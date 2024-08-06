@@ -6,9 +6,10 @@ import { updateProfile } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { updateUser } from "../utils/userSlice";
 import { auth } from "../../firebaseConfig";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { signInUser } from "../utils/signInUser";
 const SignIn = () => {
+
     const [mail, setMail] = useContext(mailContext);
     const [signIn, setSignIn] = useState(true);
     const [isMailFocused, setIsMailFocused] = useState(false);
@@ -42,7 +43,7 @@ const SignIn = () => {
                     displayName: name.current?.value,
                     photoURL: 'https://i.pinimg.com/564x/1b/a2/e6/1ba2e6d1d4874546c70c91f1024e17fb.jpg'
                 }).then(()=>{
-                    const user = auth.currentUser
+                    const user = auth.currentUser;
                     const updatedName = user.displayName;
                     const updatedPhotoURL = user.photoURL;
                     console.log(updatedName, updatedPhotoURL);
@@ -58,16 +59,14 @@ const SignIn = () => {
     }
 
     const handleLogIn = async () => {
-        console.log('inside log in');
         
-        const [mailErr, passErr, ] = useValidate(email.current?.value, password.current?.value);
+        const [mailErr,, ] = useValidate(email.current?.value);
         setMailErrMsg(mailErr);
-        setPassErrMsg(passErr);
 
-        if (mailErr == null && passErr == null) {
+        if (mailErr == null) {
             try {
                 const logInResponse = await signInUser(email.current?.value, password.current?.value);
-                console.log(logInResponse); 
+                navigate('/Contents'); 
                 
             }
             catch(error) {
@@ -207,6 +206,8 @@ const SignIn = () => {
                                     setMailErrMsg(null);
                                     setPassErrMsg(null);
                                     setNameErrMsg(null);
+                                    password.current.value = "";
+                                    setIsPasswordFocused(false)
                                 }
                             }
                         >

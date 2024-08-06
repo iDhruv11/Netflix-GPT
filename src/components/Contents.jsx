@@ -2,15 +2,13 @@ import { useSelector } from "react-redux";
 
 const Contents = () => {
     const user = useSelector(state => state.user)
-    console.log(user.email);
-    console.log(user.displayName);
-    console.log(user.photoURL);
     
     return (
         <div>
             <ul>
-                <li></li>
-                <li></li>
+                <li>{user.email}</li>
+                <li>{user.displayName}</li>
+                <li>{user.photoURL}</li>
             </ul>
         </div>
     )
