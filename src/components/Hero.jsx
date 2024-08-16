@@ -67,7 +67,7 @@ const Hero = () => {
                                 }
                                 />
 
-                                <p className={`text-gray-400 text-md font-bold absolute left-[17px] top-4 ${(isFocused == true ) ? `top-[5px] text-[13px]` : ``} transition-all ease-linear duration-150 `}>Email address</p>
+                                <p className={`text-gray-400 text-md font-bold absolute left-[17px] top-4 ${(isFocused) ? `top-[5px] text-[13px]` : ``} transition-all ease-linear duration-150 `}>Email address</p>
 
                                 <button className="text-white font-bold text-2xl bg-[#E50914] px-4 py-[12px] rounded-sm" onClick={handleEmailSubmission}>Get Started &nbsp; &gt;</button>
 

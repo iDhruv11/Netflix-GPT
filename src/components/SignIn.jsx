@@ -1,13 +1,14 @@
-import { useContext, useDebugValue, useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { mailContext } from "../utils/MailContext";
 import { useValidate } from "../utils/useValidate";
 import { registerUser } from "../utils/registerUser";
-import { updateProfile } from "firebase/auth";
+import { sendEmailVerification, updateProfile } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { updateUser } from "../utils/userSlice";
 import { auth } from "../../firebaseConfig";
-import { useNavigate } from "react-router-dom";
 import { signInUser } from "../utils/signInUser";
+import { useNavigate } from "react-router-dom";
+
 const SignIn = () => {
 
     const [mail, setMail] = useContext(mailContext);
@@ -21,6 +22,7 @@ const SignIn = () => {
     const email = useRef();
     const password = useRef();
     const name = useRef();
+    const regBtn = useRef();
     const dispatcher = useDispatch();
     const navigate = useNavigate();
     useEffect(() => {
@@ -29,49 +31,48 @@ const SignIn = () => {
 
     const handleReg = async () => {
         console.log('inside registration');
-        
+
         const [mailErr, passErr, nameErr] = useValidate(email.current?.value, password.current?.value, name.current?.value);
         setMailErrMsg(mailErr);
         setPassErrMsg(passErr);
         setNameErrMsg(nameErr);
-        
+
         if (mailErr == null && passErr == null && nameErr == null) {
             try {
                 const regResponse = await registerUser(email.current?.value, password.current?.value);
-                const user = regResponse.user;
+                sendEmailVerification(auth.currentUser)
+                .then(() => {
+                    console.log('email sent');                        
+                });
                 updateProfile(auth.currentUser, {
                     displayName: name.current?.value,
                     photoURL: 'https://i.pinimg.com/564x/1b/a2/e6/1ba2e6d1d4874546c70c91f1024e17fb.jpg'
-                }).then(()=>{
+                }).then(() => {
                     const user = auth.currentUser;
                     const updatedName = user.displayName;
                     const updatedPhotoURL = user.photoURL;
                     console.log(updatedName, updatedPhotoURL);
-                    dispatcher(updateUser({displayName: updatedName, photoURL:  updatedPhotoURL}));
-                    navigate('/Contents');
-                    
+                    dispatcher(updateUser({ name: updatedName, photoURL: updatedPhotoURL}));
                 })
+                
             }
             catch (error) {
-                (error.code == 'auth/email-already-in-use') ? setMailErrMsg('Email already in use!') : console.log('Name setting Error');          
+                (error.code == 'auth/email-already-in-use') ? setMailErrMsg('Email already in use!') : console.log('Name setting Error');
             }
         }
     }
 
     const handleLogIn = async () => {
-        
-        const [mailErr,, ] = useValidate(email.current?.value);
+
+        const [mailErr, ,] = useValidate(email.current?.value);
         setMailErrMsg(mailErr);
 
         if (mailErr == null) {
             try {
                 const logInResponse = await signInUser(email.current?.value, password.current?.value);
-                navigate('/Contents'); 
-                
             }
-            catch(error) {
-                console.log(error.code);
-                console.log(error.message);                  
+            catch (error) {
+                (error.code == 'auth/invalid-credential') ? setPassErrMsg('Invalid email or password') : null;
             }
         }
     }
@@ -118,7 +119,7 @@ const SignIn = () => {
                                     }
                                 }
                             />
-                            <p className={`font-bold text-gray-300 absolute top-4 left-4 text-[17px] ${(isMailFocused || mail) ? `top-[6px] text-sm` : ``} transition-all ease-in-out duration-300 `}>Email</p>
+                            <p className={`font-bold text-gray-300 absolute top-4 left-4 text-[17px] ${(isMailFocused || mail) ? `top-[6px] text-sm` : ``} transition-all ease-in-out duration-150 `}>Email</p>
                             {
                                 (mailErrMsg) && (
                                     <div className="flex items-center text-[#f73e34] gap-1 mt-2 font-bold" >
@@ -140,11 +141,13 @@ const SignIn = () => {
                                 onBlur={
                                     () => {
                                         (password.current.value) ? null : setIsPasswordFocused(false);
-                                        const [, passErrMsg,] = useValidate(null, password.current?.value, null);
-                                        setPassErrMsg(passErrMsg);
+                                        if (!signIn) {
+                                            const [, passErrMsg,] = useValidate(null, password.current?.value, null);
+                                            setPassErrMsg(passErrMsg);
+                                        }
                                     }
                                 } />
-                            <p className={`font-bold text-gray-300 absolute top-4 left-4 text-[17px] ${(isPasswordFocused) ? `top-[6px] text-sm` : ``} transition-all ease-in-out duration-300`}>Password</p>
+                            <p className={`font-bold text-gray-300 absolute top-4 left-4 text-[17px] ${(isPasswordFocused) ? `top-[6px] text-sm` : ``} transition-all ease-in-out duration-150`}>Password</p>
                             {
                                 (passErrMsg) && (
                                     <div className="flex items-center text-[#f73e34] gap-1 mt-2 font-bold" >
@@ -172,7 +175,7 @@ const SignIn = () => {
                                                 setNameErrMsg(nameErrMsg);
                                             }
                                         } />
-                                    <p className={`font-bold text-gray-300 absolute top-4 left-4 text-[17px] ${(isNameFocused) ? `top-[6px] text-sm ` : ``} transition-all ease-in-out duration-300`}>Full Name</p>
+                                    <p className={`font-bold text-gray-300 absolute top-4 left-4 text-[17px] ${(isNameFocused) ? `top-[6px] text-sm ` : ``} transition-all ease-in-out duration-150 `}>Full Name</p>
                                     {
                                         (nameErrMsg) && (
                                             <div className="flex items-center text-[#f73e34] gap-1 mt-2 font-bold" >
@@ -185,7 +188,7 @@ const SignIn = () => {
                             )
                         }
                         <button className="w-9/12 bg-[#e50914] text-lg font-bold py-2 rounded-sm mb-3"
-                            onClick={(signIn) ? handleLogIn : handleReg}>
+                            onClick={(signIn) ? handleLogIn : handleReg} ref={regBtn}>
                             {
                                 (signIn) ? "Sign In" : "Sign Up"
                             }
