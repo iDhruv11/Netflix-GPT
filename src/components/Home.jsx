@@ -20,8 +20,9 @@ const Home = () => {
                 console.log('inside authstatechange');
                 const { email, displayName, photoURL } = user;
                 console.log(email, displayName, photoURL);
-                dispatcher(addUser({ email, displayName, photoURL }));
+                dispatcher(addUser({ email, displayName, photoURL }));            
                 navigate('/Contents');
+                
             }
             else {
                 console.log('User Signed out');

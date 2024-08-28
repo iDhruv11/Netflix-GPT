@@ -6,9 +6,6 @@ import { mailContext } from './utils/MailContext';
 import { useState } from 'react';
 import { Provider, useDispatch } from 'react-redux';
 import { userStore } from './utils/userStore';
-import { onAuthStateChanged } from 'firebase/auth';
-import { auth } from '../firebaseConfig';
-import { addUser } from './utils/userSlice';
 import Contents from './components/Contents';
 function App() {
   const [mail, setMail] = useState(null);
