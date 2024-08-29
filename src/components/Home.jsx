@@ -21,8 +21,7 @@ const Home = () => {
                 const { email, displayName, photoURL } = user;
                 console.log(email, displayName, photoURL);
                 dispatcher(addUser({ email, displayName, photoURL }));            
-                navigate('/Contents');
-                
+                navigate('/Contents');                
             }
             else {
                 console.log('User Signed out');

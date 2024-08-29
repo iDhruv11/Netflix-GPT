@@ -21,7 +21,7 @@ const Contents = () => {
         }, 2000);
     }, [])
     return (!user.emailVerified) ? <EmailUnverified /> : (
-        <div className="h-[1200px]">
+        <div className="h-[1200px] bg-[#141414]">
             <MainMovie />
             <SuggestedMovies />
         </div>

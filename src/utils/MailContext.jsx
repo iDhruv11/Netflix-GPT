@@ -1,5 +1,5 @@
 import { createContext } from "react";
 
-const mailContext = createContext([]);
+const mailContext = createContext();
 
 export { mailContext };

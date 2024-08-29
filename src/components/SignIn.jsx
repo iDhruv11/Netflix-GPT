@@ -25,6 +25,8 @@ const SignIn = () => {
     const regBtn = useRef();
     const dispatcher = useDispatch();
     const navigate = useNavigate();
+    console.log(mail);    
+
     useEffect(() => {
         (mail) ? setSignIn(false) : null;
     }, [])
@@ -53,6 +55,7 @@ const SignIn = () => {
                     const updatedPhotoURL = user.photoURL;
                     console.log(updatedName, updatedPhotoURL);
                     dispatcher(updateUser({ name: updatedName, photoURL: updatedPhotoURL}));
+                    navigate('/Contents')
                 })
                 
             }
