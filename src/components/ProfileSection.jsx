@@ -23,8 +23,7 @@ export const ProfileSection = () => {
     const pfpURL = useRef(
         [
             {
-                title: "Default",
-                logURL: "https://res.cloudinary.com/dianmmxft/image/upload/v1726235561/Netflix-Logo_vbo1ty.png",
+                title: "Netflix",
                 avatars: [
                     {
                         id: 0,   
@@ -161,7 +160,7 @@ export const ProfileSection = () => {
             },
             {   
                 title: "Stranger Things",
-                logoURL: "https://image.tmdb.org/t/p/original/cRPjn7KVNALsmMcXvcxNzRxrcon.png",
+                logoURL: "https://image.tmdb.org/t/p/original/rMYypjcVoeeijgh5Jwdvm1jaybh.png",
                 avatars: [
                     {   
                         id: 200,
@@ -232,7 +231,7 @@ export const ProfileSection = () => {
             },
             {
                 title: "Squid Game",
-                logoURL: "https://image.tmdb.org/t/p/original/6YFWTX7fiGjWpsnJWLLV4RSbJWd.png",
+                logoURL: "https://image.tmdb.org/t/p/original/6itv9RmNAd6KAtQPaJCguvg2Zmw.png",
                 avatars: [
                     {
                         id: 300,
@@ -402,7 +401,7 @@ export const ProfileSection = () => {
             }
             {/* Profile Avatars Sections  */}
             {
-                (showAvatars) && <AvatarSection setShowAvatars = { setShowAvatars } />
+                (showAvatars) && <AvatarSection setShowAvatars = { setShowAvatars } nextPfp = {nextPfp} pfpURL = {pfpURL} />
             }
         </div>
     )

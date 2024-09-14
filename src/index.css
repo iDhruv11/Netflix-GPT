@@ -2,56 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lato';
 }
 
-.banner{
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent, transparent, rgba(0, 0, 0, 0.5)), url(https://assets.nflxext.com/ffe/siteui/vlv3/21a8ba09-4a61-44f8-8e2e-70e949c00c6f/6678e2ea-85e8-4db2-b440-c36547313109/IN-en-20240722-POP_SIGNUP_TWO_WEEKS-perspective_WEB_3457a8b1-284d-4bb5-979e-2a2e9bb342b3_large.jpg); 
+.banner {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent, transparent, rgba(0, 0, 0, 0.5)), url(https://assets.nflxext.com/ffe/siteui/vlv3/21a8ba09-4a61-44f8-8e2e-70e949c00c6f/6678e2ea-85e8-4db2-b440-c36547313109/IN-en-20240722-POP_SIGNUP_TWO_WEEKS-perspective_WEB_3457a8b1-284d-4bb5-979e-2a2e9bb342b3_large.jpg);
   background-size: cover;
 }
-.footer-child{
+
+.footer-child {
   margin-right: 13%;
 }
-ul{
-  display: flex;  
+
+ul {
+  display: flex;
   flex-direction: column;
   gap: 10px;
   text-decoration: underline;
   cursor: pointer;
 }
-.img{
+
+.img {
   position: absolute;
   top: 0px;
 }
-.img-2{
+
+.img-2 {
   top: -140px;
   left: -90px;
 }
-.img-1{
+
+.img-1 {
   top: -90px;
   left: -80px;
 }
-.img-3{
+
+.img-3 {
   top: -80px;
   left: -100px;
 }
-.img-4{
+
+.img-4 {
   min-width: 580px;
   top: -120px;
 }
-.vid-3{
+
+.vid-3 {
   width: 380px;
   transform: translateY(-50px);
   margin-right: 150px;
 }
-#banner{
+
+#banner {
   background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/21a8ba09-4a61-44f8-8e2e-70e949c00c6f/6678e2ea-85e8-4db2-b440-c36547313109/IN-en-20240722-POP_SIGNUP_TWO_WEEKS-perspective_WEB_3457a8b1-284d-4bb5-979e-2a2e9bb342b3_large.jpg);
 }
-.bottom-gradient{
+
+.bottom-gradient {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -63,24 +73,30 @@ ul{
   /* background: linear-gradient(to top, rgba(20, 20, 20), transparent); */
   bottom: 5%;
 }
-.overlap-gradient{
+
+.overlap-gradient {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, #141414, transparent,  transparent);
+  background: linear-gradient(to top, #141414, transparent, transparent);
   /* background-color: white; */
   z-index: 20;
   display: flex;
   /* justify-content: center; */
   align-items: center;
 }
-.text-shadow{
+
+.text-shadow {
   text-shadow: 3px 3px 5px black;
 }
-  
 
-    
+/* .inner-shadow {
+  box-shadow: inset 20px 0 15px -5px #141414,
+    inset -20px 0 15px -5px #141414;
+} */
 
-
+.no-scrollbar::-webkit-scrollbar{
+  display: none;
+}
