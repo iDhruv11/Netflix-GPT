@@ -41,14 +41,14 @@ const MainMovie = () => {
 
                             <p className={`text-white capitalize tracking-wider text-xl text-shadow ${(minimize) ? `translate-y-20 opacity-0` : `` } transition-all duration-700 ease-linear transform-gpu`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, nulla sit. Ex in ratione voluptatibus culpa temporibus sint corrupti vel unde cupidi.</p>
 
-                            <div className="flex gap-4">
+                            <div className="flex gap-4 relative z-10">
                                 <button className="bg-white flex items-center gap-3 px-7 py-3 rounded-sm hover:bg-white/70">
                                     <Play />
-                                    <p className="text-lg text-black font-extrabold tracking-wide">Play</p>
+                                    <p className="text-lg text-black font-extrabold tracking-wide hover:cursor-pointer">Play</p>
                                 </button>
                                 <button className="bg-[#6E7271]/70 flex items-center gap-3 px-8 py-3 rounded-sm hover:bg-[#6E7271]/40">
                                     <Info />
-                                    <p className="text-lg text-white font-extrabold">More Info</p>
+                                    <p className="text-lg text-white font-extrabold tracking-wide ">More Info</p>
                                 </button>
                             </div>
 

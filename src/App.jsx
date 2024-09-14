@@ -6,7 +6,7 @@ import { mailContext } from './utils/MailContext';
 import { useState } from 'react';
 import { Provider, useDispatch } from 'react-redux';
 import { userStore } from './utils/userStore';
-import Contents from './components/Contents';
+import Profiles from './components/Profiles';
 function App() {
   const [mail, setMail] = useState(null);
   const router = createBrowserRouter([
@@ -20,8 +20,8 @@ function App() {
       caseSensitive: true
     },
     {
-      path: '/Contents',
-      element: <Contents />,
+      path: '/Profiles',
+      element: <Profiles />,
       caseSensitive: true
     }
 

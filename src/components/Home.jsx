@@ -18,10 +18,10 @@ const Home = () => {
         onAuthStateChanged(auth, (user) => {
             if (user) {
                 console.log('inside authstatechange');
-                const { email, displayName, photoURL } = user;
-                console.log(email, displayName, photoURL);
-                dispatcher(addUser({ email, displayName, photoURL }));            
-                navigate('/Contents');                
+                const { email, displayName, photoURL, emailVerified } = user;
+                console.log(email, displayName, photoURL, emailVerified);
+                dispatcher(addUser({ email, displayName, photoURL , emailVerified }));            
+                navigate('/Profiles');                
             }
             else {
                 console.log('User Signed out');

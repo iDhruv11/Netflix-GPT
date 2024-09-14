@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const userSlice = createSlice({
     name: "User",
     initialState: {
+        type: null,
         name: null,
         email: null,
         photoURL: null,
@@ -10,11 +11,11 @@ const userSlice = createSlice({
     },
     reducers: {
         addUser: (state, action) => {
-            const { displayName, email, photoURL } = action.payload;
+            const { displayName, email, photoURL, emailVerified } = action.payload;
             state.name = displayName;
             state.email = email;
             state.photoURL = photoURL;                        
-            
+            state.emailVerified = emailVerified;
         },
         removeUser: (state) => {
             const newEmptyUser = {
