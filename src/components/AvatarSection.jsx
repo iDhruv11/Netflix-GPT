@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from "react"
-import { LeftArrow, Logo } from "../utils/Icons";
+import { LeftArrow, Logo, Tick, TickForBtn } from "../utils/Icons";
 import { AvatarSlider } from "./AvatarSlider";
 
 export const AvatarSection = ({ setShowAvatars, nextPfp, pfpURL }) => {
 
     const [backToNormalSize, setBackToNormalSize] = useState(false);
+    const [showSelected, setShowSelected] = useState(null);
     const main = useRef(null);
     const header = useRef(null);
     useEffect( () => {
@@ -20,13 +21,21 @@ export const AvatarSection = ({ setShowAvatars, nextPfp, pfpURL }) => {
 
     }
 
+    const handleExit = () => {
+        setBackToNormalSize(false);
+        setTimeout(() => {
+            setShowAvatars(false);
+        }, 800);
+    }
     return (
         <div className="absolute w-full h-screen bg-[#141414] overflow-y-hidden pt-28 ">
+
             <div className="bg-gradient-to-b from-black to-transparent w-full h-[8vh] px-20 fixed top-0 left-0">
                 <div className="pt-6"><Logo /></div>
             </div>
+
             <div 
-                className={`w-[70%] mx-auto h-[90vh] overflow-y-scroll pl-8 no-scrollbar inner-shadow ${ (backToNormalSize) ? `scale-100 opacity-100` : `scale-110 opacity-0` } transition-all duration-300 ease-linear pb-14`}
+                className={`w-[70%] mx-auto h-[90vh] overflow-y-scroll no-scrollbar inner-shadow ${ (backToNormalSize) ? `scale-100 opacity-100` : `scale-110 opacity-0` } transition-all duration-300 ease-linear pb-24`}
                 onScroll={handleScroll}
                 ref = {main}
             >
@@ -35,25 +44,38 @@ export const AvatarSection = ({ setShowAvatars, nextPfp, pfpURL }) => {
                     ref = {header}
                 >
                     <div className="flex items-center gap-4">
+
                         <div
-                            onClick={ () => setShowAvatars(false) }
-                            className="h-full flex items-center hover:bg-neutral-800 rounded-sm transition-all duration-200 ease-linear"
+                            onClick={ handleExit }
+                            className="h-full hover:bg-neutral-800 hover:cursor-pointer rounded-full px-2 py-2 transition-all duration-200 ease-linear"
                         >
                             <LeftArrow />
                         </div>
+
                         <div className="flex flex-col gap-0">
                             <p className="text-white font-bold text-[2.35rem]">Edit Profile</p>
                             <p className="text-white font-bold text-3xl">Choose a profile icon.</p>
                         </div>
+
                     </div>
+
                     <div className="w-16">
                         <img src={nextPfp.src} className="rounded-md"/>
                     </div>
+
                 </div>
-                <div className="flex flex-col gap-20 pt-16">
+
+                <div className="flex flex-col gap-20 pt-16 px-16 mb-14">
                     {
-                        pfpURL.current.map( (show) => <AvatarSlider show={show} />)
+                        pfpURL.current.map( (show) => <AvatarSlider show={show} showSelected={showSelected} setShowSelected={setShowSelected}/>)
                     }
+                </div>
+                <div className="flex gap-4 justify-end pr-16">
+                    <button className="bg-white text-black text-2xl font-bold px-6 py-2 rounded-sm flex items-center gap-2 hover:bg-[#adadad] transition-all duration-200 ease-linear ">
+                        <TickForBtn />
+                        <p>Save</p>
+                    </button>
+                    <button className="text-white font-semilbold text-2xl bg-[#707070] px-10 py-2 rounded-sm hover:bg-[#5a5a5a] ">Cancel</button>
                 </div>
             </div>
         </div>

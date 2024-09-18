@@ -281,6 +281,52 @@ export const ProfileSection = () => {
                 ]
             },
             {
+                title: "Bojack",
+                logoURL: "https://res.cloudinary.com/dianmmxft/image/upload/v1726658021/pnB0AQj9pBkczDsMpqDpFXaKYEX_cne2oa.png",
+                avatars: [
+                    {
+                        id: 500,
+                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726657770/Bojack_t1ua03.png",
+                        isSelected : false
+                    },
+                    {
+                        id: 501,
+                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726657769/Bojack2_slhuxq.png",
+                        isSelected : false
+                    },
+                    {
+                        id: 502,
+                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726657770/Bojack3_ve7qqd.png",
+                        isSelected : false
+                    },
+                    {
+                        id: 503,
+                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726657769/Bojack4_lfl6no.png",
+                        isSelected : false
+                    },
+                    {
+                        id: 504,
+                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726657769/Bojack5_j91cyc.png",
+                        isSelected : false
+                    },
+                    {
+                        id: 505,
+                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726657750/Bojack6_e0acnp.png",
+                        isSelected : false
+                    },
+                    {
+                        id: 506,
+                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726657750/Bojack8_k924zn.png",
+                        isSelected : false
+                    },
+                    {
+                        id: 507,
+                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726657750/Bojack7_w9v70n.png",
+                        isSelected : false
+                    }
+                ]
+            },
+            {
                 title: "Money Heist",
                 logoURL: "https://image.tmdb.org/t/p/w500/vgGUC33xZhnkyTwZgU9HAtqAZxX.png",
                 avatars: [
@@ -320,7 +366,59 @@ export const ProfileSection = () => {
                         isSelected : false
                     }
                 ]
-            }
+            },
+            {
+                title: "Witcher",
+                logoURL: "https://image.tmdb.org/t/p/original/x3uBgefbFC8blsE4Sbdi0m2a71d.png",
+                avatars: [
+                    {
+                        id: 500,
+                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726660123/Witcher1_svqg5d.jpg",
+                        isSelected : false
+                    },
+                    {
+                        id: 501,
+                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726660123/witcher2_ql14ov.jpg",
+                        isSelected : false
+                    },
+                    {
+                        id: 502,
+                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726660118/witcher3_iiro2g.jpg",
+                        isSelected : false
+                    },
+                    {
+                        id: 503,
+                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726660118/witcher4_pjnzp4.jpg",
+                        isSelected : false
+                    },
+                    {
+                        id: 504,
+                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726660117/witcher6_kojjzh.jpg",
+                        isSelected : false
+                    },
+                    {
+                        id: 505,
+                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726660117/witcher5_oi1rxc.jpg",
+                        isSelected : false
+                    },
+                    {
+                        id: 506,
+                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726660117/witcher7_dix5gl.jpg",
+                        isSelected : false
+                    },
+                    {
+                        id: 507,
+                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726660117/Witcher9_detjpz.jpg",
+                        isSelected : false
+                    },
+                    {
+                        id: 508,
+                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726660117/witcher8_igdtra.jpg",
+                        isSelected : false
+                    }
+                    
+                ]
+            },
         ]
     )
     const [users, setUsers] = useState([

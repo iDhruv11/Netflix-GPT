@@ -92,11 +92,6 @@ ul {
   text-shadow: 3px 3px 5px black;
 }
 
-/* .inner-shadow {
-  box-shadow: inset 20px 0 15px -5px #141414,
-    inset -20px 0 15px -5px #141414;
-} */
-
 .no-scrollbar::-webkit-scrollbar{
   display: none;
 }
