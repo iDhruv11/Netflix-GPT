@@ -50,7 +50,7 @@ export const AvatarSection = ({ setShowAvatars, nextPfp, pfpURL }) => {
                         <img src={nextPfp.src} className="rounded-md"/>
                     </div>
                 </div>
-                <div className="flex flex-col gap-16 pt-16">
+                <div className="flex flex-col gap-20 pt-16">
                     {
                         pfpURL.current.map( (show) => <AvatarSlider show={show} />)
                     }

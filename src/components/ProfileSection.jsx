@@ -286,37 +286,37 @@ export const ProfileSection = () => {
                 avatars: [
                     {
                         id: 400,
-                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726234945/cartoon-37_q41bma.jpg",
+                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726636644/Mask_cwdtdu.jpg",
                         isSelected : false
                     },
                     {
                         id: 401,
-                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726234946/cartoon-40_ycokcf.jpg",
+                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726636680/cartoon-38_krhjag.jpg",
                         isSelected : false
                     },
                     {
                         id: 402,
-                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726234945/cartoon-38_qoci7u.jpg",
+                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726636644/cartoon-39_jd5m6x.jpg",
                         isSelected : false
                     },
                     {
                         id: 403,
-                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726234947/cartoon-42_od7law.jpg",
+                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726636644/cartoon-40_xrkqy6.jpg",
                         isSelected : false
                     },
                     {
                         id: 404,
-                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726234946/cartoon-39_sphted.jpg",
+                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726636644/cartoon-42_fgwn3a.jpg",
                         isSelected : false
                     },
                     {
                         id: 405,
-                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726234946/cartoon-43_q6fb3d.jpg",
+                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726636644/cartoon-43_j31tul.jpg",
                         isSelected : false
                     },
                     {
                         id: 406,
-                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726234946/cartoon-41_sgw2pm.jpg",
+                        src: "https://res.cloudinary.com/dianmmxft/image/upload/v1726636644/cartoon-41_p2dl1z.jpg",
                         isSelected : false
                     }
                 ]

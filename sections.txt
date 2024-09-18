@@ -1,0 +1,333 @@
+
+
+### 1. Homepage Sections
+The homepage should have a broad and diverse range of content to make a strong first impression. It should also contain some of the most popular and high-traffic sections, ensuring a rich user experience right from the start.
+
+NOTE: Instead of making saperate slices for a common topic like trending in india state, you can have one trenidng slice with object state with two array as element representing trendingMovies:[]  trendingShows:[]
+
+1. Continue Watching (Mixed Content)
+    - a. Use a continue watching slice individual for series and movie
+    - b. Use addition of these slices to show on continue watching
+2. My List (Mixed Content)
+    - a. Use a list slice to add individual for both show and movie
+    - b. Use a additon of both slices to show on mainpage
+3. Because You Watched: [XYZ] (Mixed Content)
+    - a. Consume continueWatching slice form both show and movie in all three tabs 
+    - b. In homepage, as homepage consumes both continueWatching slices, if any of these slice are updated, there should be made a check that sees if the sum of movies from both continueWatching is 5 or more? 
+    - c. If yes, take any last movie from continueWatching slice of any movie/show, make a prompt to gemini asking it to list 10 movies/shows similar to it
+    - d. Display them on homepage only.
+4. Top Rated (Mixed Content)
+    - a. Make api call to fetch top rated from both movies and series api
+    - b. Brought results will be 40, filter out first 16-16 from both
+    - c. Keep top rated slice for both movie/show and consume it on homepage.
+    - d. extract 8-8 results from both slices, shuffle them up and show as a section.
+    - e. on clicking on explore all, render a huge popup that will render all 32 shows/movies
+
+    URL Movies: (https://api.themoviedb.org/3/movie/top_rated?api_key=99821f5d8417dc69c3ffd66d204f12cc&language=en-US&page=1)
+    URL Shows: (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&sort_by=vote_count.desc&vote_count.gte=1000&language=en)
+
+5. New Releases (Mixed Content)
+    - a. Make 4 api calls using discover api, 2 for movies (en, hi) and 2 for shows (en, hi) with recent under 2-3 months time ( using filtering params )
+    - b. Extract 8-8 elements from each response and update the respective state.
+    - c. for instance, if one of the response arrives of movie discovery, update it in on respective array of object and when the companion repsone arrives of diff lang do the same, shuffle it later 
+
+    URL Movie India :  (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&language=en-US&page=1&primary_release_year=2024&primary_release_date.gte=2024-06-01&region=IN&sort_by=vote_count.desc&with_origin_country=IN&with_original_language=hi&year=2024)
+
+    URL movie global : (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&language=en-US&page=1&primary_release_year=2024&primary_release_date.gte=2024-06-01&sort_by=vote_count.desc&with_original_language=en&year=2024)
+
+    URL Show India : (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&sort_by=vote_count.desc&with_origin_country=IN&with_original_language=hi&region=IN&page=1with_keywords=281372,283680&with_networks=213%7C1024%7C3373&air_date.gte=2024-06-01)
+
+    URL Show Global : (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&sort_by=vote_count.desc&page=1with_keywords=281372,283680&with_networks=213%7C1024%7C3373&air_date.gte=2024-06-01&language=en-US&with_original_language=en)
+
+6. Popular Now (Mixed Content)
+    - a. Make 4 api calls using discover api, keep movies from 2023 jun to 2024 jun and do the same as above
+
+    URL Movie India : (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&language=en-US&page=1&primary_release_date.gte=2023-12-01&primary_release_date.lte=2024-06-01&region=IN&sort_by=vote_count.desc&with_origin_country=IN&with_original_language=hi) (use shuffling here)
+
+    URL Movie Global : (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&primary_release_date.gte=2023-12-01&primary_release_date.lte=2024-06-01&sort_by=vote_count.desc&with_original_language=en)
+
+    URL Show Global : ( https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&air_date.gte=2023-12-01&air_date.lte=2024-06-01&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_original_language=en)
+
+    URL Show India : (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&air_date.gte=2023-12-01&air_date.lte=2024-06-01&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_original_language=hi&with_original_country=IN&with_networks=213%7C1024%7C3373)
+
+7. Critically Acclaimed (Mixed Content)
+    Movies ->
+    - a. 2001: A Space Odyssey - (https://api.themoviedb.org/3/movie/62?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - b. Raging Bull - (https://api.themoviedb.org/3/movie/1578?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - c. Swades - (https://api.themoviedb.org/3/movie/15774?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - d. Vertigo - (https://api.themoviedb.org/3/movie/426?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - e. Memories of murder - (https://api.themoviedb.org/3/movie/11423?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - f. Memento - (https://api.themoviedb.org/3/movie/77?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - g. Apocolypse Now - (https://api.themoviedb.org/3/movie/28?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - h. Saving Private Ryan - (https://api.themoviedb.org/3/movie/857?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - i. Gulaal - (https://api.themoviedb.org/3/movie/21625?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - j. No country for old men - (https://api.themoviedb.org/3/movie/6977?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+
+    Shows -> 
+    - a. The sopranos - (https://api.themoviedb.org/3/tv/1398?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - b. Succession - (https://api.themoviedb.org/3/tv/76331?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - c. Mindhunter - (https://api.themoviedb.org/3/tv/67744?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - d. Fargo - (https://api.themoviedb.org/3/tv/60622?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - e. The wire - (https://api.themoviedb.org/3/tv/1438?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - f. Better Call Saul - (https://api.themoviedb.org/3/tv/60059?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - g. Mad Men- (https://api.themoviedb.org/3/tv/1104?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - h. Band of Brothers - (https://api.themoviedb.org/3/tv/4613?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - i. Asur - (https://api.themoviedb.org/3/tv/100911?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images) 
+    - j. Pataal Lok - (https://api.themoviedb.org/3/tv/103051?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+
+8. Netflix Originals (Mixed Content)
+    - a. Fetch 4 apis here too, 2 for movies, 2 for shows, wrap them in promise and and resolve at the same time
+    - b. User Discover API
+
+    For Movies no api only array ( india and global both) -> 
+        - a. Extraction - (https://api.themoviedb.org/3/movie/545609?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
+        - b. Bird Box - (https://api.themoviedb.org/3/movie/405774?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
+        - c. The Irishman - (https://api.themoviedb.org/3/movie/398978?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
+        - d. Marriage Story - (https://api.themoviedb.org/3/movie/492188?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
+        - e. The old guard - (https://api.themoviedb.org/3/movie/547016?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
+        - f. The kissing booth - (https://api.themoviedb.org/3/movie/454983?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
+        - g. To all the boys I've Loved Before - (https://api.themoviedb.org/3/movie/466282?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
+        - h. Enola Holmes - (https://api.themoviedb.org/3/movie/497582?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
+
+        - i. Ludo - (https://api.themoviedb.org/3/movie/658412?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
+        - j. Bulbul - (https://api.themoviedb.org/3/movie/714338?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
+        - k. Raat akeli hai - (https://api.themoviedb.org/3/movie/589615?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images) 
+        - l. AK vs AK - (https://api.themoviedb.org/3/movie/735919?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
+        - m. Choked: Paisa bolta hai - (https://api.themoviedb.org/3/movie/706783?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
+        - n. Guilty - (https://api.themoviedb.org/3/movie/675592?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
+        - o. Pagglait - (https://api.themoviedb.org/3/movie/786190?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
+        - p. Haseen Dillruba - (https://api.themoviedb.org/3/movie/695969?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
+    
+    shows URL india  - (https://api.themoviedb.org/3/discover/tv?&api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_networks=213&with_origin_country=IN&with_original_language=hi)
+    shows URL global - (https://api.themoviedb.org/3/discover/tv?&api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=popularity.desc&with_networks=213&with_original_language=en)
+
+9. Trending in India (Mixed Content)
+    - a. Make 2 api calls using discover api, one for movie and other one for show, extract only 10 results
+    - b. update them in same slice as different key name
+    - c. Take 5 from moviestate and 5 from showState, shuffle them and use them on homepage
+
+    Movie URL - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&primary_release_year=2024&primary_release_date.gte=2024-07-20&region=IN&sort_by=vote_count.desc&with_origin_country=IN&with_original_language=hi&year=2024)
+
+    Show URL - (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&air_date.gte=2024-05-20&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_origin_country=IN&with_original_language=hi&with_networks=213%7C1024%7C3373)
+
+10. Adventure Ride (Mixed Content)
+    - a. fetch discover api with genre id 12, 28 - fetch 4 apis, 2 api for movies (hi, en) an 2 for shows (hi, en)
+
+    Movie URL Global - (https://api.themoviedb.org/3/discover/movie?&api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=12%2C28&primary_release_date.gte=2005-01-01)
+
+    Movie URL India - (https://api.themoviedb.org/3/discover/movie?&api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&region=IN&sort_by=vote_count.desc&with_genres=12&with_origin_country=IN&with_original_language=hi&without_genres=28&primary_release_date.gte=2005-01-01)
+
+    Adventurours shows don't exist, nor needed
+
+11. Action-Packed Thrillers (Mixed Content)
+    - a. same with genre id = 28,53
+
+    Movie URL Global - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_genres=28%2C53)
+
+    Movie URL India - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&primary_release_date.gte=2010-01-01&region=IN&sort_by=vote_count.desc&with_genres=28%2C53&with_origin_country=IN&with_original_language=hi)
+
+    !!! Show URL Global - (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=10759&with_networks=213%7C1024&with_original_language=en&without_genres=16%2C35%2C10762)
+
+    !!! Show URL India - Not good
+
+12. Best of 2023 (Mixed Content)
+    - a. Fetch Discover api, keep date between 2032-01-01 to 2032-12-31 and then adjust region, og-region, og-language
+
+    URL Movie Global - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&primary_release_year=2023&primary_release_date.gte=2023-01-01&primary_release_date.lte=2023-12-01&sort_by=vote_count.desc&with_original_language=en&without_genres=16&year=2023)
+
+    URL Movie India - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&primary_release_year=2023&primary_release_date.gte=2023-01-01&primary_release_date.lte=2023-12-01&region=IN&sort_by=vote_count.desc&with_origin_country=IN&with_original_language=hi&without_genres=16&year=2023)
+
+    URL Show India - (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&air_date.gte=2023-01-01&air_date.lte=2023-12-01&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_networks=213%7C1024%7C3373&with_origin_country=IN&with_original_language=hi)
+
+    URL Show Global - (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&air_date.gte=2023-01-01&air_date.lte=2023-12-01&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_original_language=en&without_genres=10762%2C16)
+
+13. True Stories (Mixed Content)
+    - a. Use the discover api, use filtering with keywords - based on true story - 9672, true story - 332623, biography - 5565, and use without keywords - fiction - 286995, science fiction - 281358, fantasy - 293198, fantasy world - 170362
+
+    Movie URL Global - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_keywords=9672%7C332623%7C5565&without_keywords=286995%7C281358%7C293198%7C170362)
+
+    Movie URL India - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&region=IN&sort_by=popularity.desc&with_keywords=9672%7C332623%7C5565&with_origin_country=IN&with_original_language=hi&without_keywords=286995%7C281358%7C293198%7C170362)
+
+    !!! Show URL India - ()
+
+    Show URL Global - (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&with_original_language=en&language=en-US&page=1&sort_by=popularity.desc&with_keywords=9672%7C332623%7C5565&without_keywords=286995%7C281358%7C293198%7C170362&with_networks=213%7C1024)
+    
+
+14. Laugh Out Loud Comedies (Mixed Content)
+    - a. Fetch discover api, with advance filtering - use keywords in chatgpt chat
+
+    URL Movie Global - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_genres=35&with_keywords=290159%7C322268%7C332045%7C9253%7C9755%7C320420%7C167541%7C336694%7C155722%7C&with_original_language=en&without_genres=16&without_keywords=10123%7C334378%7C203322%7C290159%7C316362%7C10614%7C273967%7C316332%7C272553)
+
+    URL Movie India - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&primary_release_date.lte=2020-01-01&region=IN&sort_by=popularity.desc&with_genres=35&with_origin_country=IN&with_original_language=hi&without_genres=16%7C28%7C80%7C99%7C53%7C18)
+
+    URL Show Global - (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&first_air_date.gte=2000-01-01&first_air_date.lte=2010-01-01&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_genres=35%7C10766%7C10751&with_origin_country=US&with_original_language=en&without_genres=16)
+
+    URL Show India - (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_null_first_air_dates=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=35%7C10751&with_networks=213%7C1024%7C3373&with_origin_country=IN&with_original_language=hi&without_genres=16%7C10766&without_keywords=287219%7C268140%7C287219)
+
+15. Family Favorites (Mixed Content)
+    - a. same using genre in discover api
+
+    URL Movie Global - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=10751&with_keywords=18035&with_original_language=en&without_genres=16%7C12)
+
+    URL Movie India - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&region=IN&sort_by=vote_count.desc&with_genres=10751&with_keywords=18035%7C199630&with_origin_country=IN&with_original_language=hi&without_genres=16%7C12)
+
+    URL Show India - ( !!! )
+    URL Show Global - (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_genres=10751&with_original_language=en&without_genres=10762%7C16&without_keywords=5970)
+
+16. Feel Good Flicks (Mixed Content)
+    - a. Use discover api with advance filtering using keywords 
+
+    Movie URL Global - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_keywords=304995%7C329716%7C279521%7C288816%7C199630%7C324723&with_original_language=en&without_genres=28%2C80%2C27%2C53%2C10752&without_keywords=286758%2C316090)
+
+    Movie URL India - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&region=IN&sort_by=revenue.desc&with_origin_country=IN&with_original_language=hi&without_genres=9648%2C53%2C28%2C80%2C36%2C37%2C10752&without_keywords=215292%2C10160&with_keywords=6054)
+
+    Show URL Global - ( https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_keywords=304995%7C329716%7C279521%7C288816%7C199630%7C324723%7C9840&with_original_language=en&without_genres=28%2C80%2C27%2C53%2C10752&without_keywords=286758%2C316090&with_networks=213%7C1024%7C3733)
+
+    Show URL India - (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_keywords=6054%7C304995%7C329716%7C279521%7C288816%7C199630%7C324723%7C9840&with_original_language=hi&with_origin_country=IN&without_genres=10762%7C28%2C80%2C27%2C53%2C10752&with_networks=213%7C1024%7C3733)
+
+
+### Additional Sections for the Homepage:
+18. Binge-Worthy Series (Mixed Content)
+19. Award-Winning Classics (Mixed Content)
+20. International Sensations (Mixed Content)
+
+
+
+1. Continue Watching: Movies
+2. My List: Movies
+3. Top Rated Movies
+4. New in Movies
+5. Popular Movies
+6. Critically Acclaimed Movies
+7. Netflix Original Movies
+8. Action-Packed Thrillers (Movie-Specific)
+9. Adventure & Exploration (Movie-Specific)
+10. True Story Films (Movie-Specific)
+11. Feel Good Films (Movie-Specific)    4 api calls will be made from here
+->12. Crime & Gangster Films (Movie-Specific)
+
+    Movie Global URL - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_genres=80&with_keywords=3149%7C298636%7C15011%7C10391%7C9748%7C165725%7C18026%7C7002%7C164186&with_original_language=en&without_keywords=6149%7C5340%7C8015%7C9715%7C290940)
+
+    Movie India URL - ( https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&primary_release_date.gte=1998-01-01&region=IN&sort_by=popularity.desc&with_genres=80&with_keywords=3149%7C298636%7C10391%7C9748%7C165725%7C164186%7C7002%7C15011&with_origin_country=IN&with_original_language=hi&without_genres=35%7C10749&without_keywords=6149%7C5340%7C8015%7C243959%7C10235%7C185011)
+
+    To be used in shows tab in True crime series section ->
+
+    Show URL Global- (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_genres=80&with_keywords=180547%7C9826%7C1539%7C20490%7C10907&with_original_language=en&without_keywords=6149%7C3306%7C1701%7C806%7C878)
+
+    Show URL India - (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_genres=80&with_origin_country=IN&with_original_language=hi&with_networks=213%7C1024%7C3373&without_keywords=240119)
+
+->13. Marvel Cinematic Universe (Movie-Specific)
+
+    Movie URL - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=revenue.desc&with_keywords=180547&without_keywords=310%2C14900)
+
+->14. Award-Winning Films (Movie-Specific)
+
+    Movie URL Global - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&vote_count.gte=500&with_keywords=191741%7C164186%7C320648%7C329315&with_original_language=en&without_genres=16&without_keywords=180547%7C9715%7C329315)
+
+    Movie Hindi -
+    - a. Taare zameen par - (https://api.themoviedb.org/3/movie/7508?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - b. Laggan - (https://api.themoviedb.org/3/movie/19666?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - c. Pather Panchali - (https://api.themoviedb.org/3/movie/5801?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - d. Queen - (https://api.themoviedb.org/3/movie/247645?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - e. Pink - (https://api.themoviedb.org/3/movie/415358?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - f. Court - ( https://api.themoviedb.org/3/movie/290815?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - g. Gully Boy - (https://api.themoviedb.org/3/movie/491625?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+
+    Show URL Gloabl - ()
+->15. Cult Classics (Movie-Specific)
+
+    - a. A clockwork orange - (https://api.themoviedb.org/3/movie/185?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - b. Fight Club - ( https://api.themoviedb.org/3/movie/550?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - c. Pulp Fiction - (https://api.themoviedb.org/3/movie/680?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - d. Donnie Darko - (https://api.themoviedb.org/3/movie/141?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - e. Scarface - (https://api.themoviedb.org/3/movie/111?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - f. The big lebowski - (https://api.themoviedb.org/3/movie/115?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - g. Eraserhead - (https://api.themoviedb.org/3/movie/985?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - h. Blade runner - (https://api.themoviedb.org/3/movie/78?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+
+    Hindi-
+
+    - a. Sholay - (https://api.themoviedb.org/3/movie/12259?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - b. Rang De Basanti - (https://api.themoviedb.org/3/movie/7913?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - c. Satya - (https://api.themoviedb.org/3/movie/21502?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - d. Dev D - (https://api.themoviedb.org/3/movie/15977?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - e. Pyaasa - (https://api.themoviedb.org/3/movie/41053?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - f. Laksya - (https://image.tmdb.org/t/p/w500/fQfODknc07ro4uAYWurQIU3D4WU.jpg)
+    - g. Rockstar - (https://api.themoviedb.org/3/movie/79464?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - h. Devdas - (https://api.themoviedb.org/3/movie/15917?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+
+->16. Violent Movies
+
+    Movie URL Global - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=revenue.desc&with_genres=28%7C27%7C53&with_keywords=10292%7C312898%7C14707%7C12339%7C%7C261071%7C14546%7C10714&with_original_language=en&without_genres=12&without_keywords=9715%7C293198%7C5147)
+
+    Movie URL India - ()
+
+1. Continue Watching: Shows
+2. My List: Shows
+3. Top Rated Shows
+4. New in TV Shows
+5. Popular TV Shows
+6. Critically Acclaimed Shows
+7. Netflix Original Series
+->8. Binge-Worthy Series (Show-Specific)
+
+    Series URL Global - (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&vote_count.lte=10000&with_original_language=en&without_genres=16%2C99&without_genres=16%2C99&without_keywords=207876%7C210590%7C5895%7C191132%7C180547%7C161261)
+
+    Series URL India - (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=popularity.desc&with_networks=213%7C1024%7C3373&with_origin_country=IN&with_original_language=hi&without_genres=16%7C99&vote_count.gte=32&without_keywords=240119%7C208289%7C)
+
+
+->9. Sitcoms to Binge (Show-Specific)
+
+    Show URL Global - (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_genres=35&with_keywords=322268%7C210605%7C232956%7C280227%7C193171%7C336095&with_original_language=en&without_keywords=8102)
+
+
+10. True Crime Series (Show-Specific) 5 api calls will be made form show tab
+
+    Done at movie section
+
+->11. Mystery & Suspense (Show-Specific)
+
+    URL Global - (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_genres=9648&with_keywords=316332%7C231172%7C263443%7C229137%7C259984%7C207046%7C288394%7C316790%7C314730%7C319190%7C313317&with_original_language=en)
+
+    URL Show - ( https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_average.desc&with_genres=9648&with_networks=213%7C1024%7C3373&with_origin_country=IN&with_original_language=hi)
+
+
+->12. Japanese Anime Series (Show-Specific)
+
+    URL - (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_genres=16&with_keywords=210024%7C248841&with_original_language=ja&without_genres=10762)
+
+13. Family-Friendly Shows (Show-Specific)
+14. Feel Good Series (Show-Specific)
+
+->15. Dark & Gritty Dramas (Show-Specific)
+
+    URL GLOBAL - (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_genres=80%7C9648%7C286125&with_keywords=259094%7C286125%7C332685%7C207268%7C285809%7C312898%7C9748%7C12565%7C323114&with_original_language=en&without_keywords=1299)
+
+    URL India - (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=popularity.desc&with_keywords=208289%7C210608%7C208799%7C12365%7C15009&without_keywords=9840%7C217282&with_networks=213%7C1024%7C3373&with_origin_country=IN&with_original_language=hi)
+
+
+17. Critically Acclaimed Miniseries (Show-Specific)
+18. Trending TV Shows in India (Show-Specific)
+
+
+1. Masterpieces of Scorsese (Director-Specific) (Khttps://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_crew=1032&with_original_language=en)
+
+2. Tarantino's Finest (Director-Specific) (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_crew=138&with_original_language=en&without_keywords=227510%7C4565%7C240257%7C587%7C193698%7C250279%7C166735)
+
+3. Spielberg's Epic Adventures (Director-Specific) (Renamed for appeal) (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_crew=488&with_original_language=en&without_keywords=4379%7C174915%7C5049%7C14544%7C1766%7C3347%7C15247%7C160329%7C10005%7C335544)
+
+4. Nolan's Mind-Benders (Director-Specific) (Renamed for appeal) (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_crew=525&with_original_language=en&without_keywords=205854%7C154866%7C195444)
+
+5. Kubrick's Cinematic Art (Director-Specific) (Renamed for appeal) (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_crew=240&with_original_language=en&without_keywords=310)
+
+6. David Fincher's Dark Psychological Blend (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_crew=7467&with_keywords=10714%7C9181%7C222665%7C234299%7C220831%7C159743%7C10371%7C226257%7C193021%7C11728%7C888%7C&with_original_language=en&without_keywords=11239%7C191586%7C170173%7C9663) 
+
+7. The Coen Brother's Quirky Americana - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_crew=1223&with_original_language=en&without_keywords=33873)
+
+8. Satyajit Ray's Poetic Realism (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_crew=12160&with_origin_country=IN&with_original_language=bn&without_keywords=242454)
+
+9. Rajkumar Hirani's Heartfelt Narratives (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&vote_count.gte=60&with_crew=85675&with_origin_country=IN&with_original_language=hi&without_keywords=316)
+
+10. Guru Dutt's Tragic Elegance (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&vote_count.gte=1&with_crew=125354&with_origin_country=IN&with_original_language=hi)
+
+11. Anurag Kashyap's Raw Grit - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&vote_count.gte=1&with_crew=85670&with_keywords=10391%7C12099%7C156948%7C165317%7C9706%7C128%7C209476%7C207268%7C229663%7C10703%7C15061%7C1930&with_origin_country=IN&with_original_language=hi&without_keywords=244639%7C2796%7C10683%7C180492%7C225778%7C7926%7C190149%7C9799%7C33416%7C437%7C11546%7C197871%7C1430)
