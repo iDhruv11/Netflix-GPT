@@ -5,10 +5,10 @@ export const AddProfile = ({ setShowAddPopup, setBackToNormalSize, users, setUse
 
     const [isFocused, setIsFocused] = useState(false);
     const [showError, setShowError] = useState(false);
-    // const [showPfpSection, setShowPfpSection] = useState(true);
     
     const newName = useRef();
     const isKidsType = useRef();
+
     useEffect(() => {
 
         for( let i = 0; i < pfpURL.current[0].avatars.length; i++){
@@ -24,9 +24,7 @@ export const AddProfile = ({ setShowAddPopup, setBackToNormalSize, users, setUse
         }
 
     }, [])
-    const generateIndex = () => {
-        return Math.ceil(Math.random() * 17);
-    }
+
     const handleAddProfile = () => {
         if (!newName.current.value) {
             setShowError(true);
@@ -76,8 +74,8 @@ export const AddProfile = ({ setShowAddPopup, setBackToNormalSize, users, setUse
                         className="rounded-md"
                         src={ nextPfp.src }
                     />
-                    <div 
-                        className="w-full aspect-square bg-[#191818c0] absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-all duration-150 ease-linear flex items-center justify-center"
+                    <div
+                        className="w-full aspect-square bg-[#191818c0] absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-all duration-150 ease-linear flex items-center justify-center hover:cursor-pointer"
                         onClick={ handlePfpEdit }
 
                     >

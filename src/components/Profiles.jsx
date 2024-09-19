@@ -9,7 +9,7 @@ import { ProfileSection } from "./ProfileSection";
 const Profiles = () => {
     const dispatcher = useDispatch();
     const user = useSelector(state => state.user)
-    let intervalID = useRef(null);;
+    let intervalID = useRef(null);
 
     (user.emailVerified) ? clearInterval(intervalID.current) : null;
     useEffect(() => {

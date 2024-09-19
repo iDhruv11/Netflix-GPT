@@ -7,7 +7,7 @@ import Slider from "react-slick";
 import { NextBtn } from "./NextBtn";
 import { PrevBtn } from "./PrevBtn";
 
-export const AvatarSlider = ({ show, showSelected, setShowSelected }) => {
+export const AvatarSlider = ({ show, showSelected, setShowSelected, nextPfp }) => {
 
     const slider = useRef(null);
     
@@ -34,7 +34,7 @@ export const AvatarSlider = ({ show, showSelected, setShowSelected }) => {
             >
 
                 {
-                    show.avatars.map((avatarFace) => <AvatarImage avatarFace={avatarFace} showSelected={showSelected} setShowSelected={setShowSelected}/>)
+                    show.avatars.map((avatarFace) => <AvatarImage avatarFace={avatarFace} showSelected={showSelected} setShowSelected={setShowSelected} nextPfp={nextPfp} />)
                 }
                 
             </Slider>

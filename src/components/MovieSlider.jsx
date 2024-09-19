@@ -1,7 +1,7 @@
 
 const MovieSlider = () => {
     return (
-        
+        <div></div>
     )
 }
 

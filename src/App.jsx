@@ -5,8 +5,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { mailContext } from './utils/MailContext';
 import { useState } from 'react';
 import { Provider, useDispatch } from 'react-redux';
-import { userStore } from './utils/userStore';
+import { Store } from './utils/Store';
 import Profiles from './components/Profiles';
+import { EditProfile } from './components/EditProfile';
 function App() {
   const [mail, setMail] = useState(null);
   const router = createBrowserRouter([
@@ -22,13 +23,17 @@ function App() {
     {
       path: '/Profiles',
       element: <Profiles />,
+      caseSensitive: true,
+    },
+    {
+      path: '/Profiles/:profileId',
+      element: <EditProfile />,
       caseSensitive: true
-    }
-
+    } 
   ])
   
   return (
-    <Provider store ={userStore}>
+    <Provider store={Store}>
       <mailContext.Provider value={[mail, setMail]}>
         <RouterProvider router={router} />
       </mailContext.Provider>
