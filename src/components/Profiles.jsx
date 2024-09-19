@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import EmailUnverified from "../utils/EmailUnverified";
+import EmailUnverified from "./EmailUnverified";
 import { auth } from "../../firebaseConfig";
 import { updateUser } from "../utils/userSlice";
 import { useEffect, useRef } from "react";
