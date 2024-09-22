@@ -95,3 +95,8 @@ ul {
 .no-scrollbar::-webkit-scrollbar{
   display: none;
 }
+.modify-arrow{
+  background: url("https://res.cloudinary.com/dianmmxft/image/upload/v1726811792/download_uqmg0j.png") no-repeat right center;
+  background-size: 30px;
+  background-color: black;
+}

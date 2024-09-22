@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState } from "react"
-import { LeftArrow, TickForBtn } from "../utils/Icons";
+import { LeftArrow } from "../utils/Icons";
 import { AvatarSlider } from "./AvatarSlider";
 import { HeaderMini } from "./HeaderMini";
 import { SaveBtn } from "../Buttons/SaveBtn";
 import { CancelBtn } from "../Buttons/CancelBtn";
+import { useSelector } from "react-redux";
 
-export const AvatarSection = ({ setShowAvatars, nextPfp, setNextPfp, pfpURL }) => {
+export const AvatarSection = ({ setShowAvatars, nextPfp, setNextPfp }) => {
 
     const [backToNormalSize, setBackToNormalSize] = useState(false);
     const [showSelected, setShowSelected] = useState({
@@ -14,7 +15,7 @@ export const AvatarSection = ({ setShowAvatars, nextPfp, setNextPfp, pfpURL }) =
     });
     const main = useRef(null);
     const header = useRef(null);
-
+    const pfpURL = useSelector( (store) => store.avatars);
     useEffect( () => {
         setTimeout(() => {
             setBackToNormalSize(true);
@@ -75,7 +76,7 @@ export const AvatarSection = ({ setShowAvatars, nextPfp, setNextPfp, pfpURL }) =
 
                 <div className="flex flex-col gap-20 pt-16 px-16 mb-14">
                     {
-                        pfpURL.current.map( (show) => <AvatarSlider show={show} showSelected={showSelected} setShowSelected={setShowSelected} nextPfp={nextPfp} />)
+                        pfpURL.map( (show) => <AvatarSlider show={show} showSelected={showSelected} setShowSelected={setShowSelected} nextPfp={nextPfp} />)
                     }
                 </div>
                 <div className="flex gap-4 justify-end pr-16">

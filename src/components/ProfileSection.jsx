@@ -2,43 +2,34 @@ import { useEffect, useRef, useState } from "react";
 import kidsPfp from '../img/kids.png'
 import { Add } from "../utils/Icons";
 import { AddProfile } from "./AddProfile";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { ProfileAvatar } from "./ProfileAvatar";
 import { LimitExceed } from "./LimitExceed";
 import { AvatarSection } from "./AvatarSection";
 import { HeaderMini } from "./HeaderMini";
 import { AvatarURL } from "../utils/AvatarURL";
+import { ManageBtn } from "../Buttons/ManageBtn";
+import { DoneBtn } from "../Buttons/DoneBtn";
 
 export const ProfileSection = () => {
 
-    const loggedinUser = useSelector( (store) => store.user )
     const [showAddPopup, setShowAddPopup] = useState(false);
     const [backToNormalSize, setBackToNormalSize] = useState(false);
     const [showLimitExceeded, setShowLimitExceeded] = useState(false);
     const [showAvatars, setShowAvatars] = useState(false);
+    const [beingEdited, setBeingEdited] = useState(false);
     const [nextPfp, setNextPfp] = useState(
         {
             id: null,
             src: null,
         }
     )
-    const pfpURL = useRef(AvatarURL)
-    const [users, setUsers] = useState([
-        {
-            name : loggedinUser.name,
-            photoURL : loggedinUser.photoURL, 
-            type : 'adult'
-        },
-        {
-            name: 'Children',
-            photoURL : kidsPfp,
-            type : 'children'
-        }
-    ]);
+    const users = useSelector( (store) => store.profiles );
     useEffect( () => {
         setTimeout(() => {            
             setBackToNormalSize(true);
         }, 300);
+
     }, [])
 
     const displayPopUp = () => {
@@ -67,7 +58,7 @@ export const ProfileSection = () => {
                 <div className="flex w-8/12 gap-10 justify-center items-center ">             
                    
                     {
-                        users.map( user => <ProfileAvatar name = {user.name} photoURL = {user.photoURL} />)
+                        users.map( (user, index) => <ProfileAvatar name = {user.name} photoURL = {user.photoURL} beingEdited={beingEdited} index={index}/>)
                     }
 
 
@@ -85,15 +76,17 @@ export const ProfileSection = () => {
                 </div>
 
                 {/* Manage Profiles Button */}
-                <button className="border-[#808080] border-[1px] text-[#808080] text-[1.45em]  font-semibold tracking-widest px-8 py-3 hover:border-white hover:text-white hover:cursor-pointer">
-                    Manage Profiles
-                </button>
+                <div onClick={ () => setBeingEdited(!beingEdited) }>
+                 {
+                    (beingEdited) ? <DoneBtn /> : <ManageBtn />
+                 }
+                </div>
 
             </div>
             
             {/* Popup to add a new profile  */}
             {
-                ( showAddPopup ) && <AddProfile setShowAddPopup = {setShowAddPopup} setBackToNormalSize = {setBackToNormalSize} users = {users} setUsers = {setUsers} pfpURL = {pfpURL} setShowAvatars={setShowAvatars} nextPfp={nextPfp} setNextPfp={setNextPfp} />
+                ( showAddPopup ) && <AddProfile setShowAddPopup = {setShowAddPopup} setBackToNormalSize = {setBackToNormalSize} setShowAvatars={setShowAvatars} nextPfp={nextPfp} setNextPfp={setNextPfp} />
             }
             {/* Profile Limit Exceeded Popup */}
             {
@@ -101,7 +94,7 @@ export const ProfileSection = () => {
             }
             {/* Profile Avatars Sections  */}
             {
-                (showAvatars) && <AvatarSection setShowAvatars = { setShowAvatars } nextPfp = {nextPfp} setNextPfp={setNextPfp} pfpURL = {pfpURL} />
+                (showAvatars) && <AvatarSection setShowAvatars = { setShowAvatars } nextPfp = {nextPfp} setNextPfp={setNextPfp} />
             }
         </div>
     )

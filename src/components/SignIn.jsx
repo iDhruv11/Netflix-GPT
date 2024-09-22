@@ -49,7 +49,7 @@ const SignIn = () => {
                 });
                 updateProfile(auth.currentUser, {
                     displayName: name.current?.value,
-                    photoURL: "https://i.pinimg.com/474x/c6/99/31/c699318ead25a55a908e0cd2f1c2a5f7.jpg",
+                    photoURL: "https://res.cloudinary.com/dianmmxft/image/upload/v1726833128/new_cubop6.jpg",
                 }).then(() => {
                     const user = auth.currentUser;
                     const updatedName = user.displayName;

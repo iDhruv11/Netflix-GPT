@@ -26,7 +26,7 @@ function App() {
       caseSensitive: true,
     },
     {
-      path: '/Profiles/:profileId',
+      path: '/Profiles/:profileIndex',
       element: <EditProfile />,
       caseSensitive: true
     } 

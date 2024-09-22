@@ -1,22 +1,26 @@
 import { useEffect, useRef, useState } from "react"
 import { Cross, Edit, ErrorIcon } from "../utils/Icons";
+import { useDispatch, useSelector } from "react-redux";
+import { changeIsSelected } from "../utils/avatarSlice";
+import { addProfile } from "../utils/profileSlice";
 
-export const AddProfile = ({ setShowAddPopup, setBackToNormalSize, users, setUsers, pfpURL, setShowAvatars, nextPfp, setNextPfp}) => {
+
+export const AddProfile = ({ setShowAddPopup, setBackToNormalSize, setShowAvatars, nextPfp, setNextPfp}) => {
 
     const [isFocused, setIsFocused] = useState(false);
     const [showError, setShowError] = useState(false);
-    
+    const pfpURL = useSelector((store) => store.avatars);
+    const dispatcher = useDispatch();
     const newName = useRef();
-    const isKidsType = useRef();
 
     useEffect(() => {
 
-        for( let i = 0; i < pfpURL.current[0].avatars.length; i++){
-            if(pfpURL.current[0].avatars[i].isSelected == false){
+        for( let i = 0; i < pfpURL[0].avatars.length; i++){
+            if(pfpURL[0].avatars[i].isSelected == false){
                 setNextPfp(
                     {
-                        id: pfpURL.current[0].avatars[i].id,
-                        src: pfpURL.current[0].avatars[i].src,
+                        id: pfpURL[0].avatars[i].id,
+                        src: pfpURL[0].avatars[i].src,
                     }
                 );
                 break;
@@ -31,16 +35,16 @@ export const AddProfile = ({ setShowAddPopup, setBackToNormalSize, users, setUse
             return
         }
         setShowError(false);
-        setUsers([
-            ...users,
-            {
-                name: newName.current.value,
-                photoURL: nextPfp.src,
-                type: (isKidsType.current.checked) ? 'children' : 'adult'
-            }
-        ])
-        console.log(nextPfp.id/100);
-        pfpURL.current[Math.floor((nextPfp.id)/100)].avatars[(Math.floor(nextPfp.id)%100)].isSelected = true;
+        dispatcher(addProfile({
+            type: 'secondary',
+            photoID: nextPfp.id,
+            photoURL: nextPfp.src,
+            name: newName.current.value
+        }))
+        dispatcher(changeIsSelected({
+            id: nextPfp.id,
+            setSelected: true
+        }))
         setShowAddPopup(false)
         setBackToNormalSize(true);
     }
@@ -120,7 +124,6 @@ export const AddProfile = ({ setShowAddPopup, setBackToNormalSize, users, setUse
                             type="checkbox"
                             value=""
                             class="sr-only peer"
-                            ref={isKidsType}
                         />
                         <div class="relative w-12 h-7 bg-[#737373] peer-focus:outline-none rounded-full peer dark:bg-[#737373] peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:start-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#4061e7]"></div>
                     </label>
