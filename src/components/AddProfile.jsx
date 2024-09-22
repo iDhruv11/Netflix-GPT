@@ -54,15 +54,16 @@ export const AddProfile = ({ setShowAddPopup, setBackToNormalSize, setShowAvatar
         setShowAvatars(true);
         
     }
+    const handleExit = () => {
+        setShowAddPopup(false);
+        setBackToNormalSize(true);
+    }
     return (
         <div className="absolute bg-[#161616] border border-neutral-600 flex flex-col w-4/12 px-9 pb-10 pt-20 items-center rounded-md gap-8">
             {/* cross icon  */}
             <div
                 className="absolute rounded-full px-1 py-1 hover:bg-neutral-600 hover:cursor-pointer transition-all duration-100 ease-linear top-3 right-4"
-                onClick={() => {
-                    setShowAddPopup(false);
-                    setBackToNormalSize(true);
-                }}
+                onClick={ handleExit }
             >
                 <Cross />
             </div>
@@ -90,6 +91,7 @@ export const AddProfile = ({ setShowAddPopup, setBackToNormalSize, setShowAvatar
                     <div>
                         <input
                             type="text"
+                            maxLength={8}
                             className="bg-transparent border-neutral-600 border rounded-sm px-3 pb-2 pt-5 font-semibold w-full text-white"
                             onFocus={() => setIsFocused(true)}
                             onBlur={() => {
@@ -135,7 +137,10 @@ export const AddProfile = ({ setShowAddPopup, setBackToNormalSize, setShowAvatar
                     className="bg-white text-lg font-bold tracking-wide py-2 rounded-sm hover:bg-[#bababa] transition-all duration-100 ease-linear"
                     onClick={handleAddProfile}
                 >Save</button>
-                <button className="text-lg font-bold tracking-wide py-2 rounded-sm text-white hover:bg-neutral-600 transition-all duration-100 ease-linear">Cancel</button>
+                <button
+                    className="text-lg font-bold tracking-wide py-2 rounded-sm text-white hover:bg-neutral-600 transition-all duration-100 ease-linear"
+                    onClick={ handleExit }
+                >Cancel</button>
             </div>
         </div>
     )

@@ -4,12 +4,16 @@ import { SaveBtn } from "../Buttons/SaveBtn";
 import { DeleteBtn } from "../Buttons/DeleteBtn";
 import { CancelBtn } from "../Buttons/CancelBtn";
 import { Checkbox } from "../Buttons/Checkbox";
-import { Edit } from "../utils/Icons";
+import { Edit, ErrorIcon } from "../utils/Icons";
 import { useDispatch, useSelector } from "react-redux";
 import { AvatarSection } from "./AvatarSection";
 import { useEffect, useRef, useState } from "react";
-import { editProfile } from "../utils/profileSlice";
+import { deleteProfile, editProfile } from "../utils/profileSlice";
 import { changeIsSelected } from "../utils/avatarSlice";
+import { ConfirmDelete } from "./ConfirmDelete";
+import { verifyName } from "../utils/verifyName";
+import { updateProfile } from "firebase/auth";
+import { auth } from "../../firebaseConfig";
 
 export const EditProfile = () => {
 
@@ -19,6 +23,8 @@ export const EditProfile = () => {
     const users = useSelector(store => store.profiles );
     const [showAvatars, setShowAvatars] = useState(false);
     const [backToNormalSize, setBackToNormalSize] = useState(false);
+    const [showError, setShowError] = useState(false);
+    const [showConfirm, setShowConfirm] = useState(false);
     const [nextPfp, setNextPfp] = useState({
         id: users[profileIndex].photoID,
         src: users[profileIndex].photoURL,
@@ -32,36 +38,66 @@ export const EditProfile = () => {
     }, [])
     const handleSave = () => {
 
-        
+        setShowError(false)
         const prevPhotoId = users[profileIndex].photoID;
+        if( verifyName(users, newName.current.value, profileIndex)){
+            setShowError(true);
+            return ;
+        } 
+
         dispatcher(editProfile({
             index: profileIndex,
             name: newName.current.value,
             photoURL: nextPfp.src,
             photoID: nextPfp.id,
         }))
-        setBackToNormalSize(false)
-        setTimeout(() => {
-            navigate('/Profiles')
-        }, 300);
+
+        handleExit();
+
         dispatcher(changeIsSelected({
             id: prevPhotoId,
             setSelected: false,
         }))
+
         dispatcher(changeIsSelected({
             id: nextPfp.id,
             setSelected: true,
         }))
+
+        if(auth.currentUser.displayName == newName.current.value && auth.currentUser.photoURL == nextPfp.src){
+            return 
+        }
+
+        updateProfile(auth.currentUser, {
+            displayName: newName.current.value,
+            photoURL: nextPfp.src 
+        }).then(() => {
+            console.log("default profile updated successfully");
+        }).catch((err)=>{
+            console.log(err)
+        })
+
     }
     const handleExit = () => {
-
+        setBackToNormalSize(false);
+        setTimeout(() => {
+            navigate('/Profiles');
+        }, 300);
     }
     const handleDelete = () => {
 
+        handleExit();
+        setTimeout(() => {
+            dispatcher(deleteProfile(profileIndex))
+        }, 300);
+        dispatcher(changeIsSelected({
+            id: users[profileIndex].photoID,
+            setSelected: false
+        }))
     }
     
     return (
-        <div className="absolute w-full min-h-screen bg-[#141414] flex flex-col items-center justify-center pt-10 overflow-y-hidden">
+        <div className="absolute w-full min-h-screen bg-[#141414] flex flex-col items-center justify-center pt-10 overflow-y-hidden ">
 
             <HeaderMini showLogo={true} />
 
@@ -85,14 +121,20 @@ export const EditProfile = () => {
 
                     <div className="flex flex-col w-3/4">
 
-                        <div className="border-b-[1px] border-neutral-700 pb-8 flex flex-col gap-5">
+                        <div className={`border-b-[1px] border-neutral-700 pb-8 flex flex-col ${ showError ? `gap-3` : `gap-5`}`}>
 
-                            <input
-                                type="text"
-                                className="w-full py-2 bg-neutral-500 rounded-sm px-3 text-white text-xl font-bold tracking-wider hover:cursor-pointer"
-                                defaultValue={users[profileIndex].name}
-                                ref={newName}
-                            />
+                            <div className="relative">
+                                <input
+                                    type="text"
+                                    maxLength={8}
+                                    className="w-full py-2 bg-neutral-500 rounded-sm px-3 text-white text-xl font-bold tracking-wider hover:cursor-pointer"
+                                    defaultValue={users[profileIndex].name}
+                                    ref={newName}
+                                />
+                               {
+                                (showError) && <p className="flex gap-2 text-[#e50914] text-sm font-extrabold mt-2 items-center"><ErrorIcon /> Name is already taken </p>
+                               }
+                            </div>
 
                             <div className="w-1/5 flex flex-col gap-1">
                                 <label htmlFor="lang" className="text-xl block tracking-wide text-neutral-400 font-medium">Language:</label>
@@ -148,13 +190,18 @@ export const EditProfile = () => {
                     <div onClick={ handleExit }>
                         <CancelBtn />
                     </div>
-                    <div onClick={ handleDelete }>
+                    <div onClick={ () =>{
+                        setShowConfirm(true);
+                    }}>
                         <DeleteBtn />
                     </div>
                 </div>
             </div>
             {
                 (showAvatars) && <AvatarSection setShowAvatars={setShowAvatars} nextPfp={nextPfp} setNextPfp={setNextPfp}/> 
+            }
+            {
+                (showConfirm) && <ConfirmDelete setShowConfirm={setShowConfirm} handleDelete={handleDelete}/>
             }
         </div>
     )

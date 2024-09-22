@@ -17,10 +17,14 @@ const profileSlice = createSlice({
         editProfile: (state, action) =>{
             const {index, ...newProfile} = action.payload;
             state[index] = {...state[index], ...newProfile};
+        },
+        deleteProfile: (state, action) => {
+            const newState = state.filter( (user, index) => index != action.payload)
+            return [...newState]
         }
     }
 
 })
 
-export const { addProfile, editProfile } = profileSlice.actions;
+export const { addProfile, editProfile, deleteProfile } = profileSlice.actions;
 export default profileSlice.reducer;
