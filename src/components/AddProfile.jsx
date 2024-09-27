@@ -108,7 +108,8 @@ export const AddProfile = ({ setShowAddPopup, setBackToNormalSize, setShowAvatar
                         }
                     </div>
                     <p
-                        className={`absolute text-neutral-400 font-semibold ${(isFocused) ? `top-1 text-[0.80rem]` : `top-[0.85rem] `} left-3 transition-all duration-100 ease-linear`}
+                        className={`absolute text-neutral-400 font-semibold ${(isFocused) ? `top-1 text-[0.80rem]` : `top-[0.85rem] `} left-3 transition-all duration-100 ease-linear hover:cursor-pointer`}
+                        onClick={ () => newName.current.focus() }
                     >Name</p>
                 </div>
             </div>

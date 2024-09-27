@@ -52,51 +52,47 @@ NOTE: Instead of making saperate slices for a common topic like trending in indi
 
 7. Critically Acclaimed (Mixed Content)
     Movies ->
-    - a. 2001: A Space Odyssey - (https://api.themoviedb.org/3/movie/62?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - b. Raging Bull - (https://api.themoviedb.org/3/movie/1578?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - c. Swades - (https://api.themoviedb.org/3/movie/15774?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - d. Vertigo - (https://api.themoviedb.org/3/movie/426?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - e. Memories of murder - (https://api.themoviedb.org/3/movie/11423?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - f. Memento - (https://api.themoviedb.org/3/movie/77?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - g. Apocolypse Now - (https://api.themoviedb.org/3/movie/28?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - h. Saving Private Ryan - (https://api.themoviedb.org/3/movie/857?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - i. Gulaal - (https://api.themoviedb.org/3/movie/21625?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - j. No country for old men - (https://api.themoviedb.org/3/movie/6977?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - a. 2001: A Space Odyssey - (https://api.themoviedb.org/3/movie/62?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - b. Raging Bull - (https://api.themoviedb.org/3/movie/1578?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - c. Swades - (https://api.themoviedb.org/3/movie/15774?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - d. Vertigo - (https://api.themoviedb.org/3/movie/426?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - e. Memories of murder - (https://api.themoviedb.org/3/movie/11423?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - f. Memento - (https://api.themoviedb.org/3/movie/77?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - g. Apocolypse Now - (https://api.themoviedb.org/3/movie/28?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - h. Saving Private Ryan - (https://api.themoviedb.org/3/movie/857?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - i. Gulaal - (https://api.themoviedb.org/3/movie/21625?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - j. No country for old men - (https://api.themoviedb.org/3/movie/6977?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
 
     Shows -> 
-    - a. The sopranos - (https://api.themoviedb.org/3/tv/1398?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - b. Succession - (https://api.themoviedb.org/3/tv/76331?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - c. Mindhunter - (https://api.themoviedb.org/3/tv/67744?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - d. Fargo - (https://api.themoviedb.org/3/tv/60622?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - e. The wire - (https://api.themoviedb.org/3/tv/1438?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - f. Better Call Saul - (https://api.themoviedb.org/3/tv/60059?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - g. Mad Men- (https://api.themoviedb.org/3/tv/1104?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - h. Band of Brothers - (https://api.themoviedb.org/3/tv/4613?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - i. Asur - (https://api.themoviedb.org/3/tv/100911?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images) 
-    - j. Pataal Lok - (https://api.themoviedb.org/3/tv/103051?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - a. The sopranos - (https://api.themoviedb.org/3/tv/1398?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - b. Succession - (https://api.themoviedb.org/3/tv/76331?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - c. Mindhunter - (https://api.themoviedb.org/3/tv/67744?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - d. Fargo - (https://api.themoviedb.org/3/tv/60622?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - e. The wire - (https://api.themoviedb.org/3/tv/1438?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - f. Better Call Saul - (https://api.themoviedb.org/3/tv/60059?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - g. Mad Men- (https://api.themoviedb.org/3/tv/1104?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - h. Band of Brothers - (https://api.themoviedb.org/3/tv/4613?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - i. Asur - (https://api.themoviedb.org/3/tv/100911?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords) 
+    - j. Pataal Lok - (https://api.themoviedb.org/3/tv/103051?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
 
 8. Netflix Originals (Mixed Content)
     - a. Fetch 4 apis here too, 2 for movies, 2 for shows, wrap them in promise and and resolve at the same time
     - b. User Discover API
 
     For Movies no api only array ( india and global both) -> 
-        - a. Extraction - (https://api.themoviedb.org/3/movie/545609?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
-        - b. Bird Box - (https://api.themoviedb.org/3/movie/405774?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
-        - c. The Irishman - (https://api.themoviedb.org/3/movie/398978?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
-        - d. Marriage Story - (https://api.themoviedb.org/3/movie/492188?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
-        - e. The old guard - (https://api.themoviedb.org/3/movie/547016?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
-        - f. The kissing booth - (https://api.themoviedb.org/3/movie/454983?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
-        - g. To all the boys I've Loved Before - (https://api.themoviedb.org/3/movie/466282?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
-        - h. Enola Holmes - (https://api.themoviedb.org/3/movie/497582?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
+        - a. Extraction - (https://api.themoviedb.org/3/movie/545609?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images,keywords)
+        - b. Bird Box - (https://api.themoviedb.org/3/movie/405774?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images,keywords)
+        - c. The Irishman - (https://api.themoviedb.org/3/movie/398978?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images,keywords)
+        - e. The old guard - (https://api.themoviedb.org/3/movie/547016?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images,keywords)
+        - f. The kissing booth - (https://api.themoviedb.org/3/movie/454983?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images,keywords)
+        - h. Enola Holmes - (https://api.themoviedb.org/3/movie/497582?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images,keywords)
 
-        - i. Ludo - (https://api.themoviedb.org/3/movie/658412?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
-        - j. Bulbul - (https://api.themoviedb.org/3/movie/714338?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
-        - k. Raat akeli hai - (https://api.themoviedb.org/3/movie/589615?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images) 
-        - l. AK vs AK - (https://api.themoviedb.org/3/movie/735919?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
-        - m. Choked: Paisa bolta hai - (https://api.themoviedb.org/3/movie/706783?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
-        - n. Guilty - (https://api.themoviedb.org/3/movie/675592?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
-        - o. Pagglait - (https://api.themoviedb.org/3/movie/786190?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
-        - p. Haseen Dillruba - (https://api.themoviedb.org/3/movie/695969?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images)
+        - i. Ludo - (https://api.themoviedb.org/3/movie/658412?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images,keywords)
+        - j. Bulbul - (https://api.themoviedb.org/3/movie/714338?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images,keywords)
+        - m. Choked: Paisa bolta hai - (https://api.themoviedb.org/3/movie/706783?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images,keywords)
+        - n. Guilty - (https://api.themoviedb.org/3/movie/675592?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images,keywords)
+        - o. Pagglait - (https://api.themoviedb.org/3/movie/786190?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images,keywords)
+        - p. Haseen Dillruba - (https://api.themoviedb.org/3/movie/695969?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=video,images,keywords)
     
     shows URL india  - (https://api.themoviedb.org/3/discover/tv?&api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_networks=213&with_origin_country=IN&with_original_language=hi)
     shows URL global - (https://api.themoviedb.org/3/discover/tv?&api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=popularity.desc&with_networks=213&with_original_language=en)
@@ -133,13 +129,12 @@ NOTE: Instead of making saperate slices for a common topic like trending in indi
 12. Best of 2023 (Mixed Content)
     - a. Fetch Discover api, keep date between 2032-01-01 to 2032-12-31 and then adjust region, og-region, og-language
 
-    URL Movie Global - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&primary_release_year=2023&primary_release_date.gte=2023-01-01&primary_release_date.lte=2023-12-01&sort_by=vote_count.desc&with_original_language=en&without_genres=16&year=2023)
+    !!! URL Movie Global - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&primary_release_year=2023&primary_release_date.gte=2023-01-01&primary_release_date.lte=2023-12-01&sort_by=vote_count.desc&with_original_language=en&without_genres=16&year=2023)
 
     URL Movie India - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&primary_release_year=2023&primary_release_date.gte=2023-01-01&primary_release_date.lte=2023-12-01&region=IN&sort_by=vote_count.desc&with_origin_country=IN&with_original_language=hi&without_genres=16&year=2023)
 
     URL Show India - (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&air_date.gte=2023-01-01&air_date.lte=2023-12-01&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_networks=213%7C1024%7C3373&with_origin_country=IN&with_original_language=hi)
 
-    URL Show Global - (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&air_date.gte=2023-01-01&air_date.lte=2023-12-01&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_original_language=en&without_genres=10762%2C16)
 
 13. True Stories (Mixed Content)
     - a. Use the discover api, use filtering with keywords - based on true story - 9672, true story - 332623, biography - 5565, and use without keywords - fiction - 286995, science fiction - 281358, fantasy - 293198, fantasy world - 170362
@@ -150,7 +145,7 @@ NOTE: Instead of making saperate slices for a common topic like trending in indi
 
     !!! Show URL India - ()
 
-    Show URL Global - (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&with_original_language=en&language=en-US&page=1&sort_by=popularity.desc&with_keywords=9672%7C332623%7C5565&without_keywords=286995%7C281358%7C293198%7C170362&with_networks=213%7C1024)
+    !!! Show URL Global - (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&with_original_language=en&language=en-US&page=1&sort_by=popularity.desc&with_keywords=9672%7C332623%7C5565&without_keywords=286995%7C281358%7C293198%7C170362&with_networks=213%7C1024)
     
 
 14. Laugh Out Loud Comedies (Mixed Content)
@@ -160,14 +155,14 @@ NOTE: Instead of making saperate slices for a common topic like trending in indi
 
     URL Movie India - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&primary_release_date.lte=2020-01-01&region=IN&sort_by=popularity.desc&with_genres=35&with_origin_country=IN&with_original_language=hi&without_genres=16%7C28%7C80%7C99%7C53%7C18)
 
-    URL Show Global - (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&first_air_date.gte=2000-01-01&first_air_date.lte=2010-01-01&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_genres=35%7C10766%7C10751&with_origin_country=US&with_original_language=en&without_genres=16)
+    !!! URL Show Global - (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&first_air_date.gte=2000-01-01&first_air_date.lte=2010-01-01&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_genres=35%7C10766%7C10751&with_origin_country=US&with_original_language=en&without_genres=16)
 
-    URL Show India - (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_null_first_air_dates=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=35%7C10751&with_networks=213%7C1024%7C3373&with_origin_country=IN&with_original_language=hi&without_genres=16%7C10766&without_keywords=287219%7C268140%7C287219)
+    !!! URL Show India - (https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_null_first_air_dates=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=35%7C10751&with_networks=213%7C1024%7C3373&with_origin_country=IN&with_original_language=hi&without_genres=16%7C10766&without_keywords=287219%7C268140%7C287219)
 
 15. Family Favorites (Mixed Content)
     - a. same using genre in discover api
 
-    URL Movie Global - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=10751&with_keywords=18035&with_original_language=en&without_genres=16%7C12)
+    !!! URL Movie Global - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=10751&with_keywords=18035&with_original_language=en&without_genres=16%7C12)
 
     URL Movie India - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&region=IN&sort_by=vote_count.desc&with_genres=10751&with_keywords=18035%7C199630&with_origin_country=IN&with_original_language=hi&without_genres=16%7C12)
 
@@ -203,6 +198,7 @@ NOTE: Instead of making saperate slices for a common topic like trending in indi
 8. Action-Packed Thrillers (Movie-Specific)
 9. Adventure & Exploration (Movie-Specific)
 10. True Story Films (Movie-Specific)
+1x. Comedies ( from homepage )
 11. Feel Good Films (Movie-Specific)    4 api calls will be made from here
 ->12. Crime & Gangster Films (Movie-Specific)
 
@@ -225,36 +221,31 @@ NOTE: Instead of making saperate slices for a common topic like trending in indi
     Movie URL Global - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&vote_count.gte=500&with_keywords=191741%7C164186%7C320648%7C329315&with_original_language=en&without_genres=16&without_keywords=180547%7C9715%7C329315)
 
     Movie Hindi -
-    - a. Taare zameen par - (https://api.themoviedb.org/3/movie/7508?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - b. Laggan - (https://api.themoviedb.org/3/movie/19666?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - c. Pather Panchali - (https://api.themoviedb.org/3/movie/5801?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - d. Queen - (https://api.themoviedb.org/3/movie/247645?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - e. Pink - (https://api.themoviedb.org/3/movie/415358?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - f. Court - ( https://api.themoviedb.org/3/movie/290815?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - g. Gully Boy - (https://api.themoviedb.org/3/movie/491625?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - a. Taare zameen par - (https://api.themoviedb.org/3/movie/7508?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - b. Laggan - (https://api.themoviedb.org/3/movie/19666?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - c. Pather Panchali - (https://api.themoviedb.org/3/movie/5801?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - e. Pink - (https://api.themoviedb.org/3/movie/415358?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - f. Court - ( https://api.themoviedb.org/3/movie/290815?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - g. Gully Boy - (https://api.themoviedb.org/3/movie/491625?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
 
     Show URL Gloabl - ()
 ->15. Cult Classics (Movie-Specific)
 
-    - a. A clockwork orange - (https://api.themoviedb.org/3/movie/185?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - b. Fight Club - ( https://api.themoviedb.org/3/movie/550?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - c. Pulp Fiction - (https://api.themoviedb.org/3/movie/680?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - d. Donnie Darko - (https://api.themoviedb.org/3/movie/141?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - e. Scarface - (https://api.themoviedb.org/3/movie/111?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - f. The big lebowski - (https://api.themoviedb.org/3/movie/115?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - g. Eraserhead - (https://api.themoviedb.org/3/movie/985?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - h. Blade runner - (https://api.themoviedb.org/3/movie/78?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - a. A clockwork orange - (https://api.themoviedb.org/3/movie/185?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - b. Fight Club - ( https://api.themoviedb.org/3/movie/550?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - c. Pulp Fiction - (https://api.themoviedb.org/3/movie/680?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - d. Donnie Darko - (https://api.themoviedb.org/3/movie/141?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - e. Scarface - (https://api.themoviedb.org/3/movie/111?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - f. The big lebowski - (https://api.themoviedb.org/3/movie/115?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
 
     Hindi-
 
-    - a. Sholay - (https://api.themoviedb.org/3/movie/12259?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - b. Rang De Basanti - (https://api.themoviedb.org/3/movie/7913?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - c. Satya - (https://api.themoviedb.org/3/movie/21502?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - d. Dev D - (https://api.themoviedb.org/3/movie/15977?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - e. Pyaasa - (https://api.themoviedb.org/3/movie/41053?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - f. Laksya - (https://image.tmdb.org/t/p/w500/fQfODknc07ro4uAYWurQIU3D4WU.jpg)
-    - g. Rockstar - (https://api.themoviedb.org/3/movie/79464?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
-    - h. Devdas - (https://api.themoviedb.org/3/movie/15917?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images)
+    - a. Sholay - (https://api.themoviedb.org/3/movie/12259?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - b. Rang De Basanti - (https://api.themoviedb.org/3/movie/7913?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - c. Satya - (https://api.themoviedb.org/3/movie/21502?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - d. Dev D - (https://api.themoviedb.org/3/movie/15977?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - g. Rockstar - (https://api.themoviedb.org/3/movie/79464?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    - h. Devdas - (https://api.themoviedb.org/3/movie/15917?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
 
 ->16. Violent Movies
 
@@ -310,24 +301,186 @@ NOTE: Instead of making saperate slices for a common topic like trending in indi
 18. Trending TV Shows in India (Show-Specific)
 
 
-1. Masterpieces of Scorsese (Director-Specific) (Khttps://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_crew=1032&with_original_language=en)
+1. Masterpieces of Scorsese (Director-Specific) (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_crew=1032&with_original_language=en)
+
+    d. Goodfellas - (https://api.themoviedb.org/3/movie/769?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    l. raging bull - (https://api.themoviedb.org/3/movie/1578?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    e. taxi driver - (https://api.themoviedb.org/3/movie/103?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    c. The departed - (https://api.themoviedb.org/3/movie/1422?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    a. Shutter Island - (https://api.themoviedb.org/3/movie/11324?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    b. Wolf of wall street - (https://api.themoviedb.org/3/movie/106646?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    f. Hugo - (https://api.themoviedb.org/3/movie/44826?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    g. The irishmen - (https://api.themoviedb.org/3/movie/398978?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    h. Gangs of new york - (https://api.themoviedb.org/3/movie/3131?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    i. Casino - (https://api.themoviedb.org/3/movie/524?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    j. aviator - (https://api.themoviedb.org/3/movie/2567?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    k. uncut gems - (https://api.themoviedb.org/3/movie/473033?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    n. cape fear - (https://api.themoviedb.org/3/movie/1598?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    t. king of comedy - (https://api.themoviedb.org/3/movie/262?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    p. silence - (https://api.themoviedb.org/3/movie/68730?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    o. killers of flower - (https://api.themoviedb.org/3/movie/466420?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+
 
 2. Tarantino's Finest (Director-Specific) (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_crew=138&with_original_language=en&without_keywords=227510%7C4565%7C240257%7C587%7C193698%7C250279%7C166735)
 
+    a. pulp - (https://api.themoviedb.org/3/movie/680?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    c. bastards - (https://api.themoviedb.org/3/movie/16869?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    e. reservoir - (https://api.themoviedb.org/3/movie/500?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    d. kill bill 1 - (https://api.themoviedb.org/3/movie/24?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    b. django - (https://api.themoviedb.org/3/movie/68718?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    f. hateful - (https://api.themoviedb.org/3/movie/273248?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    g. kill bill 2 - (https://api.themoviedb.org/3/movie/393?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    h. hollywood - (https://api.themoviedb.org/3/movie/466272?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    i. jackie - (https://api.themoviedb.org/3/movie/184?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    k. death proof - (https://api.themoviedb.org/3/movie/1991?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    l. planet terror - (https://api.themoviedb.org/3/movie/1992?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    p. kill bill 3 - (https://api.themoviedb.org/3/movie/414419?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    m. natural bron killer - (https://api.themoviedb.org/3/movie/241?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    n. true romance -  (https://api.themoviedb.org/3/movie/319?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    o. four rooms - (https://api.themoviedb.org/3/movie/5?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    j. dusk dawn - (https://api.themoviedb.org/3/movie/755?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+
+
 3. Spielberg's Epic Adventures (Director-Specific) (Renamed for appeal) (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_crew=488&with_original_language=en&without_keywords=4379%7C174915%7C5049%7C14544%7C1766%7C3347%7C15247%7C160329%7C10005%7C335544)
+
+    b. list - (https://api.themoviedb.org/3/movie/424?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    c. ryan - (https://api.themoviedb.org/3/movie/857?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    h. jaws - (https://api.themoviedb.org/3/movie/578?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    d. if you can - (https://api.themoviedb.org/3/movie/640?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    n. terminal - (https://api.themoviedb.org/3/movie/594?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    a. jurrasic park - (https://api.themoviedb.org/3/movie/329?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    k. report - (https://api.themoviedb.org/3/movie/180?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    e. ready - (https://api.themoviedb.org/3/movie/333339?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    g. e.t. - (https://api.themoviedb.org/3/movie/601?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    f. ark - (https://api.themoviedb.org/3/movie/85?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    i. jones - (https://api.themoviedb.org/3/movie/89?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    j. jones - (https://api.themoviedb.org/3/movie/87?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    l. war of world - (https://api.themoviedb.org/3/movie/74?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    o. bridge - (https://api.themoviedb.or☺g/3/movie/296098?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    p. goonies - (https://api.themoviedb.org/3/movie/9340?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    t. grit - (https://api.themoviedb.org/3/movie/44264?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
 
 4. Nolan's Mind-Benders (Director-Specific) (Renamed for appeal) (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_crew=525&with_original_language=en&without_keywords=205854%7C154866%7C195444)
 
+    a. inception - (https://api.themoviedb.org/3/movie/27205?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    b. inerstellar - (https://api.themoviedb.org/3/movie/157336?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    c. dark knight - (https://api.themoviedb.org/3/movie/155?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    d. batman - (https://api.themoviedb.org/3/movie/49026?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    e. batman 2 - (https://api.themoviedb.org/3/movie/272?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    g. dunkirk - (https://api.themoviedb.org/3/movie/374720?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    h. prestige - (https://api.themoviedb.org/3/movie/1124?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    j. memento - (https://api.themoviedb.org/3/movie/77?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    m. tenet - (https://api.themoviedb.org/3/movie/577922?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    n. oppen - (https://api.themoviedb.org/3/movie/872585?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    o. insomnia - (https://api.themoviedb.org/3/movie/320?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    p. following - (https://api.themoviedb.org/3/movie/11660?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+
 5. Kubrick's Cinematic Art (Director-Specific) (Renamed for appeal) (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_crew=240&with_original_language=en&without_keywords=310)
+
+    a. full metal jacket - (https://api.themoviedb.org/3/movie/600?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    b. shining - (https://api.themoviedb.org/3/movie/694?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    c. clockwork orange - (https://api.themoviedb.org/3/movie/185?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    d. wide shut - (https://api.themoviedb.org/3/movie/345?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    e. spartus - (https://api.themoviedb.org/3/movie/967?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    f. strangelove - (https://api.themoviedb.org/3/movie/935?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    g. barry - (https://api.themoviedb.org/3/movie/3175?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    h. lolita - (https://api.themoviedb.org/3/movie/802?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    i. path of glory - (https://api.themoviedb.org/3/movie/975?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    j. killer's kiss - (https://api.themoviedb.org/3/movie/10056?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    k. killing - (https://api.themoviedb.org/3/movie/247?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    l. fear and desire - (https://api.themoviedb.org/3/movie/10165?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+
 
 6. David Fincher's Dark Psychological Blend (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_crew=7467&with_keywords=10714%7C9181%7C222665%7C234299%7C220831%7C159743%7C10371%7C226257%7C193021%7C11728%7C888%7C&with_original_language=en&without_keywords=11239%7C191586%7C170173%7C9663) 
 
+    a. fight club - (https://api.themoviedb.org/3/movie/550?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    b. se7en - (https://api.themoviedb.org/3/movie/807?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    f. zodiac - (https://api.themoviedb.org/3/movie/1949?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    c. goen girl - (https://api.themoviedb.org/3/movie/210577?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    e. social network  - https://api.themoviedb.org/3/movie/37799?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords
+    d. button - (https://api.themoviedb.org/3/movie/4922?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    g. dragon tatto - (https://api.themoviedb.org/3/movie/65754?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    h. game - (https://api.themoviedb.org/3/movie/2649?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    i. panic room - (https://api.themoviedb.org/3/movie/4547?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    j. kiler - (https://api.themoviedb.org/3/movie/800158?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    k. mank - (https://api.themoviedb.org/3/movie/614560?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+
 7. The Coen Brother's Quirky Americana - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_crew=1223&with_original_language=en&without_keywords=33873)
+
+    a. old man - (https://api.themoviedb.org/3/movie/6977?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    b. big lebowski - (https://api.themoviedb.org/3/movie/115?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    c. fargo - (https://api.themoviedb.org/3/movie/275?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    f. burn afer reading - (https://api.themoviedb.org/3/movie/4944?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    g. brother - (https://api.themoviedb.org/3/movie/134?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    h. unbroken - (https://api.themoviedb.org/3/movie/227306?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    i. ballad - (https://api.themoviedb.org/3/movie/537996?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    k. hail - (https://api.themoviedb.org/3/movie/270487?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    l. inside - (https://api.themoviedb.org/3/movie/86829?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    m. serius man - (https://api.themoviedb.org/3/movie/12573?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    n. raising - (https://api.themoviedb.org/3/movie/378?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    o. suburb - (https://api.themoviedb.org/3/movie/395458?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    p. barton - (https://api.themoviedb.org/3/movie/290?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    q. miller corssing - (https://api.themoviedb.org/3/movie/379?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    r. ladykiller - (https://api.themoviedb.org/3/movie/5516?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    t. curelty - (https://api.themoviedb.org/3/movie/11775?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
 
 8. Satyajit Ray's Poetic Realism (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_crew=12160&with_origin_country=IN&with_original_language=bn&without_keywords=242454)
 
+    a. https://api.themoviedb.org/3/movie/5801?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords
+    b. https://api.themoviedb.org/3/movie/896?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords
+    c. https://api.themoviedb.org/3/movie/35790?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords
+    d. https://api.themoviedb.org/3/movie/60567?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords
+    e. https://api.themoviedb.org/3/movie/43031?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords
+    f. https://api.themoviedb.org/3/movie/41781?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords
+    h. https://api.themoviedb.org/3/movie/42498?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords
+    i. https://api.themoviedb.org/3/movie/35867?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords
+    k. https://api.themoviedb.org/3/movie/42092?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords
+    l. https://api.themoviedb.org/3/movie/206789?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords
+    m. https://api.themoviedb.org/3/movie/164990?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords
+    n. https://api.themoviedb.org/3/movie/135092?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords
+    o. https://api.themoviedb.org/3/movie/197562?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords
+    p. https://api.themoviedb.org/3/movie/122445?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords
+    q. https://api.themoviedb.org/3/movie/43027?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords
+    
+
 9. Rajkumar Hirani's Heartfelt Narratives (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&vote_count.gte=60&with_crew=85675&with_origin_country=IN&with_original_language=hi&without_keywords=316)
+
+    a. 3 idiots - https://api.themoviedb.org/3/movie/20453?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords
+    b. pk - (https://api.themoviedb.org/3/movie/297222?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    c. mbbs - (https://api.themoviedb.org/3/movie/19625?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    d. munna - (https://api.themoviedb.org/3/movie/21461?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    e. sanju - (https://api.themoviedb.org/3/movie/496328?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    f. dunki - (https://api.themoviedb.org/3/movie/960876?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+
+
 
 10. Guru Dutt's Tragic Elegance (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&vote_count.gte=1&with_crew=125354&with_origin_country=IN&with_original_language=hi)
 
+    a. pyasa - (https://api.themoviedb.org/3/movie/41053?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    b. phool - (https://api.themoviedb.org/3/movie/53767?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    c. cid - (https://api.themoviedb.org/3/movie/71284?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    d.  saheb - (https://api.themoviedb.org/3/movie/70366?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    e. mr. mrs - (https://api.themoviedb.org/3/movie/66564?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    f. aar paar - (https://api.themoviedb.org/3/movie/71283?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    g. baji - (https://api.themoviedb.org/3/movie/154857?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    h. baaj - (https://api.themoviedb.org/3/movie/185555?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    i. jaal - (https://api.themoviedb.org/3/movie/185552?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+
 11. Anurag Kashyap's Raw Grit - (https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&vote_count.gte=1&with_crew=85670&with_keywords=10391%7C12099%7C156948%7C165317%7C9706%7C128%7C209476%7C207268%7C229663%7C10703%7C15061%7C1930&with_origin_country=IN&with_original_language=hi&without_keywords=244639%7C2796%7C10683%7C180492%7C225778%7C7926%7C190149%7C9799%7C33416%7C437%7C11546%7C197871%7C1430)
+
+    a. gow 1 - (https://api.themoviedb.org/3/movie/117691?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    f. black firday - (https://api.themoviedb.org/3/movie/28740?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    e. gow 2 - (https://api.themoviedb.org/3/movie/126400?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    p. gulaal - (https://api.themoviedb.org/3/movie/21625?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    b. dev d - (https://api.themoviedb.org/3/movie/15977?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    d. ugly - (https://api.themoviedb.org/3/movie/191726?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    m. boxer - (https://api.themoviedb.org/3/movie/470641?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords470641)
+    n. yellowboots - (https://api.themoviedb.org/3/movie/77864?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    h. raman raghav - (https://api.themoviedb.org/3/movie/393562?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    j. no smoking - (https://api.themoviedb.org/3/movie/36204?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    c. kennedy - (https://api.themoviedb.org/3/movie/1112552?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    l. velvet - (https://api.themoviedb.org/3/movie/316654?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    g. ghost - (https://api.themoviedb.org/3/movie/601643?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    i. bombay - (https://api.themoviedb.org/3/movie/190940?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    k. satya - (https://api.themoviedb.org/3/movie/21502?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)
+    o. dobara - (https://api.themoviedb.org/3/movie/796207?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords)

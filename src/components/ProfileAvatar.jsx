@@ -1,13 +1,21 @@
 import { useNavigate } from "react-router-dom";
 import { Edit } from "../utils/Icons";
 
-const ProfileAvatar = ( { name, photoURL, beingEdited, index} ) => {
+const ProfileAvatar = ( { name, photoURL, beingEdited, index, setCutToBrowsePage} ) => {
 
     const navigate = useNavigate();
-
+    const handleClick = () => {
+        setCutToBrowsePage(true)
+        setTimeout(() => {
+            navigate('/Browse')
+        }, 700);
+    }
     return (
 
-        <div className="flex flex-col justify-center items-center gap-4 group w-[25%] ">
+        <div
+            className="flex flex-col justify-center items-center gap-4 group w-[25%]"
+            onClick={ handleClick }
+        >
 
             <div className="w-full h-full rounded-md group-hover:ring-4 group-hover:ring-white group-hover:cursor-pointer relative aspect-square">
 

@@ -8,6 +8,14 @@ import { Provider, useDispatch } from 'react-redux';
 import { Store } from './utils/Store';
 import Profiles from './components/Profiles';
 import { EditProfile } from './components/EditProfile';
+import { Browse } from './components/Browse';
+import { ErrorBoundary } from './components/ErrorBoundary';
+import { BrowseWrapper } from './components/BrowseWrapper';
+import { HomePage } from './components/HomePage';
+import { MoviesPage } from './components/MoviesPage';
+import { ShowsPage } from './components/ShowsPage';
+import { DirectorsPage } from './components/DirectorsPage';
+
 function App() {
   const [mail, setMail] = useState(null);
   const router = createBrowserRouter([
@@ -29,7 +37,39 @@ function App() {
       path: '/Profiles/:profileIndex',
       element: <EditProfile />,
       caseSensitive: true
-    } 
+    },
+    {
+      path: '/Browse',
+      element : <BrowseWrapper />,
+      caseSensitive: true,
+      children: [
+        {
+          path: '',
+          element: <HomePage />,
+          caseSensitive: true
+        },
+        {
+          path: 'Movies',
+          element: <MoviesPage />,
+          caseSensitive: true
+        },
+        {
+          path: 'Shows',
+          element: <ShowsPage />,
+          caseSensitive: true
+        },
+        {
+          path: 'Directors',
+          element: <DirectorsPage />,
+          caseSensitive: true
+        }
+      ]
+    },
+    {
+      path: '*',
+      element: <ErrorBoundary />
+    }
+    
   ])
   
   return (

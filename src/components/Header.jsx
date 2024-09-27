@@ -7,7 +7,7 @@ const Header = () => {
     const [showAccPopup, setShowAccPopup] = useState(false);
     const timeoutID = useRef();
     return (
-        <div className="flex bg-gradient-to-b from-black/80 to-transparent py-[1.4em] px-16 text-white font-semibold text-[0.92em] justify-between fixed w-full z-50">
+        <div className="flex bg-gradient-to-b from-black/80 to-transparent py-[1.4em] px-16 text-white font-semibold text-[0.92em] justify-between fixed w-full z-50 top-0 left-0">
             <div className="flex gap-14">
                 <div>
                     <Logo />
@@ -37,7 +37,7 @@ const Header = () => {
                         }, 500);
                     }}
                 >
-                    <img src={user.photoURL} alt="User Profile Picture" width="30px" height="30px" className="rounded-md" />
+                    <img src={user.photoURL} alt="User" width="30px" height="30px" className="rounded-md" />
                     <div className={`${(showAccPopup) ? `rotate-180` : ``} transition-transform duration-150 ease-linear`}>
                         <Arrow />
                     </div>
@@ -55,7 +55,7 @@ const Header = () => {
                 >
                     <ul className="flex flex-col no-underline py-4">
                         <li className="flex items-center gap-3 pl-4 pr-10 hover:underline">
-                            <img src={user.photoURL} alt="User Profile Picture" width="30px" height="30px" className="rounded-md" />
+                            <img src={user.photoURL} alt="User" width="30px" height="30px" className="rounded-md" />
                             <p>{user.name}</p>
                         </li>
                         <li className="flex items-center gap-3 pl-4 pr-10 hover:underline">

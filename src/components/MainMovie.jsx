@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import Header from "./Header";
 import Plyr from "plyr";
 import 'plyr/dist/plyr.css';
-import netflixSymbol from '../img/Netflix-Logo.png'
 import movieTitle from '../img/Deadpool.png'
 import { Info, Play } from "../utils/Icons";
 
@@ -10,6 +9,7 @@ const MainMovie = () => {
     
     const [minimize, setMinimize] = useState(false);
     const playerWrapper = useRef(null);
+
     useEffect(() => {
         const player = new Plyr(playerWrapper.current, {
             controls: [], // Hide all controls
@@ -25,9 +25,9 @@ const MainMovie = () => {
     }, [])
 
     return (
-        <div className="h-[100vh] bg-[#141414]">
-            <Header />
-            <div className="h-[95%] overflow-hidden">
+        <div className="h-[98vh] bg-[#a67c7c]">
+            {/* <Header /> */}
+            <div className="h-[100%] overflow-hidden relative">
                 <div className="w-full h-full scale-110 relative">
                     <div className="overlap-gradient">
 
@@ -41,14 +41,14 @@ const MainMovie = () => {
 
                             <p className={`text-white capitalize tracking-wider text-xl text-shadow ${(minimize) ? `translate-y-20 opacity-0` : `` } transition-all duration-700 ease-linear transform-gpu`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, nulla sit. Ex in ratione voluptatibus culpa temporibus sint corrupti vel unde cupidi.</p>
 
-                            <div className="flex gap-4 relative z-10">
+                            <div className="flex gap-4">
                                 <button className="bg-white flex items-center gap-3 px-7 py-3 rounded-sm hover:bg-white/70">
                                     <Play />
-                                    <p className="text-lg text-black font-extrabold tracking-wide hover:cursor-pointer">Play</p>
+                                    <p className="text-lg text-black font-extrabold tracking-wide">Play</p>
                                 </button>
                                 <button className="bg-[#6E7271]/70 flex items-center gap-3 px-8 py-3 rounded-sm hover:bg-[#6E7271]/40">
                                     <Info />
-                                    <p className="text-lg text-white font-extrabold tracking-wide ">More Info</p>
+                                    <p className="text-lg text-white font-extrabold">More Info</p>
                                 </button>
                             </div>
 
@@ -64,9 +64,7 @@ const MainMovie = () => {
                     </div>
 
                 </div>
-                <div className="bottom-gradient">
-
-                </div>
+                <div className="bottom-gradient"></div>
             </div>
 
         </div>
