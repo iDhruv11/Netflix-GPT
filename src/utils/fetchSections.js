@@ -11,7 +11,7 @@ export const extractInfoMovie = (isPosterNeeded, movie) => {
         "PG": "U/A 7+",
         "PG-13": "U/A 13+",
         "R": "U/A 17+",
-        "A": "18+",
+        "A": "A-Rated",
         "U": "U-Rated",
         "UA": "U/A 12+",
         "S": "S-Rated",
@@ -30,22 +30,31 @@ export const extractInfoMovie = (isPosterNeeded, movie) => {
         teaser: movie.videos.results.find( ( { site, type } ) => site == 'YouTube' && type == 'Teaser')?.key,
     }
 
-    const extractImage = (imageArray, defaultImage) => {
+    const extractImage = (imageArray, defaultImage, type) => {
 
         const image = imageArray.find( image => (image['iso_639_1'] == 'en' || image['iso_639_1'] == 'hi') && !(image['file_path'].includes('.svg')) )?.['file_path']
 
         if(!image){
-            return defaultImage?.['file_path'] 
+            if(type == 'logo') return null
+            return {
+                image: defaultImage?.['file_path']
+                    ? `https://image.tmdb.org/t/p/${ type == 'logo' ? `w200` : `w500` }${defaultImage['file_path']}`
+                    : "https://res.cloudinary.com/dianmmxft/image/upload/v1727777674/netflix-wallpaper-1024x576_eyvlct.jpg",
+                isLogoIncluded: false
+            } 
         } 
         
-        return image
+        return {
+            image: `https://image.tmdb.org/t/p/${ type == 'logo' ? `w200` : `w500`}${image}`,
+            isLogoIncluded: true
+        }
     }
 
-    const backdrop = extractImage(movie.images.backdrops, movie.images.backdrops[0])
-    const logo = extractImage(movie.images.logos, movie.images.logos[0])
+    const backdrop = extractImage(movie.images.backdrops, movie.images.backdrops[0], 'backdrop')
+    const logo = extractImage(movie.images.logos, movie.images.logos[0], 'logo')
     let poster = null
     if(isPosterNeeded){
-        poster = extractImage(movie.images.posters, movie.images.posters[0])
+        poster = extractImage(movie.images.posters, movie.images.posters[0], 'poster')
     }
 
     const keywords = movie.keywords.keywords.slice(0, 3).map( keyword => keyword.name ) 
@@ -73,7 +82,7 @@ export const extractInfoMovie = (isPosterNeeded, movie) => {
         ageRating
     }
 }
-export const extractInfoShow = (isPosterNeeded, show) => {
+export const extractInfoShow = (isPosterNeeded, show, sectionName) => {
 
     const title = show.name 
     const desc = show.overview
@@ -82,6 +91,12 @@ export const extractInfoShow = (isPosterNeeded, show) => {
     const totalEpisodes = show['number_of_episodes']
     const isMostLiked = show.popularity > 50.0 ? true : false
     const year = show['first_air_date'].slice(0, 4)
+    let ageRating = null
+    const certificates = [ 
+        "U/A 13+",
+        "A-Rated",
+        "U/A 17+"
+    ]
 
     const videos = {
         clip: show.videos.results.find( ( { site, type } ) => site == 'YouTube' && type == 'Clip')?.key,
@@ -115,6 +130,11 @@ export const extractInfoShow = (isPosterNeeded, show) => {
         year: season?.['air_date'].slice(0, 4)
     }))
 
+    if( sectionName == 'family') ageRating = "U-Rated"
+    else if( sectionName == 'sitcom') ageRating = "U/A 13+"
+    else {
+        ageRating = certificates[ Math.floor(Math.random()*3) ]
+    }
 
     return {
         title,
@@ -130,7 +150,8 @@ export const extractInfoShow = (isPosterNeeded, show) => {
         logo,
         keywords,
         cast,
-        seasons
+        seasons,
+        ageRating
     }       
 }
 export const fetchMovieSectionWithFourUrl = async (movieUrlOne, movieUrlTwo, showUrlOne, showUrlTwo, limit, key, extractPosters) => {
@@ -153,7 +174,7 @@ export const fetchMovieSectionWithFourUrl = async (movieUrlOne, movieUrlTwo, sho
 
         let combinedData = await Promise.all(combinedPromiseArray)
 
-        combinedData = combinedData.map( (content, index) => ( index < limit ) ? extractInfoMovie(extractPosters, content) : extractInfoShow(extractPosters, content) )
+        combinedData = combinedData.map( (content, index) => ( index < limit ) ? extractInfoMovie(extractPosters, content) : extractInfoShow(extractPosters, content, key) )
 
         dispatcher(addContent({
             key,
@@ -204,7 +225,7 @@ export const fetchShowSectionWithTwoUrl = async (showUrlOne, showUrlTwo, key) =>
         const combinedPromiseArray = combinedIdArray.map( id => axios.get(`https://api.themoviedb.org/3/tv/${id}?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords,credits`))
 
         let combinedData = await Promise.all(combinedPromiseArray)
-        combinedData = combinedData.map( content => extractInfoShow(false, content) )
+        combinedData = combinedData.map( content => extractInfoShow(false, content, key) )
 
         dispatcher(addContent({
             key,
@@ -228,7 +249,7 @@ export const fetchShowSectionWithOneUrl = async (showUrl, key) => {
         const combinedPromiseArray = combinedIdArray.map( id => axios.get(`https://api.themoviedb.org/3/tv/${id}?api_key=99821f5d8417dc69c3ffd66d204f12cc&append_to_response=videos,images,keywords,credits`))
 
         let combinedData = await Promise.all(combinedPromiseArray)
-        combinedData = combinedData.map( content => extractInfoShow(false, content) )
+        combinedData = combinedData.map( content => extractInfoShow(false, content, key) )
 
         dispatcher(addContent({
             key,
@@ -263,7 +284,7 @@ export const fetchTopRated = async () => {
 
         let combinedData = await Promise.all(combinedPromiseArray)
 
-        combinedData = combinedData.map( (content, index) => ( index < 12 ) ? extractInfoMovie(false, content) : extractInfoShow(false, content) )
+        combinedData = combinedData.map( (content, index) => ( index < 12 ) ? extractInfoMovie(false, content) : extractInfoShow(false, content, 'topRated') )
 
         dispatcher(addContent({
             key: 'topRated',
@@ -292,7 +313,7 @@ export const fetchCritic = async () => {
     
         let combinedData = await Promise.all(combinedPromiseArray)
     
-        combinedData = combinedData.map( (content, index) => index < 10 ? extractInfoMovie(false, content) : extractInfoShow(false, content) )
+        combinedData = combinedData.map( (content, index) => index < 10 ? extractInfoMovie(false, content) : extractInfoShow(false, content, 'critic') )
         
         dispatcher(addContent({
             key: 'critic',
@@ -330,7 +351,7 @@ export const fetchNetflix = async () => {
         
         let combinedData = await Promise.all(combinedPromiseArray)
 
-        combinedData = combinedData.map( (content, index) => index < 12 ? extractInfoMovie(false, content) : extractInfoShow(false, content) )
+        combinedData = combinedData.map( (content, index) => index < 12 ? extractInfoMovie(false, content) : extractInfoShow(false, content, 'netflix') )
 
         dispatcher(addContent({
             key: 'netflix',
@@ -365,7 +386,7 @@ export const fetchBestOfYear = async () =>  {
         } )
 
         let combinedData = await Promise.all(combinedPromiseArray)
-        combinedData = combinedData.map( (content, index) => index < 6 ? extractInfoMovie(false, content) : extractInfoShow(false, content) )
+        combinedData = combinedData.map( (content, index) => index < 6 ? extractInfoMovie(false, content) : extractInfoShow(false, content, 'bestOfYear') )
 
         dispatcher(addContent({
             key: 'bestOfYear',
@@ -399,7 +420,7 @@ export const fetchFamily = async () =>  {
         })
 
         let combinedData = await Promise.all(combinedPromiseArray)
-        combinedData = combinedData.map( (content, index) => index < 4 ? extractInfoMovie(false, content) : extractInfoShow(false, content) )
+        combinedData = combinedData.map( (content, index) => index < 4 ? extractInfoMovie(false, content) : extractInfoShow(false, content, 'family') )
 
         dispatcher(addContent({
             key: 'family',

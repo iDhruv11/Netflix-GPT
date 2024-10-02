@@ -3,14 +3,16 @@ import { createSlice } from "@reduxjs/toolkit";
 const sectionSlice = createSlice({
     name: 'sections', 
     initialState: {
-        homeContent: false,
+        homeContent: true,
         keys: ['topRated', 'newRelease', 'popular', 'critic', 'netflix', 'trendingIndia', 'adventure', 'action', 'bestOfYear', 'trueStories', 'comedy', 'family', 'feelGood'],
         topRated: {
             tabs: ['home', 'movie', 'show' ],
             title: "Top Rated",
             movieTitle: "Highest Rated Movies",
             showTitle: "9+/10 Rated Shows",
-            movies: [],
+            movies: [
+
+            ],
             shows: []
         },
         newRelease: {

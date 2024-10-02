@@ -22,7 +22,7 @@ export const BrowseWrapper = () => {
     }
     
     useEffect( () => {
-        fetchAllData()
+        // fetchAllData()
     }, [])
     return (
         <div className="w-full">
