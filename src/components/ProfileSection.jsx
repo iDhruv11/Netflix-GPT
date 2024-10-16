@@ -23,7 +23,7 @@ export const ProfileSection = () => {
             src: null,
         }
     )
-    const users = useSelector((store) => store.profiles);
+    const users = useSelector((store) => store.user.profiles);
     useEffect(() => {
         setTimeout(() => {
             setBackToNormalSize(true);

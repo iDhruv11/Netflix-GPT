@@ -8,12 +8,12 @@ import { ProfileSection } from "./ProfileSection";
 
 const Profiles = () => {
     const dispatcher = useDispatch();
-    const user = useSelector(state => state.user)
+    const emailVerified = useSelector(state => state.user.emailVerified)
     let intervalID = useRef(null);
 
-    (user.emailVerified) ? clearInterval(intervalID.current) : null;
+    (emailVerified) ? clearInterval(intervalID.current) : null;
     useEffect(() => {
-        if (!user.emailVerified) {
+        if (!emailVerified) {
             intervalID.current = setInterval(() => {
                 console.log('Timeout..');
                 auth.currentUser.reload().then(() => {
@@ -25,7 +25,7 @@ const Profiles = () => {
 
 
 
-    return (!user.emailVerified) ? <EmailUnverified /> : <ProfileSection />
+    return (!emailVerified) ? <EmailUnverified /> : <ProfileSection />
 
 }
 export default Profiles;

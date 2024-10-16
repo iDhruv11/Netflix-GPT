@@ -10,7 +10,8 @@ export const HomePage = () => {
 
     return (!areHomeSectionsLoaded)
         ? <Loading /> : 
-        <div>
-            <h1 className="text-6xl font-bold mx-20 py-20">Home Page</h1>
+        <div className="relative bg-[#141414] ">
+            <MainMovie />
+            <SuggestedMovies />
         </div>
 }

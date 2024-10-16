@@ -4,7 +4,7 @@ import { useValidate } from "../utils/useValidate";
 import { registerUser } from "../utils/registerUser";
 import { sendEmailVerification, updateProfile } from "firebase/auth";
 import { useDispatch } from "react-redux";
-import { updateUser } from "../utils/userSlice";
+import { updateUser, editProfile } from "../utils/userSlice";
 import { auth } from "../../firebaseConfig";
 import { signInUser } from "../utils/signInUser";
 import { useNavigate } from "react-router-dom";
@@ -56,7 +56,10 @@ const SignIn = () => {
                     const updatedPhotoURL = user.photoURL;
                     console.log(updatedName, updatedPhotoURL);
                     dispatcher(updateUser({ name: updatedName, photoURL: updatedPhotoURL}));
+                    dispatcher(editProfile({ index: 1, name: updatedName, photoURL: updatedPhotoURL, photoID: 0}))
                     navigate('/Profiles')
+                }).catch( () => {
+                    console.log("error updating profile")
                 })
                 
             }
@@ -123,7 +126,16 @@ const SignIn = () => {
                                     }
                                 }
                             />
-                            <p className={`font-bold text-gray-300 absolute top-4 left-4 text-[17px] ${(isMailFocused || mail) ? `top-[6px] text-sm` : ``} transition-all ease-in-out duration-150 `}>Email</p>
+                            <p
+                                className={`font-bold text-gray-300 absolute top-4 left-4 text-[17px] ${(isMailFocused || mail) ? `top-[6px] text-sm` : ``} transition-all ease-in-out duration-150`}
+
+                                onClick={
+                                    () => {
+                                        setIsMailFocused(true)
+                                        email.current.focus()
+                                    }
+                                }
+                            >Email</p>
                             {
                                 (mailErrMsg) && (
                                     <div className="flex items-center text-[#f73e34] gap-1 mt-2 font-bold" >
@@ -151,7 +163,16 @@ const SignIn = () => {
                                         }
                                     }
                                 } />
-                            <p className={`font-bold text-gray-300 absolute top-4 left-4 text-[17px] ${(isPasswordFocused) ? `top-[6px] text-sm` : ``} transition-all ease-in-out duration-150`}>Password</p>
+                            <p
+                                className={`font-bold text-gray-300 absolute top-4 left-4 text-[17px] ${(isPasswordFocused) ? `top-[6px] text-sm` : ``} transition-all ease-in-out duration-150`}
+                                
+                                onClick={
+                                    () => {
+                                        setIsPasswordFocused(true)
+                                        password.current.focus()
+                                    }
+                                }
+                            >Password</p>
                             {
                                 (passErrMsg) && (
                                     <div className="flex items-center text-[#f73e34] gap-1 mt-2 font-bold" >
@@ -179,7 +200,16 @@ const SignIn = () => {
                                                 setNameErrMsg(nameErrMsg);
                                             }
                                         } />
-                                    <p className={`font-bold text-gray-300 absolute top-4 left-4 text-[17px] ${(isNameFocused) ? `top-[6px] text-sm ` : ``} transition-all ease-in-out duration-150 `}>Full Name</p>
+                                    <p
+                                        className={`font-bold text-gray-300 absolute top-4 left-4 text-[17px] ${(isNameFocused) ? `top-[6px] text-sm ` : ``} transition-all ease-in-out duration-150`}
+
+                                        onClick={
+                                            () => {
+                                                setIsNameFocused(true)
+                                                name.current.focus()
+                                            }
+                                        }
+                                    >Full Name</p>
                                     {
                                         (nameErrMsg) && (
                                             <div className="flex items-center text-[#f73e34] gap-1 mt-2 font-bold" >

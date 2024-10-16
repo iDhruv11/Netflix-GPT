@@ -4,11 +4,10 @@ import Faq from './Faq'
 import Footer from './Footer'
 import { useDispatch } from 'react-redux'
 import { auth } from '../../firebaseConfig'
-import { addUser } from '../utils/userSlice'
+import { addUser, addProfile } from '../utils/userSlice'
 import { onAuthStateChanged } from 'firebase/auth'
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { addProfile } from '../utils/profileSlice'
 
 
 const Home = () => {
@@ -21,8 +20,27 @@ const Home = () => {
                 console.log('inside authstatechange');
                 const { email, displayName, photoURL, emailVerified } = user;
                 console.log(email, displayName, photoURL, emailVerified);
-                dispatcher(addUser({ email, displayName, photoURL , emailVerified }));            
-                dispatcher(addProfile({ type: 'primary', name: displayName, photoURL, photoID: 0 }))
+                dispatcher(addUser({
+                    email, 
+                    displayName, 
+                    photoURL, 
+                    emailVerified
+                }));            
+                dispatcher(addProfile({
+                    type: 'primary',
+                    name: displayName,
+                    photoURL, 
+                    photoID: 0,
+                    keepWatching: {
+                        movies: [],
+                        shows: []
+                    },
+                    myList: {
+                        movies: [],
+                        shows: []
+                    },
+                    suggestions: []
+                }))
                 navigate('/Profiles');                
             }
             else {

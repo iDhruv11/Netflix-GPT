@@ -2,14 +2,15 @@ import { useEffect, useRef, useState } from "react"
 import { Cross, Edit, ErrorIcon } from "../utils/Icons";
 import { useDispatch, useSelector } from "react-redux";
 import { changeIsSelected } from "../utils/avatarSlice";
-import { addProfile } from "../utils/profileSlice";
+import { addProfile } from "../utils/userSlice";
 
 
 export const AddProfile = ({ setShowAddPopup, setBackToNormalSize, setShowAvatars, nextPfp, setNextPfp}) => {
 
     const [isFocused, setIsFocused] = useState(false);
-    const [showError, setShowError] = useState(false);
+    const [showError, setShowError] = useState("");
     const pfpURL = useSelector((store) => store.avatars);
+    const profiles = useSelector( store => store.user.profiles)
     const dispatcher = useDispatch();
     const newName = useRef();
 
@@ -31,15 +32,30 @@ export const AddProfile = ({ setShowAddPopup, setBackToNormalSize, setShowAvatar
 
     const handleAddProfile = () => {
         if (!newName.current.value) {
-            setShowError(true);
+            setShowError("Name can't be empty!");
             return
         }
+
+        if(profiles.find( profile => profile.name == newName.current.value)){
+            setShowError("Name is already taken!")
+            return 
+        }
+
         setShowError(false);
         dispatcher(addProfile({
             type: 'secondary',
             photoID: nextPfp.id,
             photoURL: nextPfp.src,
-            name: newName.current.value
+            name: newName.current.value,
+            keepWatching: {
+                movies: [],
+                shows: []
+            },
+            myList: {
+                movies: [],
+                shows: []
+            },
+            suggestions: []
         }))
         dispatcher(changeIsSelected({
             id: nextPfp.id,
@@ -100,11 +116,11 @@ export const AddProfile = ({ setShowAddPopup, setBackToNormalSize, setShowAvatar
                             ref={newName}
                         />
                         {
-                            (showError) ? (
-                                <p className="flex items-center gap-1 text-[#cb3d36] font-semibold absolute mt-1 text-sm">
-                                    <ErrorIcon /><span> Name can't be empty </span>
+                            (showError) && (
+                                <p className="flex items-center gap-1 text-[#dd2e25] font-semibold absolute mt-1 text-sm">
+                                    <ErrorIcon /><span> { showError }</span>
                                 </p>
-                            ) : null
+                            )
                         }
                     </div>
                     <p

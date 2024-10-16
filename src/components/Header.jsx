@@ -1,9 +1,11 @@
 import { useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import { Arrow, Bell, Logo, Pencil, Person, Question, Search, Squareface } from "../utils/Icons";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-    const user = useSelector(state => state.user);
+    const profileIndex = useSelector(state => state.user.selectedProfile);
+    const user = useSelector(state => state.user.profiles[profileIndex]);
     const [showAccPopup, setShowAccPopup] = useState(false);
     const timeoutID = useRef();
     return (
@@ -13,10 +15,10 @@ const Header = () => {
                     <Logo />
                 </div>
                 <ul className="flex flex-row no-underline gap-5">
-                    <li>Home</li>
-                    <li>Movies</li>
-                    <li>TV Shows</li>
-                    <li>My List</li>
+                    <Link to="/Browse"><li>Home</li></Link>
+                    <Link to="/Browse/Movies"><li>Movies</li></Link>
+                    <Link to="/Browse/Shows"><li>TV Shows</li></Link>
+                    <Link to="/Browse/Directors"><li>Director's Chair</li></Link>
                 </ul>
             </div>
             <div className="flex justify-center items-center gap-5">

@@ -35,7 +35,7 @@ export const AvatarSection = ({ setShowAvatars, nextPfp, setNextPfp }) => {
         }, 800);
     }
     const setPfp = () => {
-        (showSelected.id) ? setNextPfp(showSelected) : null;
+        (typeof showSelected.id == "number" ) ? setNextPfp(showSelected) : null;
         handleExit();
     }
     return (

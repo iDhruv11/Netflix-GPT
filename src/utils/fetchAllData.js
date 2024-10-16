@@ -40,7 +40,7 @@
             ],
 
             adventure: [
-                "https://api.themoviedb.org/3/discover/movie?&api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&region=IN&sort_by=vote_count.desc&with_genres=12&with_origin_country=IN&with_original_language=hi&without_genres=28&primary_release_date.gte=2005-01-01",
+                "https://api.themoviedb.org/3/discover/movie?&api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&region=IN&sort_by=popualrity.desc&with_genres=12&with_origin_country=IN&with_original_language=hi&without_genres=28&primary_release_date.gte=2005-01-00&without_keywords=9914%7C290707%7C210024",
                 
                 "https://api.themoviedb.org/3/discover/movie?&api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=12%2C28&primary_release_date.gte=2005-01-01&with_original_language=en",
             ],
@@ -61,9 +61,9 @@
 
             comedy: [
                 "https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&primary_release_date.lte=2020-01-01&primary_release_date.gte=1995-01-01&region=IN&sort_by=popularity.desc&with_genres=35&with_origin_country=IN&with_original_language=hi&with_crew=80387&with_cast=35070%7C85033",
-
-                "https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_genres=35&with_keywords=290159%7C322268%7C332045%7C9253%7C9755%7C320420%7C167541%7C336694%7C155722%7C&with_original_language=en&without_genres=16&without_keywords=10123%7C334378%7C203322%7C290159%7C316362%7C10614%7C273967%7C316332%7C272553",
-
+            
+                "https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_genres=35&with_keywords=290159%7C322268%7C332045%7C9253%7C9755%7C320420%7C167541%7C336694%7C155722%7C&with_original_language=en&without_genres=16&without_keywords=10123%7C334378%7C203322%7C290159%7C316362%7C10614%7C273967%7C316332%7C272553%7C228538%7C169826",
+            
             ],
 
             feelGood: [
@@ -78,7 +78,7 @@
             ],
 
             crime: [
-                "https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&primary_release_date.gte=1998-01-01&region=IN&sort_by=popularity.desc&with_genres=80&with_keywords=3149%7C298636%7C10391%7C9748%7C165725%7C164186%7C7002%7C15011&with_origin_country=IN&with_original_language=hi&without_genres=35%7C10749&without_keywords=6149%7C5340%7C8015%7C243959%7C10235%7C185011",
+                "https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&primary_release_date.gte=1998-01-01&region=IN&sort_by=popularity.desc&with_genres=80&with_keywords=3149%7C298636%7C10391%7C9748%7C165725%7C164186%7C7002%7C15011&with_origin_country=IN&with_original_language=hi&without_genres=35%7C10749&without_keywords=6149%7C5340%7C8015%7C243959%7C10235%7C185011&vote_count.gte=70",
                 
                 "https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_genres=80&with_keywords=3149%7C298636%7C15011%7C10391%7C9748%7C165725%7C18026%7C7002%7C164186&with_original_language=en&without_keywords=6149%7C5340%7C8015%7C9715%7C290940",
 
@@ -115,8 +115,8 @@
             nolan: [27205, 157336, 155, 49026, 272, 374720, 1124, 77, 577922, 872585, 320, 11660],
             kubrick: [600, 694, 185, 345, 967, 935, 3175, 802, 975, 10056, 247, 10165],
             fincher: [550, 807, 1949, 210577, 37799, 4922, 65754, 2649, 4547, 800158, 614560],
-            coen: [6967, 115, 275, 4944, 227306, 537996, 270487, 12573, 395458, 290, 5516, 11775],
-            ray: [5801, 896, 35790, 60567, 42498, 35867, 42092, 164990, 135092, 197562, 135092, 197562, 122445, 43027],
+            coen: [6977, 115, 275, 4944, 227306, 537996, 270487, 12573, 395458, 290, 5516, 11775],
+            ray: [5801, 896, 35790, 60567, 42498, 35867, 42092, 164990, 135092, 197562, 122445, 43027],
             hirani: [20453, 297222, 19625, 21461, 496328, 960876],
             guru: [41053, 53767, 71284, 70366, 66564, 71283, 154857, 185555, 185552],
             anurag: [117691, 28740, 126400, 21625, 15977, 191726, 470641, 77864, 393562, 36204, 316654, 796207]

@@ -1,0 +1,21 @@
+1. I'm bound to use Redux persist to make sure that after intial api call all the data is fetched entirely, it's not fetched again and again just inc case user refreshes --- Gonna use Redux persist to store api Data ( contentSlice )
+
+2. Now As I'm using persist to persist api data state in client machine, why don't use it to persist the data user adds, modifies such as creating new profies, editing the existing profiles -- Gonnna use redux persist for storing user data and user profies ( useSlice )
+
+3. Now if user refereshed on browse page, it will clear out the LoggedInUser details which which will empty out your next watch, my list etc, although I beleive it should fetch the details again from userSlice by using the parameter sent by browser url so redux persist is not needed here but I still consider a --- Remote possibility of using persist for LoggedInUser 
+
+4. A bug has arisen up due to the fact that you can't use firebase auth to store additional details of your choice such as photoId of the photoURL ( requirement - onAuthStateChange indeed updates the userSlice with the url but does not provide its ID so profileSection does not know which profile to mark tick to display it's reservation and state of "not available" which happens when the main profile's pfp is updated) --- We are bound to use firestore to fix this bug to store additional info about the profile/user using uid
+
+5. Each profile under userSlice will have suggestion, my list, next watch arrays and click on any profile will navigate user from profiles page to browse page after updating the loggedinuser slice to show details on browse page
+
+6. userSlice is the second most important slice that needs persistence user does not needs to create profiles again and surf again to fill my list, suggestion, next watch
+
+7. Now it's a requirement of our app to use firestore to store related profiles and data based on uid of each registration in firestore. if user signs out it clears out the userSlice persisted state from client machine ( so that next user account that logs in does not show profiiles and profies related data ( suggestion, list, next watch ) from previous user ) and when a new user is logged in or registered it persists that user state and then again if the same user logs in which was logged in first time and had data such as profiles the data is gone because it was persisted on client machine as long as it was logged in but when it logged out, the persited state was deleted with empty, this is where we can use firestor to store data about each account --- 
+
+------------Major to Minor all To build feature in APP ----------------
+1. Sign out during browse
+2. Sign out during email verification waiting
+3. Fix profile section bug ( firestore dependent )
+4. Prevent user from deleting the main profile by showing a dialogue
+5. Sign In feature implementation 
+6. Delete profile Bug

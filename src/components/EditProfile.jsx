@@ -8,7 +8,7 @@ import { Edit, ErrorIcon } from "../utils/Icons";
 import { useDispatch, useSelector } from "react-redux";
 import { AvatarSection } from "./AvatarSection";
 import { useEffect, useRef, useState } from "react";
-import { deleteProfile, editProfile } from "../utils/profileSlice";
+import { deleteProfile, editProfile } from "../utils/userSlice";
 import { changeIsSelected } from "../utils/avatarSlice";
 import { ConfirmDelete } from "./ConfirmDelete";
 import { verifyName } from "../utils/verifyName";
@@ -20,7 +20,8 @@ export const EditProfile = () => {
     const { profileIndex } = useParams();
     const newName = useRef(null);
     const pfpURL = useSelector( store => store.avatars );
-    const users = useSelector(store => store.profiles );
+    const users = useSelector(store => store.user.profiles );
+    console.log(users)
     const [showAvatars, setShowAvatars] = useState(false);
     const [backToNormalSize, setBackToNormalSize] = useState(false);
     const [showError, setShowError] = useState(false);
@@ -63,6 +64,8 @@ export const EditProfile = () => {
             id: nextPfp.id,
             setSelected: true,
         }))
+
+        if(profileIndex != 1) return 
 
         if(auth.currentUser.displayName == newName.current.value && auth.currentUser.photoURL == nextPfp.src){
             return 
@@ -132,7 +135,7 @@ export const EditProfile = () => {
                                     ref={newName}
                                 />
                                {
-                                (showError) && <p className="flex gap-2 text-[#e50914] text-sm font-extrabold mt-2 items-center"><ErrorIcon /> Name is already taken </p>
+                                (showError) && <p className="flex gap-2 text-[#f22b21] text-sm font-extrabold mt-2 items-center"><ErrorIcon /> Name is already taken </p>   
                                }
                             </div>
 
@@ -184,16 +187,25 @@ export const EditProfile = () => {
                 </div>
                 
                 <div className="flex gap-4">
-                    <div onClick={ handleSave }>
+                    <div
+                        onClick={ handleSave }
+                        className="hover:cursor-pointer"
+                    >
                         <SaveBtn />
                     </div>
-                    <div onClick={ handleExit }>
+                    <div
+                        onClick={ handleExit }
+                        className="hover:cursor-pointer"
+                    >
                         <CancelBtn />
                     </div>
-                    <div onClick={ () =>{
-                        setShowConfirm(true);
-                    }}>
-                        <DeleteBtn />
+                    <div
+                        onClick={ () => {
+                            if(users[profileIndex].type == "primary") return
+                            setShowConfirm(true)
+                        } }
+                    >
+                        <DeleteBtn allowed={ !(users[profileIndex].type == "primary") } />
                     </div>
                 </div>
             </div>

@@ -3,20 +3,29 @@ import { createSlice } from "@reduxjs/toolkit";
 const userSlice = createSlice({
     name: "User",
     initialState: {
-        type: null,
         name: null,
         email: null,
         photoURL: null,
         emailVerified: false,
-        keepWatching: {
-            movies: [],
-            shows: []
-        },
-        myList: {
-            movies: [],
-            shows: []
-        },
-        suggestions: []
+        selectedProfile: null,
+        profiles: [
+            {   
+                type: 'default',
+                name: 'Children',
+                photoID: null,
+                photoURL: "https://res.cloudinary.com/dianmmxft/image/upload/v1726898085/kids_s8ndtp.png",
+                keepWatching: {
+                    movies: [],
+                    shows: []
+                },
+                myList: {
+                    movies: [],
+                    shows: []
+                },
+                suggestions: []
+            },
+            
+        ]
     },
     reducers: {
         addUser: (state, action) => {
@@ -37,21 +46,49 @@ const userSlice = createSlice({
         updateUser: (state, action)=>{            
             return {...state, ...action.payload}
         },
+        addProfile: (state, action) => {
+            state.profiles.push(action.payload)
+        },
+        editProfile: (state, action) => {
+            const {index, ...newProfile} = action.payload;
+            state.profiles[index] = {...state.profiles[index], ...newProfile};
+        },
+        deleteProfile: (state, action) => {
+            state.profiles = state.profiles.filter( (profile, index) => index != action.payload)
+        },
+        updateSelectedProfile: (state, action) => {
+            state.selectedProfile = action.payload
+        },
         addKeepWatching: (state, action) => {
-            state.keepWatching.movies.length >= 6 ? state.keepWatching.movies.length = 0 : null
-            state.keepWatching.shows.length >= 6 ? state.keepWatching.shows.length = 0 : null
-            action.payload.type == 'movie' ? state.keepWatching.movies.push(action.payload) : state.keepWatching.shows.push(action.payload)
+            const { profileIndex, content } = action.payload
+            state.profiles[profileIndex].keepWatching.movies.length >= 6
+                ? state.profiles[profileIndex].keepWatching.movies.length = 0
+                : null
+            state.profiles[profileIndex].keepWatching.shows.length >= 6
+                ? state.profiles[profileIndex].keepWatching.shows.length = 0
+                : null
+            content.type == 'movie'
+                ? state.profiles[profileIndex].keepWatching.movies.push(action.payload.content)
+                : state.profiles[profileIndex].keepWatching.shows.push(action.payload.content)
         },
         addMyList: (state, action) => {
-            state.myList.movies.length >= 6 ? state.myList.movies.length = 0 : null
-            state.myList.shows.length >= 6 ? state.myList.shows.length = 0 : null
-            action.payload.type == 'movie' ? state.myList.movies.push(action.payload) : state.myList.shows.push(action.payload)
+            const {profileIndex, content} = action.payload
+            state.profiles[profileIndex].myList.movies.length >= 6
+                ? state.profiles[profileIndex].myList.movies.length = 0
+                : null
+            state.profiles[profileIndex].myList.shows.length >= 6 ?
+                state.profiles[profileIndex].myList.shows.length = 0
+                : null
+            content.type == 'movie'
+                ? state.profiles[profileIndex].myList.movies.push(action.payload.content)
+                : state.profiles[profileIndex].myList.shows.push(action.payload.content)
         },
         addSuggestion: (state, action) => {
-            state.suggestions = action.payload
+            const { profileIndex, suggestionArray} = action.payload
+            state.profiles[profileIndex].suggestions = suggestionArray
         }
     }
 })
 
-export const {addUser, removeUser, updateUser, addKeepWatching, addMyList, addSuggestion} = userSlice.actions;
+export const {addUser, removeUser, updateUser, addProfile, editProfile, deleteProfile, updateSelectedProfile} = userSlice.actions;
 export default userSlice.reducer;

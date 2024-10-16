@@ -8,7 +8,6 @@ import { Provider, useDispatch } from 'react-redux';
 import { Store } from './utils/Store';
 import Profiles from './components/Profiles';
 import { EditProfile } from './components/EditProfile';
-import { Browse } from './components/Browse';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { BrowseWrapper } from './components/BrowseWrapper';
 import { HomePage } from './components/HomePage';
