@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom"
 import Header from "./Header"
 import { useDispatch, useSelector } from "react-redux"
 import { setAreHomeSectionsLoaded } from "../utils/sectionSlice"
-import { useEffect } from "react"
+import { useEffect, useRef, useState } from "react"
 
 export const BrowseWrapper = () => {
 
@@ -14,7 +14,7 @@ export const BrowseWrapper = () => {
             return acc
         }, {})
     } )
-  
+    const [hasScrolled, setHasScrolled] = useState(false)
     if(!areHomeSectionsLoaded){ 
         Object.keys(homeSections).every( (key) => homeSections[key].movies.length && homeSections[key].shows.length )
             ? dispatcher( setAreHomeSectionsLoaded(true) )
@@ -22,14 +22,16 @@ export const BrowseWrapper = () => {
     }
     
     useEffect( () => {
+        
         // fetchAllData()
+        
     }, [])
     return (
-        <div className="w-full">
+        <div className="w-screen">
             {
-                (areHomeSectionsLoaded) && <Header />
+                (areHomeSectionsLoaded) && <Header hasScrolled={hasScrolled}/>
             }
-            <Outlet />
+            <Outlet context={setHasScrolled}/>
         </div>
     )
 }

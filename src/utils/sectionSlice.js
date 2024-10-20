@@ -44,7 +44,7 @@ const sectionSlice = createSlice({
                         "Morgan Freeman",
                         "Bob Gunton"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "The Godfather",
@@ -80,7 +80,7 @@ const sectionSlice = createSlice({
                         "Al Pacino",
                         "James Caan"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "The Godfather Part II",
@@ -114,7 +114,7 @@ const sectionSlice = createSlice({
                         "Robert Duvall",
                         "Diane Keaton"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Schindler's List",
@@ -150,7 +150,7 @@ const sectionSlice = createSlice({
                         "Ben Kingsley",
                         "Ralph Fiennes"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "12 Angry Men",
@@ -184,7 +184,7 @@ const sectionSlice = createSlice({
                         "John Fiedler",
                         "Lee J. Cobb"
                     ],
-                    ageRating: "U/A 10+"
+                    ageRating: "U/A 10+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Spirited Away",
@@ -221,7 +221,7 @@ const sectionSlice = createSlice({
                         "Miyu Irino",
                         "Mari Natsuki"
                     ],
-                    ageRating: "U/A 7+"
+                    ageRating: "U/A 7+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Dilwale Dulhania Le Jayenge",
@@ -256,7 +256,7 @@ const sectionSlice = createSlice({
                         "Shah Rukh Khan",
                         "Amrish Puri"
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "The Dark Knight",
@@ -292,7 +292,7 @@ const sectionSlice = createSlice({
                         "Heath Ledger",
                         "Michael Caine"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "The Green Mile",
@@ -328,7 +328,7 @@ const sectionSlice = createSlice({
                         "David Morse",
                         "Bonnie Hunt"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Parasite",
@@ -365,7 +365,7 @@ const sectionSlice = createSlice({
                         "Lee Sun-kyun",
                         "Cho Yeo-jeong"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Pulp Fiction",
@@ -400,7 +400,7 @@ const sectionSlice = createSlice({
                         "Samuel L. Jackson",
                         "Uma Thurman"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Your Name.",
@@ -435,7 +435,7 @@ const sectionSlice = createSlice({
                         "Mone Kamishiraishi",
                         "Ryo Narita"
                     ],
-                    ageRating: "U/A 7+"
+                    ageRating: "U/A 7+", type: "movie", backdropNoLang: ""
                 }
             ],
             shows: [
@@ -532,7 +532,7 @@ const sectionSlice = createSlice({
                             year: "2019"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Money Heist",
@@ -590,7 +590,7 @@ const sectionSlice = createSlice({
                             year: "2021"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Stranger Things",
@@ -664,7 +664,7 @@ const sectionSlice = createSlice({
                             year: "202- (Unannounced)"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "The Walking Dead",
@@ -777,7 +777,7 @@ const sectionSlice = createSlice({
                             year: "2021"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Lucifer",
@@ -856,7 +856,7 @@ const sectionSlice = createSlice({
                             year: "2021"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Breaking Bad",
@@ -928,7 +928,7 @@ const sectionSlice = createSlice({
                             year: "2012"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Squid Game",
@@ -981,7 +981,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Riverdale",
@@ -1068,7 +1068,7 @@ const sectionSlice = createSlice({
                             year: "2023"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "The Good Doctor",
@@ -1153,7 +1153,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "WandaVision",
@@ -1199,7 +1199,7 @@ const sectionSlice = createSlice({
                             year: "2021"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Loki",
@@ -1251,7 +1251,7 @@ const sectionSlice = createSlice({
                             year: "2023"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "The Big Bang Theory",
@@ -1371,7 +1371,7 @@ const sectionSlice = createSlice({
                             year: "2018"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 }
             ]
         },
@@ -1415,7 +1415,7 @@ const sectionSlice = createSlice({
                         "Abhishek Chauhan",
                         "Pratap Verma"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Sector 36",
@@ -1447,7 +1447,7 @@ const sectionSlice = createSlice({
                         "Vikrant Massey",
                         "Akash Khurana"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Stree 2",
@@ -1480,7 +1480,7 @@ const sectionSlice = createSlice({
                         "Shraddha Kapoor",
                         "Aparshakti Khurana"
                     ],
-                    ageRating: "U/A 12+"
+                    ageRating: "U/A 12+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Maharaj",
@@ -1510,7 +1510,7 @@ const sectionSlice = createSlice({
                         "Jaideep Ahlawat",
                         "Sharvari Wagh"
                     ],
-                    ageRating: "U/A 16+"
+                    ageRating: "U/A 16+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Phir Aayi Hasseen Dillruba",
@@ -1543,7 +1543,7 @@ const sectionSlice = createSlice({
                         "Vikrant Massey",
                         "Sunny Kaushal"
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Munjya",
@@ -1575,7 +1575,7 @@ const sectionSlice = createSlice({
                         "Sharvari Wagh",
                         "Ayush Ulagadde"
                     ],
-                    ageRating: "U/A 12+"
+                    ageRating: "U/A 12+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Inside Out 2",
@@ -1612,7 +1612,7 @@ const sectionSlice = createSlice({
                         "Maya Hawke",
                         "Kensington Tallman"
                     ],
-                    ageRating: "U/A 7+"
+                    ageRating: "U/A 7+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Deadpool & Wolverine",
@@ -1648,7 +1648,7 @@ const sectionSlice = createSlice({
                         "Hugh Jackman",
                         "Emma Corrin"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Bad Boys: Ride or Die",
@@ -1685,7 +1685,7 @@ const sectionSlice = createSlice({
                         "Martin Lawrence",
                         "Vanessa Hudgens"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "A Quiet Place: Day One",
@@ -1722,7 +1722,7 @@ const sectionSlice = createSlice({
                         "Joseph Quinn",
                         "Alex Wolff"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Despicable Me 4",
@@ -1759,7 +1759,7 @@ const sectionSlice = createSlice({
                         "Kristen Wiig",
                         "Will Ferrell"
                     ],
-                    ageRating: "U/A 7+"
+                    ageRating: "U/A 7+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Twisters",
@@ -1796,7 +1796,7 @@ const sectionSlice = createSlice({
                         "Glen Powell",
                         "Anthony Ramos"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 }
             ],
             shows: [
@@ -1858,7 +1858,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Panchayat",
@@ -1916,7 +1916,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "IC 814: The Kandahar Hijack",
@@ -1957,7 +1957,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Chacha Vidhayak Hain Humare",
@@ -2007,7 +2007,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Heeramandi: The Diamond Bazaar",
@@ -2060,7 +2060,7 @@ const sectionSlice = createSlice({
                             year: "202- (Unannounced)"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Tribhuvan Mishra CA Topper",
@@ -2104,7 +2104,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "The Boys",
@@ -2177,7 +2177,7 @@ const sectionSlice = createSlice({
                             year: "202- (Unannounced)"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "The Umbrella Academy",
@@ -2243,7 +2243,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Cobra Kai",
@@ -2324,7 +2324,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Arcane",
@@ -2377,7 +2377,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "The Lord of the Rings: The Rings of Power",
@@ -2430,7 +2430,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Bridgerton",
@@ -2495,7 +2495,7 @@ const sectionSlice = createSlice({
                             year: "202- (Unannounced)"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 }
             ]
         },
@@ -2535,7 +2535,7 @@ const sectionSlice = createSlice({
                         "Deepika Padukone",
                         "Anil Kapoor"
                     ],
-                    ageRating: "U/A 12+"
+                    ageRating: "U/A 12+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Animal",
@@ -2570,7 +2570,7 @@ const sectionSlice = createSlice({
                         "Rashmika Mandanna",
                         "Anil Kapoor"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Dunki",
@@ -2604,7 +2604,7 @@ const sectionSlice = createSlice({
                         "Taapsee Pannu",
                         "Vikram Kochhar"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Laapataa Ladies",
@@ -2639,7 +2639,7 @@ const sectionSlice = createSlice({
                         "Nitanshi Goel",
                         "Sparsh Shrivastav"
                     ],
-                    ageRating: "U/A 12+"
+                    ageRating: "U/A 12+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Kho Gaye Hum Kahan",
@@ -2674,7 +2674,7 @@ const sectionSlice = createSlice({
                         "Ananya Panday",
                         "Adarsh Gourav"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "The Archies",
@@ -2710,7 +2710,7 @@ const sectionSlice = createSlice({
                         "Suhana Khan",
                         "Khushi Kapoor"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Dune: Part Two",
@@ -2746,7 +2746,7 @@ const sectionSlice = createSlice({
                         "Zendaya",
                         "Rebecca Ferguson"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Poor Things",
@@ -2783,7 +2783,7 @@ const sectionSlice = createSlice({
                         "Mark Ruffalo",
                         "Willem Dafoe"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Godzilla x Kong: The New Empire",
@@ -2820,7 +2820,7 @@ const sectionSlice = createSlice({
                         "Brian Tyree Henry",
                         "Dan Stevens"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Wonka",
@@ -2857,7 +2857,7 @@ const sectionSlice = createSlice({
                         "Calah Lane",
                         "Keegan-Michael Key"
                     ],
-                    ageRating: "U/A 7+"
+                    ageRating: "U/A 7+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Furiosa: A Mad Max Saga",
@@ -2894,7 +2894,7 @@ const sectionSlice = createSlice({
                         "Chris Hemsworth",
                         "Tom Burke"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Kingdom of the Planet of the Apes",
@@ -2931,7 +2931,7 @@ const sectionSlice = createSlice({
                         "Freya Allan",
                         "Kevin Durand"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 }
             ],
             shows: [
@@ -2991,7 +2991,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Indian Police Force",
@@ -3033,7 +3033,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "FLAMES",
@@ -3099,7 +3099,7 @@ const sectionSlice = createSlice({
                             year: "2023"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "ImMATURE",
@@ -3153,7 +3153,7 @@ const sectionSlice = createSlice({
                             year: "2023"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Killer Soup",
@@ -3199,7 +3199,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Maamla Legal Hai",
@@ -3243,7 +3243,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "The Good Doctor",
@@ -3328,7 +3328,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "The Boys",
@@ -3401,7 +3401,7 @@ const sectionSlice = createSlice({
                             year: "202- (Unannounced)"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Grey's Anatomy",
@@ -3584,7 +3584,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "The Mandalorian",
@@ -3642,7 +3642,7 @@ const sectionSlice = createSlice({
                             year: "2023"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "The Simpsons",
@@ -3932,7 +3932,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Rick and Morty",
@@ -4020,7 +4020,7 @@ const sectionSlice = createSlice({
                             year: "2023"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 }
             ]
         },
@@ -4064,7 +4064,7 @@ const sectionSlice = createSlice({
                         "Gary Lockwood",
                         "William Sylvester"
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Raging Bull",
@@ -4098,7 +4098,7 @@ const sectionSlice = createSlice({
                         "Cathy Moriarty",
                         "Joe Pesci"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Swades",
@@ -4130,7 +4130,7 @@ const sectionSlice = createSlice({
                         "Gayatri Joshi",
                         "Kishori Balal"
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Vertigo",
@@ -4167,7 +4167,7 @@ const sectionSlice = createSlice({
                         "Kim Novak",
                         "Barbara Bel Geddes"
                     ],
-                    ageRating: "U/A 7+"
+                    ageRating: "U/A 7+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Memories of Murder",
@@ -4204,7 +4204,7 @@ const sectionSlice = createSlice({
                         "Kim Sang-kyung",
                         "Kim Roi-ha"
                     ],
-                    ageRating: "U/A 10+"
+                    ageRating: "U/A 10+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Memento",
@@ -4238,7 +4238,7 @@ const sectionSlice = createSlice({
                         "Carrie-Anne Moss",
                         "Joe Pantoliano"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Apocalypse Now",
@@ -4273,7 +4273,7 @@ const sectionSlice = createSlice({
                         "Frederic Forrest",
                         "Albert Hall"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Saving Private Ryan",
@@ -4309,7 +4309,7 @@ const sectionSlice = createSlice({
                         "Tom Sizemore",
                         "Edward Burns"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Gulaal",
@@ -4341,7 +4341,7 @@ const sectionSlice = createSlice({
                         "Kay Kay Menon",
                         "Abhimanyu Singh"
                     ],
-                    ageRating: "U/A 10+"
+                    ageRating: "U/A 10+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "No Country for Old Men",
@@ -4377,7 +4377,7 @@ const sectionSlice = createSlice({
                         "Tommy Lee Jones",
                         "Josh Brolin"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 }
             ],
             shows: [
@@ -4457,7 +4457,7 @@ const sectionSlice = createSlice({
                             year: "2006"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Succession",
@@ -4523,7 +4523,7 @@ const sectionSlice = createSlice({
                             year: "2023"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "MINDHUNTER",
@@ -4576,7 +4576,7 @@ const sectionSlice = createSlice({
                             year: "2019"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Fargo",
@@ -4648,7 +4648,7 @@ const sectionSlice = createSlice({
                             year: "2023"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "The Wire",
@@ -4720,7 +4720,7 @@ const sectionSlice = createSlice({
                             year: "2008"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Better Call Saul",
@@ -4800,7 +4800,7 @@ const sectionSlice = createSlice({
                             year: "2022"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Mad Men",
@@ -4885,7 +4885,7 @@ const sectionSlice = createSlice({
                             year: "2014"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Band of Brothers",
@@ -4929,7 +4929,7 @@ const sectionSlice = createSlice({
                             year: "2001"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Asur",
@@ -4979,7 +4979,7 @@ const sectionSlice = createSlice({
                             year: "2023"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Paatal Lok",
@@ -5030,7 +5030,7 @@ const sectionSlice = createSlice({
                             year: "202- (Unannounced)"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 }
             ]
         },
@@ -5074,7 +5074,7 @@ const sectionSlice = createSlice({
                         "Trevante Rhodes",
                         "John Malkovich"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/pDKFL1zcHzEpmz4MJA5JJnRbJeD.jpg"
                 },
                 {
                     title: "Extraction",
@@ -5108,7 +5108,7 @@ const sectionSlice = createSlice({
                         "Rudhraksh Jaiswal",
                         "Randeep Hooda"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/1R6cvRtZgsYCkh8UFuWFN33xBP4.jpg"
                 },
                 {
                     title: "The Irishman",
@@ -5145,7 +5145,7 @@ const sectionSlice = createSlice({
                         "Al Pacino",
                         "Joe Pesci"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/1RDto0tLo8Fhq7OcwgDaM7nECb7.jpg"
                 },
                 {
                     title: "The Old Guard",
@@ -5180,7 +5180,7 @@ const sectionSlice = createSlice({
                         "KiKi Layne",
                         "Veronica Ngo"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/m0ObOaJBerZ3Unc74l471ar8Iiy.jpg"
                 },
                 {
                     title: "The Kissing Booth",
@@ -5212,7 +5212,7 @@ const sectionSlice = createSlice({
                         "Joel Courtney",
                         "Jacob Elordi"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/aqrDUkuzksLhOD8pbyBXLO0dz5t.jpg"
                 },
                 {
                     title: "Enola Holmes",
@@ -5248,7 +5248,7 @@ const sectionSlice = createSlice({
                         "Henry Cavill",
                         "Sam Claflin"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/kMe4TKMDNXTKptQPAdOF0oZHq3V.jpg"
                 },
                 {
                     title: "Ludo",
@@ -5280,7 +5280,7 @@ const sectionSlice = createSlice({
                         "Abhishek Bachchan",
                         "Inayat Verma"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/8C8EsEClcgBT1NGGTwiRBbsF5HV.jpg"
                 },
                 {
                     title: "Bulbbul",
@@ -5314,7 +5314,7 @@ const sectionSlice = createSlice({
                         "Rahul Bose",
                         "Avinash Tiwary"
                     ],
-                    ageRating: "U/A 7+"
+                    ageRating: "U/A 7+", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/rfxj5AoOuvbqi0019TVZLy6gyCC.jpg"
                 },
                 {
                     title: "Choked: Paisa Bolta Hai",
@@ -5344,7 +5344,7 @@ const sectionSlice = createSlice({
                         "Rajshri Deshpande",
                         "Amruta Subhash"
                     ],
-                    ageRating: "U/A 12+"
+                    ageRating: "U/A 12+", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/6jCOU7gnjS1z8izCwRrdHn0CXwq.jpg"
                 },
                 {
                     title: "Guilty",
@@ -5373,7 +5373,7 @@ const sectionSlice = createSlice({
                         "Gurfateh Pirzada",
                         "Akansha Ranjan Kapoor"
                     ],
-                    ageRating: "U/A 10+"
+                    ageRating: "U/A 10+", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/t7yjtDJXAxc0p5awbRGoWCOewsm.jpg"
                 },
                 {
                     title: "Pagglait",
@@ -5403,7 +5403,7 @@ const sectionSlice = createSlice({
                         "Shruti Sharma",
                         "Chetan Sharma"
                     ],
-                    ageRating: "U/A 10+"
+                    ageRating: "U/A 10+", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/fbALWEldsKHueCvEjHqarf9rmiM.jpg"
                 },
                 {
                     title: "Haseen Dillruba",
@@ -5434,7 +5434,7 @@ const sectionSlice = createSlice({
                         "Vikrant Massey",
                         "Harshvardhan Rane"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/ohBudODLg90h2R8jQf4DvfGjY4A.jpg"
                 }
             ],
             shows: [
@@ -5488,7 +5488,7 @@ const sectionSlice = createSlice({
                             year: "2019"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/qtac9X9lSLqZFbxS71347N8MiID.jpg"
                 },
                 {
                     title: "GHOUL",
@@ -5534,7 +5534,7 @@ const sectionSlice = createSlice({
                             year: "2018"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/lnNj4ysMDiY9kcYpT5NN2QdBBBw.jpg"
                 },
                 {
                     title: "Betaal",
@@ -5578,7 +5578,7 @@ const sectionSlice = createSlice({
                             year: "2020"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/tPUEME9NpRo4l3lxdVJRwp5stx5.jpg"
                 },
                 {
                     title: "Delhi Crime",
@@ -5636,7 +5636,7 @@ const sectionSlice = createSlice({
                             year: "202- (Unannounced)"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/j6djmR4hi8ULL0xUPQN4ZVyzgVN.jpg"
                 },
                 {
                     title: "House of Secrets: The Burari Deaths",
@@ -5679,7 +5679,7 @@ const sectionSlice = createSlice({
                             year: "2021"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/e7YjhjWFp9gmYvET6oZZ9Auod5h.jpg"
                 },
                 {
                     title: "The Railway Men - The Untold Story of Bhopal 1984",
@@ -5721,7 +5721,7 @@ const sectionSlice = createSlice({
                             year: "2023"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/s7dpEDsAan8mvC5cikvWidOupsO.jpg"
                 },
                 {
                     title: "Nobody Wants This",
@@ -5764,7 +5764,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/xG5TbIDNjM6GKOcK7kFARNnf8KX.jpg"
                 },
                 {
                     title: "Monsters",
@@ -5809,7 +5809,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/h324Kf6pjDzGQiUrc4W2r4YcD9L.jpg"
                 },
                 {
                     title: "Heartstopper",
@@ -5867,7 +5867,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/w1beuDq08J0zUmi5uJPMvpWK9rv.jpg"
                 },
                 {
                     title: "Lucifer",
@@ -5946,7 +5946,7 @@ const sectionSlice = createSlice({
                             year: "2021"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/aDBRtunw49UF4XmqfyNuD9nlYIu.jpg"
                 },
                 {
                     title: "Stranger Things",
@@ -6020,7 +6020,7 @@ const sectionSlice = createSlice({
                             year: "202- (Unannounced)"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/56v2KjBlU4XaOv9rVYEQypROD7P.jpg"
                 },
                 {
                     title: "Cobra Kai",
@@ -6101,7 +6101,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/zymbuoBoL1i94xAOzVJF6IuWLfD.jpg"
                 }
             ]
         },
@@ -6144,7 +6144,7 @@ const sectionSlice = createSlice({
                         "Vikrant Massey",
                         "Akash Khurana"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/as8fZuf0c8V2iMO43kw13hc6a9V.jpg"
                 },
                 {
                     title: "Stree 2",
@@ -6180,7 +6180,7 @@ const sectionSlice = createSlice({
                         "Shraddha Kapoor",
                         "Aparshakti Khurana"
                     ],
-                    ageRating: "U/A 12+"
+                    ageRating: "U/A 12+", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/jDxqjLUBpOVeKhLPJFKSyneKwF7.jpg"
                 },
                 {
                     title: "Phir Aayi Hasseen Dillruba",
@@ -6216,7 +6216,7 @@ const sectionSlice = createSlice({
                         "Vikrant Massey",
                         "Sunny Kaushal"
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/qWyNNd4uAr8tta2Hd5Toiz14fVl.jpg"
                 },
                 {
                     title: "CTRL",
@@ -6251,7 +6251,7 @@ const sectionSlice = createSlice({
                         "Vihaan Samat",
                         "Devika Vatsa"
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/cVTW8yQcIUPQ8lGnIgAa4Jx5dNw.jpg"
                 },
                 {
                     title: "Ulajh",
@@ -6286,7 +6286,7 @@ const sectionSlice = createSlice({
                         "Gulshan Devaiah",
                         "Roshan Mathew"
                     ],
-                    ageRating: "U/A 12+"
+                    ageRating: "U/A 12+", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/gOvb0MWKeg97AWr7Cpvi3aDnB0r.jpg"
                 },
                 {
                     title: "Wolfs",
@@ -6326,7 +6326,7 @@ const sectionSlice = createSlice({
                         "Brad Pitt",
                         "Austin Abrams"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/c7K0gjcbUMQdW7DV8kRCi1mmv75.jpg"
                 },
                 {
                     title: "The Crow",
@@ -6366,7 +6366,7 @@ const sectionSlice = createSlice({
                         "FKA twigs",
                         "Danny Huston"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/Asg2UUwipAdE87MxtJy7SQo08XI.jpg"
                 },
                 {
                     title: "Speak No Evil",
@@ -6405,7 +6405,7 @@ const sectionSlice = createSlice({
                         "Mackenzie Davis",
                         "James McAvoy"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/1fL2S8LKxCVE9KoPRBXeagmBtex.jpg"
                 },
                 {
                     title: "The Substance",
@@ -6445,7 +6445,7 @@ const sectionSlice = createSlice({
                         "Margaret Qualley",
                         "Dennis Quaid"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/jlWk4J1sV1EHgkjhvsN7EdzGvOx.jpg"
                 },
                 {
                     title: "Kill 'em All 2",
@@ -6482,7 +6482,7 @@ const sectionSlice = createSlice({
                         "Jacqueline Fernandez",
                         "Andrei Lenart"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/wh1IhMWkW7u5c5bkzSGFylF9G8r.jpg"
                 }
             ],
             shows: [
@@ -6547,7 +6547,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/3dV7pWAdwIPKR2lMIACMfObXdgK.jpg"
                 },
                 {
                     title: "Panchayat",
@@ -6608,7 +6608,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/lM9LGo4qnpOl0l94hE0DLXbcaXn.jpg"
                 },
                 {
                     title: "IC 814: The Kandahar Hijack",
@@ -6652,7 +6652,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/fzq5QiEtx8MCtQ4yTZzWbJHnstr.jpg"
                 },
                 {
                     title: "The Great Indian Kapil Show",
@@ -6704,7 +6704,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/lPVM7LR0ydKVj2qzdsVgi1akjom.jpg"
                 },
                 {
                     title: "Tribhuvan Mishra CA Topper",
@@ -6751,7 +6751,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/gtgE02vlDumpMBjJRlZlvf2spfY.jpg"
                 },
                 {
                     title: "The Lord of the Rings: The Rings of Power",
@@ -6807,7 +6807,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/NNC08YmJFFlLi1prBkK8quk3dp.jpg"
                 },
                 {
                     title: "Nobody Wants This",
@@ -6853,7 +6853,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/xG5TbIDNjM6GKOcK7kFARNnf8KX.jpg"
                 },
                 {
                     title: "Monsters",
@@ -6901,7 +6901,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/h324Kf6pjDzGQiUrc4W2r4YcD9L.jpg"
                 },
                 {
                     title: "Heartstopper",
@@ -6962,7 +6962,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/w1beuDq08J0zUmi5uJPMvpWK9rv.jpg"
                 },
                 {
                     title: "The Boys",
@@ -7038,7 +7038,7 @@ const sectionSlice = createSlice({
                             year: "202- (Unannounced)"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/7cqKGQMnNabzOpi7qaIgZvQ7NGV.jpg"
                 }
             ]
         },
@@ -7083,7 +7083,7 @@ const sectionSlice = createSlice({
                         "Gracy Singh",
                         "Rachel Shelley"
                     ],
-                    ageRating: "U/A 7+"
+                    ageRating: "U/A 7+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Dunki",
@@ -7120,7 +7120,7 @@ const sectionSlice = createSlice({
                         "Taapsee Pannu",
                         "Vikram Kochhar"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Aladin",
@@ -7153,7 +7153,7 @@ const sectionSlice = createSlice({
                         "Amitabh Bachchan",
                         "Jacqueline Fernandez"
                     ],
-                    ageRating: "U/A 12+"
+                    ageRating: "U/A 12+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Dhamaal",
@@ -7188,7 +7188,7 @@ const sectionSlice = createSlice({
                         "Arshad Warsi",
                         "Javed Jaffrey"
                     ],
-                    ageRating: "U/A 10+"
+                    ageRating: "U/A 10+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Table No. 21",
@@ -7223,7 +7223,7 @@ const sectionSlice = createSlice({
                         "Rajeev Khandelwal",
                         "Tina Desai"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Wild Wild Punjab",
@@ -7258,7 +7258,7 @@ const sectionSlice = createSlice({
                         "Sunny Singh",
                         "Jassie Gill"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "The Garfield Movie",
@@ -7298,7 +7298,7 @@ const sectionSlice = createSlice({
                         "Samuel L. Jackson",
                         "Hannah Waddingham"
                     ],
-                    ageRating: "U/A 7+"
+                    ageRating: "U/A 7+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Transformers One",
@@ -7338,7 +7338,7 @@ const sectionSlice = createSlice({
                         "Brian Tyree Henry",
                         "Scarlett Johansson"
                     ],
-                    ageRating: "U/A 7+"
+                    ageRating: "U/A 7+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Twisters",
@@ -7378,7 +7378,7 @@ const sectionSlice = createSlice({
                         "Glen Powell",
                         "Anthony Ramos"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Kingdom of the Planet of the Apes",
@@ -7418,7 +7418,7 @@ const sectionSlice = createSlice({
                         "Freya Allan",
                         "Kevin Durand"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Furiosa: A Mad Max Saga",
@@ -7458,7 +7458,7 @@ const sectionSlice = createSlice({
                         "Chris Hemsworth",
                         "Tom Burke"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Godzilla x Kong: The New Empire",
@@ -7498,7 +7498,7 @@ const sectionSlice = createSlice({
                         "Brian Tyree Henry",
                         "Dan Stevens"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 }
             ],
             shows: []
@@ -7542,7 +7542,7 @@ const sectionSlice = createSlice({
                         "Tiger Shroff",
                         "Ashutosh Rana"
                     ],
-                    ageRating: "U/A 12+"
+                    ageRating: "U/A 12+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Jawan",
@@ -7580,7 +7580,7 @@ const sectionSlice = createSlice({
                         "Nayanthara",
                         "Vijay Sethupathi"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Don 2",
@@ -7615,7 +7615,7 @@ const sectionSlice = createSlice({
                         "Priyanka Chopra Jonas",
                         "Boman Irani"
                     ],
-                    ageRating: "U/A 12+"
+                    ageRating: "U/A 12+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Raees",
@@ -7654,7 +7654,7 @@ const sectionSlice = createSlice({
                         "Mahira Khan",
                         "Nawazuddin Siddiqui"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Bang Bang!",
@@ -7690,7 +7690,7 @@ const sectionSlice = createSlice({
                         "Katrina Kaif",
                         "Danny Denzongpa"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Attack",
@@ -7728,7 +7728,7 @@ const sectionSlice = createSlice({
                         "Serena Walia",
                         "Rakul Preet Singh"
                     ],
-                    ageRating: "U/A 12+"
+                    ageRating: "U/A 12+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "The Dark Knight",
@@ -7767,7 +7767,7 @@ const sectionSlice = createSlice({
                         "Heath Ledger",
                         "Michael Caine"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "The Dark Knight Rises",
@@ -7806,7 +7806,7 @@ const sectionSlice = createSlice({
                         "Michael Caine",
                         "Gary Oldman"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Jurassic World",
@@ -7845,7 +7845,7 @@ const sectionSlice = createSlice({
                         "Bryce Dallas Howard",
                         "Irrfan Khan"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "John Wick",
@@ -7883,7 +7883,7 @@ const sectionSlice = createSlice({
                         "Michael Nyqvist",
                         "Alfie Allen"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "The Maze Runner",
@@ -7921,7 +7921,7 @@ const sectionSlice = createSlice({
                         "Kaya Scodelario",
                         "Aml Ameen"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "World War Z",
@@ -7960,7 +7960,7 @@ const sectionSlice = createSlice({
                         "Mireille Enos",
                         "Daniella Kertesz"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 }
             ],
             shows: []
@@ -8002,7 +8002,7 @@ const sectionSlice = createSlice({
                         "Nayanthara",
                         "Vijay Sethupathi"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Pathaan",
@@ -8038,7 +8038,7 @@ const sectionSlice = createSlice({
                         "Deepika Padukone",
                         "John Abraham"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Tu Jhoothi Main Makkaar",
@@ -8071,7 +8071,7 @@ const sectionSlice = createSlice({
                         "Shraddha Kapoor",
                         "Anubhav Singh Bassi"
                     ],
-                    ageRating: "U/A 12+"
+                    ageRating: "U/A 12+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "12th Fail",
@@ -8103,7 +8103,7 @@ const sectionSlice = createSlice({
                         "Medha Shankr",
                         "Anant Joshi"
                     ],
-                    ageRating: "U/A 10+"
+                    ageRating: "U/A 10+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Chor Nikal Ke Bhaga",
@@ -8133,7 +8133,7 @@ const sectionSlice = createSlice({
                         "Sunny Kaushal",
                         "Sharad Kelkar"
                     ],
-                    ageRating: "U/A 7+"
+                    ageRating: "U/A 7+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Animal",
@@ -8168,7 +8168,7 @@ const sectionSlice = createSlice({
                         "Rashmika Mandanna",
                         "Anil Kapoor"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 }
             ],
             shows: [
@@ -8212,7 +8212,7 @@ const sectionSlice = createSlice({
                             year: "2023"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "The Railway Men - The Untold Story of Bhopal 1984",
@@ -8254,7 +8254,7 @@ const sectionSlice = createSlice({
                             year: "2023"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Aspirants",
@@ -8300,7 +8300,7 @@ const sectionSlice = createSlice({
                             year: "2023"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Permanent Roommates",
@@ -8354,7 +8354,7 @@ const sectionSlice = createSlice({
                             year: "2023"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Hostel Daze",
@@ -8419,7 +8419,7 @@ const sectionSlice = createSlice({
                             year: "2023"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Guns & Gulaabs",
@@ -8462,7 +8462,7 @@ const sectionSlice = createSlice({
                             year: "2023"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 }
             ]
         },
@@ -8508,7 +8508,7 @@ const sectionSlice = createSlice({
                         "Paresh Rawal",
                         "Yami Gautam"
                     ],
-                    ageRating: "U/A 12+"
+                    ageRating: "U/A 12+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "My Name Is Khan",
@@ -8546,7 +8546,7 @@ const sectionSlice = createSlice({
                         "Kajol",
                         "Arjan Aujla"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "State of Siege: Temple Attack",
@@ -8577,7 +8577,7 @@ const sectionSlice = createSlice({
                         "Gautam Rode",
                         "Vivek Dahiya"
                     ],
-                    ageRating: "U/A 10+"
+                    ageRating: "U/A 10+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Bhaag Milkha Bhaag",
@@ -8615,7 +8615,7 @@ const sectionSlice = createSlice({
                         "Sonam Kapoor Ahuja",
                         "Divya Dutta"
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Lagaan: Once Upon a Time in India",
@@ -8653,7 +8653,7 @@ const sectionSlice = createSlice({
                         "Gracy Singh",
                         "Rachel Shelley"
                     ],
-                    ageRating: "U/A 7+"
+                    ageRating: "U/A 7+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Shershaah",
@@ -8685,7 +8685,7 @@ const sectionSlice = createSlice({
                         "Kiara Advani",
                         "Shataf Figar"
                     ],
-                    ageRating: "U/A 12+"
+                    ageRating: "U/A 12+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Titanic",
@@ -8724,7 +8724,7 @@ const sectionSlice = createSlice({
                         "Kate Winslet",
                         "Billy Zane"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "The Wolf of Wall Street",
@@ -8764,7 +8764,7 @@ const sectionSlice = createSlice({
                         "Jonah Hill",
                         "Margot Robbie"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "The Revenant",
@@ -8803,7 +8803,7 @@ const sectionSlice = createSlice({
                         "Tom Hardy",
                         "Domhnall Gleeson"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "The Intouchables",
@@ -8840,7 +8840,7 @@ const sectionSlice = createSlice({
                         "Omar Sy",
                         "Dominique Henry"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "The Imitation Game",
@@ -8880,7 +8880,7 @@ const sectionSlice = createSlice({
                         "Keira Knightley",
                         "Matthew Goode"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Bohemian Rhapsody",
@@ -8919,7 +8919,7 @@ const sectionSlice = createSlice({
                         "Gwilym Lee",
                         "Ben Hardy"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 }
             ],
             shows: []
@@ -8958,7 +8958,7 @@ const sectionSlice = createSlice({
                         "John Abraham",
                         "Paresh Rawal"
                     ],
-                    ageRating: "U/A 10+"
+                    ageRating: "U/A 10+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Bhool Bhulaiyaa",
@@ -8994,7 +8994,7 @@ const sectionSlice = createSlice({
                         "Vidya Balan",
                         "Shiney Ahuja"
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Bhagam Bhag",
@@ -9027,7 +9027,7 @@ const sectionSlice = createSlice({
                         "Govinda",
                         "Paresh Rawal"
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Chup Chup Ke",
@@ -9059,7 +9059,7 @@ const sectionSlice = createSlice({
                         "Paresh Rawal",
                         "Rajpal Yadav"
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "De Dana Dan",
@@ -9091,7 +9091,7 @@ const sectionSlice = createSlice({
                         "Suniel Shetty",
                         "Katrina Kaif"
                     ],
-                    ageRating: "U/A 12+"
+                    ageRating: "U/A 12+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Hera Pheri",
@@ -9121,7 +9121,7 @@ const sectionSlice = createSlice({
                         "Suniel Shetty",
                         "Paresh Rawal"
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "The Hangover",
@@ -9158,7 +9158,7 @@ const sectionSlice = createSlice({
                         "Ed Helms",
                         "Zach Galifianakis"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Zombieland",
@@ -9196,7 +9196,7 @@ const sectionSlice = createSlice({
                         "Woody Harrelson",
                         "Emma Stone"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "21 Jump Street",
@@ -9236,7 +9236,7 @@ const sectionSlice = createSlice({
                         "Channing Tatum",
                         "Brie Larson"
                     ],
-                    ageRating: "A-Rated"
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "The Mask",
@@ -9275,7 +9275,7 @@ const sectionSlice = createSlice({
                         "Peter Greene",
                         "Cameron Diaz"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Ghostbusters",
@@ -9313,7 +9313,7 @@ const sectionSlice = createSlice({
                         "Dan Aykroyd",
                         "Sigourney Weaver"
                     ],
-                    ageRating: "U/A 7+"
+                    ageRating: "U/A 7+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Mean Girls",
@@ -9352,7 +9352,7 @@ const sectionSlice = createSlice({
                         "Rachel McAdams",
                         "Lizzy Caplan"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 }
             ],
             shows: []
@@ -9395,7 +9395,7 @@ const sectionSlice = createSlice({
                         "Fatima Sana Shaikh",
                         "Sanya Malhotra"
                     ],
-                    ageRating: "U/A 7+"
+                    ageRating: "U/A 7+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "English Vinglish",
@@ -9427,7 +9427,7 @@ const sectionSlice = createSlice({
                         "Adil Hussain",
                         "Mehdi Nebbou"
                     ],
-                    ageRating: "U/A 7+"
+                    ageRating: "U/A 7+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Kapoor & Sons",
@@ -9459,7 +9459,7 @@ const sectionSlice = createSlice({
                         "Fawad Khan",
                         "Alia Bhatt"
                     ],
-                    ageRating: "U/A 12+"
+                    ageRating: "U/A 12+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Welcome",
@@ -9492,7 +9492,7 @@ const sectionSlice = createSlice({
                         "Katrina Kaif",
                         "Anil Kapoor"
                     ],
-                    ageRating: "U/A 12+"
+                    ageRating: "U/A 12+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Golmaal – Fun Unlimited",
@@ -9525,7 +9525,7 @@ const sectionSlice = createSlice({
                         "Arshad Warsi",
                         "Sharman Joshi"
                     ],
-                    ageRating: "U/A 12+"
+                    ageRating: "U/A 12+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Bhoothnath",
@@ -9553,7 +9553,7 @@ const sectionSlice = createSlice({
                         "Aman Siddiqui",
                         "Juhi Chawla Mehta"
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "movie", backdropNoLang: ""
                 }
             ],
             shows: [
@@ -9613,7 +9613,7 @@ const sectionSlice = createSlice({
                             year: "2019"
                         }
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Malcolm in the Middle",
@@ -9701,7 +9701,7 @@ const sectionSlice = createSlice({
                             year: "2005"
                         }
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Young Sheldon",
@@ -9788,7 +9788,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "A Series of Unfortunate Events",
@@ -9848,7 +9848,7 @@ const sectionSlice = createSlice({
                             year: "2019"
                         }
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "iCarly",
@@ -9906,7 +9906,7 @@ const sectionSlice = createSlice({
                             year: "2023"
                         }
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Planet Earth II",
@@ -9949,7 +9949,7 @@ const sectionSlice = createSlice({
                             year: "2016"
                         }
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Girl Meets World",
@@ -10007,7 +10007,7 @@ const sectionSlice = createSlice({
                             year: "2016"
                         }
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "The Thundermans",
@@ -10073,7 +10073,7 @@ const sectionSlice = createSlice({
                             year: "2016"
                         }
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Fuller House",
@@ -10147,7 +10147,7 @@ const sectionSlice = createSlice({
                             year: "2019"
                         }
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Man Vs Bee",
@@ -10188,7 +10188,7 @@ const sectionSlice = createSlice({
                             year: "2022"
                         }
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Percy Jackson and the Olympians",
@@ -10241,7 +10241,7 @@ const sectionSlice = createSlice({
                             year: "202- (Unannounced)"
                         }
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "My Wife and Kids",
@@ -10311,7 +10311,7 @@ const sectionSlice = createSlice({
                             year: "2004"
                         }
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "show", backdropNoLang: ""
                 }
             ]
         },
@@ -10356,7 +10356,7 @@ const sectionSlice = createSlice({
                         "Abhay Deol",
                         "Farhan Akhtar"
                     ],
-                    ageRating: "U/A 12+"
+                    ageRating: "U/A 12+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "PK",
@@ -10391,7 +10391,7 @@ const sectionSlice = createSlice({
                         "Anushka Sharma",
                         "Saurabh Shukla"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Yeh Jawaani Hai Deewani",
@@ -10425,7 +10425,7 @@ const sectionSlice = createSlice({
                         "Deepika Padukone",
                         "Aditya Roy Kapur"
                     ],
-                    ageRating: "U/A 12+"
+                    ageRating: "U/A 12+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Chhichhore",
@@ -10455,7 +10455,7 @@ const sectionSlice = createSlice({
                         "Shraddha Kapoor",
                         "Tahir Raj Bhasin"
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Love Aaj Kal",
@@ -10490,7 +10490,7 @@ const sectionSlice = createSlice({
                         "Deepika Padukone",
                         "Rishi Kapoor"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Golmaal 3",
@@ -10522,7 +10522,7 @@ const sectionSlice = createSlice({
                         "Arshad Warsi",
                         "Shreyas Talpade"
                     ],
-                    ageRating: "U/A 7+"
+                    ageRating: "U/A 7+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Forrest Gump",
@@ -10558,7 +10558,7 @@ const sectionSlice = createSlice({
                         "Robin Wright",
                         "Gary Sinise"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Finding Nemo",
@@ -10594,7 +10594,7 @@ const sectionSlice = createSlice({
                         "Ellen DeGeneres",
                         "Alexander Gould"
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Toy Story",
@@ -10630,7 +10630,7 @@ const sectionSlice = createSlice({
                         "Tim Allen",
                         "Don Rickles"
                     ],
-                    ageRating: "U-Rated"
+                    ageRating: "U-Rated", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "Green Book",
@@ -10666,7 +10666,7 @@ const sectionSlice = createSlice({
                         "Mahershala Ali",
                         "Linda Cardellini"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "The Simpsons Movie",
@@ -10702,7 +10702,7 @@ const sectionSlice = createSlice({
                         "Julie Kavner",
                         "Nancy Cartwright"
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
                 },
                 {
                     title: "The Lego Movie",
@@ -10737,7 +10737,7 @@ const sectionSlice = createSlice({
                         "Elizabeth Banks",
                         "Will Ferrell"
                     ],
-                    ageRating: "U/A 7+"
+                    ageRating: "U/A 7+", type: "movie", backdropNoLang: ""
                 }
             ],
             shows: [
@@ -10804,7 +10804,7 @@ const sectionSlice = createSlice({
                             year: "2023"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "FLAMES",
@@ -10870,7 +10870,7 @@ const sectionSlice = createSlice({
                             year: "2023"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Mismatched",
@@ -10918,7 +10918,7 @@ const sectionSlice = createSlice({
                             year: "2022"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Zindagi in Short",
@@ -10960,7 +10960,7 @@ const sectionSlice = createSlice({
                             year: "2020"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Taj Mahal 1989",
@@ -11003,7 +11003,7 @@ const sectionSlice = createSlice({
                             year: "2020"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Ladies Up",
@@ -11044,7 +11044,7 @@ const sectionSlice = createSlice({
                             year: "2020"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Nobody Wants This",
@@ -11087,7 +11087,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Heartstopper",
@@ -11145,7 +11145,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Sex/Life",
@@ -11193,7 +11193,7 @@ const sectionSlice = createSlice({
                             year: "2023"
                         }
                     ],
-                    ageRating: "U/A 13+"
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Girls5eva",
@@ -11251,7 +11251,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Never Have I Ever",
@@ -11317,7 +11317,7 @@ const sectionSlice = createSlice({
                             year: "2023"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 },
                 {
                     title: "Virgin River",
@@ -11388,7 +11388,7 @@ const sectionSlice = createSlice({
                             year: "2023"
                         }
                     ],
-                    ageRating: "U/A 17+"
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
                 }
             ]
         },
