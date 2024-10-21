@@ -1379,7 +1379,7 @@ const sectionSlice = createSlice({
             tabs: ['home', 'movie', 'show'],
             title: "New Releases",
             movieTitle: "Fresh Releases",
-            showTitle: "New Releases: Shows",
+            showTitle: "New Arrivals",
             movies: [
                 {
                     title: "Kill",
@@ -1415,7 +1415,7 @@ const sectionSlice = createSlice({
                         "Abhishek Chauhan",
                         "Pratap Verma"
                     ],
-                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/okVLmXL5y18dfN2R4ufMZEGaeCd.jpg"
                 },
                 {
                     title: "Sector 36",
@@ -1447,7 +1447,7 @@ const sectionSlice = createSlice({
                         "Vikrant Massey",
                         "Akash Khurana"
                     ],
-                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/as8fZuf0c8V2iMO43kw13hc6a9V.jpg"
                 },
                 {
                     title: "Stree 2",
@@ -1480,7 +1480,7 @@ const sectionSlice = createSlice({
                         "Shraddha Kapoor",
                         "Aparshakti Khurana"
                     ],
-                    ageRating: "U/A 12+", type: "movie", backdropNoLang: ""
+                    ageRating: "U/A 12+", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/jDxqjLUBpOVeKhLPJFKSyneKwF7.jpg"
                 },
                 {
                     title: "Maharaj",
@@ -1510,7 +1510,7 @@ const sectionSlice = createSlice({
                         "Jaideep Ahlawat",
                         "Sharvari Wagh"
                     ],
-                    ageRating: "U/A 16+", type: "movie", backdropNoLang: ""
+                    ageRating: "U/A 16+", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/9RdDCAdZ8PL2qo6pJGRU1vY0UYj.jpg"
                 },
                 {
                     title: "Phir Aayi Hasseen Dillruba",
@@ -1543,7 +1543,7 @@ const sectionSlice = createSlice({
                         "Vikrant Massey",
                         "Sunny Kaushal"
                     ],
-                    ageRating: "U-Rated", type: "movie", backdropNoLang: ""
+                    ageRating: "U-Rated", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/qWyNNd4uAr8tta2Hd5Toiz14fVl.jpg"
                 },
                 {
                     title: "Munjya",
@@ -1575,7 +1575,7 @@ const sectionSlice = createSlice({
                         "Sharvari Wagh",
                         "Ayush Ulagadde"
                     ],
-                    ageRating: "U/A 12+", type: "movie", backdropNoLang: ""
+                    ageRating: "U/A 12+", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/tjmE6ZzJqfGynRvTYa55IM5e7Xc.jpg"
                 },
                 {
                     title: "Inside Out 2",
@@ -1612,7 +1612,7 @@ const sectionSlice = createSlice({
                         "Maya Hawke",
                         "Kensington Tallman"
                     ],
-                    ageRating: "U/A 7+", type: "movie", backdropNoLang: ""
+                    ageRating: "U/A 7+", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/p5ozvmdgsmbWe0H8Xk7Rc8SCwAB.jpg"
                 },
                 {
                     title: "Deadpool & Wolverine",
@@ -1648,7 +1648,7 @@ const sectionSlice = createSlice({
                         "Hugh Jackman",
                         "Emma Corrin"
                     ],
-                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/yDHYTfA3R0jFYba16jBB1ef8oIt.jpg"
                 },
                 {
                     title: "Bad Boys: Ride or Die",
@@ -1685,7 +1685,7 @@ const sectionSlice = createSlice({
                         "Martin Lawrence",
                         "Vanessa Hudgens"
                     ],
-                    ageRating: "A-Rated", type: "movie", backdropNoLang: ""
+                    ageRating: "A-Rated", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/tncbMvfV0V07UZozXdBEq4Wu9HH.jpg"
                 },
                 {
                     title: "A Quiet Place: Day One",
@@ -1722,7 +1722,7 @@ const sectionSlice = createSlice({
                         "Joseph Quinn",
                         "Alex Wolff"
                     ],
-                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/6XjMwQTvnICBz6TguiDKkDVHvgS.jpg"
                 },
                 {
                     title: "Despicable Me 4",
@@ -1759,7 +1759,7 @@ const sectionSlice = createSlice({
                         "Kristen Wiig",
                         "Will Ferrell"
                     ],
-                    ageRating: "U/A 7+", type: "movie", backdropNoLang: ""
+                    ageRating: "U/A 7+", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/lgkPzcOSnTvjeMnuFzozRO5HHw1.jpg"
                 },
                 {
                     title: "Twisters",
@@ -1796,7 +1796,7 @@ const sectionSlice = createSlice({
                         "Glen Powell",
                         "Anthony Ramos"
                     ],
-                    ageRating: "U/A 13+", type: "movie", backdropNoLang: ""
+                    ageRating: "U/A 13+", type: "movie", backdropNoLang: "https://image.tmdb.org/t/p/original/7aPrv2HFssWcOtpig5G3HEVk3uS.jpg"
                 }
             ],
             shows: [
@@ -1858,7 +1858,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/3dV7pWAdwIPKR2lMIACMfObXdgK.jpg"
                 },
                 {
                     title: "Panchayat",
@@ -1916,7 +1916,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/lM9LGo4qnpOl0l94hE0DLXbcaXn.jpg"
                 },
                 {
                     title: "IC 814: The Kandahar Hijack",
@@ -1957,7 +1957,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/fzq5QiEtx8MCtQ4yTZzWbJHnstr.jpg"
                 },
                 {
                     title: "Chacha Vidhayak Hain Humare",
@@ -2060,7 +2060,7 @@ const sectionSlice = createSlice({
                             year: "202- (Unannounced)"
                         }
                     ],
-                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/z0F11p7HBaIUizZHGzyZ32FLm7O.jpg"
                 },
                 {
                     title: "Tribhuvan Mishra CA Topper",
@@ -2104,7 +2104,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/gtgE02vlDumpMBjJRlZlvf2spfY.jpg"
                 },
                 {
                     title: "The Boys",
@@ -2177,7 +2177,7 @@ const sectionSlice = createSlice({
                             year: "202- (Unannounced)"
                         }
                     ],
-                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/7cqKGQMnNabzOpi7qaIgZvQ7NGV.jpg"
                 },
                 {
                     title: "The Umbrella Academy",
@@ -2243,7 +2243,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/7sqFEDDmK1hG5m92upolcfQxy7R.jpg"
                 },
                 {
                     title: "Cobra Kai",
@@ -2324,7 +2324,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/zymbuoBoL1i94xAOzVJF6IuWLfD.jpg"
                 },
                 {
                     title: "Arcane",
@@ -2377,7 +2377,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 13+", type: "show", backdropNoLang: ""
+                    ageRating: "U/A 13+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/wQEW3xLrQAThu1GvqpsKQyejrYS.jpg"
                 },
                 {
                     title: "The Lord of the Rings: The Rings of Power",
@@ -2430,7 +2430,7 @@ const sectionSlice = createSlice({
                             year: "2024"
                         }
                     ],
-                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/NNC08YmJFFlLi1prBkK8quk3dp.jpg"
                 },
                 {
                     title: "Bridgerton",
@@ -2495,7 +2495,7 @@ const sectionSlice = createSlice({
                             year: "202- (Unannounced)"
                         }
                     ],
-                    ageRating: "U/A 17+", type: "show", backdropNoLang: ""
+                    ageRating: "U/A 17+", type: "show", backdropNoLang: "https://image.tmdb.org/t/p/original/tdlHJ8KoOd9UgUygCWQ3fKRNkAR.jpg"
                 }
             ]
         },

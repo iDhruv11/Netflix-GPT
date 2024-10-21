@@ -47,6 +47,11 @@ const MainMovie = ({ mainMovieCollection }) => {
         }
     }, [])
 
+
+    useEffect( () => {
+
+    }, [mainMovieCollection])
+
     useEffect(() => {
 
         if (mainMovie.desc) {
@@ -196,7 +201,7 @@ const MainMovie = ({ mainMovieCollection }) => {
             }, 13500);
 
             setTimeout(() => {
-                if (isMounted.current && isMounted.current) {
+                if (isMounted.current) {
                     setShowVideo(true)
                 }
             }, 1000);
@@ -228,7 +233,7 @@ const MainMovie = ({ mainMovieCollection }) => {
                 <div className={`absolute pl-16 w-[40%] flex flex-col bottom-64 ${(mainMovie.desc) ? `gap-1` : `gap-4`}`}>
 
                     <ShimmerDiv mode="custom" height={"15rem"} width={"90%"} loading={!mainMovie.logo.src} from="#141414" via="#1c1c1c" to="#141414" border={0} rounded={"0.3"}>
-                        <div className={`${(minimize) ? `${mainMovie.logo.minWidth} translate-y-44 ` : `${mainMovie.logo.maxWidth}`} ${(mainMovie.isNetflixOriginal && mainMovie.title != "The Irishman") ? `mb-6` : `mb-0`} transition-all duration-1000 ease-linear transform-gpu`}>
+                        <div className={`${(minimize) ? `${mainMovie.logo.minWidth} translate-y-44 ` : `${mainMovie.logo.maxWidth}`} ${(mainMovie.isNetflixOriginal && mainMovie.title != "The Irishman") ? `mb-6` : `mb-1`} transition-all duration-1000 ease-linear transform-gpu`}>
                             <img src={`${mainMovie.logo.src}`} className="w-full" />
                         </div>
 

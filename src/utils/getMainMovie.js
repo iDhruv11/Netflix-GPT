@@ -1,9 +1,13 @@
 export const getMainMovie = (collection, setMainMovie) => {
-
+    
+    console.log(collection)
+    
     const shuffledCollection = [
-        ...collection.trendingIndia,
-        ...collection.netflix
+        ...collection.trendingIndia.groupOne,
+        ...collection.trendingIndia.groupTwo,
+        ...collection.netflix.content
     ]
+
     const index = Math.floor(Math.random() * shuffledCollection.length)
     const mainMovie = shuffledCollection[index]
 
@@ -29,7 +33,7 @@ export const getMainMovie = (collection, setMainMovie) => {
             maxWidth = `w-[38%]`
         }
         
-        if( collection.trendingIndia.length > 5){
+        if(collection.page == "home"){
             if(index > 4){
                 rank = (index - 5) + 1
             }
@@ -37,10 +41,10 @@ export const getMainMovie = (collection, setMainMovie) => {
                 rank = index + 1
             }
         }
-        else{
+        else {
             rank = index + 1
         }
-        
+
         setMainMovie({
 
             title: mainMovie.title,
@@ -51,7 +55,7 @@ export const getMainMovie = (collection, setMainMovie) => {
                 maxWidth
             },
             type: mainMovie.type,
-            isNetflixOriginal: (index >= collection.trendingIndia.length) ,
+            isNetflixOriginal: (index >= 10) ,
             rank,
             ageRating: mainMovie.ageRating,
             backdrop: mainMovie.backdropNoLang,

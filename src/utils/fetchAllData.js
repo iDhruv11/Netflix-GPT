@@ -12,7 +12,7 @@
             newRelease: [
                 "https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&language=en-US&page=1&primary_release_year=2024&primary_release_date.gte=2024-06-01&region=IN&sort_by=vote_count.desc&with_origin_country=IN&with_original_language=hi&year=2024",
 
-                "https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&language=en-US&page=1&primary_release_year=2024&primary_release_date.gte=2024-06-01&sort_by=vote_count.desc&with_original_language=en&year=2024",
+                "https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&language=en-US&page=1&primary_release_year=2024&primary_release_date.gte=2024-06-01&sort_by=vote_count.desc&with_original_language=en&year=2024&without_genres=16",
 
                 "https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&sort_by=vote_count.desc&with_origin_country=IN&with_original_language=hi&region=IN&page=1with_keywords=281372,283680&with_networks=213%7C1024%7C3373&air_date.gte=2024-04-01&without_genres=10767",
 

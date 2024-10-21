@@ -54,7 +54,7 @@ const extractInfoMovie = (isPosterNeeded, movie, sectionName) => {
         }
     }
 
-    const backdropNoLang = (sectionName == "trendingIndia" || sectionName == "netflix") ? `https://image.tmdb.org/t/p/original${movie["backdrop_path"]}` : ""
+    const backdropNoLang = (movie["backdrop_path"]) ? `https://image.tmdb.org/t/p/original${movie["backdrop_path"]}` : ""
 
     const backdrop = extractImage(movie.images.backdrops, 'backdrop')
     const logo = extractImage(movie.images.logos, 'logo')
@@ -109,7 +109,7 @@ const extractInfoShow = (isPosterNeeded, show, sectionName) => {
         "U/A 17+"
     ]
     
-    const backdropNoLang = (sectionName == "trendingIndia" || sectionName == "netflix") ? `https://image.tmdb.org/t/p/original${show["backdrop_path"]}` : ""
+    const backdropNoLang = (movie["backdrop_path"]) ? `https://image.tmdb.org/t/p/original${movie["backdrop_path"]}` : ""
 
     const videos = {
         clip: show.videos.results.find(({ site, type }) => site == 'YouTube' && type == 'Clip')?.key,
@@ -368,7 +368,7 @@ export const fetchCritic = async () => {
 export const fetchNetflix = async () => {                                           
     try{
 
-        const showUrlOne = 'https://api.themoviedb.org/3/discover/tv?&api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_networks=213&with_origin_country=IN&with_original_language=hi'
+        const showUrlOne = 'https://api.themoviedb.org/3/discover/tv?&api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_networks=213&with_origin_country=IN&with_original_language=hi&without_genres=99'
         const showUrlTwo = 'https://api.themoviedb.org/3/discover/tv?&api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=popularity.desc&with_networks=213&with_original_language=en'
 
 
