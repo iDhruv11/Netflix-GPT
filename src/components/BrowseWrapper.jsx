@@ -6,7 +6,11 @@ import { useEffect, useRef, useState } from "react"
 
 export const BrowseWrapper = () => {
 
+    const [hasScrolled, setHasScrolled] = useState(false)
+    const [page, setPage] = useState("home")
+
     const dispatcher = useDispatch()
+
     const areHomeSectionsLoaded = useSelector( store => store.contents.homeContent )
     const homeSections = useSelector( store => {
         return store.contents.keys.slice(0, 13).reduce( (acc, key) => {
@@ -14,7 +18,7 @@ export const BrowseWrapper = () => {
             return acc
         }, {})
     } )
-    const [hasScrolled, setHasScrolled] = useState(false)
+
     if(!areHomeSectionsLoaded){ 
         Object.keys(homeSections).every( (key) => homeSections[key].movies.length && homeSections[key].shows.length )
             ? dispatcher( setAreHomeSectionsLoaded(true) )
@@ -29,7 +33,7 @@ export const BrowseWrapper = () => {
     return (
         <div className="w-screen">
             {
-                (areHomeSectionsLoaded) && <Header hasScrolled={hasScrolled}/>
+                (areHomeSectionsLoaded) && <Header hasScrolled={hasScrolled} page={page} setPage={setPage}/>
             }
             <Outlet context={setHasScrolled}/>
         </div>

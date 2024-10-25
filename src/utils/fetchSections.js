@@ -54,7 +54,8 @@ const extractInfoMovie = (isPosterNeeded, movie, sectionName) => {
         }
     }
 
-    const backdropNoLang = (movie["backdrop_path"]) ? `https://image.tmdb.org/t/p/original${movie["backdrop_path"]}` : ""
+    const backdropNoLang = ( ["netflix", "trendingIndia", "directors"].includes(sectionName) ) ? `https://image.tmdb.org/t/p/original${movie["backdrop_path"]}` : ""
+
 
     const backdrop = extractImage(movie.images.backdrops, 'backdrop')
     const logo = extractImage(movie.images.logos, 'logo')
@@ -109,7 +110,7 @@ const extractInfoShow = (isPosterNeeded, show, sectionName) => {
         "U/A 17+"
     ]
     
-    const backdropNoLang = (movie["backdrop_path"]) ? `https://image.tmdb.org/t/p/original${movie["backdrop_path"]}` : ""
+    const backdropNoLang = ( ["netflix", "trendingIndia", "directors"].includes(sectionName) ) ? `https://image.tmdb.org/t/p/original${movie["backdrop_path"]}` : ""
 
     const videos = {
         clip: show.videos.results.find(({ site, type }) => site == 'YouTube' && type == 'Clip')?.key,
@@ -578,7 +579,7 @@ export const fetchDirectorSection = async (movieIdArray, director) => {
 
     const movieArray = await Promise.all(promiseArray)
 
-    const finalArray = movieArray.map( ({data}) => extractInfoMovie(false, data, director))
+    const finalArray = movieArray.map( ({data}) => extractInfoMovie(false, data, "directors"))
 
     dispatcher(addContent({
         key: director,

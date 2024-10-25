@@ -1,30 +1,26 @@
 export const getMainMovie = (collection, setMainMovie) => {
     
     console.log(collection)
-    
-    const shuffledCollection = [
-        ...collection.trendingIndia.groupOne,
-        ...collection.trendingIndia.groupTwo,
-        ...collection.netflix.content
-    ]
 
-    const index = Math.floor(Math.random() * shuffledCollection.length)
-    const mainMovie = shuffledCollection[index]
+    // const index = Math.floor(Math.random() * collection.content.length)
+    let index = Math.floor(Math.random() * collection.content.length)
+    if(collection.page == "director") index = 8
+    const mainMovie = collection.content[index]
 
     const logo = new Image()
     logo.src = mainMovie.logo.image
 
     logo.onload = () => {
 
-        const ratio = logo.naturalWidth/logo.naturalHeight
+        const aspectRatio = logo.naturalWidth/logo.naturalHeight
         let rank
         let minWidth, maxWidth
 
-        if(ratio >= 1.75){
+        if(aspectRatio >= 1.75){
             minWidth = `w-[55%]`
-            maxWidth = `w-[95%]`
+            maxWidth = (collection.page == "home") ? `w-[95%]` : `w-[85%]`
         }
-        else if(ratio >= 1.20 && ratio < 1.75){
+        else if(aspectRatio >= 1.20 && aspectRatio < 1.75){
             minWidth = `w-[40%]`
             maxWidth = `w-[55%]`
         }
@@ -45,6 +41,7 @@ export const getMainMovie = (collection, setMainMovie) => {
             rank = index + 1
         }
 
+
         setMainMovie({
 
             title: mainMovie.title,
@@ -52,14 +49,17 @@ export const getMainMovie = (collection, setMainMovie) => {
             logo: {
                 src: mainMovie.logo.image,
                 minWidth,
-                maxWidth
+                maxWidth,
+                aspectRatio,
             },
             type: mainMovie.type,
-            isNetflixOriginal: (index >= 10) ,
+            isNetflixOriginal: (index >= 10),
             rank,
             ageRating: mainMovie.ageRating,
             backdrop: mainMovie.backdropNoLang,
-            videoKey: mainMovie.videos?.clip || mainMovie.videos?.trailer || mainMovie.videos?.teaser || `ITeFJcFFEBQ`
+            videoKey: ["Black Friday", "Gulaal"].includes(mainMovie.title)
+                ?   `ITeFJcFFEBQ`
+                :   mainMovie.videos?.clip || mainMovie.videos?.trailer || mainMovie.videos?.teaser || `ITeFJcFFEBQ`
             
         })
     }

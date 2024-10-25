@@ -1,11 +1,11 @@
-import { useRef } from "react"
+import { useEffect, useRef } from "react"
 import { useSelector } from "react-redux"
 import { useOutletContext } from "react-router-dom"
 import { MainMovie } from "./MainMovie"
 import SuggestedMovies from "./SuggestedMovies"
 
 export const ShowsPage = () => {
-    
+
     const scrolledElement = useRef(null)
     const setHasScrolled = useOutletContext()
 
@@ -27,29 +27,28 @@ export const ShowsPage = () => {
             .filter( (show, index) => index <= 4)
     })
 
-    const mainMovieCollection = {
+    const mainMovieCollection = useSelector(store => {
+        return {
 
-        page: "movie",
-        trendingIndia: {
-            groupOne: trending,
-            groupTwo: newRelease,
-        },
-        netflix: {
-            content: netflix 
+            page: "shows",
+            content: [
+                ...trending,
+                ...newRelease,
+                ...netflix
+            ]
         }
-    }
+    })
 
-    const handleScroll = () => {
-        scrolledElement.current.scrollTop > 5 ? setHasScrolled(true) : setHasScrolled(false) 
-    } 
+    useEffect(() => {
+        setHasScrolled(true)
+    })
 
     return (
         <div
             className="relative bg-[#141414] w-screen h-screen overflow-y-scroll overflow-x-hidden custom-scrollbar"
             ref={scrolledElement}
-            onScroll={ handleScroll } 
         >
-            <MainMovie mainMovieCollection={mainMovieCollection}/>
+            <MainMovie mainMovieCollection={mainMovieCollection} bottom={`bottom-56`} />
             <SuggestedMovies />
         </div>
     )

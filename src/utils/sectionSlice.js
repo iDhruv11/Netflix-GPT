@@ -3,8 +3,10 @@ import { createSlice } from "@reduxjs/toolkit";
 const sectionSlice = createSlice({
     name: 'sections',
     initialState: {
+
         homeContent: true,
         keys: ['topRated', 'newRelease', 'popular', 'critic', 'netflix', 'trendingIndia', 'adventure', 'action', 'bestOfYear', 'trueStories', 'comedy', 'family', 'feelGood'],
+
         topRated: {
             tabs: ['home', 'movie', 'show'],
             title: "Top Rated",
@@ -11458,11 +11460,464 @@ const sectionSlice = createSlice({
         martin: {
             tabs: ['director'],
             title: "Masterpieces of Scorsese",
-            movies: [],
+            movies: [
+                {
+                    type:"movie",
+                    title:"GoodFellas",
+                    desc:"The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conw...",
+                    genres:[
+                        "Drama",
+                        "Crime"
+                    ],
+                    runtime:145,
+                    year:"1990",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"Pfcy15ZUE2c",
+                        trailer:"PTBRNXGQR9Q"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/ppF6t3eKHL0e6ggk3P8LhGav4fC.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/7TF4p86ZafnxFuNqWdhpHXFO244.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/inwc0dp4lg2YUirexKRYv6qlNU5.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "prison",
+                        "florida",
+                        "new york city"
+                    ],
+                    cast:[
+                        "Robert De Niro",
+                        "Ray Liotta",
+                        "Joe Pesci"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Raging Bull",
+                    desc:"The life of boxer Jake LaMotta, whose violence and temper that led him to the top in the ring destroyed his life outside of it.",
+                    genres:[
+                        "Drama"
+                    ],
+                    runtime:129,
+                    year:"1980",
+                    isMostLiked:false,
+                    videos:{
+                        clip:"MSspmsYAOq0",
+                        trailer:"G5RHRg6zEhY"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/gWT4iXWExkbjWiViJpsixCfOMOU.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/aAStHDJgD97k4g4Zf0NLqbAmrvZ.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/x3nWKOKCIoZkuUz0T1SfcrZ7eb8.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "jealousy",
+                        "transporter",
+                        "sports"
+                    ],
+                    cast:[
+                        "Robert De Niro",
+                        "Cathy Moriarty",
+                        "Joe Pesci"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Taxi Driver",
+                    desc:"A mentally unstable Vietnam War veteran works as a night-time taxi driver in New York City where the perceived decadence and sleaze feed his urge for violent action.",
+                    genres:[
+                        "Crime",
+                        "Drama"
+                    ],
+                    runtime:114,
+                    year:"1976",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"dB_5XEMH3mc",
+                        trailer:"zdqCqDSTVNI",
+                        teaser:"lbSisPcYQFQ"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/eWdEXjM7oIVIBI91C1ki4eTiWSU.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/6aoyUbvu0419XLKLIMoH0TkEicH.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/5jdAstL71FuDsG10HVI5a8NXftJ.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "drug dealer",
+                        "vietnam veteran",
+                        "new york city"
+                    ],
+                    cast:[
+                        "Robert De Niro",
+                        "Jodie Foster",
+                        "Cybill Shepherd"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"The Departed",
+                    desc:"To take down South Boston's Irish Mafia, the police send in one of their own to infiltrate the underworld, not realizing the syndicate has done likewise. While an undercover cop curries favor with the...",
+                    genres:[
+                        "Drama",
+                        "Thriller",
+                        "Crime"
+                    ],
+                    runtime:151,
+                    year:"2006",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"lZdsIpDa7zQ",
+                        trailer:"r-MiSNsCdQ4"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/bbT3xRFp0tX66e6X0eiQW3zRk1q.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/6WRrGYalXXveItfpnipYdayFkQB.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/hgwPIc6SntSABkOcVby7inDKRSw.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "police",
+                        "undercover",
+                        "gangster"
+                    ],
+                    cast:[
+                        "Leonardo DiCaprio",
+                        "Matt Damon",
+                        "Jack Nicholson"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Shutter Island",
+                    desc:"World War II soldier-turned-U.S. Marshal Teddy Daniels investigates the disappearance of a patient from a hospital for the criminally insane, but his efforts are compromised by troubling visions and a...",
+                    genres:[
+                        "Drama",
+                        "Thriller",
+                        "Mystery"
+                    ],
+                    runtime:138,
+                    year:"2010",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"x9lGthLqe3E",
+                        trailer:"qdPw9x9h5CY"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/A9lezV9kggHeRlIFkQZXnDFpUUA.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/rbZvGN1A1QyZuoKzhCw8QPmf2q0.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/hRtb8ju7S4xNP3s6RtDqyR1wn8j.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "island",
+                        "hurricane",
+                        "investigation"
+                    ],
+                    cast:[
+                        "Leonardo DiCaprio",
+                        "Mark Ruffalo",
+                        "Ben Kingsley"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"The Wolf of Wall Street",
+                    desc:"A New York stockbroker refuses to cooperate in a large securities fraud case involving corruption on Wall Street, corporate banking world and mob infiltration. Based on Jordan Belfort's autobiography.",
+                    genres:[
+                        "Crime",
+                        "Drama",
+                        "Comedy"
+                    ],
+                    runtime:180,
+                    year:"2013",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"RPORRudmQv0",
+                        trailer:"Slj4-Sv-YNA",
+                        teaser:"ryp0oKu31nE"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/br7n8b3ELexcvs6l30IH2x9P2ux.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/7Nwnmyzrtd0FkcRyPqmdzTPppQa.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/mCn3JT0FHgUaDpud79djjfF9wnX.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "corruption",
+                        "drug addiction",
+                        "anti hero"
+                    ],
+                    cast:[
+                        "Leonardo DiCaprio",
+                        "Jonah Hill",
+                        "Margot Robbie"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"The Irishman",
+                    desc:"Pennsylvania, 1956. Frank Sheeran, a war veteran of Irish origin who works as a truck driver, accidentally meets mobster Russell Bufalino. Once Frank becomes his trusted man, Bufalino sends him to Chi...",
+                    genres:[
+                        "Crime",
+                        "Drama",
+                        "History"
+                    ],
+                    runtime:209,
+                    year:"2019",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"Rn1Vtou_sU0",
+                        trailer:"RS3aHkkfuEI",
+                        teaser:"1Expe7hf6MU"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/4P6bqSY4goBnDleDLj7kLupyiW3.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/1RDto0tLo8Fhq7OcwgDaM7nECb7.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/bCAhNbPTDCj6g2ukijoySf7vNQL.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "chicago, illinois",
+                        "hitman",
+                        "pennsylvania, usa"
+                    ],
+                    cast:[
+                        "Robert De Niro",
+                        "Al Pacino",
+                        "Joe Pesci"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Gangs of New York",
+                    desc:"In 1863, Amsterdam Vallon returns to the Five Points of America to seek vengeance against the psychotic gangland kingpin, Bill the Butcher, who murdered his father years earlier. With an eager pickpoc...",
+                    genres:[
+                        "Drama",
+                        "History",
+                        "Crime"
+                    ],
+                    runtime:168,
+                    year:"2002",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"4s1vB_oPfpE",
+                        trailer:"1bjh979vVG0"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/rY3n4voBDv0Z62OTBgGGnCzjJDm.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/a2Aj5ksEo2HOUH3FbGyZCtaJM4C.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/gPduLazH0Tq61ZJxqX52rtTPamE.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "rescue",
+                        "immigrant",
+                        "ship"
+                    ],
+                    cast:[
+                        "Leonardo DiCaprio",
+                        "Daniel Day-Lewis",
+                        "Cameron Diaz"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Casino",
+                    desc:"In early-1970s Las Vegas, Sam \"Ace\" Rothstein gets tapped by his bosses to head the Tangiers Casino. At first, he's a great success in the job, but over the years, problems with his loose-cannon enfor...",
+                    genres:[
+                        "Crime",
+                        "Drama"
+                    ],
+                    runtime:179,
+                    year:"1995",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"5DazcjGF8L8",
+                        trailer:"AIRRDirf4KY"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/aeEFgmSW4X88SMHNEEWGzXpeXJr.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/iZGiMD0p1M2AOmzKknFo5bkuz94.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/uMZHu14lCEx5bjV2Sak87yO0OhB.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "drug abuse",
+                        "casino",
+                        "poker"
+                    ],
+                    cast:[
+                        "Robert De Niro",
+                        "Sharon Stone",
+                        "Joe Pesci"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"The Aviator",
+                    desc:"A biopic depicting the life of filmmaker and aviation pioneer Howard Hughes from 1927 to 1947, during which time he became a successful film producer and an aviation magnate, while simultaneously grow...",
+                    genres:[
+                        "Drama"
+                    ],
+                    runtime:170,
+                    year:"2004",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"ewBaj0A0YLM",
+                        trailer:"dkwypzOQf8o"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/smCxORGf5kKMeI2WI42PHJXrPWj.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/vVk0HV9HAqvvSfWiNGjpsOekLBS.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/bPLoV83JlLBGV7KgaQfynEtPKB4.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "ladykiller",
+                        "pilot",
+                        "biography"
+                    ],
+                    cast:[
+                        "Leonardo DiCaprio",
+                        "Cate Blanchett",
+                        "Kate Beckinsale"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Cape Fear",
+                    desc:"Sam Bowden is a small-town corporate attorney. Max Cady is a tattooed, cigar-smoking, Bible-quoting, psychotic rapist. What do they have in common? 14 years ago, Sam was a public defender assigned to ...",
+                    genres:[
+                        "Thriller",
+                        "Crime"
+                    ],
+                    runtime:128,
+                    year:"1991",
+                    isMostLiked:false,
+                    videos:{
+                        clip:"yR3WXcJN8aA",
+                        trailer:"mPsOIhZJug4"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/8jUqeHjGGk7RI8HpJBWRu7q4xkA.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/ntgpger7OwFNlEldxuvvFHDKzjW.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/wYvgaVmUioMTrTowBDvnQeNJ6Wf.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "prison",
+                        "daughter",
+                        "small town"
+                    ],
+                    cast:[
+                        "Robert De Niro",
+                        "Nick Nolte",
+                        "Jessica Lange"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Killers of the Flower Moon",
+                    desc:"When oil is discovered in 1920s Oklahoma under Osage Nation land, the Osage people are murdered one by one—until the FBI steps in to unravel the mystery.",
+                    genres:[
+                        "Crime",
+                        "History",
+                        "Drama"
+                    ],
+                    runtime:206,
+                    year:"2023",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"rt6rYhpKiX8",
+                        trailer:"1oZUCkJEuvo",
+                        teaser:"Lm73h0l1W2M"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/nQJ3RWiSMX5FB8wx4cIooR44B1s.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/acvE3RWjDLgvbL2RtcyzkrsAyNV.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/1byCcdBqQi9CI50xQTA4cjmVCxf.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "war veteran",
+                        "fbi",
+                        "greed"
+                    ],
+                    cast:[
+                        "Leonardo DiCaprio",
+                        "Robert De Niro",
+                        "Lily Gladstone"
+                    ],
+                    ageRating:"A-Rated"
+                }
+            ],
             shows: [],
             info: {
                 name: 'Martin Scorsese',
-                desc: 'A legend of American cinema, Scorsese is known for his deep character studies and powerful explorations of crime, guilt, and morality. His Dynamic cinematography and intense, emotionally charged and layered stories have produces iconic films.',
+                desc: 'A legend of American cinema, Scorsese is known for his deep character studies and powerful explorations of crime, guilt, and morality. His Dynamic cinematography and intense, emotionally charged and layered stories have produced iconic films.',
                 renowned: 'Globally',
                 knownFor: ['Taxi Driver', 'Goodfellas', 'The Departed'],
                 genres: ['Crime', 'Drama', 'Biographical'],
@@ -11472,7 +11927,457 @@ const sectionSlice = createSlice({
         tarantino: {
             tabs: ['director'],
             title: "Tarantino's Finest",
-            movies: [],
+            movies: [
+                {
+                    type:"movie",
+                    title:"Pulp Fiction",
+                    desc:"A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that i...",
+                    genres:[
+                        "Thriller",
+                        "Crime"
+                    ],
+                    runtime:154,
+                    year:"1994",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"r1bm09Xxr0Q",
+                        trailer:"tGpTpVyI_OQ"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/jlVOS4D6ledQGxGdL0EIte3TXfL.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/kpuNKsIzVbK3LDVo4iOJDAY0y7d.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "drug dealer",
+                        "boxer",
+                        "massage"
+                    ],
+                    cast:[
+                        "John Travolta",
+                        "Samuel L. Jackson",
+                        "Uma Thurman"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Inglourious Basterds",
+                    desc:"In Nazi-occupied France during World War II, a group of Jewish-American soldiers known as \"The Basterds\" are chosen specifically to spread fear throughout the Third Reich by scalping and brutally kill...",
+                    genres:[
+                        "Drama",
+                        "Thriller",
+                        "War"
+                    ],
+                    runtime:153,
+                    year:"2009",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"QFIUD3aq_do"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/e9RBxEVDxpPVaLFEOn6FnURARmJ.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/1Jpkm9qZcsT0mSyVXgs4VlGjPNI.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/ckZoF4j35HL1USGG2iX8GeQ7058.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "guerrilla warfare",
+                        "swastika",
+                        "paris, france"
+                    ],
+                    cast:[
+                        "Brad Pitt",
+                        "Mélanie Laurent",
+                        "Christoph Waltz"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Reservoir Dogs",
+                    desc:"A botched robbery indicates a police informant, and the pressure mounts in the aftermath at a warehouse. Crime begets violence as the survivors -- veteran Mr. White, newcomer Mr. Orange, psychopathic ...",
+                    genres:[
+                        "Crime",
+                        "Thriller"
+                    ],
+                    runtime:99,
+                    year:"1992",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"azwAJYpnKzQ",
+                        trailer:"2KLZ4fSXtgI"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/1lSflqaVdJA0rrlfiUzv4wIvYtc.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/jqFjgNnxpXIXWuPsyfqmcLXRo9p.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/gBtwDC7oE4R4TbkUJpEWlBsxwOm.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "escape",
+                        "jewelry",
+                        "psychopath"
+                    ],
+                    cast:[
+                        "Harvey Keitel",
+                        "Tim Roth",
+                        "Michael Madsen"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Kill Bill: Vol. 1",
+                    desc:"An assassin is shot by her ruthless employer, Bill, and other members of their assassination circle – but she lives to plot her vengeance.",
+                    genres:[
+                        "Action",
+                        "Crime"
+                    ],
+                    runtime:111,
+                    year:"2003",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"DiVKwaIr1Dw",
+                        trailer:"7xhUyYQdCf8"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/byGvsjXuTXk0jAm7OxJiCqeRa91.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/lVy5Zqcty2NfemqKYbVJfdg44rK.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/mIiJMgtGAIbQVrIElG0s7lCBs50.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "martial arts",
+                        "japan",
+                        "kung fu"
+                    ],
+                    cast:[
+                        "Uma Thurman",
+                        "Lucy Liu",
+                        "Vivica A. Fox"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Django Unchained",
+                    desc:"With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.",
+                    genres:[
+                        "Drama",
+                        "Western"
+                    ],
+                    runtime:165,
+                    year:"2012",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"_iH0UBYDI4g",
+                        teaser:"wH1TSNIYj5E"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/gh3cS7fBeTLZFxoKRoGNsdFYDxY.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/5Lbm0gpFDRAPIV1Cth6ln9iL1ou.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/fWtlayXGkBQ0IFp3lbnONmVkifw.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "rescue",
+                        "friendship",
+                        "bounty hunter"
+                    ],
+                    cast:[
+                        "Jamie Foxx",
+                        "Christoph Waltz",
+                        "Leonardo DiCaprio"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"The Hateful Eight",
+                    desc:"Bounty hunters seek shelter from a raging blizzard and get caught up in a plot of betrayal and deception.",
+                    genres:[
+                        "Drama",
+                        "Mystery",
+                        "Western"
+                    ],
+                    runtime:188,
+                    year:"2015",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"GRG7fAPksbg"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/sOvwWmxfIJBweSM6qD5FvVdmEAa.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/7gfDVfaw0VaIkUGiEH13o3TIC7A.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/dhkWUiFU6wvwkVhwKae5FO57AP6.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "bounty hunter",
+                        "wyoming, usa",
+                        "narration"
+                    ],
+                    cast:[
+                        "Samuel L. Jackson",
+                        "Kurt Russell",
+                        "Jennifer Jason Leigh"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Kill Bill: Vol. 2",
+                    desc:"The Bride unwaveringly continues on her roaring rampage of revenge against the band of assassins who had tried to kill her and her unborn child. She visits each of her former associates one-by-one, ch...",
+                    genres:[
+                        "Action",
+                        "Crime",
+                        "Thriller"
+                    ],
+                    runtime:136,
+                    year:"2004",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"cOmJ-koXwIA",
+                        trailer:"q2h6EFk36kI"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/7ldYM5HSpVEkowWr8WSEwYzEzKt.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/akXPz7zK6NZ8YxGqjcHunGK9bXL.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/oWnoYWltTGSfTcUZrXYHwJ3Fl9j.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "daughter",
+                        "martial arts",
+                        "kung fu"
+                    ],
+                    cast:[
+                        "Uma Thurman",
+                        "David Carradine",
+                        "Daryl Hannah"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Once Upon a Time... in Hollywood",
+                    desc:"Los Angeles, 1969. TV star Rick Dalton, a struggling actor specializing in westerns, and stuntman Cliff Booth, his best friend, try to survive in a constantly changing movie industry. Dalton is the ne...",
+                    genres:[
+                        "Comedy",
+                        "Drama",
+                        "Thriller"
+                    ],
+                    runtime:162,
+                    year:"2019",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"5LiuSANqdWc",
+                        trailer:"vKgITiP1UMg",
+                        teaser:"kyi0JiaBiWA"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/hj59t2wo5sYdPW3OSONMHYmAz09.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/xwgBHC2FgoIrQitl8jZwXXdsR9u.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/5z6WuO1x5LgGfDYMZGj7rgD47Sq.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "movie business",
+                        "male friendship",
+                        "cult"
+                    ],
+                    cast:[
+                        "Leonardo DiCaprio",
+                        "Brad Pitt",
+                        "Margot Robbie"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Jackie Brown",
+                    desc:"Jackie Brown is a flight attendant who gets caught in the middle of smuggling cash into the country for her gunrunner boss. When the cops try to use Jackie to get to her boss, she hatches a plan — wit...",
+                    genres:[
+                        "Crime",
+                        "Drama",
+                        "Thriller"
+                    ],
+                    runtime:154,
+                    year:"1997",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"Mr5aO3Ltrdg"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/cZaVOcHJDAYAgHuhRPm3mVTCHtz.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/mXELcGjyU0osFfUCiz1YdAn470M.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/c0zD0EqXLhLApf7YJFRT38zdS8N.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "airport",
+                        "police",
+                        "arms deal"
+                    ],
+                    cast:[
+                        "Pam Grier",
+                        "Samuel L. Jackson",
+                        "Robert De Niro"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Death Proof",
+                    desc:"Austin's hottest DJ, Jungle Julia, sets out into the night to unwind with her two friends Shanna and Arlene. Covertly tracking their moves is Stuntman Mike, a scarred rebel leering from behind the whe...",
+                    genres:[
+                        "Action",
+                        "Thriller"
+                    ],
+                    runtime:113,
+                    year:"2007",
+                    isMostLiked:false,
+                    videos:{
+                        clip:"qXRJsPV9UUY",
+                        trailer:"7mICGcg5-pM"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/csQ2BUJMYLWkV5kCTO1vZ1zVSyE.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/xRpQkuQr4loiLiks2T15TanM2m2.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/cgvpApTCyGsms9EMUQzx6xGTRDq.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "sports car",
+                        "sadism",
+                        "psychopath"
+                    ],
+                    cast:[
+                        "Kurt Russell",
+                        "Zoë Bell",
+                        "Rosario Dawson"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Natural Born Killers",
+                    desc:"Two victims of traumatized childhoods become lovers and serial murderers irresponsibly glorified by the mass media.",
+                    genres:[
+                        "Crime",
+                        "Thriller",
+                        "Drama"
+                    ],
+                    runtime:118,
+                    year:"1994",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"Quh24cn7-E8"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/c4KlLFCYrwqmWCiTlO8j2JFwYbs.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/k3TOt50cHvTLXWYPnXP0szhiXB8.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/4p33iacgtBsC6On6c0XhFL59FSk.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "daughter",
+                        "journalist",
+                        "sadistic"
+                    ],
+                    cast:[
+                        "Woody Harrelson",
+                        "Juliette Lewis",
+                        "Robert Downey Jr."
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"True Romance",
+                    desc:"Clarence marries hooker Alabama, steals cocaine from her pimp, and tries to sell it in Hollywood, while the owners of the coke try to reclaim it.",
+                    genres:[
+                        "Action",
+                        "Crime",
+                        "Romance"
+                    ],
+                    runtime:118,
+                    year:"1993",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"Adv9gYQWqb8",
+                        trailer:"sDrNU_C-cJA",
+                        teaser:"6uoPeUa7Gkc"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/5f0B7cRa0oWAWPgCsLmIZ7gAGpC.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/2o7rsRTBbgpxAfSSWoDZjmM40PH.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/dOzOEJneaIWoWpNS8AG2kTKTChk.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "hotel",
+                        "movie business",
+                        "detective"
+                    ],
+                    cast:[
+                        "Christian Slater",
+                        "Patricia Arquette",
+                        "Dennis Hopper"
+                    ],
+                    ageRating:"A-Rated"
+                }
+            ],
             shows: [],
             info: {
                 name: 'Quentin Tarantino',
@@ -11486,7 +12391,456 @@ const sectionSlice = createSlice({
         steven: {
             tabs: ['director'],
             title: "Spielberg's Epic Adventures",
-            movies: [],
+            movies: [
+                {
+                    type:"movie",
+                    title:"Schindler's List",
+                    desc:"The true story of how businessman Oskar Schindler saved over a thousand Jewish lives from the Nazis while they worked as slaves in his factory during World War II.",
+                    genres:[
+                        "Drama",
+                        "History",
+                        "War"
+                    ],
+                    runtime:195,
+                    year:"1993",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"lx9Ahsr4544",
+                        trailer:"mxphAlJID9U"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/wH7ZxjF1yU3azuj3pgXVcgrCTUk.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/zb6fM1CX41D9rF9hdgclu0peUmy.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/krEC3MIxUbiZy2uM0TemRio2Z2E.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "factory",
+                        "hero",
+                        "nazi"
+                    ],
+                    cast:[
+                        "Liam Neeson",
+                        "Ben Kingsley",
+                        "Ralph Fiennes"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Saving Private Ryan",
+                    desc:"As U.S. troops storm the beaches of Normandy, three brothers lie dead on the battlefield, with a fourth trapped behind enemy lines. Ranger captain John Miller and seven men are tasked with penetrating...",
+                    genres:[
+                        "Drama",
+                        "History",
+                        "War"
+                    ],
+                    runtime:169,
+                    year:"1998",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"y4SA9yUDgW8",
+                        teaser:"x3wsoR3UyKM"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/cfCzOzMPPBsPvp2gAVepsmV0vbA.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/rW2xRFlJRbTnBJlQTSjQmjevIwb.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/jv2zZcZKcaCF1WgLWNqV5tIZhjv.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "epic",
+                        "army",
+                        "airplane"
+                    ],
+                    cast:[
+                        "Tom Hanks",
+                        "Tom Sizemore",
+                        "Edward Burns"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Jaws",
+                    desc:"When the seaside community of Amity finds itself under attack by a dangerous great white shark, the town's chief of police, a young marine biologist, and a grizzled hunter embark on a desperate quest ...",
+                    genres:[
+                        "Horror",
+                        "Thriller",
+                        "Adventure"
+                    ],
+                    runtime:124,
+                    year:"1975",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"AQ-cqPgSUJ0",
+                        trailer:"WKuZJjPSLXQ",
+                        teaser:"c5__Xki5cIg"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/8Oki3ZJ285le0LLe9XT6B2K1Q6E.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/3nYlM34QhzdtAvWRV5bN4nLtnTc.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/nik828RfbRgK44gYYyo1MmLT2qh.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "dying and death",
+                        "beach",
+                        "bathing"
+                    ],
+                    cast:[
+                        "Roy Scheider",
+                        "Robert Shaw",
+                        "Richard Dreyfuss"
+                    ],
+                    ageRating:"U/A 7+"
+                },
+                {
+                    type:"movie",
+                    title:"Catch Me If You Can",
+                    desc:"A true story about Frank Abagnale Jr. who, before his 19th birthday, successfully conned millions of dollars worth of checks as a Pan Am pilot, doctor, and legal prosecutor. An FBI agent makes it his ...",
+                    genres:[
+                        "Drama",
+                        "Crime"
+                    ],
+                    runtime:141,
+                    year:"2002",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"71rDQ7z4eFg"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/uhOCsgXx5Q8pLJh2SUI1KNwk2hq.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/Ag6qhzsJd3k1NKuNrG9RmhZDMh7.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/7Cbekp4ijme78TICVYBsR211GL3.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "fbi",
+                        "con man",
+                        "biography"
+                    ],
+                    cast:[
+                        "Leonardo DiCaprio",
+                        "Tom Hanks",
+                        "Christopher Walken"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"The Terminal",
+                    desc:"Viktor Navorski is a man without a country; his plane took off just as a coup d'etat exploded in his homeland, leaving it in shambles, and now he's stranded at Kennedy Airport, where he's holding a pa...",
+                    genres:[
+                        "Comedy",
+                        "Drama"
+                    ],
+                    runtime:128,
+                    year:"2004",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"GZjC9dAvWuU"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/zt3cmdZr3t0K64gzpwIc4LXiuDu.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/dfGJKPaxabWaXacJ2fw6zXgA9QX.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/q3RB5V8jW1z0kN9qDK7WpKQjhyh.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "new york city",
+                        "friendship",
+                        "marriage proposal"
+                    ],
+                    cast:[
+                        "Tom Hanks",
+                        "Catherine Zeta-Jones",
+                        "Stanley Tucci"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Jurassic Park",
+                    desc:"A wealthy entrepreneur secretly creates a theme park featuring living dinosaurs drawn from prehistoric DNA. Before opening day, he invites a team of experts and his two eager grandchildren to experien...",
+                    genres:[
+                        "Adventure",
+                        "Science Fiction"
+                    ],
+                    runtime:127,
+                    year:"1993",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"B_ZHnUAXaBI",
+                        trailer:"bx46tthKXmc"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/mlolzwV6VrKOZJ1SfYbPHXXDD4p.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/79bJL9ydAMYVltuNTt4VhxORqIz.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/wv4klz73UtLSwhAXqYJLi6GuI2H.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "exotic island",
+                        "island",
+                        "triceratops"
+                    ],
+                    cast:[
+                        "Sam Neill",
+                        "Laura Dern",
+                        "Jeff Goldblum"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Minority Report",
+                    desc:"John Anderton is a top 'Precrime' cop in the late-21st century, when technology can predict crimes before they're committed. But Anderton becomes the quarry when another investigator targets him for a...",
+                    genres:[
+                        "Science Fiction",
+                        "Action",
+                        "Thriller"
+                    ],
+                    runtime:145,
+                    year:"2002",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"3JNsNp2DVSE"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/f1gIZWXXPKzdxiWTMf7ZO4p9U3o.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/r1gLQFbpkWWLrOEPmpqzzMIUxxj.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/xn3UbIliWqRXQH50RDSga47FvPs.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "police chief",
+                        "precognition",
+                        "hologram"
+                    ],
+                    cast:[
+                        "Tom Cruise",
+                        "Samantha Morton",
+                        "Max von Sydow"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Ready Player One",
+                    desc:"When the creator of a popular video game system dies, a virtual contest is created to compete for his fortune.",
+                    genres:[
+                        "Adventure",
+                        "Action",
+                        "Science Fiction"
+                    ],
+                    runtime:140,
+                    year:"2018",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"1hrwbc5qCZ4",
+                        teaser:"DlU4ZSU2xzg"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/7ngkC5XeGgtSEOVc5dXmQPd1lUh.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/5a7lMDn3nAj2ByO0X1fg6BhUphR.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/sKLqXYCvWdbMM91CVMXEVZqYE6Z.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "future",
+                        "video game",
+                        "virtual reality"
+                    ],
+                    cast:[
+                        "Tye Sheridan",
+                        "Olivia Cooke",
+                        "Ben Mendelsohn"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"E.T. the Extra-Terrestrial",
+                    desc:"An alien is left behind on Earth and saved by the 10-year-old Elliot who decides to keep him hidden in his home. While a task force hunts for the extra-terrestrial, Elliot, his brother, and his little...",
+                    genres:[
+                        "Science Fiction",
+                        "Adventure",
+                        "Family"
+                    ],
+                    runtime:115,
+                    year:"1982",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"JqfGB0ofyN8",
+                        trailer:"NsvdZ_z56c0"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/nxjkgFpYaT8PtySODYGxcOFa6pS.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/mXLVA0YL6tcXi6SJSuAh9ONXFj5.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/cj5vQJiJ9ByXNNeVy3mG5exM1BA.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "farewell",
+                        "space marine",
+                        "operation"
+                    ],
+                    cast:[
+                        "Henry Thomas",
+                        "Drew Barrymore",
+                        "Robert MacNaughton"
+                    ],
+                    ageRating:"U/A 7+"
+                },
+                {
+                    type:"movie",
+                    title:"Raiders of the Lost Ark",
+                    desc:"When Dr. Indiana Jones – the tweed-suited professor who just happens to be a celebrated archaeologist – is hired by the government to locate the legendary Ark of the Covenant, he finds himself up agai...",
+                    genres:[
+                        "Adventure",
+                        "Action"
+                    ],
+                    runtime:115,
+                    year:"1981",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"8bYvCSfd72A",
+                        trailer:"0xQSIdSRlAk",
+                        teaser:"w9YcGbOupgw"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/edtIzvWUuMDG8qsWsYzjMXoXTy2.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/c7Mjuip0jfHLY7x8ZSEriRj45cu.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/pQwAK7zj1tU8bYdVI47v7bUpv5B.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "egypt",
+                        "treasure",
+                        "medallion"
+                    ],
+                    cast:[
+                        "Harrison Ford",
+                        "Karen Allen",
+                        "Paul Freeman"
+                    ],
+                    ageRating:"U/A 7+"
+                },
+                {
+                    type:"movie",
+                    title:"Indiana Jones and the Last Crusade",
+                    desc:"In 1938, an art collector appeals to eminent archaeologist Dr. Indiana Jones to embark on a search for the Holy Grail. Indy learns that a medieval historian has vanished while searching for it, and th...",
+                    genres:[
+                        "Adventure",
+                        "Action"
+                    ],
+                    runtime:127,
+                    year:"1989",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"VA7J0KkanzM",
+                        trailer:"GRfckj3ETh0"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/dA0IuruOfLhJUti48OOJdykxbkY.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/7KGdTzKux4fp5sW7hUM33NWqBU1.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/hDzmP4qDyJIr0QvfSEcAhRT6ydh.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "saving the world",
+                        "nazi",
+                        "holy grail"
+                    ],
+                    cast:[
+                        "Harrison Ford",
+                        "Sean Connery",
+                        "Denholm Elliott"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Bridge of Spies",
+                    desc:"During the Cold War, the Soviet Union captures U.S. pilot Francis Gary Powers after shooting down his U-2 spy plane. Sentenced to 10 years in prison, Powers' only hope is New York lawyer James Donovan...",
+                    genres:[
+                        "Thriller",
+                        "Drama"
+                    ],
+                    runtime:141,
+                    year:"2015",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"owhBnicLZt4"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/yq3RPPEbI1OQc2pRZzjMTgzRalQ.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/3vNg9pb2jPv2EFUZXrk7Xviqalm.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/y17aIeyX7bQdvaQq991q8FGoVbi.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "spy",
+                        "cold war",
+                        "soviet union"
+                    ],
+                    cast:[
+                        "Tom Hanks",
+                        "Mark Rylance",
+                        "Amy Ryan"
+                    ],
+                    ageRating:"U/A 13+"
+                }
+            ],
             shows: [],
             info: {
                 name: 'Steven Spielberg',
@@ -11500,7 +12854,460 @@ const sectionSlice = createSlice({
         nolan: {
             tabs: ['director'],
             title: "Nolan's Mind Benders",
-            movies: [],
+            movies: [
+                {
+                    type:"movie",
+                    title:"Inception",
+                    desc:"Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inc...",
+                    genres:[
+                        "Action",
+                        "Science Fiction",
+                        "Adventure"
+                    ],
+                    runtime:148,
+                    year:"2010",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"mpj9dL7swwk",
+                        trailer:"cdx31ak4KbQ",
+                        teaser:"HO5v3RhO8ek"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/rWDkbJlIyqN8KcqXajh9sZMwGzo.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/8ZTVqvKDQ8emSGUEMjsS4yHAwrp.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/iXYh7y0vI1DZR0taTuvrr8PSnOd.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "rescue",
+                        "mission",
+                        "dream"
+                    ],
+                    cast:[
+                        "Leonardo DiCaprio",
+                        "Joseph Gordon-Levitt",
+                        "Ken Watanabe"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Interstellar",
+                    desc:"The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
+                    genres:[
+                        "Adventure",
+                        "Drama",
+                        "Science Fiction"
+                    ],
+                    runtime:169,
+                    year:"2014",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"Rvns5DaW-ug",
+                        trailer:"LY19rHKAaAg",
+                        teaser:"PG5c2GgkA2w"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/yUa0iCocBPsGJ79BwrshHqz45Qc.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/xJHokMbljvjADYdit5fK5VQsXEG.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/v6PLrz2a4Fcr2X1h1OmdCfwWaRU.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "rescue",
+                        "future",
+                        "spacecraft"
+                    ],
+                    cast:[
+                        "Matthew McConaughey",
+                        "Anne Hathaway",
+                        "Michael Caine"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"The Dark Knight",
+                    desc:"Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the stree...",
+                    genres:[
+                        "Drama",
+                        "Action",
+                        "Crime"
+                    ],
+                    runtime:152,
+                    year:"2008",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"QEBCT-Lsh-A",
+                        trailer:"LDG9bisJEaI"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/A9YICp8lGP7Es5R8oD6qUbvDWhn.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/nMKdUUepR0i5zn0y1T4CsSB5chy.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/nO5Uix3Qr4WjOyU1BMPv0okyNWm.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "joker",
+                        "sadism",
+                        "chaos"
+                    ],
+                    cast:[
+                        "Christian Bale",
+                        "Heath Ledger",
+                        "Michael Caine"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"The Dark Knight Rises",
+                    desc:"Following the death of District Attorney Harvey Dent, Batman assumes responsibility for Dent's crimes to protect the late attorney's reputation and is subsequently hunted by the Gotham City Police Dep...",
+                    genres:[
+                        "Action",
+                        "Crime",
+                        "Drama"
+                    ],
+                    runtime:165,
+                    year:"2012",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"yiyUl1VMiDs",
+                        trailer:"GAjBzu8ggi0"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/73lKeIl7MOQsFK74shmoSAhitg6.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/c3OHQncTAnKFhdOTX7D3LTW6son.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/xdNHIYqo1VzxMCw4n51ARgem6ym.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "fight",
+                        "burglar",
+                        "hostage"
+                    ],
+                    cast:[
+                        "Christian Bale",
+                        "Michael Caine",
+                        "Gary Oldman"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Batman Begins",
+                    desc:"Driven by tragedy, billionaire Bruce Wayne dedicates his life to uncovering and defeating the corruption that plagues his home, Gotham City.  Unable to work within the system, he instead creates a new...",
+                    genres:[
+                        "Action",
+                        "Crime",
+                        "Drama"
+                    ],
+                    runtime:140,
+                    year:"2005",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"5oeyTU36lBw",
+                        trailer:"lirBhHXvDSg"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/v5H01hnfZd9a3WPkKanW9hptP2.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/lh5lbisD4oDbEKgUxoRaZU8HVrk.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/kmqIeEVaVfbBCgV9WFPuLUl84uW.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "martial arts",
+                        "undercover",
+                        "loss of loved one"
+                    ],
+                    cast:[
+                        "Christian Bale",
+                        "Michael Caine",
+                        "Liam Neeson"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Dunkirk",
+                    desc:"The story of the miraculous evacuation of Allied soldiers from Belgium, Britain, Canada and France, who were cut off and surrounded by the German army from the beaches and harbour of Dunkirk between M...",
+                    genres:[
+                        "War",
+                        "Action",
+                        "Drama"
+                    ],
+                    runtime:107,
+                    year:"2017",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"T7O7BtBnsG4",
+                        teaser:"kvbiVcj4l0c"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/3GXCm3TDTESevM6GuFYxQ03sray.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/ddIkmH3TpR6XSc47jj0BrGK5Rbz.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/d23hHJ9S84b1vtXXOCE0VI17ckD.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "army",
+                        "beach",
+                        "france"
+                    ],
+                    cast:[
+                        "Fionn Whitehead",
+                        "Tom Hardy",
+                        "Mark Rylance"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"The Prestige",
+                    desc:"A mysterious story of two magicians whose intense rivalry leads them on a life-long battle for supremacy -- full of obsession, deceit and jealousy with dangerous and deadly consequences.",
+                    genres:[
+                        "Drama",
+                        "Mystery",
+                        "Science Fiction"
+                    ],
+                    runtime:130,
+                    year:"2006",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"ijXruSzfGEc"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/8qNI1E7jprDtCVoWKhXFagrP6ox.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/xBDE2d6HM1aBKQRu4IT7SfPD9fs.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/spOKEWc2HsfVJWCicr5CXCCVRil.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "dying and death",
+                        "suicide",
+                        "class society"
+                    ],
+                    cast:[
+                        "Hugh Jackman",
+                        "Christian Bale",
+                        "Michael Caine"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Memento",
+                    desc:"Leonard Shelby is tracking down the man who raped and murdered his wife. The difficulty of locating his wife's killer, however, is compounded by the fact that he suffers from a rare, untreatable form ...",
+                    genres:[
+                        "Mystery",
+                        "Thriller"
+                    ],
+                    runtime:113,
+                    year:"2000",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"Rq9eM4ZXRgs"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/5wmhPm9UmAFsVAwYjk5ZDjuqoW0.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/7Wev9JMo6R5XAfz2KDvXb7oPMmy.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/hlh8G7r8iOqJmpRbN8j9IvtMgc9.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "drug dealer",
+                        "amnesia",
+                        "insulin"
+                    ],
+                    cast:[
+                        "Guy Pearce",
+                        "Carrie-Anne Moss",
+                        "Joe Pantoliano"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Tenet",
+                    desc:"Armed with only one word - Tenet - and fighting for the survival of the entire world, the Protagonist journeys through a twilight world of international espionage on a mission that will unfold in some...",
+                    genres:[
+                        "Action",
+                        "Thriller",
+                        "Science Fiction"
+                    ],
+                    runtime:150,
+                    year:"2020",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"KJP5RunZUKk"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/bImDTzVitwcKZXCF1naWRGI5W0g.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/yY76zq9XSuJ4nWyPDuwkdV7Wt0c.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/klkGMBmx2NDjkjtWxtAjuF6BOy8.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "assassin",
+                        "espionage",
+                        "spy"
+                    ],
+                    cast:[
+                        "John David Washington",
+                        "Robert Pattinson",
+                        "Elizabeth Debicki"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Oppenheimer",
+                    desc:"The story of J. Robert Oppenheimer's role in the development of the atomic bomb during World War II.",
+                    genres:[
+                        "Drama",
+                        "History"
+                    ],
+                    runtime:181,
+                    year:"2023",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"sOsIKu2VAkM",
+                        trailer:"qiuSBWVdgLI",
+                        teaser:"hlZO437mwXQ"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/cUIqZd6jJCbO94Txt1CkTs7MSeP.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/fm6KqXpk3M2HVveHwCrBSSBaO0V.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/vsnVZCWKGnaVqln5erH0uHxHZeC.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "atomic bomb",
+                        "patriotism",
+                        "new mexico"
+                    ],
+                    cast:[
+                        "Cillian Murphy",
+                        "Emily Blunt",
+                        "Matt Damon"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Insomnia",
+                    desc:"Two Los Angeles homicide detectives are dispatched to a northern town where the sun doesn't set to investigate the methodical murder of a local teen.",
+                    genres:[
+                        "Crime",
+                        "Thriller"
+                    ],
+                    runtime:118,
+                    year:"2002",
+                    isMostLiked:false,
+                    videos:{
+                        clip:"aVstepxNXNc",
+                        trailer:"emIHzg4VH8A"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/hLJ1XZIUjvgYOE7Z7fx8pE2FZZA.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/2tsmTWJsR81cwwZHLE85vPxSCoR.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/pPN8TskktZtEOgQXfgu0Q8tbnfk.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "hotel",
+                        "small town",
+                        "homicide"
+                    ],
+                    cast:[
+                        "Al Pacino",
+                        "Robin Williams",
+                        "Hilary Swank"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Following",
+                    desc:"Bill, an idle, unemployed aspiring writer, walks the crowded streets of London following randomly chosen strangers, a seemingly innocent entertainment that becomes dangerous when he crosses paths with...",
+                    genres:[
+                        "Drama",
+                        "Thriller"
+                    ],
+                    runtime:69,
+                    year:"1999",
+                    isMostLiked:false,
+                    videos:{
+                        clip:"yXOTD4y-SCc",
+                        trailer:"Xc1cMA4UryY"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/eNHlI1Ei0cbB1UhUion2p1WsjuR.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/owgFkvnozNYdShynerDjot2hHK2.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/soA0pJOdcmrAgTfmSUj4qKXFbXp.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "london, england",
+                        "robbery",
+                        "stalker"
+                    ],
+                    cast:[
+                        "Jeremy Theobald",
+                        "Alex Haw",
+                        "Lucy Russell"
+                    ],
+                    ageRating:"A-Rated"
+                }
+            ],
             shows: [],
             info: {
                 name: 'Christopher Nolan',
@@ -11514,7 +13321,452 @@ const sectionSlice = createSlice({
         kubrick: {
             tabs: ['director'],
             title: "Stanley Kubrick's Cinematic Art",
-            movies: [],
+            movies: [
+                {
+                    type:"movie",
+                    title:"Full Metal Jacket",
+                    desc:"A pragmatic U.S. Marine observes the dehumanizing effects the U.S.-Vietnam War has on his fellow recruits from their brutal boot camp training to the bloody street fighting in Hue.",
+                    genres:[
+                        "Drama",
+                        "War"
+                    ],
+                    runtime:117,
+                    year:"1987",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"3Un-WBlVHPw",
+                        trailer:"ZFlm7fFfEmU"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/lQvuJEeT8sA2jBNZCIOAI4ypYtQ.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/mKEmuB7diOa7Ef0tJSGQ3fYJnNe.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/qwdLJlmyWD1Laak24kskzXmSFh0.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "rescue",
+                        "sniper",
+                        "vietnam war"
+                    ],
+                    cast:[
+                        "Matthew Modine",
+                        "Adam Baldwin",
+                        "Vincent D'Onofrio"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"The Shining",
+                    desc:"Jack Torrance accepts a caretaker job at the Overlook Hotel, where he, along with his wife Wendy and their son Danny, must live isolated from the rest of the world for the winter. But they aren't prep...",
+                    genres:[
+                        "Horror",
+                        "Thriller"
+                    ],
+                    runtime:144,
+                    year:"1980",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"AjUzPpuqzaE",
+                        trailer:"FZQvIJxG9Xs"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/cAQI3ogdNDd3WqVwERuc55iHvph.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/mmd1HnuvAzFc4iuVJcnBrhDNEKr.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/7Qc7geNI4C4i9A1OFk0aPe5VYzn.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "hotel",
+                        "child abuse",
+                        "isolation"
+                    ],
+                    cast:[
+                        "Jack Nicholson",
+                        "Shelley Duvall",
+                        "Danny Lloyd"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"A Clockwork Orange",
+                    desc:"In a near-future Britain, young Alexander DeLarge and his pals get their kicks beating and raping anyone they please. When not destroying the lives of others, Alex swoons to the music of Beethoven. Th...",
+                    genres:[
+                        "Science Fiction",
+                        "Crime"
+                    ],
+                    runtime:137,
+                    year:"1971",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"4uRwjqBV3gA",
+                        trailer:"T54uZPI4Z8A"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/snidsjyk64ur9S58hb8NNqR6xQU.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/ysnVjBz5iRSRSl3xrNcQTUfa4L3.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/irRlKJHgl7BNn4HsCnWL0TeZviH.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "london, england",
+                        "robbery",
+                        "street gang"
+                    ],
+                    cast:[
+                        "Malcolm McDowell",
+                        "Patrick Magee",
+                        "Carl Duering"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Eyes Wide Shut",
+                    desc:"After Dr. Bill Harford's wife, Alice, admits to having sexual fantasies about a man she met, Bill becomes obsessed with having a sexual encounter. He discovers an underground sexual group and attends ...",
+                    genres:[
+                        "Drama",
+                        "Thriller",
+                        "Mystery"
+                    ],
+                    runtime:159,
+                    year:"1999",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"VSS47StLOhk"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/eAuS9UpWi44tyI7PdOLrcgLpZuV.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/oqxIs6674wwQ6V4omFTYRF0R6Bl.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/rwUXccna9yw4ajcZChvCOHYB3E0.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "new york city",
+                        "prostitute",
+                        "sexual obsession"
+                    ],
+                    cast:[
+                        "Tom Cruise",
+                        "Nicole Kidman",
+                        "Sydney Pollack"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Spartacus",
+                    desc:"The rebellious Thracian Spartacus, born and raised a slave, is sold to Gladiator trainer Batiatus. After weeks of being trained to kill for the arena, Spartacus turns on his owners and leads the other...",
+                    genres:[
+                        "History",
+                        "War",
+                        "Drama"
+                    ],
+                    runtime:197,
+                    year:"1960",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"HcIMY1Ah3aw"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/841ktc64H8aXIXqJvq3a8S5xrT1.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/aheSIG4h3JNxWeDvdb1NxKzgjaM.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/2LnOk1tYpDpciqkP6QSh7AD7vOd.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "epic",
+                        "gladiator",
+                        "roman empire"
+                    ],
+                    cast:[
+                        "Kirk Douglas",
+                        "Laurence Olivier",
+                        "Jean Simmons"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+                    desc:"After the insane General Jack D. Ripper initiates a nuclear strike on the Soviet Union, a war room full of politicians, generals and a Russian diplomat all frantically try to stop the nuclear strike.",
+                    genres:[
+                        "Comedy",
+                        "War"
+                    ],
+                    runtime:95,
+                    year:"1964",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"tyOLJ99ysdU",
+                        trailer:"Ja3n2Mxf21s"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/iCzC57sZYfp87JMmghZaXScJ3wy.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/sTp8K0SfcC2RQef1Tu160z3niHO.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/oQFEghR50LL4QGNYOMPl6YkmfgO.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "usa president",
+                        "general",
+                        "cold war"
+                    ],
+                    cast:[
+                        "Peter Sellers",
+                        "George C. Scott",
+                        "Sterling Hayden"
+                    ],
+                    ageRating:"U/A 7+"
+                },
+                {
+                    type:"movie",
+                    title:"Barry Lyndon",
+                    desc:"An Irish rogue uses his cunning and wit to work his way up the social classes of 18th century England, transforming himself from the humble Redmond Barry into the noble Barry Lyndon.",
+                    genres:[
+                        "Drama",
+                        "Romance",
+                        "War"
+                    ],
+                    runtime:185,
+                    year:"1975",
+                    isMostLiked:false,
+                    videos:{
+                        clip:"woO1Cs6c-oo",
+                        trailer:"XjPSGuJskxM"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/yRViKouQtLqfuMjqvAmx66cBnTg.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/7ZT8AdGAzK7hv8JhQ0tCtEZ72JP.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/3JCe5mAsPkj5l4UfPnXbhqdwrjF.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "gambling",
+                        "desertion",
+                        "fencing"
+                    ],
+                    cast:[
+                        "Ryan O'Neal",
+                        "Marisa Berenson",
+                        "Patrick Magee"
+                    ],
+                    ageRating:"U/A 7+"
+                },
+                {
+                    type:"movie",
+                    title:"Lolita",
+                    desc:"Humbert Humbert is a middle-aged British novelist who is both appalled by and attracted to the vulgarity of American culture. When he comes to stay at the boarding house run by Charlotte Haze, he soon...",
+                    genres:[
+                        "Drama",
+                        "Comedy",
+                        "Romance"
+                    ],
+                    runtime:154,
+                    year:"1962",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"ihZ-aIJj6-g"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/oQ5QkraJrOltwbaau93vN1t3XzR.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/40JNQ4FOekM1LDgUC5mDcM8bZyl.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/b9NhXfe4t3Ka7lK3OPYivbNWwSu.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "hotel",
+                        "depression",
+                        "lolita"
+                    ],
+                    cast:[
+                        "James Mason",
+                        "Shelley Winters",
+                        "Sue Lyon"
+                    ],
+                    ageRating:"U-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Paths of Glory",
+                    desc:"A commanding officer defends three scapegoats on trial for a failed offensive that occurred within the French Army in 1916.",
+                    genres:[
+                        "War",
+                        "Drama",
+                        "History"
+                    ],
+                    runtime:88,
+                    year:"1957",
+                    isMostLiked:false,
+                    videos:{
+                        clip:"Tibic2070mE",
+                        trailer:"FESvZ0HG2p4"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/clzms0KmqM5xHIUiOR6ZwL6VVp0.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/354kfjVb96mtFALMhBE6jzHGiA2.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/4qFgkxNibQIJHCEB4nsXsca3RU2.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "army",
+                        "france",
+                        "general"
+                    ],
+                    cast:[
+                        "Kirk Douglas",
+                        "Ralph Meeker",
+                        "Adolphe Menjou"
+                    ],
+                    ageRating:"U-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Killer's Kiss",
+                    desc:"Davey Gordon, a New York City boxer at the end of his career, falls for dancer Gloria Price. However, their budding relationship is interrupted by Gloria's violent boss, Vincent Rapallo, who has eyes ...",
+                    genres:[
+                        "Thriller",
+                        "Crime",
+                        "Drama"
+                    ],
+                    runtime:68,
+                    year:"1955",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"W25UlE0C1-Y"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/mSPw5aImriARLl98xworCCUuCvf.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/7iFieVSvFizrGMRsxwXedBWqw4g.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/bmyeAs2hvgPgV5Lz07xnBeRdg9z.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "new york city",
+                        "film noir",
+                        "hoodlum"
+                    ],
+                    cast:[
+                        "Frank Silvera",
+                        "Jamie Smith",
+                        "Irene Kane"
+                    ],
+                    ageRating:"U/A 10+"
+                },
+                {
+                    type:"movie",
+                    title:"The Killing",
+                    desc:"Career criminal Johnny Clay recruits a sharpshooter, a crooked police officer, a bartender and a betting teller named George, among others, for one last job before he goes straight and gets married. B...",
+                    genres:[
+                        "Crime",
+                        "Thriller"
+                    ],
+                    runtime:85,
+                    year:"1956",
+                    isMostLiked:false,
+                    videos:{
+                        clip:"6yHQlP-OwgQ",
+                        trailer:"c0Odg-GY40w"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/ibmTN1f5nDwuTiGw9S6jSpzZFuY.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/dY0suaAdGpOqh7JkLeIN6lT7k9d.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/2AIkqhddn1Imzw2N2n6lPjvcZGT.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "sniper",
+                        "adultery",
+                        "robbery"
+                    ],
+                    cast:[
+                        "Sterling Hayden",
+                        "Coleen Gray",
+                        "Vince Edwards"
+                    ],
+                    ageRating:"U/A 10+"
+                },
+                {
+                    type:"movie",
+                    title:"Fear and Desire",
+                    desc:"After their airplane crashes behind enemy lines, four soldiers must survive and try to find a way back to their battalion. However, when they come across a local peasant girl the horrors of war quickl...",
+                    genres:[
+                        "Drama",
+                        "War",
+                        "Thriller"
+                    ],
+                    runtime:62,
+                    year:"1953",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"rDy7E6pNBSc",
+                        teaser:"lTU4UIHw-x4"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/xUqVMa2Z3krtCWCdoSSvbUE8qsA.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/e3o0Dwlzzpd4kJpOOJgVyMstnII.jpg",
+                    poster:null,
+                    logo:null,
+                    keywords:[
+                        "airplane",
+                        "soldier",
+                        "war"
+                    ],
+                    cast:[
+                        "Frank Silvera",
+                        "Kenneth Harp",
+                        "Paul Mazursky"
+                    ],
+                    ageRating:"U/A 10+"
+                }
+            ],
             shows: [],
             info: {
                 name: 'Stanley Kubrick',
@@ -11528,7 +13780,417 @@ const sectionSlice = createSlice({
         fincher: {
             tabs: ['director'],
             title: "David Fincher's Dark Psychological Blend",
-            movies: [],
+            movies: [
+                {
+                    type:"movie",
+                    title:"Fight Club",
+                    desc:"A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every...",
+                    genres:[
+                        "Drama"
+                    ],
+                    runtime:139,
+                    year:"1999",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"dfeUzm6KF4g"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/fygeMr16EcxJiYhdiO1LEr7iHtI.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/hZkgoQYus5vegHoetLkCJzb17zJ.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/7Uqhv24pGJs4Ns31NoOPWFJGWNG.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "dual identity",
+                        "rage and hate",
+                        "nihilism"
+                    ],
+                    cast:[
+                        "Edward Norton",
+                        "Brad Pitt",
+                        "Helena Bonham Carter"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Se7en",
+                    desc:"Two homicide detectives are on a desperate hunt for a serial killer whose crimes are based on the \"seven deadly sins\" in this dark and haunting film that takes viewers from the tortured remains of one...",
+                    genres:[
+                        "Crime",
+                        "Mystery",
+                        "Thriller"
+                    ],
+                    runtime:127,
+                    year:"1995",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"BJKukbTDLto",
+                        trailer:"vr3UZ-axauU"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/6jRk8m3Bd5i514cFzv95YKUjpw8.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/vxPrxPufDQc4e2zr492LkXoEjdl.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/4msVv6tLAykTlWO0i17DI15Trv.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "rage and hate",
+                        "police",
+                        "s.w.a.t."
+                    ],
+                    cast:[
+                        "Morgan Freeman",
+                        "Brad Pitt",
+                        "Gwyneth Paltrow"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Zodiac",
+                    desc:"The zodiac murders cause the lives of Paul Avery, David Toschi and Robert Graysmith to intersect.",
+                    genres:[
+                        "Crime",
+                        "Drama",
+                        "Mystery"
+                    ],
+                    runtime:157,
+                    year:"2007",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"yNncHPl1UXg"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/68q8BFxbZIRkux15PY4TONuujBq.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/elzsm8vIpYVh0s6ztFEKElqgXqe.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/cyapem0oKE2nySKpYaQvmAEMfCF.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "newspaper",
+                        "journalist",
+                        "california"
+                    ],
+                    cast:[
+                        "Jake Gyllenhaal",
+                        "Mark Ruffalo",
+                        "Anthony Edwards"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Gone Girl",
+                    desc:"With his wife's disappearance having become the focus of an intense media circus, a man sees the spotlight turned on him when it's suspected that he may not be innocent.",
+                    genres:[
+                        "Mystery",
+                        "Thriller",
+                        "Drama"
+                    ],
+                    runtime:149,
+                    year:"2014",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"GIdhXAc7atE",
+                        trailer:"2-_-1nJf8Vg",
+                        teaser:"e1AZgJg3OEA"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/5Tqdk3eezqu945KcBtz3SYQxidN.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/xISE4M4IhCFgd9oOEFKYfkknumg.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/9XppjJk4i9tk8q4NWIPcs4pVm0w.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "infidelity",
+                        "wife",
+                        "marriage crisis"
+                    ],
+                    cast:[
+                        "Ben Affleck",
+                        "Rosamund Pike",
+                        "Neil Patrick Harris"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"The Social Network",
+                    desc:"The tale of a new breed of cultural insurgent: a punk genius who sparked a revolution and changed the face of human interaction for a generation, and perhaps forever. Chronicling the formation of Face...",
+                    genres:[
+                        "Drama"
+                    ],
+                    runtime:121,
+                    year:"2010",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"orAWNu1cVXg",
+                        trailer:"rBCNU0XT9GY",
+                        teaser:"iJCSRxzPfXI"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/xxIc4OOQDNGmoN4cSyzNHfoSiGq.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/1PXwh3nJzgRkkYnqfWInJNypeL4.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/c4chOkNTnwNMFhxkzi6tCJ2UzsM.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "hacker",
+                        "ex-girlfriend",
+                        "narcissism"
+                    ],
+                    cast:[
+                        "Jesse Eisenberg",
+                        "Andrew Garfield",
+                        "Armie Hammer"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"The Curious Case of Benjamin Button",
+                    desc:"Born under unusual circumstances, Benjamin Button springs into being as an elderly man in a New Orleans nursing home and ages in reverse. Twelve years after his birth, he meets Daisy, a child who flit...",
+                    genres:[
+                        "Drama",
+                        "Fantasy",
+                        "Romance"
+                    ],
+                    runtime:166,
+                    year:"2008",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"ODjKVMHF9fM"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/6mnoD9Bzcbnm4jbVBgJUkdKFR0E.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/2fswjyrY3GEzeoVn6mF8pNeNcgf.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/bNzkKnHQhJ1NrK0u5Yyi884J57P.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "new york city",
+                        "navy",
+                        "funeral"
+                    ],
+                    cast:[
+                        "Brad Pitt",
+                        "Cate Blanchett",
+                        "Taraji P. Henson"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"The Girl with the Dragon Tattoo",
+                    desc:"Disgraced journalist Mikael Blomkvist investigates the disappearance of a weary patriarch's niece from 40 years ago. He is aided by the pierced, tattooed, punk computer hacker named Lisbeth Salander. ...",
+                    genres:[
+                        "Thriller",
+                        "Crime",
+                        "Mystery"
+                    ],
+                    runtime:158,
+                    year:"2011",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"svucpVzRBD4",
+                        teaser:"YKWXEfXGWtA"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/17XtQC6vjqxUWtFAJmba2tpGCTx.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/heLjxyCa7WPGkzbhkiiIe09hYOi.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/8Ou4GjXqOLWplIMctkTWosQbGoy.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "journalist",
+                        "island",
+                        "rape"
+                    ],
+                    cast:[
+                        "Daniel Craig",
+                        "Rooney Mara",
+                        "Christopher Plummer"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"The Game",
+                    desc:"In honor of his birthday, San Francisco banker Nicholas Van Orton, a financial genius and a cold-hearted loner, receives an unusual present from his younger brother, Conrad: a gift certificate to play...",
+                    genres:[
+                        "Drama",
+                        "Thriller",
+                        "Mystery"
+                    ],
+                    runtime:129,
+                    year:"1997",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"cM8Vrbz92ew",
+                        trailer:"9KXxG-KjfUc"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/dsjP98yfjEsYLKpXLKrfW11V8Xd.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/sjNXaMPWOH47VEtvE77BqUzHatB.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/hKSoSJg8BIScPfjMZhkbv9aE79l.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "suicide",
+                        "birthday",
+                        "gun"
+                    ],
+                    cast:[
+                        "Michael Douglas",
+                        "Sean Penn",
+                        "Deborah Kara Unger"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Panic Room",
+                    desc:"Trapped in their New York brownstone's panic room, a hidden chamber built as a sanctuary in the event of break-ins, newly divorced Meg Altman and her young daughter Sarah play a deadly game of cat-and...",
+                    genres:[
+                        "Crime",
+                        "Drama",
+                        "Thriller"
+                    ],
+                    runtime:111,
+                    year:"2002",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"8IAIJQpQuSM"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/nxgf9Cykin9wWEHMtHILDTiNXBE.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/9G5bteYI8FXaY9EomnUP0kdHm66.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/l7uy9GsBYl9Xax8yM6385CnAb9L.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "new york city",
+                        "hostage",
+                        "bravery"
+                    ],
+                    cast:[
+                        "Jodie Foster",
+                        "Kristen Stewart",
+                        "Forest Whitaker"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"The Killer",
+                    desc:"After a fateful near-miss, an assassin battles his employers, and himself, on an international manhunt he insists isn't personal.",
+                    genres:[
+                        "Crime",
+                        "Thriller"
+                    ],
+                    runtime:118,
+                    year:"2023",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"5S7FR_HCg9g"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/tJtPeE1fR6VQot8Fg1pg852ESJU.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/zEqfkiyWZILZKy2M1lgeGmIRzYR.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/4xaqtScTG7EWKkKjgELqOJjf6uS.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "sniper",
+                        "new york city",
+                        "assassin"
+                    ],
+                    cast:[
+                        "Michael Fassbender",
+                        "Tilda Swinton",
+                        "Charles Parnell"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Mank",
+                    desc:"1930s Hollywood is reevaluated through the eyes of scathing social critic and alcoholic screenwriter Herman J. Mankiewicz as he races to finish the screenplay of Citizen Kane.",
+                    genres:[
+                        "Drama",
+                        "History"
+                    ],
+                    runtime:132,
+                    year:"2020",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"aSfX-nrg-lI",
+                        teaser:"4Xwmo4mc_dQ"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/wztR46RlpFcTpYemIbrd1OcoeG7.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/hBOH4PNnhcGPgZbZjBwkx9gnNxI.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/91m0t2LzrTvheshJMcz4G8aVWgZ.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "movie business",
+                        "screenwriter",
+                        "biography"
+                    ],
+                    cast:[
+                        "Gary Oldman",
+                        "Amanda Seyfried",
+                        "Lily Collins"
+                    ],
+                    ageRating:"A-Rated"
+                }
+            ],
             shows: [],
             info: {
                 name: 'David Fincher',
@@ -11542,7 +14204,451 @@ const sectionSlice = createSlice({
         coen: {
             tabs: ['director'],
             title: "The Coen Brothers' Quirky Americana",
-            movies: [],
+            movies: [
+                {
+                    type:"movie",
+                    title:"No Country for Old Men",
+                    desc:"Llewelyn Moss stumbles upon dead bodies, $2 million and a hoard of heroin in a Texas desert, but methodical killer Anton Chigurh comes looking for it, with local sheriff Ed Tom Bell hot on his trail. ...",
+                    genres:[
+                        "Crime",
+                        "Drama",
+                        "Thriller"
+                    ],
+                    runtime:122,
+                    year:"2007",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"m8cwKEITxV8",
+                        trailer:"A0oNrgumrlE"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/hvAAY1qNrIcTRGw7zsF37MzpvCL.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/kd9jFTTabg4xJpHDgxY0h8F9BzG.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/6u3WGSBwqmsG3tooD2B5eMKkxKU.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "vietnam veteran",
+                        "sheriff",
+                        "trailer park"
+                    ],
+                    cast:[
+                        "Javier Bardem",
+                        "Tommy Lee Jones",
+                        "Josh Brolin"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"The Big Lebowski",
+                    desc:"Jeffrey 'The Dude' Lebowski, a Los Angeles slacker who only wants to bowl and drink White Russians, is mistaken for another Jeffrey Lebowski, a wheelchair-bound millionaire, and finds himself dragged ...",
+                    genres:[
+                        "Comedy",
+                        "Crime"
+                    ],
+                    runtime:117,
+                    year:"1998",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"8CU0dlLfBtg",
+                        trailer:"GiwMMziJdqg",
+                        teaser:"MjMcMeLXWxA"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/3jNcl3JmPbsqhn6Ro8gKYCDM89e.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/nevS6wjzCxZESvmjJZqdyZ3RNQ6.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/9y7SHMO5WvyEWBbfG0TibeWszYX.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "vietnam veteran",
+                        "white russian",
+                        "bowling"
+                    ],
+                    cast:[
+                        "Jeff Bridges",
+                        "John Goodman",
+                        "Julianne Moore"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Fargo",
+                    desc:"Jerry, a small-town Minnesota car salesman is bursting at the seams with debt... but he's got a plan. He's going to hire two thugs to kidnap his wife in a scheme to collect a hefty ransom from his wea...",
+                    genres:[
+                        "Crime",
+                        "Drama",
+                        "Thriller"
+                    ],
+                    runtime:98,
+                    year:"1996",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"iJPgVnyEByE",
+                        trailer:"aoOZDiswNaw"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/kHHfUmhkJUouqDPd27qcpBdSewC.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/yHiIDe3MDgkSTrePg2Xk8wN3b4U.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/33niNRK7JDLcaGy2pcJsYkVTeq7.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "salesclerk",
+                        "unsociability",
+                        "police"
+                    ],
+                    cast:[
+                        "Frances McDormand",
+                        "William H. Macy",
+                        "Steve Buscemi"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Burn After Reading",
+                    desc:"When a disc containing memoirs of a former CIA analyst falls into the hands of gym employees, Linda and Chad, they see a chance to make enough money for Linda to have life-changing cosmetic surgery. P...",
+                    genres:[
+                        "Comedy",
+                        "Drama"
+                    ],
+                    runtime:96,
+                    year:"2008",
+                    isMostLiked:false,
+                    videos:{
+                        clip:"EhRfLPTWzBY",
+                        trailer:"cnM-v3p1vvw"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/m3kVkc5FCpVLo7gwHKbJy0yNSj3.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/mLFJ6BooWWbKLM9hevV1ZpfWfl4.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/wIPJHChwRRfD4qTbsNxYagr6CuS.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "blackmail",
+                        "paranoia",
+                        "black humor"
+                    ],
+                    cast:[
+                        "George Clooney",
+                        "Frances McDormand",
+                        "Brad Pitt"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Unbroken",
+                    desc:"A chronicle of the life of Louis Zamperini, an Olympic runner who was taken prisoner by Japanese forces during World War II.",
+                    genres:[
+                        "Drama",
+                        "War"
+                    ],
+                    runtime:137,
+                    year:"2014",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"Zd9-zz3A7zQ",
+                        trailer:"rGlsxVfCSyQ"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/i3t3eJyPsLnODc0Y7NuDoY1GOoS.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/sKtL6s049rsCc2sv2BQwDqyWYbb.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/csVuItTrhq97TfaxZFtvCQPUrUN.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "japan",
+                        "berlin, germany",
+                        "sports"
+                    ],
+                    cast:[
+                        "Jack O'Connell",
+                        "Alex Russell",
+                        "Domhnall Gleeson"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"The Ballad of Buster Scruggs",
+                    desc:"Vignettes weaving together the stories of six individuals in the old West at the end of the Civil War. Following the tales of a sharp-shooting songster, a wannabe bank robber, two weary traveling perf...",
+                    genres:[
+                        "Western",
+                        "Comedy",
+                        "Drama"
+                    ],
+                    runtime:132,
+                    year:"2018",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"_2PyxzSH1HM"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/7K8F49CamvU3R1KV5IF1dJtOTXe.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/f1QSRkTPLNilbrJlvadKPyUhesY.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/eXqoZGS0zV2KmQS8eARG13yqjyF.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "prostitute",
+                        "native american",
+                        "parody"
+                    ],
+                    cast:[
+                        "Tim Blake Nelson",
+                        "Willie Watson",
+                        "Clancy Brown"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Hail, Caesar!",
+                    desc:"When a Hollywood star mysteriously disappears in the middle of filming, the studio sends their fixer to get him back.",
+                    genres:[
+                        "Comedy",
+                        "Crime",
+                        "Mystery"
+                    ],
+                    runtime:106,
+                    year:"2016",
+                    isMostLiked:false,
+                    videos:{
+                        clip:"vN-R_E-XBPk",
+                        trailer:"vMUUKtF_BF0",
+                        teaser:"4F4Thdn0vlE"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/kSM2yeV1vnrn7Y0BeUwK0qYmltk.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/qsYma0KMuh2p57wRf3KFjRaFZ8Q.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/bOxcEJBeGfFewbrLicZQ6Ie8pmN.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "journalist",
+                        "ransom",
+                        "cat"
+                    ],
+                    cast:[
+                        "Josh Brolin",
+                        "George Clooney",
+                        "Alden Ehrenreich"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"A Serious Man",
+                    desc:"It is 1967, and Larry Gopnik, a physics professor at a quiet Midwestern university, has just been informed by his wife Judith that she is leaving him. She has fallen in love with one of his more pompo...",
+                    genres:[
+                        "Comedy",
+                        "Drama"
+                    ],
+                    runtime:106,
+                    year:"2009",
+                    isMostLiked:false,
+                    videos:{
+                        clip:"8iIGBWH0gks",
+                        trailer:"mDKHWRbK2_Q"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/hp8LWuknB5bTh5NQ9nqsYOTAFGG.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/ihwfod79qlBbFpjVQNeXxmX03ql.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/pCNUL4teSoK43BKVEqrOvlOQDL0.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "midlife crisis",
+                        "professor",
+                        "minnesota"
+                    ],
+                    cast:[
+                        "Michael Stuhlbarg",
+                        "Richard Kind",
+                        "Fred Melamed"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Suburbicon",
+                    desc:"In the quiet family town of Suburbicon during the 1950s, the best and worst of humanity is hilariously reflected through the deeds of seemingly ordinary people. When a home invasion turns deadly, a pi...",
+                    genres:[
+                        "Thriller",
+                        "Crime",
+                        "Drama"
+                    ],
+                    runtime:105,
+                    year:"2017",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"IYga2m0V2O0"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/sSEgU3XanLLCcxcmO14iVHXfzEp.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/dmgFJdivUmV4vGLkbPD49KVjlHx.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/qhlhZjgqaErzbH1WFKO9dRXl4PY.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "dark comedy"
+                    ],
+                    cast:[
+                        "Matt Damon",
+                        "Julianne Moore",
+                        "Noah Jupe"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Barton Fink",
+                    desc:"A renowned New York playwright is enticed to California to write for the movies and discovers the hellish truth of Hollywood.",
+                    genres:[
+                        "Comedy",
+                        "Drama"
+                    ],
+                    runtime:117,
+                    year:"1991",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"UKLwS4odvyw"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/hyfQsAXtu1tahqzlKEmTxf4BFIL.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/5IbE8joIeUUowIVC2TNsyAd0nFv.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/rNyORqyxrBALy1TvY2NVib4Irrm.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "hotel",
+                        "screenplay",
+                        "mass murder"
+                    ],
+                    cast:[
+                        "John Turturro",
+                        "John Goodman",
+                        "Judy Davis"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"The Ladykillers",
+                    desc:"An eccentric, if not charming Southern professor and his crew pose as a band in order to rob a casino, all under the nose of his unsuspecting landlord – a sharp old woman.",
+                    genres:[
+                        "Comedy",
+                        "Crime",
+                        "Thriller"
+                    ],
+                    runtime:104,
+                    year:"2004",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"BVL6AjybCZ0"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/yLJcszmw9O5zGI9iy4cXxqgtjp1.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/bJIAvpPOUV3NCU9TXBytTo3HaSd.jpg",
+                    poster:null,
+                    logo:null,
+                    keywords:[
+                        "garbage",
+                        "church choir",
+                        "remake"
+                    ],
+                    cast:[
+                        "Tom Hanks",
+                        "Irma P. Hall",
+                        "Marlon Wayans"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Intolerable Cruelty",
+                    desc:"A revenge-seeking gold digger marries a womanizing Beverly Hills lawyer with the intention of making a killing in the divorce.",
+                    genres:[
+                        "Comedy",
+                        "Romance"
+                    ],
+                    runtime:100,
+                    year:"2003",
+                    isMostLiked:false,
+                    videos:{
+                        clip:"41jaWVfT5Ko",
+                        trailer:"aeuAiVTB3fc"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/pUfKRx91YwigEzoTVTcbwOQR53G.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/4UTiuhJLtO1PGPbMD9Hq1iqFaHJ.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/7zABvuXpnmMBbWcetE5szh0Pi28.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "infidelity",
+                        "california",
+                        "assassin"
+                    ],
+                    cast:[
+                        "George Clooney",
+                        "Catherine Zeta-Jones",
+                        "Geoffrey Rush"
+                    ],
+                    ageRating:"U/A 13+"
+                }
+            ],
             shows: [],
             info: {
                 name: 'Ethan Coen, Joe Coen',
@@ -11556,7 +14662,397 @@ const sectionSlice = createSlice({
         ray: {
             tabs: ['director'],
             title: "Satyajit Ray's Poetic Realism",
-            movies: [],
+            movies: [
+                {
+                    type:"movie",
+                    title:"Pather Panchali",
+                    desc:"Impoverished priest Harihar Ray, dreaming of a better life for himself and his family, leaves his rural Bengal village in search of work.  Preserved by the Academy Film Archive in partnership with The...",
+                    genres:[
+                        "Drama"
+                    ],
+                    runtime:125,
+                    year:"1955",
+                    isMostLiked:false,
+                    videos:{
+                        clip:"gcT3NBPMGgI",
+                        trailer:"mgv68E_o6VM"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/ibJuTdFmYGOiiUzJ5HzHU4EAuf1.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/ibJuTdFmYGOiiUzJ5HzHU4EAuf1.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/5KTKviMAYco5Gk64KO8XisBlbea.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "robbery",
+                        "misery",
+                        "move"
+                    ],
+                    cast:[
+                        "Subir Banerjee",
+                        "Uma Das Gupta",
+                        "Karuna Banerjee"
+                    ],
+                    ageRating:"U-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Apur Sansar",
+                    desc:"Apu is a jobless ex-student dreaming vaguely of a future as a writer. An old college friend talks him into a visit up-country to a village wedding.  Preserved by the Academy Film Archive in 1996.",
+                    genres:[
+                        "Drama"
+                    ],
+                    runtime:105,
+                    year:"1959",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"mgv68E_o6VM"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/d3RW7jRsBCHfC9QZaUF9FpzJrh8.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/d3RW7jRsBCHfC9QZaUF9FpzJrh8.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/khrMLll0EXfi2onWd2LhlczOZsz.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "dying and death",
+                        "broken engagement",
+                        "arranged marriage"
+                    ],
+                    cast:[
+                        "Soumitra Chatterjee",
+                        "Sharmila Tagore",
+                        "Alok Chakravarty"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Charulata",
+                    desc:"In 1870s India, Charulata is an isolated, artistically inclined woman who sees little of her busy journalist husband, Bhupati. Realizing that his wife is alienated and unhappy, he convinces his cousin...",
+                    genres:[
+                        "Drama",
+                        "Romance"
+                    ],
+                    runtime:117,
+                    year:"1964",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"gFCuy_FUsdo"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/brR9IQgWt01b4Am3CyOckUU0m3u.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/brR9IQgWt01b4Am3CyOckUU0m3u.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/r43CkYnMnvBaL81BQlMgsfMX2Ul.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "swing",
+                        "writer",
+                        "india"
+                    ],
+                    cast:[
+                        "Madhabi Mukherjee",
+                        "Soumitra Chatterjee",
+                        "Shailen Mukherjee"
+                    ],
+                    ageRating:"U-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"The Big City",
+                    desc:"Life at home changes when a housewife from a middle-class, conservative family in Calcutta gets a job as a salesperson.  Preserved by the Academy Film Archive in partnership with The Film Foundation i...",
+                    genres:[
+                        "Drama"
+                    ],
+                    runtime:136,
+                    year:"1963",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"HGA8WBTvQco"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/buaddeWUkt52VJFSujO5mKNx0ab.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/cDxkqKumuTe9q5MoC98tRXGW50o.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/vKOyAxpNSa8xiftBMBR0eY1Bn40.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "mother-in-law",
+                        "money",
+                        "calcutta"
+                    ],
+                    cast:[
+                        "Madhabi Mukherjee",
+                        "Anil Chatterjee",
+                        "Haren Chatterjee"
+                    ],
+                    ageRating:"U-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"The Adversary",
+                    desc:"Siddhartho Chowdhury, a brilliant young medical student, is forced to leave his studies after his father's sudden demise. He is forced to navigate the high unemployment rate and the communist socio-po...",
+                    genres:[
+                        "Drama",
+                        "Romance"
+                    ],
+                    runtime:110,
+                    year:"1970",
+                    isMostLiked:false,
+                    videos:{
+                        clip:"AOG1xowCEos"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/rVgW81YtIyMZFoRBwv4vOxaOMnA.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/rVgW81YtIyMZFoRBwv4vOxaOMnA.jpg",
+                    poster:null,
+                    logo:null,
+                    keywords:[
+                        "job interview",
+                        "adversary",
+                        "calcutta"
+                    ],
+                    cast:[
+                        "Dhritiman Chatterjee",
+                        "Krishna Bose",
+                        "Indira Devi"
+                    ],
+                    ageRating:"U/A 7+"
+                },
+                {
+                    type:"movie",
+                    title:"Days and Nights in the Forest",
+                    desc:"Four friends from Calcutta who have very different personalities make a holiday excursion into the country, to a tiny village in the state of Bihar where they set themselves up in a bungalow. A series...",
+                    genres:[
+                        "Drama"
+                    ],
+                    runtime:115,
+                    year:"1970",
+                    isMostLiked:false,
+                    videos:{
+                        clip:"nflPA_mTMFw"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/7d8nRbxKPfwIvj2raftrkAaEMdY.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/2TagGB8rcYEAbqWRxQAk19DlMaH.jpg",
+                    poster:null,
+                    logo:null,
+                    keywords:[
+                        "countryside",
+                        "holiday",
+                        "class"
+                    ],
+                    cast:[
+                        "Soumitra Chatterjee",
+                        "Samit Bhanja",
+                        "Subhendu Chatterjee"
+                    ],
+                    ageRating:"U-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"The Home and the World",
+                    desc:"When the movie opens, a woman is recalling the events that molded her perspective on the world. Years ago, her husband, a wealthy Western-educated landowner, challenged tradition by providing her with...",
+                    genres:[
+                        "Drama"
+                    ],
+                    runtime:140,
+                    year:"1985",
+                    isMostLiked:false,
+                    videos:{},
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/onJ2tY8Bja4JUjhiD81Ze0Uj7IX.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/onJ2tY8Bja4JUjhiD81Ze0Uj7IX.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/lYhEtGfr4DGjtJdYJYddb8X1e2H.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "love triangle",
+                        "patriotism",
+                        "family drama"
+                    ],
+                    cast:[
+                        "Soumitra Chatterjee",
+                        "Victor Banerjee",
+                        "Swatilekha Sengupta"
+                    ],
+                    ageRating:"U/A 10+"
+                },
+                {
+                    type:"movie",
+                    title:"The Golden Fortress",
+                    desc:"A young boy becomes a target for crooks, after he claims to remember his past life and mentions precious jewels in a golden fortress.",
+                    genres:[
+                        "Mystery"
+                    ],
+                    runtime:135,
+                    year:"1974",
+                    isMostLiked:false,
+                    videos:{},
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/tkDruUs0xEXkRjl747kWuQLU9xk.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/tkDruUs0xEXkRjl747kWuQLU9xk.jpg",
+                    poster:null,
+                    logo:null,
+                    keywords:[
+                        "Not Available"
+                    ],
+                    cast:[
+                        "Soumitra Chatterjee",
+                        "Santosh Dutta",
+                        "Siddhartha Chatterjee"
+                    ],
+                    ageRating:"U/A 10+"
+                },
+                {
+                    type:"movie",
+                    title:"The Adventures of Goopy and Bagha",
+                    desc:"Goopy Gyne and Bagha Byne are banished from their respective villages for being bad musicians. However, with their skills, they succeed in pleasing the king of ghosts who grants them three boons. How ...",
+                    genres:[
+                        "Comedy",
+                        "Music",
+                        "Fantasy"
+                    ],
+                    runtime:132,
+                    year:"1969",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"xVgXiC2hOkg"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/6HLHtth6BBD2PLtITHoHhCHWGQS.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/6HLHtth6BBD2PLtITHoHhCHWGQS.jpg",
+                    poster:null,
+                    logo:null,
+                    keywords:[
+                        "horror spoof",
+                        "preserved film"
+                    ],
+                    cast:[
+                        "Tapan Chatterjee",
+                        "Rabi Ghosh",
+                        "Santosh Dutta"
+                    ],
+                    ageRating:"U-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"An Enemy of the People",
+                    desc:"Ashoke Gupta is an idealistic doctor working in a town near Calcutta. He discovers that the water at a popular temple is the source of an outbreak of typhoid and hepatitis. In order to save lives, he ...",
+                    genres:[
+                        "Drama"
+                    ],
+                    runtime:99,
+                    year:"1990",
+                    isMostLiked:false,
+                    videos:{},
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/tmYQUgBsHjsnLVdkel8kHKLYdOG.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/tmYQUgBsHjsnLVdkel8kHKLYdOG.jpg",
+                    poster:null,
+                    logo:null,
+                    keywords:[
+                        "water supply"
+                    ],
+                    cast:[
+                        "Soumitra Chatterjee",
+                        "Dhritiman Chatterjee",
+                        "Dipankar Dey"
+                    ],
+                    ageRating:"U/A 10+"
+                },
+                {
+                    type:"movie",
+                    title:"The Middleman",
+                    desc:"A bright and idealistic young graduate steels himself for a dog-eat-dog world, only to flounder in a job market packed with thousands of other hopefuls. When he eventually decides to start his own bus...",
+                    genres:[
+                        "Drama"
+                    ],
+                    runtime:131,
+                    year:"1976",
+                    isMostLiked:false,
+                    videos:{},
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/xH7DjZC53RT0N1a36r3DXWJSVJd.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/xH7DjZC53RT0N1a36r3DXWJSVJd.jpg",
+                    poster:null,
+                    logo:null,
+                    keywords:[
+                        "market",
+                        "middleman",
+                        "preserved film"
+                    ],
+                    cast:[
+                        "Pradip Mukherjee",
+                        "Satya Banerjee",
+                        "Dipankar Dey"
+                    ],
+                    ageRating:"U/A 7+"
+                },
+                {
+                    type:"movie",
+                    title:"Three Daughters",
+                    desc:"'Teen Kanya' is an anthology film based upon short stories by Rabindranath Tagore, as a tribute on the author's centenary. The title means \"Three Daughters\", and the film's original Indian release con...",
+                    genres:[
+                        "Comedy",
+                        "Drama",
+                        "Fantasy"
+                    ],
+                    runtime:173,
+                    year:"1961",
+                    isMostLiked:false,
+                    videos:{},
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/l8yamy1OU7xRGqmuMxaXYPeeI5d.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/l8yamy1OU7xRGqmuMxaXYPeeI5d.jpg",
+                    poster:null,
+                    logo:null,
+                    keywords:[
+                        "preserved film"
+                    ],
+                    cast:[
+                        "Chandana Banerjee",
+                        "Nripati Chatterjee",
+                        "Anil Chatterjee"
+                    ],
+                    ageRating:"U-Rated"
+                }
+            ],
             shows: [],
             info: {
                 name: 'Satyajit Ray',
@@ -11570,7 +15066,225 @@ const sectionSlice = createSlice({
         hirani: {
             tabs: ['director'],
             title: "Rajkumar Hirani's Heartfelt Narratives",
-            movies: [],
+            movies: [
+                {
+                    type:"movie",
+                    title:"3 Idiots",
+                    desc:"Rascal. Joker. Dreamer. Genius... You've never met a college student quite like \"Rancho.\" From the moment he arrives at India's most prestigious university, Rancho's outlandish schemes turn the campus...",
+                    genres:[
+                        "Drama",
+                        "Comedy"
+                    ],
+                    runtime:171,
+                    year:"2009",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"K0eDlFX9GMc"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/7fqChpiaXELdOBGHVJaEoetS7dw.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/u7kuUaySqXBVAtqEl9vkTkAzHV9.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/v6Hihdrx8TajNEbWSDD8cxi5er1.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "suicide",
+                        "suicide attempt",
+                        "professor"
+                    ],
+                    cast:[
+                        "Aamir Khan",
+                        "R. Madhavan",
+                        "Sharman Joshi"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"PK",
+                    desc:"A stranger in the city asks questions no one has asked before. Known only by his initials, the man's innocent questions and childlike curiosity take him on a journey of love, laughter and letting go.",
+                    genres:[
+                        "Comedy",
+                        "Drama",
+                        "Science Fiction"
+                    ],
+                    runtime:153,
+                    year:"2014",
+                    isMostLiked:true,
+                    videos:{
+                        teaser:"SOXWc32k4zA"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/q1guAERQtxW8cprKv4sAdpVOyGU.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/gxfvtq5eYiClS2X7hxAAPBNrbWA.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/BnDydsaEeMhywD5Snv6jN77ifh.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "friendship",
+                        "society",
+                        "christianity"
+                    ],
+                    cast:[
+                        "Aamir Khan",
+                        "Anushka Sharma",
+                        "Saurabh Shukla"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Munna Bhai M.B.B.S.",
+                    desc:"A gangster sets out to fulfill his father's dream of becoming a doctor.",
+                    genres:[
+                        "Comedy",
+                        "Drama"
+                    ],
+                    runtime:156,
+                    year:"2003",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"6lCGvu-hwX4"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/r3bdOFgv8WE4MRjWdNZYkO4xijo.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/smaFFzbd1flJKUqDI2ylljQ8Pki.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/o7bGhABnizJx8jx5xj8xtgj4u3a.png",
+                        isLogoIncluded:false
+                    },
+                    keywords:[
+                        "medicine",
+                        "hospital"
+                    ],
+                    cast:[
+                        "Sanjay Dutt",
+                        "Arshad Warsi",
+                        "Boman Irani"
+                    ],
+                    ageRating:"U-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Lage Raho Munna Bhai",
+                    desc:"Lovable goon Munna falls for a morning radio host by the name of Jahnvi, who also runs an elders' home which an unscrupulous builder seeks to attain. In order to gain Jahnvi’s attention, he cheats his...",
+                    genres:[
+                        "Comedy",
+                        "Drama",
+                        "Romance"
+                    ],
+                    runtime:144,
+                    year:"2006",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"OE6f1oHgeDg"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/urxONLFFBKFWzsxLcvUaRgo4v4M.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/urxONLFFBKFWzsxLcvUaRgo4v4M.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/bu20NZpnt3qHe3dUckI8ZpN4idX.png",
+                        isLogoIncluded:false
+                    },
+                    keywords:[
+                        "historical figure",
+                        "india"
+                    ],
+                    cast:[
+                        "Sanjay Dutt",
+                        "Arshad Warsi",
+                        "Dilip Prabhavalkar"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Sanju",
+                    desc:"Sanju explores some of the most crucial chapters from movie star Sanjay Dutt’s dramatic and controversial real life. It gives a lowdown on his tryst with drugs and his trials and tribulations in the A...",
+                    genres:[
+                        "Drama",
+                        "Comedy"
+                    ],
+                    runtime:161,
+                    year:"2018",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"1J76wN0TPI4",
+                        teaser:"rRr1qiJRsXk"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/nyD9dfebEwoeRJ4vlQju2bOH3Ee.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/XeJhxScCrZyoCVRLG3eUWbCyOz.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/k3Mskqew3cLqEbaEpnV7FEYIg6a.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "artists' life",
+                        "biography",
+                        "sanjay dutt"
+                    ],
+                    cast:[
+                        "Ranbir Kapoor",
+                        "Paresh Rawal",
+                        "Vicky Kaushal"
+                    ],
+                    ageRating:"U/A 12+"
+                },
+                {
+                    type:"movie",
+                    title:"Dunki",
+                    desc:"Four friends from a sleepy little village in Punjab share a common dream: to go to England. Their problem is that they have neither the visa nor the ticket. A soldier alights from a train one day, and...",
+                    genres:[
+                        "Adventure",
+                        "Comedy",
+                        "Drama"
+                    ],
+                    runtime:159,
+                    year:"2023",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"Zd69FfhBmSc"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/7kXd9k4UbrzdIZU5pQhP87hd5Bm.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/uuw0PRR4sgGi1IV4CYYpEYtez9y.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/kxhnOWx0ikkwB2Y7oGzJjd2RIun.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "affectation",
+                        "ambiguous"
+                    ],
+                    cast:[
+                        "Shah Rukh Khan",
+                        "Taapsee Pannu",
+                        "Vikram Kochhar"
+                    ],
+                    ageRating:"U/A 13+"
+                }
+            ],
             shows: [],
             info: {
                 name: 'Rajkumar Hirani',
@@ -11584,7 +15298,294 @@ const sectionSlice = createSlice({
         guru: {
             tabs: ['director'],
             title: "Guru Dutt's Tragic Elegance",
-            movies: [],
+            movies: [
+                {
+                    type:"movie",
+                    title:"Pyaasa",
+                    desc:"Vijay, a destitute poet, searches for true love while attempting to get his work published. With the assistance of two women in his life, his dream comes true - but at a cost that causes Vijay to reth...",
+                    genres:[
+                        "Drama",
+                        "Romance"
+                    ],
+                    runtime:146,
+                    year:"1957",
+                    isMostLiked:false,
+                    videos:{
+                        clip:"3ta4BmumQKc",
+                        trailer:"IjlQJjmTIcM"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/yMPM4ff8bAflecxr5vbagg4fsyD.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/hvtRa9AZ2mKnR32fRow356vsdSf.jpg",
+                    poster:null,
+                    logo:null,
+                    keywords:[
+                        "depression",
+                        "prostitute",
+                        "greed"
+                    ],
+                    cast:[
+                        "Guru Dutt",
+                        "Waheeda Rehman",
+                        "Mala Sinha"
+                    ],
+                    ageRating:"U-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Kaagaz Ke Phool",
+                    desc:"The film tells, in flashback, the story of Suresh Sinha, a famous film director and his relationship with an aspiring actress.",
+                    genres:[
+                        "Drama",
+                        "Romance"
+                    ],
+                    runtime:142,
+                    year:"1959",
+                    isMostLiked:false,
+                    videos:{
+                        clip:"3TxjJCEKYvE"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/jKmX5N1jr36MCYbW9XOi93xymGM.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/jKmX5N1jr36MCYbW9XOi93xymGM.jpg",
+                    poster:null,
+                    logo:null,
+                    keywords:[
+                        "musical"
+                    ],
+                    cast:[
+                        "Waheeda Rehman",
+                        "Guru Dutt",
+                        "Kumari Naaz"
+                    ],
+                    ageRating:"U-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"C.I.D.",
+                    desc:"A newspaper editor gets murdered when he was about to expose the underworld links of a rich person. So, a C.I.D inspector gets assigned to investigate the murder case.",
+                    genres:[
+                        "Action",
+                        "Crime"
+                    ],
+                    runtime:146,
+                    year:"1956",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"g_rd9O8jVMw"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/75LrazHSauQwhGhJpvfbp5WW9Vo.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/75LrazHSauQwhGhJpvfbp5WW9Vo.jpg",
+                    poster:null,
+                    logo:null,
+                    keywords:[
+                        "Not Available"
+                    ],
+                    cast:[
+                        "Dev Anand",
+                        "Shakila",
+                        "Waheeda Rehman"
+                    ],
+                    ageRating:"U/A 10+"
+                },
+                {
+                    type:"movie",
+                    title:"Sahib Bibi Aur Ghulam",
+                    desc:"A debauchee Zamindar greatly neglects his wife. The decadence of the Bengali Zamindar milieu in the late 19th century, seen through the eyes of a young upward mobile rustic seeking fortune in Calcutta...",
+                    genres:[
+                        "Drama"
+                    ],
+                    runtime:152,
+                    year:"1962",
+                    isMostLiked:false,
+                    videos:{},
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/vU4Fz6I9VAyjRiqPguPgdCEQoMq.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/vU4Fz6I9VAyjRiqPguPgdCEQoMq.jpg",
+                    poster:null,
+                    logo:null,
+                    keywords:[
+                        "neglect",
+                        "tragedy",
+                        "alcoholic"
+                    ],
+                    cast:[
+                        "Guru Dutt",
+                        "Meena Kumari",
+                        "Waheeda Rehman"
+                    ],
+                    ageRating:"U-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Mr. & Mrs. '55",
+                    desc:"A young, naive heiress is forced into a 'marriage of convenience' with an unemployed cartoonist in an attempt to save her millions - a move orchestrated by the scheming aunt.",
+                    genres:[
+                        "Comedy",
+                        "Romance",
+                        "Drama"
+                    ],
+                    runtime:157,
+                    year:"1955",
+                    isMostLiked:false,
+                    videos:{},
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/8rWtbh6tmPhGqB2kmS0miyq2RW3.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/8rWtbh6tmPhGqB2kmS0miyq2RW3.jpg",
+                    poster:null,
+                    logo:null,
+                    keywords:[
+                        "newspaper",
+                        "feminism",
+                        "musical"
+                    ],
+                    cast:[
+                        "Guru Dutt",
+                        "Madhubala",
+                        "Lalita Pawar"
+                    ],
+                    ageRating:"U-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Aar Paar",
+                    desc:"Kalu is a taxi-driver in Bombay, India. He has two women who love him and would like to marry him. Kalu first wants to establish himself, and become rich, before he can even think of marriage. One of ...",
+                    genres:[
+                        "Drama",
+                        "Romance",
+                        "Crime"
+                    ],
+                    runtime:146,
+                    year:"1954",
+                    isMostLiked:false,
+                    videos:{},
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/8EEpTV3qmpsKGkDIUNuL0rfCUA6.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/8EEpTV3qmpsKGkDIUNuL0rfCUA6.jpg",
+                    poster:null,
+                    logo:null,
+                    keywords:[
+                        "taxi driver",
+                        "car mechanic",
+                        "forbidden love"
+                    ],
+                    cast:[
+                        "Guru Dutt",
+                        "Shyama",
+                        "Jagdish Sethi"
+                    ],
+                    ageRating:"U-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Baazi",
+                    desc:"Madan comes from a poor family background. Unable to find employment, he takes to gambling in order to pay for his sister's medical expenses. Soon, he forms a bond with Leena, a dancer, and is falsely...",
+                    genres:[
+                        "Crime",
+                        "Drama",
+                        "Music"
+                    ],
+                    runtime:143,
+                    year:"1951",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"dyoamSouESo"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/yFQQLI3XEaLPXUWYsNH9ziZmlyZ.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/yFQQLI3XEaLPXUWYsNH9ziZmlyZ.jpg",
+                    poster:null,
+                    logo:null,
+                    keywords:[
+                        "casino",
+                        "gambling",
+                        "forbidden love"
+                    ],
+                    cast:[
+                        "Dev Anand",
+                        "Geeta Bali",
+                        "Kalpana Kartik"
+                    ],
+                    ageRating:"U-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"The Falcon",
+                    desc:"The Crown Prince of Malabar dallies with Rosita whilst his people suffer at the hands of cruel Portuguese colonists. Whilst voyaging on a Portuguese ship, the Prince is captured by patriots who are re...",
+                    genres:[
+                        "Adventure",
+                        "Drama",
+                        "History"
+                    ],
+                    runtime:141,
+                    year:"1953",
+                    isMostLiked:false,
+                    videos:{},
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/lp4Zr8rBjro9EqaIaWHffpRd3uU.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/lp4Zr8rBjro9EqaIaWHffpRd3uU.jpg",
+                    poster:null,
+                    logo:null,
+                    keywords:[
+                        "Not Available"
+                    ],
+                    cast:[
+                        "Geeta Bali",
+                        "Guru Dutt",
+                        "K.N. Singh"
+                    ],
+                    ageRating:"U/A 10+"
+                },
+                {
+                    type:"movie",
+                    title:"Jaal",
+                    desc:"Carlos and his sister Maria live along the Indian coast in a fishing village. Tony and Lisa are 2 newcomers and soon Maria and Tony fall in love. This does not go down well with Simon who loves Maria.",
+                    genres:[
+                        "Crime",
+                        "Drama",
+                        "Music"
+                    ],
+                    runtime:115,
+                    year:"1952",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"uOjeDbhbyfw"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/pmSwGA0vUxjh9e5bULFEI8meZWe.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/pmSwGA0vUxjh9e5bULFEI8meZWe.jpg",
+                    poster:null,
+                    logo:null,
+                    keywords:[
+                        "Not Available"
+                    ],
+                    cast:[
+                        "Geeta Bali",
+                        "Dev Anand",
+                        "Purnima"
+                    ],
+                    ageRating:"U-Rated"
+                }
+            ],
             shows: [],
             info: {
                 name: 'Guru Dutt',
@@ -11598,7 +15599,425 @@ const sectionSlice = createSlice({
         anurag: {
             tabs: ['director'],
             title: "Anurag Kashyap's raw grit",
-            movies: [],
+            movies: [
+                {
+                    type:"movie",
+                    title:"Gangs of Wasseypur - Part 1",
+                    desc:"In 1970s India, Sardar Khan vows to take revenge on the man who killed his father decades earlier.",
+                    genres:[
+                        "Action",
+                        "Thriller",
+                        "Crime"
+                    ],
+                    runtime:160,
+                    year:"2012",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"cSfNfckoXPc"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/1CAyD1mFJvCgsbOKyYTP8hIBqGe.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/riwwiv2BMD9D6L3NM4sJjHCMVsm.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/tfL4cULbynBEIIYZcLk8YTzpKt1.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "mafia",
+                        "gang",
+                        "coal mining"
+                    ],
+                    cast:[
+                        "Manoj Bajpayee",
+                        "Richa Chadha",
+                        "Tigmanshu Dhulia"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Black Friday",
+                    desc:"Bombs tear through Bombay in 1993, wreaking havoc and polarising the citizens. With perpetrators at large, the state launches a massive man-hunt to unmask the perpetrators behind these events.",
+                    genres:[
+                        "Crime",
+                        "Drama"
+                    ],
+                    runtime:162,
+                    year:"2004",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"SU_59-aC5L8"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/kBi1q1jXgOPjbtBIw56nAl15zjw.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/kBi1q1jXgOPjbtBIw56nAl15zjw.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/eqvdzNXSXViCKCWIp9ByMGkpx7C.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "terrorism",
+                        "docudrama",
+                        "bomb planting"
+                    ],
+                    cast:[
+                        "Kay Kay Menon",
+                        "Pavan Malhotra",
+                        "Aditya Srivastava"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Gangs of Wasseypur - Part 2",
+                    desc:"After the death of his father and brother Danish, Faizal Khan vows to take revenge by destroying Ramadhir Singh's gang.",
+                    genres:[
+                        "Crime",
+                        "Thriller",
+                        "Action"
+                    ],
+                    runtime:160,
+                    year:"2012",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"XuK5TAEIqfg"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/usAGICQAbm0W2dkwp2Fyqk7Vtmx.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/nXkNbKFx8YLorku25MMLO5OV6aW.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/b4iMJVzV4FyxlfEDT4UHGJA0p6r.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "gun",
+                        "revenge",
+                        "mafia"
+                    ],
+                    cast:[
+                        "Nawazuddin Siddiqui",
+                        "Huma Qureshi",
+                        "Richa Chadha"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Gulaal",
+                    desc:"A law student witnesses the struggles of the Rajputs, deception, homicide and crime after being elected as General Secretary of his college.",
+                    genres:[
+                        "Crime",
+                        "Drama"
+                    ],
+                    runtime:147,
+                    year:"2009",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"IS7KLVs1Ib4"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/r9fwjoJOYT1xQGHwLkSJA6snhsR.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/r9fwjoJOYT1xQGHwLkSJA6snhsR.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/92wnvRx1bvfiqblnKm32JMor04P.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "Not Available"
+                    ],
+                    cast:[
+                        "Raj Singh Chaudhary",
+                        "Kay Kay Menon",
+                        "Abhimanyu Singh"
+                    ],
+                    ageRating:"U-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Dev.D",
+                    desc:"After breaking up with his childhood love Paro, Dev finds solace in drugs and alcohol. He soon bumps into Leni, a prostitute, and falls for her.",
+                    genres:[
+                        "Comedy",
+                        "Drama",
+                        "Romance"
+                    ],
+                    runtime:144,
+                    year:"2009",
+                    isMostLiked:false,
+                    videos:{
+                        clip:"DAmGvia0Le4",
+                        trailer:"ATZB8mwU3M0"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/rACXg4zadOTEQKceu0zViohXwCb.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/rACXg4zadOTEQKceu0zViohXwCb.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/kwzx7WGa2CL1uHo8HlbbbQE6QzI.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "drug addiction",
+                        "tragic love"
+                    ],
+                    cast:[
+                        "Abhay Deol",
+                        "Mahie Gill",
+                        "Kalki Koechlin"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Ugly",
+                    desc:"A team of the best cops in Mumbai is dispatched to find a girl who has gone missing from her father's car. As the hunt for the kidnapper begins, fingers suspiciously point to closer home.",
+                    genres:[
+                        "Thriller",
+                        "Drama",
+                        "Mystery"
+                    ],
+                    runtime:128,
+                    year:"2013",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"4ougQY2-zpk"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/viPf6kTYU0LyryNPhGfQExxGbcd.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/viPf6kTYU0LyryNPhGfQExxGbcd.jpg",
+                    poster:null,
+                    logo:null,
+                    keywords:[
+                        "police",
+                        "investigation",
+                        "missing child"
+                    ],
+                    cast:[
+                        "Ronit Roy",
+                        "Rahul Bhat",
+                        "Vineet Kumar Singh"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Mukkabaaz",
+                    desc:"A low caste boxer, Shravan, trains at a gym controlled by a local Don, Mishra. Shravan falls for Mishra's niece, Sunaina. Mishra does not approve of this match. Shravan strives to win Sunaina's hand i...",
+                    genres:[
+                        "Drama"
+                    ],
+                    runtime:145,
+                    year:"2018",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"fl3gun0J8XM"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/A6qDUM0KJPcQKh7wf14xseGBphy.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/A6qDUM0KJPcQKh7wf14xseGBphy.jpg",
+                    poster:null,
+                    logo:null,
+                    keywords:[
+                        "boxing",
+                        "caste politics"
+                    ],
+                    cast:[
+                        "Vineet Kumar Singh",
+                        "Zoya Hussain",
+                        "Ravi Kishan"
+                    ],
+                    ageRating:"U/A 12+"
+                },
+                {
+                    type:"movie",
+                    title:"That Girl in Yellow Boots",
+                    desc:"An Anglo-Indian woman works in a seedy Mumbai massage parlor while trying to find her long-lost father.",
+                    genres:[
+                        "Crime",
+                        "Drama",
+                        "Mystery"
+                    ],
+                    runtime:103,
+                    year:"2011",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"FRDRfQ_mZnA"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/xZSN3URBvdutvfoVrNXExDRPdIm.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/xZSN3URBvdutvfoVrNXExDRPdIm.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/of0R4kW7iTld0BawcUHNSkzVuSx.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "gangster"
+                    ],
+                    cast:[
+                        "Kalki Koechlin",
+                        "Naseeruddin Shah",
+                        "Gulshan Devaiah"
+                    ],
+                    ageRating:"U/A 12+"
+                },
+                {
+                    type:"movie",
+                    title:"Raman Raghav 2.0",
+                    desc:"A corrupt cop and a serial killer obsessed with a psychopath from the '60s get caught up in a ruthless cat-and-mouse game.",
+                    genres:[
+                        "Thriller",
+                        "Crime"
+                    ],
+                    runtime:134,
+                    year:"2016",
+                    isMostLiked:false,
+                    videos:{
+                        clip:"0nDNKf2h2cg",
+                        trailer:"xq1cEmhVa68"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/e0ENbso69pi1GoMgj4jTXdOL47I.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/wlbWvdbn3B3EvWIaQ8hiKPnv2qH.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/zNSxE4gTAc9sY8mHz99cWa97ju7.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "drug addiction",
+                        "serial killer",
+                        "life in the slums"
+                    ],
+                    cast:[
+                        "Nawazuddin Siddiqui",
+                        "Vicky Kaushal",
+                        "Sobhita Dhulipala"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"No Smoking",
+                    desc:"A heavily addicted smoker is unprepared for the true price he must pay when he asks a guru's help to kick the habit.",
+                    genres:[
+                        "Thriller",
+                        "Drama"
+                    ],
+                    runtime:126,
+                    year:"2007",
+                    isMostLiked:false,
+                    videos:{
+                        clip:"53D_Qs1C6k4"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/q64vjfQkPPVGj5OvosJvswMhpqM.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/q64vjfQkPPVGj5OvosJvswMhpqM.jpg",
+                    poster:null,
+                    logo:null,
+                    keywords:[
+                        "smoking",
+                        "cigarette",
+                        "chain smoking"
+                    ],
+                    cast:[
+                        "John Abraham",
+                        "Paresh Rawal",
+                        "Ayesha Takia"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Bombay Velvet",
+                    desc:"An ordinary man, who goes against all odds to forge his own destiny and become a star in the glittering sky of 'Bombay,' thriving on jazz and violence.",
+                    genres:[
+                        "Crime",
+                        "Thriller"
+                    ],
+                    runtime:151,
+                    year:"2015",
+                    isMostLiked:false,
+                    videos:{},
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/GdV6lVfuDdCdbq1h8HtAdk5zDk.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/GdV6lVfuDdCdbq1h8HtAdk5zDk.jpg",
+                    poster:null,
+                    logo:null,
+                    keywords:[
+                        "jazz",
+                        "gangster",
+                        "boxer"
+                    ],
+                    cast:[
+                        "Ranbir Kapoor",
+                        "Anushka Sharma",
+                        "Karan Johar"
+                    ],
+                    ageRating:"U/A 12+"
+                },
+                {
+                    type:"movie",
+                    title:"Dobaaraa",
+                    desc:"In the 1990s, during a wild thunderstorm night, 12-year-old Anay dies in a road accident shortly after he sees his next-door neighbor committing a crime. Twenty-five years later, in a strange turn of ...",
+                    genres:[
+                        "Science Fiction",
+                        "Mystery",
+                        "Thriller"
+                    ],
+                    runtime:135,
+                    year:"2022",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"AeTsMFbmK14"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/dhN8q2eM7n0VL10RSAH2EeFxstQ.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"https://image.tmdb.org/t/p/original/vA9N4eI19uBGE5HOhHxl9kJr5Ph.jpg",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/dVaz4a5Ay7wUqABRwntWO11YwVt.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "based on movie"
+                    ],
+                    cast:[
+                        "Taapsee Pannu",
+                        "Pavail Gulati",
+                        "Aarrian Sawant"
+                    ],
+                    ageRating:"U-Rated"
+                }
+            ],
             shows: [],
             info: {
                 name: 'Anurag Kashyap',

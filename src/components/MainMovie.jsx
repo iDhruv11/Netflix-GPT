@@ -5,7 +5,7 @@ import { Info, Play, Replay, Unmute, Mute } from "../utils/Icons";
 import { ShimmerButton, ShimmerDiv, ShimmerText } from "shimmer-effects-react";
 import { getMainMovie } from "../utils/getMainMovie";
 
-const MainMovie = ({ mainMovieCollection }) => {
+const MainMovie = ({ mainMovieCollection, bottom }) => {
 
     const [minimize, setMinimize] = useState(false);
     const [showVideo, setShowVideo] = useState(false)
@@ -21,7 +21,8 @@ const MainMovie = ({ mainMovieCollection }) => {
         logo: {
             src: null,
             minWidth: null,
-            maxWidth: null
+            maxWidth: null,
+            aspectRatio: null,
         },
         desc: null,
         type: null,
@@ -47,10 +48,6 @@ const MainMovie = ({ mainMovieCollection }) => {
         }
     }, [])
 
-
-    useEffect( () => {
-
-    }, [mainMovieCollection])
 
     useEffect(() => {
 
@@ -114,6 +111,7 @@ const MainMovie = ({ mainMovieCollection }) => {
                                             player.current.stop()
                                             setShowCover(true)
                                             setShowVideo(true)
+                                            setMinimize(false)
                                         }
 
                                     }, 1500)
@@ -140,8 +138,9 @@ const MainMovie = ({ mainMovieCollection }) => {
                 const prePlayer = new YT.Player('iframe', {
                     events: {
 
-                        'onError': () => {
+                        'onError': (event) => {
                             console.log("Error playing video")
+                            console.log(event)
                             error.current = true
                         },
 
@@ -230,10 +229,10 @@ const MainMovie = ({ mainMovieCollection }) => {
 
             <div className="w-full h-full absolute left-0 top-0 z-40">
 
-                <div className={`absolute pl-16 w-[40%] flex flex-col bottom-64 ${(mainMovie.desc) ? `gap-1` : `gap-4`}`}>
+                <div className={`absolute pl-16 w-[40%] flex flex-col ${bottom} ${(mainMovie.desc) ? `gap-1` : `gap-4`}`}>
 
                     <ShimmerDiv mode="custom" height={"15rem"} width={"90%"} loading={!mainMovie.logo.src} from="#141414" via="#1c1c1c" to="#141414" border={0} rounded={"0.3"}>
-                        <div className={`${(minimize) ? `${mainMovie.logo.minWidth} translate-y-44 ` : `${mainMovie.logo.maxWidth}`} ${(mainMovie.isNetflixOriginal && mainMovie.title != "The Irishman") ? `mb-6` : `mb-1`} transition-all duration-1000 ease-linear transform-gpu`}>
+                        <div className={`${(minimize) ? `${mainMovie.logo.minWidth} translate-y-44` : `${mainMovie.logo.maxWidth}`} ${(mainMovie.isNetflixOriginal && mainMovie.title != "The Irishman") ? `mb-6` : `mb-1`} transition-all duration-1000 ease-linear transform-gpu`}>
                             <img src={`${mainMovie.logo.src}`} className="w-full" />
                         </div>
 
@@ -241,7 +240,9 @@ const MainMovie = ({ mainMovieCollection }) => {
 
                     {
                         (mainMovie.isNetflixOriginal)
+                        
                             ? <ShimmerDiv mode="custom" width={"70%"} height={"3.15rem"} from="#141414" via="#1c1c1c" to="#141414" border={0} rounded={"0.3"} loading={!mainMovie.type}>
+
                                 <div className={`flex items-center gap-3 ${(minimize) ? `translate-y-20 opacity-0` : `opacity-100`} transition-all duration-700 ease-linear transform-gpu mb-[0.15rem]`}>
                                     <p className="text-white font-medium text-[2rem] flex gap-1 items-center text-shadow">
                                         A <img
@@ -250,8 +251,11 @@ const MainMovie = ({ mainMovieCollection }) => {
                                         /> Original {mainMovie.type == "movie" ? "Film" : "Show"}
                                     </p>
                                 </div>
+
                             </ShimmerDiv>
+
                             : <ShimmerDiv mode="custom" width={"70%"} height={"3.15rem"} from="#141414" via="#1c1c1c" to="#141414" border={0} rounded={"0.3"} loading={!mainMovie.type}>
+
                                 <div className={`flex items-center gap-4 ${(minimize) ? `translate-y-20 opacity-0` : `opacity-100`} transition-all duration-700 ease-linear transform-gpu mb-[0.6rem] mt-6 `}>
                                     <img
                                         src="https://res.cloudinary.com/dianmmxft/image/upload/v1728642746/top10_ysb4ws.png"
@@ -259,27 +263,35 @@ const MainMovie = ({ mainMovieCollection }) => {
                                     />
                                     <p className="text-white font-medium text-[2rem] text-shadow">{`#${mainMovie.rank} in ${mainMovie.type == "movie" ? `Movies` : `Shows`} Today`}</p>
                                 </div>
+                                
                             </ShimmerDiv>
                     }
 
 
                     <ShimmerText mode="custom" width={90} height={15} line={3} gap={6} from="#141414" via="#1c1c1c" to="#141414" border={0} loading={!mainMovie.desc}>
-                        <p className={`text-white text-[1.45rem] leading-snug font-medium text-shadow w-full ${(minimize) ? `translate-y-20 opacity-0` : `opacity-100`} transition-all duration-700 ease-linear transform-gpu mb-5`}>{mainMovie.desc}</p>
+                        <p className={`text-white text-[1.45rem] leading-snug font-normal text-shadow w-full ${(minimize) ? `translate-y-20 opacity-0` : `opacity-100`} transition-all duration-700 ease-linear transform-gpu mb-5`}>{mainMovie.desc}</p>
                     </ShimmerText>
 
                     <div className="flex gap-4 relative items-center ">
+
                         <ShimmerButton mode="custom" width={200} height={60} from="#141414" via="#1c1c1c" to="#141414" border={0} loading={!mainMovie.desc}>
+
                             <button className="bg-white flex items-center gap-3 px-7 py-[0.65rem] rounded-sm hover:bg-white/70 ">
                                 <Play />
                                 <p className="text-[1.45rem] text-black font-medium">Play</p>
                             </button>
+
                         </ShimmerButton>
+
                         <ShimmerButton mode="custom" width={250} height={60} from="#141414" via="#1c1c1c" to="#141414" border={0} loading={!mainMovie.desc}>
+
                             <button className="bg-[#6E7271]/80 flex items-center gap-3 px-6 py-2 rounded-sm hover:bg-[#6E7271]/50 ">
                                 <Info />
                                 <p className="text-[1.45rem] text-white font-medium ">More Info</p>
                             </button>
+
                         </ShimmerButton>
+
                     </div>
 
                 </div>
@@ -287,13 +299,14 @@ const MainMovie = ({ mainMovieCollection }) => {
                     {
                         (controlBtn == "replay") ?
                             <div
-                                className={`border-neutral-400 border-2 w-[25%] aspect-square flex justify-center items-center rounded-full hover:cursor-pointer ${(controlBtn) ? `` : `invisible pointer-events-none ml-4`} hover:border-white`}
+                                className={`border-neutral-400 border-2 w-[25%] aspect-square flex justify-center items-center rounded-full hover:cursor-pointer ${(controlBtn) ? `` : `invisible pointer-events-none ml-4`} hover:border-white transition-all duration-200 ease-linear`}
                                 onClick={() => {
                                     setShowVideo(false)
                                     setControlBtn("")
                                     setTimeout(() => {
                                         setShowCover(false)
                                         player.current.restart()
+                                        setMinimize(true)
                                     }, 1500);
                                     setTimeout(() => {
                                         setShowVideo(true)
@@ -305,7 +318,7 @@ const MainMovie = ({ mainMovieCollection }) => {
                             </div> :
                             (controlBtn == "mute") ?
                                 <div
-                                    className={`border-neutral-400 border-2 w-[25%] aspect-square flex justify-center items-center rounded-full hover:cursor-pointer ${(controlBtn) ? `` : `invisible pointer-events-none ml-4`} hover:border-white`}
+                                    className={`border-neutral-400 border-2 w-[25%] aspect-square flex justify-center items-center rounded-full hover:cursor-pointer ${(controlBtn) ? `` : `invisible pointer-events-none ml-4`} hover:border-white transition-all duration-200 ease-linear`}
                                     onClick={() => {
                                         player.current.volume = 0.9
                                         setControlBtn("unmute")
@@ -315,7 +328,7 @@ const MainMovie = ({ mainMovieCollection }) => {
                                     <Mute />
                                 </div> :
                                 <div
-                                    className={`border-neutral-400 border-2 w-[25%] aspect-square flex justify-center items-center rounded-full hover:cursor-pointer ${(controlBtn) ? `` : `invisible pointer-events-none ml-4`} hover:border-white`}
+                                    className={`border-neutral-400 border-2 w-[25%] aspect-square flex justify-center items-center rounded-full hover:cursor-pointer ${(controlBtn) ? `` : `invisible pointer-events-none ml-4`} hover:border-white transition-all duration-200 ease-linear`}
                                     onClick={() => {
                                         player.current.volume = 0
                                         setControlBtn("mute")

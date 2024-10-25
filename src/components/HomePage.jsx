@@ -13,18 +13,18 @@ export const HomePage = () => {
     const mainMovieCollection = useSelector(store => {
         return {
             page: "home",
-            trendingIndia: {
-                groupOne: store.contents["trendingIndia"].movies
+            content: [
+
+                ...store.contents["trendingIndia"].movies
                     .filter(movie => (movie.backdropNoLang && movie.logo))
                     .filter((movie, index) => index <= 4),
 
-                groupTwo: store.contents["trendingIndia"].shows
+                ...store.contents["trendingIndia"].shows
                     .filter(show => (show.backdropNoLang && show.logo))
-                    .filter((show, index) => index <= 4)
-            },
-            netflix: {
-                content: store.contents["netflix"].movies.filter((movie, index) => index <= 4)
-            }
+                    .filter((show, index) => index <= 4),
+                    
+                ...store.contents["netflix"].movies.filter((movie, index) => index <= 4)
+            ]
         }
     })
 
@@ -33,6 +33,10 @@ export const HomePage = () => {
         scrolledElement.current.scrollTop > 5 ? setHasScrolled(true) : setHasScrolled(false)
     }
 
+    useEffect( () => {
+        setHasScrolled(false)
+    }, [])
+
     return (!areHomeSectionsLoaded)
         ? <Loading /> :
         <div
@@ -40,7 +44,7 @@ export const HomePage = () => {
             ref={scrolledElement}
             onScroll={handleScroll}
         >
-            <MainMovie mainMovieCollection={mainMovieCollection} />
+            <MainMovie mainMovieCollection={mainMovieCollection} bottom={`bottom-64`} />
             <SuggestedMovies />
         </div>
 }
