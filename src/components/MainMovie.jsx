@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import Plyr from "plyr";
 import 'plyr/dist/plyr.css';
-import { Info, Play, Replay, Unmute, Mute } from "../utils/Icons";
+import { Info, Play, Replay, Unmute, Mute, FilmSlate } from "../utils/Icons";
 import { ShimmerButton, ShimmerDiv, ShimmerText } from "shimmer-effects-react";
 import { getMainMovie } from "../utils/getMainMovie";
 
-const MainMovie = ({ mainMovieCollection, bottom }) => {
+const MainMovie = ({ mainMovieCollection, bottom, contentOccurance}) => {
 
     const [minimize, setMinimize] = useState(false);
     const [showVideo, setShowVideo] = useState(false)
@@ -22,7 +22,6 @@ const MainMovie = ({ mainMovieCollection, bottom }) => {
             src: null,
             minWidth: null,
             maxWidth: null,
-            aspectRatio: null,
         },
         desc: null,
         type: null,
@@ -38,7 +37,7 @@ const MainMovie = ({ mainMovieCollection, bottom }) => {
 
         isMounted.current = true
 
-        getMainMovie(mainMovieCollection, setMainMovie)
+        getMainMovie(mainMovieCollection, setMainMovie, contentOccurance)
 
         return () => {
             if (player.current) {
@@ -102,11 +101,11 @@ const MainMovie = ({ mainMovieCollection, bottom }) => {
 
                                     isExecutedAlready = true
 
-                                    if(isMounted.current) setShowVideo(false)
+                                    if (isMounted.current) setShowVideo(false)
 
                                     setTimeout(() => {
 
-                                        if(isMounted.current){
+                                        if (isMounted.current) {
                                             setControlBtn("")
                                             player.current.stop()
                                             setShowCover(true)
@@ -118,7 +117,7 @@ const MainMovie = ({ mainMovieCollection, bottom }) => {
 
                                     setTimeout(() => {
 
-                                        if(isMounted.current) setControlBtn("replay")
+                                        if (isMounted.current) setControlBtn("replay")
 
                                     }, 2000);
                                 }
@@ -160,7 +159,7 @@ const MainMovie = ({ mainMovieCollection, bottom }) => {
 
                 window.onYouTubeIframeAPIReady = () => {
                     console.log("New Iframe API was fetched")
-                    if(isMounted.current) checkVideoExistence()
+                    if (isMounted.current) checkVideoExistence()
                 }
                 const script = document.createElement("script")
                 script.src = "https://www.youtube.com/iframe_api"
@@ -168,7 +167,7 @@ const MainMovie = ({ mainMovieCollection, bottom }) => {
             }
             else {
                 console.log("Existing Iframe API was used")
-                if(isMounted.current) checkVideoExistence()
+                if (isMounted.current) checkVideoExistence()
             }
 
             setTimeout(() => {
@@ -204,6 +203,7 @@ const MainMovie = ({ mainMovieCollection, bottom }) => {
                     setShowVideo(true)
                 }
             }, 1000);
+
         }
 
 
@@ -232,7 +232,7 @@ const MainMovie = ({ mainMovieCollection, bottom }) => {
                 <div className={`absolute pl-16 w-[40%] flex flex-col ${bottom} ${(mainMovie.desc) ? `gap-1` : `gap-4`}`}>
 
                     <ShimmerDiv mode="custom" height={"15rem"} width={"90%"} loading={!mainMovie.logo.src} from="#141414" via="#1c1c1c" to="#141414" border={0} rounded={"0.3"}>
-                        <div className={`${(minimize) ? `${mainMovie.logo.minWidth} translate-y-44` : `${mainMovie.logo.maxWidth}`} ${(mainMovie.isNetflixOriginal && mainMovie.title != "The Irishman") ? `mb-6` : `mb-1`} transition-all duration-1000 ease-linear transform-gpu`}>
+                        <div className={`${(minimize) ? `${mainMovie.logo.minWidth} translate-y-40` : `${mainMovie.logo.maxWidth}`} ${(mainMovie.isNetflixOriginal && mainMovie.title != "The Irishman") ? `mb-6` : `mb-1`} transition-all duration-1000 ease-linear transform-gpu`}>
                             <img src={`${mainMovie.logo.src}`} className="w-full" />
                         </div>
 
@@ -240,7 +240,7 @@ const MainMovie = ({ mainMovieCollection, bottom }) => {
 
                     {
                         (mainMovie.isNetflixOriginal)
-                        
+
                             ? <ShimmerDiv mode="custom" width={"70%"} height={"3.15rem"} from="#141414" via="#1c1c1c" to="#141414" border={0} rounded={"0.3"} loading={!mainMovie.type}>
 
                                 <div className={`flex items-center gap-3 ${(minimize) ? `translate-y-20 opacity-0` : `opacity-100`} transition-all duration-700 ease-linear transform-gpu mb-[0.15rem]`}>
@@ -254,25 +254,32 @@ const MainMovie = ({ mainMovieCollection, bottom }) => {
 
                             </ShimmerDiv>
 
-                            : <ShimmerDiv mode="custom" width={"70%"} height={"3.15rem"} from="#141414" via="#1c1c1c" to="#141414" border={0} rounded={"0.3"} loading={!mainMovie.type}>
+                            : (mainMovie.page == "director")
+                                ? <ShimmerDiv mode="custom" width={"70%"} height={"3.15rem"} from="#141414" via="#1c1c1c" to="#141414" border={0} rounded={"0.3"} loading={!mainMovie.type}>
 
-                                <div className={`flex items-center gap-4 ${(minimize) ? `translate-y-20 opacity-0` : `opacity-100`} transition-all duration-700 ease-linear transform-gpu mb-[0.6rem] mt-6 `}>
-                                    <img
-                                        src="https://res.cloudinary.com/dianmmxft/image/upload/v1728642746/top10_ysb4ws.png"
-                                        className="w-11"
-                                    />
-                                    <p className="text-white font-medium text-[2rem] text-shadow">{`#${mainMovie.rank} in ${mainMovie.type == "movie" ? `Movies` : `Shows`} Today`}</p>
-                                </div>
-                                
-                            </ShimmerDiv>
+                                    <div className={`flex items-center gap-4 ${(minimize) ? `translate-y-20 opacity-0` : `opacity-100`} transition-all duration-700 ease-linear transform-gpu mb-[0.6rem] mt-6 text-white font-medium text-[2rem] text-shadow`}>
+                                        <FilmSlate />By {mainMovie.director}
+                                    </div>
+
+                                </ShimmerDiv>
+                                : <ShimmerDiv mode="custom" width={"70%"} height={"3.15rem"} from="#141414" via="#1c1c1c" to="#141414" border={0} rounded={"0.3"} loading={!mainMovie.type}>
+
+                                    <div className={`flex items-center gap-4 ${(minimize) ? `translate-y-20 opacity-0` : `opacity-100`} transition-all duration-700 ease-linear transform-gpu mb-[0.6rem] mt-6 `}>
+                                        <img
+                                            src="https://res.cloudinary.com/dianmmxft/image/upload/v1728642746/top10_ysb4ws.png"
+                                            className="w-11"
+                                        />
+                                        <p className="text-white font-medium text-[2rem] text-shadow">{`#${mainMovie.rank} in ${mainMovie.type == "movie" ? `Movies` : `Shows`} Today`}</p>
+                                    </div>
+
+                                </ShimmerDiv>
                     }
 
-
                     <ShimmerText mode="custom" width={90} height={15} line={3} gap={6} from="#141414" via="#1c1c1c" to="#141414" border={0} loading={!mainMovie.desc}>
-                        <p className={`text-white text-[1.45rem] leading-snug font-normal text-shadow w-full ${(minimize) ? `translate-y-20 opacity-0` : `opacity-100`} transition-all duration-700 ease-linear transform-gpu mb-5`}>{mainMovie.desc}</p>
+                        <p className={`text-white text-[1.45rem] leading-tight font-normal text-shadow w-full ${(minimize) ? `translate-y-20 opacity-0` : `opacity-100`} transition-all duration-700 ease-linear transform-gpu mb-5`}>{mainMovie.desc}</p>
                     </ShimmerText>
 
-                    <div className="flex gap-4 relative items-center ">
+                    <div className="flex gap-4 relative items-center">
 
                         <ShimmerButton mode="custom" width={200} height={60} from="#141414" via="#1c1c1c" to="#141414" border={0} loading={!mainMovie.desc}>
 

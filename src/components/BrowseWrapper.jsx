@@ -9,6 +9,13 @@ export const BrowseWrapper = () => {
     const [hasScrolled, setHasScrolled] = useState(false)
     const [page, setPage] = useState("home")
 
+    const contentOccurance = useRef({
+        home: [],
+        shows: [],
+        movies: [],
+        director: []
+    })
+
     const dispatcher = useDispatch()
 
     const areHomeSectionsLoaded = useSelector( store => store.contents.homeContent )
@@ -35,7 +42,10 @@ export const BrowseWrapper = () => {
             {
                 (areHomeSectionsLoaded) && <Header hasScrolled={hasScrolled} page={page} setPage={setPage}/>
             }
-            <Outlet context={setHasScrolled}/>
+            <Outlet context={{
+                setHasScrolled,
+                contentOccurance: contentOccurance.current
+            }}/>
         </div>
     )
 }

@@ -1,23 +1,26 @@
-import { useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 export const PageTitle = ({ page, options }) => {
 
     let showListTimeoutId = useRef(null)
     let hideListTimeoutId = useRef(null)
+    const pageTitle = useRef(null)
+
     const [showList, setShowList] = useState(false)
+    const [isTransparent, setIsTransparent] = useState(false)
 
     const handleShowList = () => {
         showListTimeoutId.current = setTimeout( () => {
             setShowList(true)
         }, 700)
     }
-    
     const handleHideList = () => {
         clearTimeout(showListTimeoutId.current)
         hideListTimeoutId.current = setTimeout( () => {
             setShowList(false)
         }, 700)
     }
+
     const handleKeepShowingList = () => {
         clearTimeout(hideListTimeoutId.current)
     }
@@ -27,8 +30,47 @@ export const PageTitle = ({ page, options }) => {
         }, 700);
     }
 
+    // useEffect( () => {
+        // if(!isTransparent){
+        //     pageTitle.current.classList.add("transition-all")
+        //     setTimeout(() => {
+        //         setIsTransparent(true)
+        //     }, 1000);
+        // }
+        // else{
+        //     pageTitle.current.classList.remove("transition-all")
+        //     setIsTransparent(false)
+            
+        //     setTimeout(() => {
+        //         pageTitle.current.classList.add("transition-all")
+        //         setIsTransparent(true)
+        //     }, 1000);
+        // }
+    // }, [page])
+    useEffect( () => {
+
+        if(!isTransparent){
+
+            setTimeout(() => {
+                setIsTransparent(true)
+            }, 2000);
+
+        }
+        else{
+
+            setIsTransparent(false)
+            setTimeout(() => {
+                setIsTransparent(true)
+            }, 2000);
+
+        }
+    }, [page])
+
     return (
-        <div className="w-full h-full pl-16 text-white">
+        <div
+            className={`w-full h-full pl-16 text-white ${ (isTransparent) ? `bg-transparent transition-all duration-[1000ms] ease-linear` : `bg-[#141414]` }`}
+        >
+
             <div className="flex items-center gap-10">
 
                 <h1 className="text-[2.50rem] font-medium pb-1">{ 

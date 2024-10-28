@@ -7,7 +7,8 @@ import SuggestedMovies from "./SuggestedMovies"
 export const ShowsPage = () => {
 
     const scrolledElement = useRef(null)
-    const setHasScrolled = useOutletContext()
+    const {setHasScrolled, contentOccurance} = useOutletContext()
+
 
     const trending = useSelector( store => {
         return store.contents["trendingIndia"].shows
@@ -48,7 +49,7 @@ export const ShowsPage = () => {
             className="relative bg-[#141414] w-screen h-screen overflow-y-scroll overflow-x-hidden custom-scrollbar"
             ref={scrolledElement}
         >
-            <MainMovie mainMovieCollection={mainMovieCollection} bottom={`bottom-56`} />
+            <MainMovie mainMovieCollection={mainMovieCollection} bottom={`bottom-56`} contentOccurance={contentOccurance.shows}/>
             <SuggestedMovies />
         </div>
     )

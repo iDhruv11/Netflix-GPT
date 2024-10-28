@@ -7,30 +7,11 @@ import SuggestedMovies from "./SuggestedMovies"
 export const DirectorsPage = () => {
     
     const scrolledElement = useRef(null)
-    const setHasScrolled = useOutletContext()
+    const {setHasScrolled, contentOccurance} = useOutletContext()
+
 
     const directorKeys = ["martin", "tarantino", "steven", "kubrick", "fincher", "nolan", "anurag", "hirani"]
     
-    // const mainMovieCollection = useSelector( store => {
-
-    //     const content = directorKeys.reduce( (collection, director) => {
-
-    //         return [
-    //             ...collection,
-    //             {
-    //                 director, 
-    //                 movies: store.contents[director].movies.every( (movie, index) => index < 4 )
-    //             }
-    //         ]
-            
-    //     }, [])
-
-    //     return {
-    //         page: "director",
-    //         content
-    //     }
-
-    // })
     const mainMovieCollection = useSelector( store => {
 
         const content = directorKeys.reduce( (collection, director) => {
@@ -63,7 +44,7 @@ export const DirectorsPage = () => {
             className="relative bg-[#141414] w-screen h-screen overflow-y-scroll overflow-x-hidden custom-scrollbar"
             ref={scrolledElement}
         >
-            <MainMovie mainMovieCollection={mainMovieCollection} bottom={`bottom-56`}/>
+            <MainMovie mainMovieCollection={mainMovieCollection} bottom={`bottom-56`} contentOccurance={contentOccurance.director}/>
             <SuggestedMovies />
         </div>
     )

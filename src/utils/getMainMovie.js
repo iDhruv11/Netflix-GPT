@@ -1,10 +1,33 @@
-export const getMainMovie = (collection, setMainMovie) => {
-    
-    console.log(collection)
 
-    // const index = Math.floor(Math.random() * collection.content.length)
+export const getMainMovie = (collection, setMainMovie, contentOccurance) => {
+
+    
+    const nameMapping = {
+        martin: "Martin Scorsese",
+        tarantino: "Quentin Tarantino",
+        steven: "Steven Spielberg",
+        nolan: "Christopher Nolan",
+        kubrick: "Stanley Kubrick",
+        fincher: "David Fincher",
+        coen: "Coen Brothers",
+        ray: "Satyajit Ray",
+        hirani: "Rajkumar Hirani",
+        guru: "Guru Dutt",
+        anurag: "Anurag Kashyap",
+    }
+    console.log(collection)
     let index = Math.floor(Math.random() * collection.content.length)
-    if(collection.page == "director") index = 8
+
+    // let index = Math.floor(Math.random() * collection.content.length)
+    // if(collection.page == "director") index = 1
+
+    if(contentOccurance.length == collection.content.length) contentOccurance.length = 0
+    while(contentOccurance.includes(index)){
+        index = Math.floor(Math.random() * collection.content.length)
+        console.log("movie was ", collection.content[index])
+    }
+    contentOccurance.push(index)
+
     const mainMovie = collection.content[index]
 
     const logo = new Image()
@@ -41,19 +64,23 @@ export const getMainMovie = (collection, setMainMovie) => {
             rank = index + 1
         }
 
+        let desc = mainMovie.desc.slice(0, 140).trim()
+        if( desc[desc.length-1] == ",") desc.splice(0, desc.length-1)
+        desc = desc + "..."
 
         setMainMovie({
 
+            page: collection.page,
+            director: nameMapping[mainMovie.director],
             title: mainMovie.title,
-            desc: mainMovie.desc,
+            desc,
             logo: {
                 src: mainMovie.logo.image,
                 minWidth,
                 maxWidth,
-                aspectRatio,
             },
             type: mainMovie.type,
-            isNetflixOriginal: (index >= 10),
+            isNetflixOriginal: collection.page != "director" ? index >= 10 : false,
             rank,
             ageRating: mainMovie.ageRating,
             backdrop: mainMovie.backdropNoLang,

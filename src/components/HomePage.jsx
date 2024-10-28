@@ -7,7 +7,7 @@ import { useOutletContext } from "react-router-dom"
 
 export const HomePage = () => {
 
-    const setHasScrolled = useOutletContext()
+    const {setHasScrolled, contentOccurance} = useOutletContext()
     const areHomeSectionsLoaded = useSelector(store => store.contents.homeContent)
 
     const mainMovieCollection = useSelector(store => {
@@ -44,7 +44,7 @@ export const HomePage = () => {
             ref={scrolledElement}
             onScroll={handleScroll}
         >
-            <MainMovie mainMovieCollection={mainMovieCollection} bottom={`bottom-64`} />
+            <MainMovie mainMovieCollection={mainMovieCollection} bottom={`bottom-64`} contentOccurance={contentOccurance.home}/>
             <SuggestedMovies />
         </div>
 }

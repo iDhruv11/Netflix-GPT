@@ -1,14 +1,14 @@
 import { useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import { Arrow, Bell, Logo, Pencil, Person, Question, Search, Squareface } from "../utils/Icons";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { PageTitle } from "./PageTitle";
 
 const Header = ({ hasScrolled, page, setPage }) => {
 
     const profileIndex = useSelector(state => state.user.selectedProfile);
     const user = useSelector(state => state.user.profiles[profileIndex]);
-
+    const navigate = useNavigate()
     const [showAccPopup, setShowAccPopup] = useState(false);
     // const [selected, setSelected] = useState("Home")
 
@@ -21,42 +21,42 @@ const Header = ({ hasScrolled, page, setPage }) => {
         directors: ["Martin Scorsese", "Satyajit Ray", "Quentin Tarantino", "Steven Spielberg", "Christopher Nolan", "Stanley Kubrick", "David Fincher", "Coen Brothers", "Anurag Kashyap", "Rajkumar Hirani", "Guru Dutt"]
     }
 
-    const handlePageChange = (page) => {
-        setPage(page)
-    } 
-
     return (
         <div className="absolute z-50 top-0 left-0 w-screen ">
-            <div className={`flex py-[1.3em] pl-16 pr-14 text-white font-semibold text-[0.92em] justify-between w-full bg-gradient-to-b from-black/80 ${(hasScrolled) ? `bg-[#141414]/100` : `bg-[#141414]/0`} transition-all duration-200 ease-linear`}>
+            <div className={`flex py-[1.3em] pl-16 pr-14 text-white font-semibold text-[0.92em] justify-between w-full bg-gradient-to-b from-black/80 ${(hasScrolled) ? `bg-[#141414]/100` : `bg-[#141414]/0 transition-all duration-300 ease-linear` }`}>
                 <div className="flex gap-14">
                     <div className="flex ">
                         <Logo />
                     </div>
                     <ul className="flex flex-row no-underline gap-5 pt-[0.15rem]">
-                        <Link to="/Browse">
                             <li
-                                className={`tracking-normal text-[0.96rem] ${(page == "home") ? ` text-white font-medium` : `text-slate-300 font-normal`} `}
-                                onClick={() => setPage("home") }
+                                className={`tracking-normal text-[0.96rem] ${(page == "home") ? ` text-white text-[0.97rem]` : `text-slate-300`} font-normal transition-all duration-150 ease-linear`}
+                                onClick={ () => {
+                                    setPage("home")
+                                    navigate("/Browse")
+                                }}
                             >Home</li>
-                        </Link>
-                        <Link to="/Browse/Movies">
                             <li
-                                className={`tracking-normal text-[0.97rem] font-normal ${(page == "movies") ? ` text-white` : `text-slate-300`} `}
-                                onClick={() => setPage("movies") }
+                                className={`tracking-normal text-[0.96rem] font-normal ${(page == "movies") ? ` text-white text-[0.97rem]` : `text-slate-300`} font-normal transition-all duration-150 ease-linear`}
+                                onClick={ () => {
+                                    setPage("movies")
+                                    navigate("/Browse/Movies")
+                                }}
                             >Movies</li>
-                        </Link>
-                        <Link to="/Browse/Shows">
                             <li
-                                className={`tracking-normal text-[0.96rem] ${(page == "shows") ? ` text-white font-medium` : `text-slate-300 font-normal`} `}
-                                onClick={() => setPage("shows") }
+                                className={`tracking-normal text-[0.96rem] ${(page == "shows") ? ` text-white text-[0.97rem]` : `text-slate-300`} font-normal transition-all duration-150 ease-linear`}
+                                onClick={ () => {
+                                    setPage("shows")
+                                    navigate("/Browse/Shows")
+                                }}
                             >TV Shows</li>
-                        </Link>
-                        <Link to="/Browse/Directors">
                             <li
-                                className={`tracking-normal text-[0.96rem] ${(page == "directors") ? ` text-white font-medium` : `text-slate-300 font-normal`} `}
-                                onClick={() => setPage("directors") }
+                                className={`tracking-normal text-[0.96rem] ${(page == "directors") ? ` text-white text-[0.97rem]` : `text-slate-300`} font-normal transition-all duration-150 ease-linear`}
+                                onClick={ () => {
+                                    setPage("directors")
+                                    navigate("/Browse/Directors")
+                                }}
                             >Director's Chair</li>
-                        </Link>
                     </ul>
                 </div>
                 <div className="flex justify-center items-center gap-5">
