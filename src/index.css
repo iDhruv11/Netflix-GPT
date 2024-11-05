@@ -103,3 +103,42 @@ ul {
 .custom-scrollbar::-webkit-scrollbar{
   display: none;
 }
+
+.trending{
+  background: no-repeat top left;
+  background-size: auto 100%; 
+}
+  
+.one{
+  background-image: url("https://res.cloudinary.com/dianmmxft/image/upload/v1730648472/One_foxeih.png");
+  background-position: 3rem;
+}
+.two{
+  background-image: url("https://res.cloudinary.com/dianmmxft/image/upload/v1730648473/Two_llwzqd.png");
+}
+.three{
+  background-image: url("https://res.cloudinary.com/dianmmxft/image/upload/v1730648472/Three_scm4h1.png");
+}
+.four{
+  background-image: url("https://res.cloudinary.com/dianmmxft/image/upload/v1730648472/Four_oxfvoy.png");
+}
+.five{
+  background-image: url("https://res.cloudinary.com/dianmmxft/image/upload/v1730648472/Five_rzaiao.png");
+}
+.six{
+  background-image: url("https://res.cloudinary.com/dianmmxft/image/upload/v1730648471/6_g14lod.png");
+}
+.seven{
+  background-image: url("https://res.cloudinary.com/dianmmxft/image/upload/v1730648472/Seven_euojqo.png");
+}
+.eight{
+  background-image: url("https://res.cloudinary.com/dianmmxft/image/upload/v1730648472/Eight_iaajuf.png");
+}
+.nine{
+  background-image: url("https://res.cloudinary.com/dianmmxft/image/upload/v1730648472/Nine_oujjmj.png");
+}
+.ten{
+  background-image: url("https://res.cloudinary.com/dianmmxft/image/upload/v1730648472/Ten_chvgt1.png");
+  background-size: auto 75%;
+  background-position: left ;
+}

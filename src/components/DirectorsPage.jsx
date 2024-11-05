@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react"
 import { useSelector } from "react-redux"
 import { useOutletContext } from "react-router-dom"
 import { MainMovie } from "./MainMovie"
-import SuggestedMovies from "./SuggestedMovies"
+import SuggestedSections from "./SuggestedSections"
 
 export const DirectorsPage = () => {
     
@@ -45,7 +45,7 @@ export const DirectorsPage = () => {
             ref={scrolledElement}
         >
             <MainMovie mainMovieCollection={mainMovieCollection} bottom={`bottom-56`} contentOccurance={contentOccurance.director}/>
-            <SuggestedMovies />
+            <SuggestedSections sections={sections} page={"home"}/>
         </div>
     )
 

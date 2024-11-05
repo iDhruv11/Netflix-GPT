@@ -10,7 +10,7 @@ import { PrevBtn } from "./PrevBtn";
 export const AvatarSlider = ({ show, showSelected, setShowSelected, nextPfp }) => {
 
     const slider = useRef(null);
-    
+    const [sliderScrolled, setSliderScrolled] = useState(false)
     return (
         <div className="flex flex-col overflow-x-visible w-full gap-1 group ">
 
@@ -29,8 +29,8 @@ export const AvatarSlider = ({ show, showSelected, setShowSelected, nextPfp }) =
                 draggable={false}
                 slidesToShow={7.3}
                 slidesToScroll={6}
-                nextArrow={(show.avatars.length >= 8) ? <PrevBtn /> : <></>}
-                prevArrow={(show.avatars.length >= 8) ? <NextBtn /> : <></>}
+                nextArrow={(show.avatars.length >= 8) ? <PrevBtn setSliderScrolled={setSliderScrolled}/> : <></>}
+                prevArrow={(show.avatars.length >= 8 && sliderScrolled ) ? <NextBtn /> : <></>}
             >
 
                 {

@@ -18,23 +18,30 @@ export const BrowseWrapper = () => {
 
     const dispatcher = useDispatch()
 
+    const keys = ['topRated', 'newRelease', 'popular', 'critic', 'netflix', 'trendingIndia', 'adventure', 'action', 'bestOfYear', 'trueStories', 'comedy', 'family', 'feelGood', 'martin', 'tarantino', 'steven', 'nolan', 'kubrick', 'fincher', 'coen', 'ray', 'hirani', 'guru', 'anurag']    
+
     const areHomeSectionsLoaded = useSelector( store => store.contents.homeContent )
     const homeSections = useSelector( store => {
-        return store.contents.keys.slice(0, 13).reduce( (acc, key) => {
-            acc[key] = store.contents[key]
-            return acc
-        }, {})
+
+        return (!areHomeSectionsLoaded) 
+            ? keys.reduce( (acc, key) => {
+                acc[key] = store.contents[key]
+                return acc
+            }, {})
+            : null
     } )
 
     if(!areHomeSectionsLoaded){ 
-        Object.keys(homeSections).every( (key) => homeSections[key].movies.length && homeSections[key].shows.length )
+        Object.keys(homeSections).every( (key) => homeSections[key].movies != null && homeSections[key].shows != null )
             ? dispatcher( setAreHomeSectionsLoaded(true) )
+            // ? console.log("full data available")
             : null
     }
     
     useEffect( () => {
         
         // fetchAllData()
+        console.log("mounted for the first time")
         
     }, [])
     return (

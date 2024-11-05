@@ -1,31 +1,34 @@
 import { useSelector } from "react-redux"
 import { MainMovie } from "./MainMovie"
-import SuggestedMovies from "./SuggestedMovies"
 import { Loading } from "./Loading"
 import { useEffect, useRef } from "react"
 import { useOutletContext } from "react-router-dom"
+import SuggestedSections from "./SuggestedSections"
 
 export const HomePage = () => {
 
     const {setHasScrolled, contentOccurance} = useOutletContext()
     const areHomeSectionsLoaded = useSelector(store => store.contents.homeContent)
+    const sections = ['topRated', 'newRelease', 'popular', 'critic', 'netflix', 'trendingIndia', 'adventure', 'action', 'bestOfYear', 'trueStories', 'comedy', 'family', 'feelGood']
 
     const mainMovieCollection = useSelector(store => {
-        return {
-            page: "home",
-            content: [
-
-                ...store.contents["trendingIndia"].movies
-                    .filter(movie => (movie.backdropNoLang && movie.logo))
-                    .filter((movie, index) => index <= 4),
-
-                ...store.contents["trendingIndia"].shows
-                    .filter(show => (show.backdropNoLang && show.logo))
-                    .filter((show, index) => index <= 4),
-                    
-                ...store.contents["netflix"].movies.filter((movie, index) => index <= 4)
-            ]
-        }
+        return (areHomeSectionsLoaded) 
+            ? {
+                page: "home",
+                content: [
+    
+                    ...store.contents["trendingIndia"].movies
+                        .filter(movie => (movie.backdropNoLang && movie.logo))
+                        .filter((movie, index) => index <= 4),
+    
+                    ...store.contents["trendingIndia"].shows
+                        .filter(show => (show.backdropNoLang && show.logo))
+                        .filter((show, index) => index <= 4),
+                        
+                    ...store.contents["netflix"].movies.filter((movie, index) => index <= 4)
+                ]
+            }
+            : null
     })
 
     const scrolledElement = useRef(null)
@@ -45,6 +48,6 @@ export const HomePage = () => {
             onScroll={handleScroll}
         >
             <MainMovie mainMovieCollection={mainMovieCollection} bottom={`bottom-64`} contentOccurance={contentOccurance.home}/>
-            <SuggestedMovies />
+            <SuggestedSections sections={sections} page={"home"}/>
         </div>
 }

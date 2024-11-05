@@ -229,7 +229,7 @@ const MainMovie = ({ mainMovieCollection, bottom, contentOccurance}) => {
 
             <div className="w-full h-full absolute left-0 top-0 z-40">
 
-                <div className={`absolute pl-16 w-[40%] flex flex-col ${bottom} ${(mainMovie.desc) ? `gap-1` : `gap-4`}`}>
+                <div className={`absolute pl-14 w-[40%] flex flex-col ${bottom} ${(mainMovie.desc) ? `gap-1` : `gap-4`}`}>
 
                     <ShimmerDiv mode="custom" height={"15rem"} width={"90%"} loading={!mainMovie.logo.src} from="#141414" via="#1c1c1c" to="#141414" border={0} rounded={"0.3"}>
                         <div className={`${(minimize) ? `${mainMovie.logo.minWidth} translate-y-40` : `${mainMovie.logo.maxWidth}`} ${(mainMovie.isNetflixOriginal && mainMovie.title != "The Irishman") ? `mb-6` : `mb-1`} transition-all duration-1000 ease-linear transform-gpu`}>
@@ -247,7 +247,7 @@ const MainMovie = ({ mainMovieCollection, bottom, contentOccurance}) => {
                                     <p className="text-white font-medium text-[2rem] flex gap-1 items-center text-shadow">
                                         A <img
                                             src="https://res.cloudinary.com/dianmmxft/image/upload/v1728646664/Netflix_Logo_RGB_rlx0yn.png"
-                                            className="w-[7.3rem] object-contain pt-1"
+                                            className="w-[7.3rem] object-contain pt-[0.15rem]"
                                         /> Original {mainMovie.type == "movie" ? "Film" : "Show"}
                                     </p>
                                 </div>
@@ -255,6 +255,7 @@ const MainMovie = ({ mainMovieCollection, bottom, contentOccurance}) => {
                             </ShimmerDiv>
 
                             : (mainMovie.page == "director")
+
                                 ? <ShimmerDiv mode="custom" width={"70%"} height={"3.15rem"} from="#141414" via="#1c1c1c" to="#141414" border={0} rounded={"0.3"} loading={!mainMovie.type}>
 
                                     <div className={`flex items-center gap-4 ${(minimize) ? `translate-y-20 opacity-0` : `opacity-100`} transition-all duration-700 ease-linear transform-gpu mb-[0.6rem] mt-6 text-white font-medium text-[2rem] text-shadow`}>
@@ -262,6 +263,7 @@ const MainMovie = ({ mainMovieCollection, bottom, contentOccurance}) => {
                                     </div>
 
                                 </ShimmerDiv>
+
                                 : <ShimmerDiv mode="custom" width={"70%"} height={"3.15rem"} from="#141414" via="#1c1c1c" to="#141414" border={0} rounded={"0.3"} loading={!mainMovie.type}>
 
                                     <div className={`flex items-center gap-4 ${(minimize) ? `translate-y-20 opacity-0` : `opacity-100`} transition-all duration-700 ease-linear transform-gpu mb-[0.6rem] mt-6 `}>

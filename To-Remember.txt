@@ -19,3 +19,5 @@
 4. Prevent user from deleting the main profile by showing a dialogue
 5. Sign In feature implementation 
 6. Delete profile Bug
+7. Gonna keep a useSelector in mainMovie.jsx to subcribe to the section I'm gonna show in sliderSection below preview movie component, this way I'll make sure that all sections to show below are loaded in redux, then i'll keep a callback that will execute each time the state is changed by useSelector due to constant api fetching and redux updating, this way each time this callback will execute and will verify if all the sections are loaded or not, if they are loaded then only I'm gonna call getMainMovie that chooses a movie and updates the state which will cause other mainMovie state dependent tasks to take place such as intialisePlyr, showing the backdrop, minmise etc. For home page and directors page that are already loaded in loading page, in their case it will be quick because the data is not paralley fetched and redux is not parallely updated, it is fetched and updated during the loading screen making it all quicker than movie and show page. This will happen in mainMovie.jsx 
+8. 

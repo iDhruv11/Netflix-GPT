@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react"
 import { useSelector } from "react-redux"
 import { useOutletContext } from "react-router-dom"
 import { MainMovie } from "./MainMovie"
-import SuggestedMovies from "./SuggestedMovies"
+import SuggestedSections from "./SuggestedSections"
 
 export const ShowsPage = () => {
 
@@ -28,17 +28,15 @@ export const ShowsPage = () => {
             .filter( (show, index) => index <= 4)
     })
 
-    const mainMovieCollection = useSelector(store => {
-        return {
+    const mainMovieCollection = {
 
-            page: "shows",
-            content: [
-                ...trending,
-                ...newRelease,
-                ...netflix
-            ]
-        }
-    })
+        page: "shows",
+        content: [
+            ...trending,
+            ...newRelease,
+            ...netflix
+        ]
+    }
 
     useEffect(() => {
         setHasScrolled(true)
@@ -50,7 +48,7 @@ export const ShowsPage = () => {
             ref={scrolledElement}
         >
             <MainMovie mainMovieCollection={mainMovieCollection} bottom={`bottom-56`} contentOccurance={contentOccurance.shows}/>
-            <SuggestedMovies />
+            <SuggestedSections sections={sections} page={"home"}/>
         </div>
     )
 

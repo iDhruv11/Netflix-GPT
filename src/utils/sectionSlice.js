@@ -4,14 +4,14 @@ const sectionSlice = createSlice({
     name: 'sections',
     initialState: {
 
-        homeContent: true,
+        homeContent: false,
         keys: ['topRated', 'newRelease', 'popular', 'critic', 'netflix', 'trendingIndia', 'adventure', 'action', 'bestOfYear', 'trueStories', 'comedy', 'family', 'feelGood'],
 
         topRated: {
             tabs: ['home', 'movie', 'show'],
             title: "Top Rated",
             movieTitle: "Highest Rated Movies",
-            showTitle: "9+/10 Rated Shows",
+            showTitle: "9+ Rated Shows",
             movies: [
                 {
                     title: "The Shawshank Redemption",
@@ -2503,7 +2503,7 @@ const sectionSlice = createSlice({
         },
         popular: {
             tab: ['home', 'movie', 'show'],
-            title: "Popular",
+            title: "Popular Movies and TV Shows",
             movieTitle: "Popular: Movies",
             showTitle: "Popular: Shows",
             movies: [
@@ -4028,7 +4028,7 @@ const sectionSlice = createSlice({
         },
         critic: {
             tabs: ['home', 'movie', 'show'],
-            title: "Critically Acclaimed",
+            title: "Critically Acclaimed Movies & Shows",
             movieTitle: "Critically Renowned Films",
             showTitle: "Critically Acclaimed: Shows",
             movies: [
@@ -6123,6 +6123,7 @@ const sectionSlice = createSlice({
                     ],
                     runtime: 124,
                     year: "2024",
+                    month: "06",
                     isMostLiked: true,
                     videos: {},
                     backdrop: {
@@ -6157,6 +6158,7 @@ const sectionSlice = createSlice({
                     ],
                     runtime: 143,
                     year: "2024",
+                    month: "09",
                     isMostLiked: true,
                     videos: {
                         trailer: "VlvOgk5BHS4",
@@ -6194,6 +6196,7 @@ const sectionSlice = createSlice({
                     ],
                     runtime: 133,
                     year: "2024",
+                    month: "01",
                     isMostLiked: false,
                     videos: {
                         teaser: "UPRseRavhYQ"
@@ -6229,6 +6232,7 @@ const sectionSlice = createSlice({
                     ],
                     runtime: 99,
                     year: "2024",
+                    month: "10",
                     isMostLiked: true,
                     videos: {
                         teaser: "xqdWV_fhuV4"
@@ -6264,6 +6268,7 @@ const sectionSlice = createSlice({
                     ],
                     runtime: 134,
                     year: "2024",
+                    month: "08",
                     isMostLiked: true,
                     videos: {
                         trailer: "Tk1EQD7vGiY"
@@ -6300,6 +6305,7 @@ const sectionSlice = createSlice({
                     ],
                     runtime: 108,
                     year: "2024",
+                    month: "07",
                     isMostLiked: true,
                     videos: {
                         clip: "HOoafnrOmfw",
@@ -6340,6 +6346,7 @@ const sectionSlice = createSlice({
                     ],
                     runtime: 111,
                     year: "2024",
+                    month: "11",
                     isMostLiked: true,
                     videos: {
                         clip: "AOnjHigFVa8",
@@ -6379,6 +6386,7 @@ const sectionSlice = createSlice({
                     ],
                     runtime: 110,
                     year: "2024",
+                    month: "04",
                     isMostLiked: true,
                     videos: {
                         clip: "JNFFz0wXZSw",
@@ -6419,6 +6427,7 @@ const sectionSlice = createSlice({
                     ],
                     runtime: 141,
                     year: "2024",
+                    month: "09",
                     isMostLiked: true,
                     videos: {
                         clip: "4DPFdsDVK4w",
@@ -6459,6 +6468,7 @@ const sectionSlice = createSlice({
                     ],
                     runtime: 85,
                     year: "2024",
+                    month: "02",
                     isMostLiked: true,
                     videos: {
                         clip: "YmR6qUslZms",
@@ -6499,6 +6509,7 @@ const sectionSlice = createSlice({
                     totalSeasons: 3,
                     totalEpisodes: 29,
                     year: "2018",
+                    month: "10",
                     isMostLiked: true,
                     videos: {
                         trailer: "33o3s4Vs4Sw",
@@ -6561,6 +6572,7 @@ const sectionSlice = createSlice({
                     totalSeasons: 3,
                     totalEpisodes: 24,
                     year: "2020",
+                    month: "06",
                     isMostLiked: false,
                     videos: {
                         trailer: "5khjF0-SqEc"
@@ -6622,6 +6634,7 @@ const sectionSlice = createSlice({
                     totalSeasons: 1,
                     totalEpisodes: 6,
                     year: "2024",
+                    month: "10",
                     isMostLiked: false,
                     videos: {
                         trailer: "Oi7hJgH0sKw",
@@ -6666,6 +6679,7 @@ const sectionSlice = createSlice({
                     totalSeasons: 2,
                     totalEpisodes: 16,
                     year: "2024",
+                    month: "03",
                     isMostLiked: false,
                     videos: {
                         trailer: "bftjfqS3v6k"
@@ -6719,6 +6733,7 @@ const sectionSlice = createSlice({
                     totalSeasons: 1,
                     totalEpisodes: 9,
                     year: "2024",
+                    month: "07",
                     isMostLiked: false,
                     videos: {
                         trailer: "Jm109fPG4zI",
@@ -6766,6 +6781,7 @@ const sectionSlice = createSlice({
                     totalSeasons: 2,
                     totalEpisodes: 16,
                     year: "2022",
+                    month: "11",
                     isMostLiked: true,
                     videos: {
                         trailer: "x8UAUAuKNcU",
@@ -6820,6 +6836,7 @@ const sectionSlice = createSlice({
                     totalSeasons: 1,
                     totalEpisodes: 10,
                     year: "2024",
+                    month: "09",
                     isMostLiked: true,
                     videos: {
                         trailer: "Xn2PsXD8m4A"
@@ -6867,6 +6884,7 @@ const sectionSlice = createSlice({
                     totalSeasons: 1,
                     totalEpisodes: 9,
                     year: "2024",
+                    month: "02",
                     isMostLiked: true,
                     videos: {
                         trailer: "BcXg28iAiLM",
@@ -6914,6 +6932,7 @@ const sectionSlice = createSlice({
                     totalSeasons: 3,
                     totalEpisodes: 24,
                     year: "2022",
+                    month: "08",
                     isMostLiked: true,
                     videos: {
                         trailer: "FrK4xPy4ahg",
@@ -6976,6 +6995,7 @@ const sectionSlice = createSlice({
                     totalSeasons: 5,
                     totalEpisodes: 32,
                     year: "2019",
+                    month: "04",
                     isMostLiked: true,
                     videos: {
                         trailer: "EzFXDvC-EwM",
@@ -7046,8 +7066,8 @@ const sectionSlice = createSlice({
         },
         adventure: {
             tabs: ['home', 'movie'],
-            title: "Adventure Ride",
-            movieTitle: "Adventurous Movies",
+            title: "Adventure & Fantasy",
+            movieTitle: "Exciting Adventurous Movies",
             movies: [
                 {
                     title: "Lagaan: Once Upon a Time in India",
@@ -8471,7 +8491,7 @@ const sectionSlice = createSlice({
         trueStories: {
             tabs: ['home', 'movie'],
             title: "Based on True Stories",
-            movieTitle: "Movies on True Incidents",
+            movieTitle: "Movies on True Events",
             movies: [
                 {
                     title: "Uri: The Surgical Strike",
@@ -11399,63 +11419,7614 @@ const sectionSlice = createSlice({
             movieTitle: "Crime and Gangster Films",
             showTitle: "True Crime Shows",
             movies: [
-
+                {
+                    type:"movie",
+                    title:"Jawan",
+                    desc:"An emotional journey of a prison warden, driven by a personal vendetta while keeping up to a promise made years ago, recruits inmates to commit outrageous crimes that shed light on corruption and inju...",
+                    genres:[
+                        "Action",
+                        "Crime",
+                        "Thriller"
+                    ],
+                    runtime:169,
+                    year:"2023",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"MWOlnZSnXJo"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/qGJhiG86pJUISlui6XKsnbHg43v.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/7VQCCoFTVUt4rpsrgF9TE69L5lw.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "revenge",
+                        "vigilantism",
+                        "political"
+                    ],
+                    cast:[
+                        "Shah Rukh Khan",
+                        "Nayanthara",
+                        "Vijay Sethupathi"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Gangs of Wasseypur - Part 1",
+                    desc:"In 1970s India, Sardar Khan vows to take revenge on the man who killed his father decades earlier.",
+                    genres:[
+                        "Action",
+                        "Thriller",
+                        "Crime"
+                    ],
+                    runtime:160,
+                    year:"2012",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"cSfNfckoXPc"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/1CAyD1mFJvCgsbOKyYTP8hIBqGe.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/tfL4cULbynBEIIYZcLk8YTzpKt1.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "mafia",
+                        "gang",
+                        "coal mining"
+                    ],
+                    cast:[
+                        "Manoj Bajpayee",
+                        "Richa Chadha",
+                        "Tigmanshu Dhulia"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Once Upon a Time in Mumbaai",
+                    desc:"A tale of two gangsters from the eras of past and present, whose lives enter parallel paths as they struggle to survive within Bombay's criminal underworld.",
+                    genres:[
+                        "Drama",
+                        "Thriller",
+                        "Crime"
+                    ],
+                    runtime:132,
+                    year:"2010",
+                    isMostLiked:false,
+                    videos:{},
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/vHIxxJH9P8YZhuzO0D1KtnSCBD8.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/8n7CyopsIqSXIk4PFAylAR2jCjl.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "crime boss",
+                        "criminal past",
+                        "mafia"
+                    ],
+                    cast:[
+                        "Ajay Devgn",
+                        "Emraan Hashmi",
+                        "Kangana Ranaut"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Agneepath",
+                    desc:"When his father is lynched by a mob after being framed by a gangster, a young boy leaves his village along with his pregnant mother  and flees to Mumbai. He takes up a life of crime and swears to aven...",
+                    genres:[
+                        "Action",
+                        "Crime",
+                        "Drama"
+                    ],
+                    runtime:174,
+                    year:"2012",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"z0KPQstwMQw"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/7PP7NLNYyLVymJPHX3HiYHgAtsh.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/2IGobl61f8wj7QL3fGGhM9nmTbq.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "remake",
+                        "revenge",
+                        "shaved head"
+                    ],
+                    cast:[
+                        "Hrithik Roshan",
+                        "Sanjay Dutt",
+                        "Priyanka Chopra Jonas"
+                    ],
+                    ageRating:"U/A 12+"
+                },
+                {
+                    type:"movie",
+                    title:"Gunday",
+                    desc:"The lives of Calcutta's most powerful gangsters - Bikram and Bala, changes when Nandita enters it. Then a counter-force takes charge and a thriller unfolds.",
+                    genres:[
+                        "Action",
+                        "Crime",
+                        "Drama"
+                    ],
+                    runtime:152,
+                    year:"2014",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"lFI09rbuHQ8",
+                        teaser:"zHRQ49cohEw"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/z4A9MCxjJJeGT4F0y5sEUUn7XYh.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:null,
+                    keywords:[
+                        "friendship",
+                        "love triangle",
+                        "gangster"
+                    ],
+                    cast:[
+                        "Ranveer Singh",
+                        "Arjun Kapoor",
+                        "Priyanka Chopra Jonas"
+                    ],
+                    ageRating:"U/A 12+"
+                },
+                {
+                    type:"movie",
+                    title:"Badlapur",
+                    desc:"After his wife and son are killed, a young man finds out the man behind the murder and fights against him, along committing some big mistakes.",
+                    genres:[
+                        "Crime",
+                        "Thriller",
+                        "Action"
+                    ],
+                    runtime:134,
+                    year:"2015",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"9KEoZanqlOE"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/b6dhMvtKF0UiG9xP2fIIeMcidJY.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/6KwOyHywFbqdEfvZ0BaEkjAGXFX.png",
+                        isLogoIncluded:false
+                    },
+                    keywords:[
+                        "revenge"
+                    ],
+                    cast:[
+                        "Varun Dhawan",
+                        "Nawazuddin Siddiqui",
+                        "Huma Qureshi"
+                    ],
+                    ageRating:"NC-17"
+                },
+                {
+                    type:"movie",
+                    title:"Joker",
+                    desc:"During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure.",
+                    genres:[
+                        "Crime",
+                        "Thriller",
+                        "Drama"
+                    ],
+                    runtime:122,
+                    year:"2019",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"eQ-NqkrWLx0",
+                        trailer:"-RFFRxcoKfA",
+                        teaser:"D5RDDAcGTks"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/nxt5320P4XdkCaRb99FEmFYfMh3.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/uACD19MjHdpLBlzmFSztlwsW5Q6.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "dream",
+                        "street gang",
+                        "society"
+                    ],
+                    cast:[
+                        "Joaquin Phoenix",
+                        "Robert De Niro",
+                        "Zazie Beetz"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"The Godfather",
+                    desc:"Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his y...",
+                    genres:[
+                        "Drama",
+                        "Crime"
+                    ],
+                    runtime:175,
+                    year:"1972",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"evl5ai7Mg7w",
+                        trailer:"Ew9ngL1GZvs",
+                        teaser:"gMjmsqvIPGc"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/AbgEQO2mneCSOc8CSnOMa8pBS8I.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/kysDTCloxUPJ1BILI4f8gs74fcr.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "loss of loved one",
+                        "italy",
+                        "symbolism"
+                    ],
+                    cast:[
+                        "Marlon Brando",
+                        "Al Pacino",
+                        "James Caan"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Kill Bill: Vol. 1",
+                    desc:"An assassin is shot by her ruthless employer, Bill, and other members of their assassination circle – but she lives to plot her vengeance.",
+                    genres:[
+                        "Action",
+                        "Crime"
+                    ],
+                    runtime:111,
+                    year:"2003",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"DiVKwaIr1Dw",
+                        trailer:"7xhUyYQdCf8"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/byGvsjXuTXk0jAm7OxJiCqeRa91.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/mIiJMgtGAIbQVrIElG0s7lCBs50.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "martial arts",
+                        "japan",
+                        "kung fu"
+                    ],
+                    cast:[
+                        "Uma Thurman",
+                        "Lucy Liu",
+                        "Vivica A. Fox"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Léon: The Professional",
+                    desc:"Léon, the top hit man in New York, has earned a rep as an effective \"cleaner\". But when his next-door neighbors are wiped out by a loose-cannon DEA agent, he becomes the unwilling custodian of 12-year...",
+                    genres:[
+                        "Crime",
+                        "Drama",
+                        "Action"
+                    ],
+                    runtime:111,
+                    year:"1994",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"Jcjel7l_7mQ",
+                        trailer:"Nq101UyQyTo"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/rtUOro8dRC0vS1EBwFoI7PuvfHI.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/2HzRM8xrGjMKJlBFimIlJ43JXbL.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "hotel room",
+                        "new york city",
+                        "immigrant"
+                    ],
+                    cast:[
+                        "Jean Reno",
+                        "Natalie Portman",
+                        "Gary Oldman"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"John Wick: Chapter 2",
+                    desc:"John Wick is forced out of retirement by a former associate looking to seize control of a shadowy international assassins’ guild. Bound by a blood oath to aid him, Wick travels to Rome and does battle...",
+                    genres:[
+                        "Action",
+                        "Thriller",
+                        "Crime"
+                    ],
+                    runtime:122,
+                    year:"2017",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"Wp3EE71PINI",
+                        trailer:"LZrX9mffH8Y",
+                        teaser:"bQN5U7DbJdk"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/bgZEdRSi8rENiEap1qUGZErNWRt.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/jfH33zGBFvKOcxctyj6RDvHN9K4.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "martial arts",
+                        "assassin",
+                        "hitman"
+                    ],
+                    cast:[
+                        "Keanu Reeves",
+                        "Common",
+                        "Ian McShane"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"GoodFellas",
+                    desc:"The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conw...",
+                    genres:[
+                        "Drama",
+                        "Crime"
+                    ],
+                    runtime:145,
+                    year:"1990",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"Pfcy15ZUE2c",
+                        trailer:"PTBRNXGQR9Q"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/ppF6t3eKHL0e6ggk3P8LhGav4fC.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/inwc0dp4lg2YUirexKRYv6qlNU5.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "prison",
+                        "florida",
+                        "new york city"
+                    ],
+                    cast:[
+                        "Robert De Niro",
+                        "Ray Liotta",
+                        "Joe Pesci"
+                    ],
+                    ageRating:"A-Rated"
+                },
             ],
-            shows: []
+            shows: [
+                {
+                    type:"show",
+                    title:"Marvel's Daredevil",
+                    desc:"Lawyer-by-day Matt Murdock uses his heightened senses from being blinded as a young boy to fight crime at night on the streets of Hell’s Kitchen as Daredevil.",
+                    genres:[
+                        "Crime",
+                        "Drama",
+                        "Action & Adventure"
+                    ],
+                    totalSeasons:3,
+                    totalEpisodes:39,
+                    year:"2015",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"jAy6NJ_D5vU",
+                        teaser:"GFUMJcJ3310"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/4oPLhbejqUwcebRlreAmCVLJDCq.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/jbYIbMDDMP6gTA4VjBfoMDJ3L85.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "new york city",
+                        "corruption",
+                        "secret identity"
+                    ],
+                    cast:[
+                        "Charlie Cox",
+                        "Deborah Ann Woll",
+                        "Elden Henson"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"Blinded as a young boy, Matt Murdock fights injustice by day as a lawyer and by night as the superhero Daredevil in Hell's Kitchen, New York City.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/zFmJQzl6bFrdpHhDkxXmboyykqD.jpg",
+                            totalEpisode:13,
+                            year:"2015"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"Dark forces are tearing Hell's Kitchen apart once again, but this time Daredevil may have to choose between the city and his friends.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/opHoslNCxkgoCaGhfO66fvCSH83.jpg",
+                            totalEpisode:13,
+                            year:"2016"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"Missing for months, Matt Murdock reemerges a broken man, putting into question his future as both vigilante Daredevil and lawyer Matthew Murdock. But when his archenemy Wilson Fisk is released from pr...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/zH6sgePlr1XX0jSZypbfQmr70Lf.jpg",
+                            totalEpisode:13,
+                            year:"2018"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"Chucky",
+                    desc:"After a vintage Chucky doll turns up at a suburban yard sale, an idyllic American town is thrown into chaos as a series of horrifying murders begin to expose the town’s hypocrisies and secrets. Meanwh...",
+                    genres:[
+                        "Crime",
+                        "Comedy",
+                        "Mystery"
+                    ],
+                    totalSeasons:3,
+                    totalEpisodes:24,
+                    year:"2021",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"oBNH-PY730k",
+                        teaser:"nye6Tc8JahE"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/d2ceQcyGnOaLEtGoYyYVJy9mnT9.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/AgYN1OiH9DS8NMyteuQGTik0nyd.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "new jersey",
+                        "evil doll",
+                        "possession"
+                    ],
+                    cast:[
+                        "Zackary Arthur",
+                        "Brad Dourif",
+                        "Björgvin Arnarson"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"After teenage loner Jake Wheeler discovers a vintage 'Good Guy' doll at a suburban yard sale, a quiet American town soon erupts into mayhem as a blood-chilling murder spree begins to spill everyone's ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/iF8ai2QLNiHV4anwY1TuSGZXqfN.jpg",
+                            totalEpisode:8,
+                            year:"2021"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"While Jake and Devon encounter trouble as a couple at their new Catholic school, Chucky embarks on a whole new killing spree, crossing paths with familiar faces along the way.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/kY0BogCM8SkNJ0MNiHB3VTM86Tz.jpg",
+                            totalEpisode:8,
+                            year:"2022"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"In Chucky’s unending thirst for power, Season 3 now sees Chucky ensconced with the most powerful family in the world — America's First Family, inside the infamous walls of the White House. How did Chu...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/gBW0xkZNgFRyRt77FgB1NcGZbXz.jpg",
+                            totalEpisode:8,
+                            year:"2023"
+                        }
+                    ],
+                    ageRating:"U/A 17+"
+                },
+                {
+                    type:"show",
+                    title:"Marvel's The Punisher",
+                    desc:"A former Marine out to punish the criminals responsible for his family's murder finds himself ensnared in a military conspiracy.",
+                    genres:[
+                        "Action & Adventure",
+                        "Crime",
+                        "Drama"
+                    ],
+                    totalSeasons:2,
+                    totalEpisodes:26,
+                    year:"2017",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"s4QV6OZdmWY",
+                        teaser:"sDp4AuNen0Y"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/8bZ1e6a1Ylt8J5uNLXWZ3aC4AVE.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/9mc72Fo2nXSb4gP5ngrrVDHcuJH.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "gun",
+                        "anti hero",
+                        "vigilante"
+                    ],
+                    cast:[
+                        "Jon Bernthal",
+                        "Ben Barnes",
+                        "Amber Rose Revah"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"A former Marine out to punish the criminals responsible for his family's murder finds himself ensnared in a military conspiracy.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/pJHS0WCBIOPJMIYpGQwubSBvDa.jpg",
+                            totalEpisode:13,
+                            year:"2017"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"Frank strives to protect a teenager caught in a sinister conspiracy while doing whatever it takes -- and then some -- to end Russo once and for all.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/zBMYMP25nUhbnO0tbFxkQCAF5r1.jpg",
+                            totalEpisode:13,
+                            year:"2019"
+                        }
+                    ],
+                    ageRating:"U/A 17+"
+                },
+                {
+                    type:"show",
+                    title:"DAHMER - Monster: The Jeffrey Dahmer Story",
+                    desc:"This series examines the gruesome and horrific true crimes of Jeffrey Dahmer and the systemic failures that enabled one of America’s most notorious serial killers to continue his murderous spree in pl...",
+                    genres:[
+                        "Crime",
+                        "Drama"
+                    ],
+                    totalSeasons:1,
+                    totalEpisodes:10,
+                    year:"2022",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"1PgKjIosF50",
+                        teaser:"riaxM3JcNac"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/hc2ZskN65AthhTp1DirOhEwHkDu.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/llLKLlbuE2ZH0WfdQTJcy3WsmLi.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "deaf-mute",
+                        "pedophilia",
+                        "court case"
+                    ],
+                    cast:[
+                        "Evan Peters",
+                        "Richard Jenkins",
+                        "Molly Ringwald"
+                    ],
+                    seasons:[
+                        {
+                            name:"Miniseries",
+                            desc:"Across more than a decade, 17 teen boys and young men were murdered by convicted killer Jeffrey Dahmer. How did he evade arrest for so long?",
+                            posterPath:"https://image.tmdb.org/t/p/w400/h7YlJ1Mhg6jCZiHToUiKqHdzMO9.jpg",
+                            totalEpisode:10,
+                            year:"2022"
+                        }
+                    ],
+                    ageRating:"U/A 17+"
+                },
+                {
+                    type:"show",
+                    title:"Marvel's Luke Cage",
+                    desc:"Given superstrength and durability by a sabotaged experiment, a wrongly accused man escapes prison to become a superhero for hire.",
+                    genres:[
+                        "Drama",
+                        "Sci-Fi & Fantasy",
+                        "Action & Adventure"
+                    ],
+                    totalSeasons:2,
+                    totalEpisodes:26,
+                    year:"2016",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"0pSQOqwQTNw"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/s0UquJK2fIFnJFMxrRTBswOXgsL.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/rbblexb8lrTSdKQKo0QPtU5ar9X.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "new york city",
+                        "superhero",
+                        "based on comic"
+                    ],
+                    cast:[
+                        "Mike Colter",
+                        "Alfre Woodard",
+                        "Simone Missick"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"As the bulletproof defender of Harlem, Luke Cage battles corrupt politicians, ruthless gangsters and demons from his own past.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/77jhpwhJXexUIIhytQzAXVhjXWo.jpg",
+                            totalEpisode:13,
+                            year:"2016"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"As his fame and responsibility soar, Luke Cage finds his life upended by a mysterious newcomer with powers of his own -- and a plan to take over Harlem.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/vogAXFUx6G0iHFdGOnME7yGXxhK.jpg",
+                            totalEpisode:13,
+                            year:"2018"
+                        }
+                    ],
+                    ageRating:"U/A 17+"
+                },
+                {
+                    type:"show",
+                    title:"How to Get Away with Murder",
+                    desc:"A sexy, suspense-driven legal thriller about a group of ambitious law students and their brilliant, mysterious criminal defense professor. They become entangled in a murder plot and will shake the ent...",
+                    genres:[
+                        "Crime",
+                        "Drama",
+                        "Mystery"
+                    ],
+                    totalSeasons:6,
+                    totalEpisodes:90,
+                    year:"2014",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"VHKRO7rSbOs",
+                        teaser:"hcRdcnOfsxU"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/vyd9sqQ2iQO2cc4ZYkD1n7BtWYm.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/zXf2J4Yy7Bi9WnS8GjbMquPlyXC.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "court case",
+                        "murder",
+                        "lawyer"
+                    ],
+                    cast:[
+                        "Viola Davis",
+                        "Billy Brown",
+                        "Jack Falahee"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"A law professor chooses five students to intern at her firm, while shifts in time foretell of the team's involvement in a shocking murder.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/lub62zywrVzwwdcEVu6FnejIjAI.jpg",
+                            totalEpisode:15,
+                            year:"2014"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"They say the first year of law school is the hardest. After taking Professor Annalise Keating's class at Middleton University, the Keating 5 were pushed to their limits as their values, convictions, d...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/2FWDfMtRXnxxw8GEy3TA9GieoJN.jpg",
+                            totalEpisode:15,
+                            year:"2015"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"Professor Annalise Keating and her class of bright law students push the limits of legality in the courtroom and beyond in order to keep their clients out of jail and each other out of hot water.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/snwDLmltAPtbbHD4pVwPdp00nVX.jpg",
+                            totalEpisode:15,
+                            year:"2016"
+                        },
+                        {
+                            name:"Season 4",
+                            desc:"Murder, deception, fear and guilt are the ties that bind Middleton University Professor Annalise Keating to her long-time associates Frank Delfino, Bonnie Winterbottom and her students. But as the gro...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/tuKy7vWMIu1BH1zGDpRAVBlSyP2.jpg",
+                            totalEpisode:15,
+                            year:"2017"
+                        },
+                        {
+                            name:"Season 5",
+                            desc:"Michaela, Connor, Asher, and Laurel move on with the next chapter of their lives. A new mystery involving one of their own will unfold, as relationships are fractured, and new secrets are exposed.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/hF0W7YUptWS3HzIcXzzDFL56CGp.jpg",
+                            totalEpisode:15,
+                            year:"2018"
+                        },
+                        {
+                            name:"Season 6",
+                            desc:"Professor Annalise Keating’s class is in their final semester of law school – while the deception, fear and guilt binding Professor Keating to her students prove deadlier then ever.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/eSEbaFI66BFdcDAaszUPfDNRnFU.jpg",
+                            totalEpisode:15,
+                            year:"2019"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"Sacred Games",
+                    desc:"A link in their pasts leads an honest cop to a fugitive gang boss, whose cryptic warning spurs the officer on a quest to save Mumbai from cataclysm.",
+                    genres:[
+                        "Drama",
+                        "Crime",
+                        "Action & Adventure"
+                    ],
+                    totalSeasons:2,
+                    totalEpisodes:16,
+                    year:"2018",
+                    isMostLiked:false,
+                    videos:{
+                        teaser:"AkUgf2jIPyI"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/wTVb2m8Nsc8YE8IyLPZS2lcj5yB.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/timrJkMqs1huwJSNdtjkgh3O4MB.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "investigation",
+                        "torture",
+                        "drugs"
+                    ],
+                    cast:[
+                        "Saif Ali Khan",
+                        "Nawazuddin Siddiqui",
+                        "Pankaj Tripathi"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"A link in their pasts leads an honest cop to a fugitive gang boss, whose cryptic warning spurs the officer on a quest to save Mumbai from cataclysm.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/mVQ6JFJCAMRLKvsMZdiEeYXC6cp.jpg",
+                            totalEpisode:8,
+                            year:"2018"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"As Mumbai’s fate hangs in the balance, Sartaj Singh chases a connection to Ganesh Gaitonde’s third father, an enigmatic guru with a catastrophic plan.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/5Bs2SBg97gaqoYH2c9zRNOEctaz.jpg",
+                            totalEpisode:8,
+                            year:"2019"
+                        }
+                    ],
+                    ageRating:"U/A 17+"
+                },
+                {
+                    type:"show",
+                    title:"Farzi",
+                    desc:"Sunny, a brilliant small-time artist is catapulted into the high-stakes world of counterfeiting when he creates the perfect fake currency note, even as Michael, a fiery, unorthodox task force officer ...",
+                    genres:[
+                        "Drama",
+                        "Crime"
+                    ],
+                    totalSeasons:1,
+                    totalEpisodes:8,
+                    year:"2023",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"KQdgKpNYho8"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/pbcusTSBfqZ9mfFAjyDkbu4JkeS.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/ifGD5GeRaBk9mNo73xFcGsqPEFP.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "Not Available"
+                    ],
+                    cast:[
+                        "Shahid Kapoor",
+                        "Vijay Sethupathi",
+                        "Kay Kay Menon"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"Sunny, a brilliant small-time artist is catapulted into the high-stakes world of counterfeiting when he creates the perfect fake currency note, even as Michael, a fiery, unorthodox task force officer ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/cTS86RwEBIDgCgUmjWQTSoPsK6p.jpg",
+                            totalEpisode:8,
+                            year:"2023"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"Delhi Crime",
+                    desc:"Following the police force as they investigate high-profile crimes in Delhi, this series has seasons inspired by both real and fictional events.",
+                    genres:[
+                        "Crime"
+                    ],
+                    totalSeasons:3,
+                    totalEpisodes:12,
+                    year:"2019",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"jNuKwlKJx2E",
+                        teaser:"ydoqfYCwmxQ"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/8WXouptCWLBHkBpWZahIgkeUDiH.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/iQi9YBSoPc1H9MZm3SIbQHRRcxT.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "delhi, india",
+                        "investigation",
+                        "gang rape"
+                    ],
+                    cast:[
+                        "Shefali Shah",
+                        "Rasika Dugal",
+                        "Avijit Dutt"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"As Delhi reels in the aftermath of a gang rape, DCP Vartika Chaturvedi leads a painstaking search for the culprits. Inspired by the 2012 Nirbhaya case.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/xkpkTj6KGsjSaet0VQaq0aTn31D.jpg",
+                            totalEpisode:7,
+                            year:"2019"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"When a chain of distinctly grisly murders suggests the return of a feared criminal gang, DCP Vartika heads the case under media and public pressure.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/xwK3JdYQpEH7bYocbngvB9XQcEm.jpg",
+                            totalEpisode:5,
+                            year:"2022"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"Following the police force as they investigate high-profile crimes in Delhi, this series has seasons inspired by both real and fictional events.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/xkpkTj6KGsjSaet0VQaq0aTn31D.jpg",
+                            totalEpisode:"Not Disclosed Yet",
+                            year:"202- (Unannounced)"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"Paatal Lok",
+                    desc:"A down and out cop lands the case of a lifetime when four suspects are nabbed in the assassination attempt of a prime time journalist. The case turns out to be a devious maze where nothing is what it ...",
+                    genres:[
+                        "Crime",
+                        "Drama"
+                    ],
+                    totalSeasons:2,
+                    totalEpisodes:9,
+                    year:"2020",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"cNwWMW4mxO8"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/s9HBagoNkCGoXxykbR9rvUgS91d.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/cEwO2WmHVmYkl72h3DB4vNHTrcp.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "detective",
+                        "police",
+                        "organized crime"
+                    ],
+                    cast:[
+                        "Jaideep Ahlawat",
+                        "Gul Panag",
+                        "Neeraj Kabi"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"A down and out cop lands the case of a lifetime when four suspects are nabbed in the assassination attempt of a prime time journalist. The case turns out to be a devious maze where nothing is what it ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/w5wlQNIDnP3hlt79BVEr2yaFRum.jpg",
+                            totalEpisode:9,
+                            year:"2020"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"A down and out cop lands the case of a lifetime when four suspects are nabbed in the assassination attempt of a prime time journalist. The case turns out to be a devious maze where nothing is what it ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/duaaazbB49iKK4TMvekR3fQIVhU.jpg",
+                            totalEpisode:"Not Disclosed Yet",
+                            year:"202- (Unannounced)"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"Breathe",
+                    desc:"Kabir, a brilliant but non-conventional officer of the Crime Branch, puts the pieces together of seemingly unconnected deaths of organ donors that lead up to an unlikely suspect - the affable Danny. K...",
+                    genres:[
+                        "Crime",
+                        "Drama"
+                    ],
+                    totalSeasons:1,
+                    totalEpisodes:8,
+                    year:"2018",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"jCGMk6l4tjA"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/cj9OkR52208ZNmtQMpa0q4vicol.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/avhIrQCN0Z8guepVH6ntFtDcx7w.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "Not Available"
+                    ],
+                    cast:[
+                        "R. Madhavan",
+                        "Amit Sadh",
+                        "Sapna Pabbi"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"Breathe is an Indian drama that explores the lives of ordinary men faced with extraordinary circumstances. Kabir (Sadh), a brilliant but non-conventional officer of the Crime Branch, puts the pieces t...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/j4blxUNlu4CiaB07iNO02sWv6hb.jpg",
+                            totalEpisode:8,
+                            year:"2018"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"Aranyak",
+                    desc:"After a foreign teenage tourist goes missing in a misty village, Kasturi, a frazzled local cop, is forced to team up with her city-bred successor, Angad, on a high-profile case that unearths skeletons...",
+                    genres:[
+                        "Crime",
+                        "Drama",
+                        "Mystery"
+                    ],
+                    totalSeasons:1,
+                    totalEpisodes:8,
+                    year:"2021",
+                    isMostLiked:false,
+                    videos:{},
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/bmlDEKCq23QtjIsG3huEkOieWaN.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/mLJD9CK33FHugKTHLq70AUW0qpo.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "police",
+                        "murder"
+                    ],
+                    cast:[
+                        "Raveena Tandon",
+                        "Ashutosh Rana",
+                        "Parambrata Chatterjee"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"Political ploys, personal agendas and a beastly myth all surface as two mismatched hill station cops navigate a web of suspects after a puzzling murder.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/8ISiNNlIyXcibWFV8loFzC6jRXv.jpg",
+                            totalEpisode:8,
+                            year:"2021"
+                        }
+                    ],
+                    ageRating:"U/A 17+"
+                }
+            ]
         },
         mcu: {
             tabs: ['movie'],
             movieTitle: 'Marvel Cinematic Universe',
-            movies: [],
+            movies: [
+                {
+                    type:"movie",
+                    title:"Avengers: Endgame",
+                    desc:"After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in...",
+                    genres:[
+                        "Adventure",
+                        "Science Fiction",
+                        "Action"
+                    ],
+                    runtime:181,
+                    year:"2019",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"9tKr3m6r9NI",
+                        trailer:"AMSITikqKiM",
+                        teaser:"I8o0a71EI74"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/yaRps1bMQLyz54M8ib5YdA2a2RZ.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/pjZSBgMDYjEhyanp8aahfE1KcAn.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "superhero",
+                        "time travel",
+                        "space travel"
+                    ],
+                    cast:[
+                        "Robert Downey Jr.",
+                        "Chris Evans",
+                        "Mark Ruffalo"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Spider-Man: No Way Home",
+                    desc:"Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, for...",
+                    genres:[
+                        "Action",
+                        "Adventure",
+                        "Science Fiction"
+                    ],
+                    runtime:148,
+                    year:"2021",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"Z2LqB-l3IKg",
+                        trailer:"1mTjfMFyPi8",
+                        teaser:"FK1aFyCbbBM"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/ekJqwEoa3E2UtPBuMEd6blHjaXW.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/9xjIoK8eGVvMdiqwUQbEBUeh9Ej.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "new york city",
+                        "hero",
+                        "showdown"
+                    ],
+                    cast:[
+                        "Tom Holland",
+                        "Zendaya",
+                        "Benedict Cumberbatch"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"The Avengers",
+                    desc:"When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull t...",
+                    genres:[
+                        "Science Fiction",
+                        "Action",
+                        "Adventure"
+                    ],
+                    runtime:143,
+                    year:"2012",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"bGt-saFvkNk",
+                        trailer:"hIR8Ar-Z4hw"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/agE0zlMnY7fFwH7SXD5zDXhwLhu.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/pKcdR1LeFvjfz0BiBAJNHHwGVKl.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "new york city",
+                        "superhero",
+                        "shield"
+                    ],
+                    cast:[
+                        "Robert Downey Jr.",
+                        "Chris Evans",
+                        "Mark Ruffalo"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Black Panther",
+                    desc:"King T'Challa returns home to the reclusive, technologically advanced African nation of Wakanda to serve as his country's new leader. However, T'Challa soon finds that he is challenged for the throne ...",
+                    genres:[
+                        "Action",
+                        "Adventure",
+                        "Science Fiction"
+                    ],
+                    runtime:135,
+                    year:"2018",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"u0SBlLWNe5s",
+                        trailer:"xjDjIWPwcPU",
+                        teaser:"zkWiTLKE0mg"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/iwKlrK1FJJy6wnJVu8YQgNq3Ort.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/hhSZl284wdgX7nY3lJXGS1e0sAL.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "africa",
+                        "superhero",
+                        "based on comic"
+                    ],
+                    cast:[
+                        "Chadwick Boseman",
+                        "Michael B. Jordan",
+                        "Lupita Nyong'o"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Deadpool & Wolverine",
+                    desc:"A listless Wade Wilson toils away in civilian life with his days as the morally flexible mercenary, Deadpool, behind him. But when his homeworld faces an existential threat, Wade must reluctantly suit...",
+                    genres:[
+                        "Action",
+                        "Comedy",
+                        "Science Fiction"
+                    ],
+                    runtime:128,
+                    year:"2024",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"Idh8n5XuYIA",
+                        teaser:"LYaJVfiwv0w"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/jxjIKaABRNvhO9mXlfCrAQQFZdL.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/vbipZWH60X3h8RJIIgBYdDsBXwu.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "hero",
+                        "superhero",
+                        "anti hero"
+                    ],
+                    cast:[
+                        "Ryan Reynolds",
+                        "Hugh Jackman",
+                        "Emma Corrin"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Iron Man 3",
+                    desc:"When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.",
+                    genres:[
+                        "Action",
+                        "Adventure",
+                        "Science Fiction"
+                    ],
+                    runtime:130,
+                    year:"2013",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"YLorLVa95Xo"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/rIUa56zPJ7RmkxvWAQGL8x86G6j.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/5hoZjBG0atD2L2olFjBGZu6siZC.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "california",
+                        "war on terror",
+                        "superhero"
+                    ],
+                    cast:[
+                        "Robert Downey Jr.",
+                        "Gwyneth Paltrow",
+                        "Don Cheadle"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Captain America: Civil War",
+                    desc:"Following the events of Age of Ultron, the collective governments of the world pass an act designed to regulate all superhuman activity. This polarizes opinion amongst the Avengers, causing two factio...",
+                    genres:[
+                        "Adventure",
+                        "Action",
+                        "Science Fiction"
+                    ],
+                    runtime:147,
+                    year:"2016",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"27_qmFNYldE",
+                        trailer:"dKrVegVI0Us",
+                        teaser:"N3KNEbWSirg"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/qPghrh3RMB7qzxK66skhiH5RZvF.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/19vL8lerTxsNrtQsiPsgmuHbGUi.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "superhero",
+                        "based on comic",
+                        "sequel"
+                    ],
+                    cast:[
+                        "Chris Evans",
+                        "Robert Downey Jr.",
+                        "Scarlett Johansson"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Spider-Man: Far From Home",
+                    desc:"Peter Parker and his friends go on a summer trip to Europe. However, they will hardly be able to rest - Peter will have to agree to help Nick Fury uncover the mystery of creatures that cause natural d...",
+                    genres:[
+                        "Action",
+                        "Adventure",
+                        "Science Fiction"
+                    ],
+                    runtime:129,
+                    year:"2019",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"op1Zyb2HGvU",
+                        trailer:"LFoz8ZJWmPs",
+                        teaser:"8aQtkMNRasw"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/vA4GjP2AVhx5zwKzJdh33PDp3J9.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/AA7j1iGNgGxPgbwt3T3erZ5lV5.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "venice, italy",
+                        "superhero",
+                        "school trip"
+                    ],
+                    cast:[
+                        "Tom Holland",
+                        "Jake Gyllenhaal",
+                        "Samuel L. Jackson"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Captain Marvel",
+                    desc:"The story follows Carol Danvers as she becomes one of the universe’s most powerful heroes when Earth is caught in the middle of a galactic war between two alien races. Set in the 1990s, Captain Marvel...",
+                    genres:[
+                        "Action",
+                        "Adventure",
+                        "Science Fiction"
+                    ],
+                    runtime:124,
+                    year:"2019",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"Lf2JIPI8pQU",
+                        trailer:"GX33bIOA5aA",
+                        teaser:"jxFJ9h3bv9A"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/k5V2cbDZvYIu6BKIK0Q0KGyAUDB.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/idLgPuXo4XAk3cA30xZ5p0i43Po.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "superhero",
+                        "based on comic",
+                        "alien invasion"
+                    ],
+                    cast:[
+                        "Brie Larson",
+                        "Samuel L. Jackson",
+                        "Ben Mendelsohn"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Doctor Strange in the Multiverse of Madness",
+                    desc:"Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.",
+                    genres:[
+                        "Fantasy",
+                        "Action",
+                        "Adventure"
+                    ],
+                    runtime:126,
+                    year:"2022",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"Rf8LAYJSOL8",
+                        teaser:"ipA03zcKZXc"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/shDYfjtNFyZmf7uZNtOLaI6iJXM.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/7FrW8xdtCRuhAm3ihTafJb8oH3J.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "magic",
+                        "superhero",
+                        "based on comic"
+                    ],
+                    cast:[
+                        "Benedict Cumberbatch",
+                        "Xochitl Gomez",
+                        "Elizabeth Olsen"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Spider-Man: Homecoming",
+                    desc:"Following the events of Captain America: Civil War, Peter Parker, with the help of his mentor Tony Stark, tries to balance his life as an ordinary high school student in Queens, New York City, with fi...",
+                    genres:[
+                        "Action",
+                        "Adventure",
+                        "Science Fiction"
+                    ],
+                    runtime:133,
+                    year:"2017",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"WtcfIn6QuI8",
+                        trailer:"xEvV3OsE2WM"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/7PhC0zGZNRWNQSXJz9Y3kAooGer.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/zxdyOGiGE1dUFgTGr4kvF1NTWdq.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "high school",
+                        "new york city",
+                        "superhero"
+                    ],
+                    cast:[
+                        "Tom Holland",
+                        "Michael Keaton",
+                        "Robert Downey Jr."
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Guardians of the Galaxy Vol. 2",
+                    desc:"The Guardians must fight to keep their newfound family together as they unravel the mysteries of Peter Quill's true parentage.",
+                    genres:[
+                        "Science Fiction",
+                        "Adventure",
+                        "Action"
+                    ],
+                    runtime:137,
+                    year:"2017",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"wUn05hdkhjM",
+                        teaser:"BSXAOywn_rE"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/fMQXhDlQeTnN5CiSCZt2xzSIDdW.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/767C9dyjI9FMq6emsDE0rY6K8Nc.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "superhero",
+                        "based on comic",
+                        "sequel"
+                    ],
+                    cast:[
+                        "Chris Pratt",
+                        "Zoe Saldaña",
+                        "Dave Bautista"
+                    ],
+                    ageRating:"U/A 13+"
+                }
+            ],
             shows: []
         },
         award: {
             tabs: ['movie'],
-            movieTitle: 'Award Winning Films',
-            movies: [],
+            movieTitle: 'Award-Winning Films',
+            movies: [
+                {
+                    type:"movie",
+                    title:"Joker",
+                    desc:"During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure.",
+                    genres:[
+                        "Crime",
+                        "Thriller",
+                        "Drama"
+                    ],
+                    runtime:122,
+                    year:"2019",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"eQ-NqkrWLx0",
+                        trailer:"-RFFRxcoKfA",
+                        teaser:"D5RDDAcGTks"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/nxt5320P4XdkCaRb99FEmFYfMh3.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/uACD19MjHdpLBlzmFSztlwsW5Q6.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "dream",
+                        "street gang",
+                        "society"
+                    ],
+                    cast:[
+                        "Joaquin Phoenix",
+                        "Robert De Niro",
+                        "Zazie Beetz"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Taxi Driver",
+                    desc:"A mentally unstable Vietnam War veteran works as a night-time taxi driver in New York City where the perceived decadence and sleaze feed his urge for violent action.",
+                    genres:[
+                        "Crime",
+                        "Drama"
+                    ],
+                    runtime:114,
+                    year:"1976",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"dB_5XEMH3mc",
+                        trailer:"zdqCqDSTVNI",
+                        teaser:"lbSisPcYQFQ"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/eWdEXjM7oIVIBI91C1ki4eTiWSU.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/5jdAstL71FuDsG10HVI5a8NXftJ.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "drug dealer",
+                        "vietnam veteran",
+                        "new york city"
+                    ],
+                    cast:[
+                        "Robert De Niro",
+                        "Jodie Foster",
+                        "Cybill Shepherd"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"American Psycho",
+                    desc:"A wealthy New York investment banking executive hides his alternate psychopathic ego from his co-workers and friends as he escalates deeper into his illogical, gratuitous fantasies.",
+                    genres:[
+                        "Thriller",
+                        "Drama",
+                        "Crime"
+                    ],
+                    runtime:102,
+                    year:"2000",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"Y-4vDAKaMX8",
+                        trailer:"81mibtQWWBg"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/oFDPh2ilXgJnTFgT3p8bycs1xds.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/jvQAjlprJFhza9u3Vn4kgkU2PjH.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "new york city",
+                        "businessman",
+                        "psychopath"
+                    ],
+                    cast:[
+                        "Christian Bale",
+                        "Justin Theroux",
+                        "Josh Lucas"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Nightcrawler",
+                    desc:"When Lou Bloom, desperate for work, muscles into the world of L.A. crime journalism, he blurs the line between observer and participant to become the star of his own story. Aiding him in his effort is...",
+                    genres:[
+                        "Crime",
+                        "Drama",
+                        "Thriller"
+                    ],
+                    runtime:118,
+                    year:"2014",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"AIfzU54rYHw",
+                        trailer:"7uaYhPpV7G4",
+                        teaser:"XkpyF1xfptM"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/c4Mu8smik4Ovs4A8xzokJcATkJp.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/rE5aRTyT0V3paIoz3i3bgIc7guG.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "underground",
+                        "psychopath",
+                        "journalism"
+                    ],
+                    cast:[
+                        "Jake Gyllenhaal",
+                        "Riz Ahmed",
+                        "Rene Russo"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"There Will Be Blood",
+                    desc:"Ruthless silver miner, turned oil prospector, Daniel Plainview, moves to oil-rich California. Using his son to project a trustworthy, family-man image, Plainview cons local landowners into selling him...",
+                    genres:[
+                        "Drama"
+                    ],
+                    runtime:158,
+                    year:"2007",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"0FIm5ATyAY0"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/pvOnQHWyiiO9dN6Q48j7BO5rCzP.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/lcPgZI1xiXj2yCv6O62oGMS5Yd4.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "california",
+                        "petrol",
+                        "capitalism"
+                    ],
+                    cast:[
+                        "Daniel Day-Lewis",
+                        "Paul Dano",
+                        "Kevin J. O'Connor"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Uncut Gems",
+                    desc:"A charismatic New York City jeweler always on the lookout for the next big score makes a series of high-stakes bets that could lead to the windfall of a lifetime. Howard must perform a precarious high...",
+                    genres:[
+                        "Drama",
+                        "Thriller",
+                        "Crime"
+                    ],
+                    runtime:136,
+                    year:"2019",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"TmlVK6fG1gg",
+                        trailer:"sXga1Oy0iRk"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/ihQIgiM73tkYK9I2nFpYebUvit6.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/hiF1jRHALkH8WzynYVURoNXQX6T.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "bet",
+                        "infidelity",
+                        "new york city"
+                    ],
+                    cast:[
+                        "Adam Sandler",
+                        "LaKeith Stanfield",
+                        "Julia Fox"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Like Stars on Earth",
+                    desc:"Ishaan Awasthi is an eight-year-old whose world is filled with wonders that no one else seems to appreciate. Colours, fish, dogs, and kites don't seem important to the adults, who are much more intere...",
+                    genres:[
+                        "Drama"
+                    ],
+                    runtime:162,
+                    year:"2007",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"tn_2Ie_jtX8"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/owqarJSDllJGoEW8EMz8q6cvKDD.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/8a9k1ytiJ55pKiP7YCSOWIjEGwh.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "jealousy",
+                        "boarding school",
+                        "painter"
+                    ],
+                    cast:[
+                        "Darsheel Safary",
+                        "Tisca Chopra",
+                        "Vipin Sharma"
+                    ],
+                    ageRating:"U/A 7+"
+                },
+                {
+                    type:"movie",
+                    title:"Lagaan: Once Upon a Time in India",
+                    desc:"In 1890s India, an arrogant British commander challenges the harshly taxed residents of Champaner to a high-stakes cricket match.",
+                    genres:[
+                        "Adventure",
+                        "Romance",
+                        "Drama"
+                    ],
+                    runtime:224,
+                    year:"2001",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"AqVjWevMrAg"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/lr5NleIRRDrqCoMujQUTkYl24OV.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/oo2VJIIrz24HFaOpG8JTP1bgYPl.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "countryside",
+                        "sports",
+                        "patriotism"
+                    ],
+                    cast:[
+                        "Aamir Khan",
+                        "Gracy Singh",
+                        "Rachel Shelley"
+                    ],
+                    ageRating:"U/A 7+"
+                },
+                {
+                    type:"movie",
+                    title:"Pather Panchali",
+                    desc:"Impoverished priest Harihar Ray, dreaming of a better life for himself and his family, leaves his rural Bengal village in search of work.  Preserved by the Academy Film Archive in partnership with The...",
+                    genres:[
+                        "Drama"
+                    ],
+                    runtime:125,
+                    year:"1955",
+                    isMostLiked:false,
+                    videos:{
+                        clip:"gcT3NBPMGgI",
+                        trailer:"mgv68E_o6VM"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/ibJuTdFmYGOiiUzJ5HzHU4EAuf1.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/5KTKviMAYco5Gk64KO8XisBlbea.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "robbery",
+                        "misery",
+                        "move"
+                    ],
+                    cast:[
+                        "Subir Banerjee",
+                        "Uma Das Gupta",
+                        "Karuna Banerjee"
+                    ],
+                    ageRating:"U/A 10+"
+                },
+                {
+                    type:"movie",
+                    title:"Pink",
+                    desc:"A sexual assault victim, unjustly tried for the attempted murder of her attacker, is defended by a retired lawyer who challenges India's rape culture.",
+                    genres:[
+                        "Drama",
+                        "Thriller"
+                    ],
+                    runtime:136,
+                    year:"2016",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"AL2TShb6fFs"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/Jsnn8m1ZzkEkClnYcjnFIYZzEc.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/rIgNIa4QXXpHnjwfTONZare5OFL.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "trial",
+                        "lawyer",
+                        "false accusations"
+                    ],
+                    cast:[
+                        "Amitabh Bachchan",
+                        "Taapsee Pannu",
+                        "Kirti Kulhari"
+                    ],
+                    ageRating:"U/A 12+"
+                },
+                {
+                    type:"movie",
+                    title:"Court",
+                    desc:"A sewerage worker's dead body is found inside a manhole in Mumbai. An ageing folk singer is tried in court on charges of abetment of suicide. He is accused of performing an inflammatory song which mig...",
+                    genres:[
+                        "Drama"
+                    ],
+                    runtime:116,
+                    year:"2015",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"4sc8z7zav9A"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/lK9R56dfj182Uz4THzEZ5vrUEn.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/x9VYN3LbL4UgS69WIjPE8QXIos8.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "court",
+                        "courtroom",
+                        "courtroom drama"
+                    ],
+                    cast:[
+                        "Vira Sathidar",
+                        "Vivek Gomber",
+                        "Geetanjali Kulkarni"
+                    ],
+                    ageRating:"U/A 7+"
+                },
+                {
+                    type:"movie",
+                    title:"Gully Boy",
+                    desc:"A coming-of-age story based on the lives of street rappers in Mumbai.",
+                    genres:[
+                        "Drama",
+                        "Music"
+                    ],
+                    runtime:156,
+                    year:"2019",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"JfbxcD6biOk"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/envYqk9BomXElkyWqrnncQfzz3c.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/y32N52NIzsXuIRkHsgjFQ3RcCb8.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "rap music",
+                        "slum",
+                        "rapper"
+                    ],
+                    cast:[
+                        "Ranveer Singh",
+                        "Alia Bhatt",
+                        "Siddhant Chaturvedi"
+                    ],
+                    ageRating:"U/A 12+"
+                }
+            ],
             shows: []
         },
         cult: {
             tabs: ['movie'],
             movieTitle: 'Cult-Classic Films',
-            movies: [],
+            movies: [
+                {
+                    type:"movie",
+                    title:"A Clockwork Orange",
+                    desc:"In a near-future Britain, young Alexander DeLarge and his pals get their kicks beating and raping anyone they please. When not destroying the lives of others, Alex swoons to the music of Beethoven. Th...",
+                    genres:[
+                        "Science Fiction",
+                        "Crime"
+                    ],
+                    runtime:137,
+                    year:"1971",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"4uRwjqBV3gA",
+                        trailer:"T54uZPI4Z8A"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/snidsjyk64ur9S58hb8NNqR6xQU.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/irRlKJHgl7BNn4HsCnWL0TeZviH.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "london, england",
+                        "robbery",
+                        "street gang"
+                    ],
+                    cast:[
+                        "Malcolm McDowell",
+                        "Patrick Magee",
+                        "Carl Duering"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Fight Club",
+                    desc:"A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every...",
+                    genres:[
+                        "Drama"
+                    ],
+                    runtime:139,
+                    year:"1999",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"dfeUzm6KF4g"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/fygeMr16EcxJiYhdiO1LEr7iHtI.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/7Uqhv24pGJs4Ns31NoOPWFJGWNG.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "dual identity",
+                        "rage and hate",
+                        "nihilism"
+                    ],
+                    cast:[
+                        "Edward Norton",
+                        "Brad Pitt",
+                        "Helena Bonham Carter"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Pulp Fiction",
+                    desc:"A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that i...",
+                    genres:[
+                        "Thriller",
+                        "Crime"
+                    ],
+                    runtime:154,
+                    year:"1994",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"r1bm09Xxr0Q",
+                        trailer:"tGpTpVyI_OQ"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/jlVOS4D6ledQGxGdL0EIte3TXfL.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/kpuNKsIzVbK3LDVo4iOJDAY0y7d.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "drug dealer",
+                        "boxer",
+                        "massage"
+                    ],
+                    cast:[
+                        "John Travolta",
+                        "Samuel L. Jackson",
+                        "Uma Thurman"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Donnie Darko",
+                    desc:"After narrowly escaping a bizarre accident, a troubled teenager is plagued by visions of a large bunny rabbit that manipulates him to commit a series of crimes.",
+                    genres:[
+                        "Fantasy",
+                        "Drama",
+                        "Mystery"
+                    ],
+                    runtime:114,
+                    year:"2001",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"71RaE7JYTUU"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/2Qe5h38MT99b8h7hWHL01WETdAw.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/pNvOhQXSl0qrhzIMZjT7r02kpdV.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "high school",
+                        "airplane",
+                        "therapist"
+                    ],
+                    cast:[
+                        "Jake Gyllenhaal",
+                        "Jena Malone",
+                        "James Duval"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Scarface",
+                    desc:"After getting a green card in exchange for assassinating a Cuban government official, Tony Montana stakes a claim on the drug trade in Miami. Viciously murdering anyone who stands in his way, Tony eve...",
+                    genres:[
+                        "Action",
+                        "Crime",
+                        "Drama"
+                    ],
+                    runtime:169,
+                    year:"1983",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"AU5jwUHIgMc",
+                        trailer:"lZMIrD36MG8",
+                        teaser:"61QvF-E9nWE"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/1LAy0CQnTZSv2dTfLKvVUpTjohg.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/3cEsezy6T2WvsCUHactrZQbdAn5.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "corruption",
+                        "miami, florida",
+                        "cuba"
+                    ],
+                    cast:[
+                        "Al Pacino",
+                        "Steven Bauer",
+                        "Michelle Pfeiffer"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"The Big Lebowski",
+                    desc:"Jeffrey 'The Dude' Lebowski, a Los Angeles slacker who only wants to bowl and drink White Russians, is mistaken for another Jeffrey Lebowski, a wheelchair-bound millionaire, and finds himself dragged ...",
+                    genres:[
+                        "Comedy",
+                        "Crime"
+                    ],
+                    runtime:117,
+                    year:"1998",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"rzp4KKEEcV0",
+                        trailer:"GiwMMziJdqg",
+                        teaser:"MjMcMeLXWxA"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/3jNcl3JmPbsqhn6Ro8gKYCDM89e.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/9y7SHMO5WvyEWBbfG0TibeWszYX.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "vietnam veteran",
+                        "white russian",
+                        "bowling"
+                    ],
+                    cast:[
+                        "Jeff Bridges",
+                        "John Goodman",
+                        "Julianne Moore"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Sholay",
+                    desc:"After his family is murdered by the notorious bandit Gabbar Singh, a former police officer enlists the services of two outlaws to capture him and seek revenge.",
+                    genres:[
+                        "Action"
+                    ],
+                    runtime:204,
+                    year:"1975",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"XjiluhItzIA"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/bzayYRmQqtk6Sr5YUd3rMBuw9Im.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/bNllYad8CtNHsJlHLPXS6oG4M7w.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "police",
+                        "fight",
+                        "village"
+                    ],
+                    cast:[
+                        "Dharmendra",
+                        "Amitabh Bachchan",
+                        "Sanjeev Kumar"
+                    ],
+                    ageRating:"U-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Rang De Basanti",
+                    desc:"After a group of friends graduate from Delhi University, they listlessly haunt their old campus, until a British filmmaker casts them in a film she's making about freedom fighters under British rule. ...",
+                    genres:[
+                        "Comedy",
+                        "Drama",
+                        "History"
+                    ],
+                    runtime:157,
+                    year:"2006",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"l-BTOTtcGmk"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/wZEPdR7gGwH6MzfXFDXwJLRBBpI.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/9YFv95FhgytcSqewILvEAhZNVm.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "patriotism",
+                        "coming of age",
+                        "celebration"
+                    ],
+                    cast:[
+                        "Aamir Khan",
+                        "Siddharth",
+                        "Kunal Kapoor"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"Satya",
+                    desc:"A young man named Satya comes to Mumbai from South India in search of a job. Jailed for something he did not do, the once-honest young man meets an underworld boss, Bhiku Mhatre in jail and joins his ...",
+                    genres:[
+                        "Crime",
+                        "Drama"
+                    ],
+                    runtime:170,
+                    year:"1998",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"V0ZHTqJj9yQ"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/25DeIhWj4ncKmRxRK6Rbs3V63z9.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/hjbeIjNGYCz3crV12yGQ6147oYF.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "crime boss",
+                        "mafia"
+                    ],
+                    cast:[
+                        "J. D. Chakravarthi",
+                        "Manoj Bajpayee",
+                        "Urmila Matondkar"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Dev.D",
+                    desc:"After breaking up with his childhood love Paro, Dev finds solace in drugs and alcohol. He soon bumps into Leni, a prostitute, and falls for her.",
+                    genres:[
+                        "Comedy",
+                        "Drama",
+                        "Romance"
+                    ],
+                    runtime:144,
+                    year:"2009",
+                    isMostLiked:false,
+                    videos:{
+                        clip:"DAmGvia0Le4",
+                        trailer:"ATZB8mwU3M0"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/rACXg4zadOTEQKceu0zViohXwCb.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/kwzx7WGa2CL1uHo8HlbbbQE6QzI.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "drug addiction",
+                        "tragic love"
+                    ],
+                    cast:[
+                        "Abhay Deol",
+                        "Mahie Gill",
+                        "Kalki Koechlin"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Rockstar",
+                    desc:"College student Janardhan is a simpleton who desperately seeks inspiration for the musician inside him. Although heartbreak helps him reach his goal, it also leads him to self-destruction.",
+                    genres:[
+                        "Drama",
+                        "Music",
+                        "Romance"
+                    ],
+                    runtime:159,
+                    year:"2011",
+                    isMostLiked:false,
+                    videos:{},
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/pkLPRHRMMEnSZpMAgFa6ILNSZjU.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/6UBUdCiKLfQZUoDzNCb4vmIyXyI.png",
+                        isLogoIncluded:false
+                    },
+                    keywords:[
+                        "adultery",
+                        "musical",
+                        "terminal illness"
+                    ],
+                    cast:[
+                        "Ranbir Kapoor",
+                        "Nargis Fakhri",
+                        "Shammi Kapoor"
+                    ],
+                    ageRating:"U/A 12+"
+                },
+                {
+                    type:"movie",
+                    title:"Devdas",
+                    desc:"After his wealthy family prohibits him from marrying the woman he is in love with, Devdas Mukherjee's life spirals further and further out of control as he takes up alcohol and a life of vice to numb ...",
+                    genres:[
+                        "Drama",
+                        "Romance"
+                    ],
+                    runtime:185,
+                    year:"2002",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"8tuHQWGMQwY"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/xmvdgjs0cYsz2rejsPdMVwywcb5.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/zSzUq1T0A1FKbErBXP8iqJvHBZj.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "courtesan",
+                        "remake",
+                        "calcutta"
+                    ],
+                    cast:[
+                        "Shah Rukh Khan",
+                        "Aishwarya Rai Bachchan",
+                        "Madhuri Dixit"
+                    ],
+                    ageRating:"U-Rated"
+                }
+            ],
             shows: []
         },
         violent: {
             tabs: ['movie'],
-            movieTitle: 'Violent Films',
-            movies: [],
+            movieTitle: 'Violent & Aggresive Films',
+            movies: [
+                {
+                    type:"movie",
+                    title:"Hannibal",
+                    desc:"After having successfully eluded the authorities for years, Hannibal peacefully lives in Italy in disguise as an art scholar. Trouble strikes again when he's discovered leaving a deserving few dead in...",
+                    genres:[
+                        "Crime",
+                        "Drama",
+                        "Thriller"
+                    ],
+                    runtime:131,
+                    year:"2001",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"20rd9VQ1Wx0"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/zbcck1Akh2Vxml0oNJO9tqgJdUl.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/uVCZlXtYEGyg1keHKxI7IZsfmGj.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "venice, italy",
+                        "fbi",
+                        "sequel"
+                    ],
+                    cast:[
+                        "Anthony Hopkins",
+                        "Julianne Moore",
+                        "Gary Oldman"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"300: Rise of an Empire",
+                    desc:"Greek general Themistocles attempts to unite all of Greece by leading the charge that will change the course of the war. Themistocles faces the massive invading Persian forces led by mortal-turned-god...",
+                    genres:[
+                        "Action",
+                        "Drama",
+                        "War"
+                    ],
+                    runtime:102,
+                    year:"2014",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"bsoJaQ2gZh4"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/aXTEnhbmjAiu1nhBywvl3mM4Aqv.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/exTGhtEbPwU6DtAuvP660UWofgc.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "based on comic",
+                        "sword fight",
+                        "soldier"
+                    ],
+                    cast:[
+                        "Sullivan Stapleton",
+                        "Eva Green",
+                        "Lena Headey"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Se7en",
+                    desc:"Two homicide detectives are on a desperate hunt for a serial killer whose crimes are based on the \"seven deadly sins\" in this dark and haunting film that takes viewers from the tortured remains of one...",
+                    genres:[
+                        "Crime",
+                        "Mystery",
+                        "Thriller"
+                    ],
+                    runtime:127,
+                    year:"1995",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"BJKukbTDLto",
+                        trailer:"vr3UZ-axauU"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/6jRk8m3Bd5i514cFzv95YKUjpw8.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/4msVv6tLAykTlWO0i17DI15Trv.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "rage and hate",
+                        "police",
+                        "s.w.a.t."
+                    ],
+                    cast:[
+                        "Morgan Freeman",
+                        "Brad Pitt",
+                        "Gwyneth Paltrow"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Split",
+                    desc:"Though Kevin has evidenced 23 personalities to his trusted psychiatrist, Dr. Fletcher, there remains one still submerged who is set to materialize and dominate all the others. Compelled to abduct thre...",
+                    genres:[
+                        "Horror",
+                        "Thriller"
+                    ],
+                    runtime:117,
+                    year:"2017",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"zpekM5VjV8Q",
+                        trailer:"6bfooooTKyM",
+                        teaser:"85sUbGzdEn8"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/bdUzIGXTSclcX2ELHS9HHbmQmMI.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/zFeVDHnWBCbrMLqsIO9LtBSNhAK.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "child abuse",
+                        "kidnapping",
+                        "gore"
+                    ],
+                    cast:[
+                        "James McAvoy",
+                        "Anya Taylor-Joy",
+                        "Betty Buckley"
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"movie",
+                    title:"The Silence of the Lambs",
+                    desc:"Clarice Starling is a top student at the FBI's training academy.  Jack Crawford wants Clarice to interview Dr. Hannibal Lecter, a brilliant psychiatrist who is also a violent psychopath, serving life ...",
+                    genres:[
+                        "Crime",
+                        "Drama",
+                        "Thriller"
+                    ],
+                    runtime:119,
+                    year:"1991",
+                    isMostLiked:false,
+                    videos:{
+                        clip:"mIj6hqPUnio",
+                        trailer:"1lFj08l4ujg"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/jEB8ILifjm2C4mOBOeTZNN4UNiF.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/5AloWdxhzFyi1HVX0lIOncz2V9a.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "kidnapping",
+                        "psychopath",
+                        "fbi"
+                    ],
+                    cast:[
+                        "Jodie Foster",
+                        "Anthony Hopkins",
+                        "Scott Glenn"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Halloween",
+                    desc:"Laurie Strode comes to her final confrontation with Michael Myers, the masked figure who has haunted her since she narrowly escaped his killing spree on Halloween night four decades ago.",
+                    genres:[
+                        "Horror",
+                        "Thriller"
+                    ],
+                    runtime:106,
+                    year:"2018",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"qT4ozPmWcAE",
+                        trailer:"x_-x4Dwz-rU"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/hI2KATJN6dti4bKITw2hTGW7v2n.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/g2jV22rtlQIEYH7L9bBQ3GbdASO.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "trauma",
+                        "halloween",
+                        "knife"
+                    ],
+                    cast:[
+                        "Jamie Lee Curtis",
+                        "Judy Greer",
+                        "Andi Matichak"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"The Girl with the Dragon Tattoo",
+                    desc:"Disgraced journalist Mikael Blomkvist investigates the disappearance of a weary patriarch's niece from 40 years ago. He is aided by the pierced, tattooed, punk computer hacker named Lisbeth Salander. ...",
+                    genres:[
+                        "Thriller",
+                        "Crime",
+                        "Mystery"
+                    ],
+                    runtime:158,
+                    year:"2011",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"svucpVzRBD4",
+                        teaser:"YKWXEfXGWtA"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/17XtQC6vjqxUWtFAJmba2tpGCTx.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/8Ou4GjXqOLWplIMctkTWosQbGoy.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "journalist",
+                        "island",
+                        "rape"
+                    ],
+                    cast:[
+                        "Daniel Craig",
+                        "Rooney Mara",
+                        "Christopher Plummer"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Con Air",
+                    desc:"Newly-paroled former US Army ranger Cameron Poe is headed back to his wife, but must fly home aboard a prison transport flight dubbed \"Jailbird\" taking the “worst of the worst” prisoners, a group desc...",
+                    genres:[
+                        "Action",
+                        "Thriller",
+                        "Crime"
+                    ],
+                    runtime:116,
+                    year:"1997",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"Olvpk5BXWCI",
+                        teaser:"Px8U9fx8TXw"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/pu4Ml9nKEQa4CPIIN3jFPwrhnkS.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/7yh1zNg4QmpwAeYZPwWh44yeazS.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "prison",
+                        "helicopter",
+                        "airplane"
+                    ],
+                    cast:[
+                        "Nicolas Cage",
+                        "John Cusack",
+                        "John Malkovich"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"The Patriot",
+                    desc:"After proving himself on the field of battle in the French and Indian War, Benjamin Martin wants nothing more to do with such things, preferring the simple life of a farmer. But when his son Gabriel e...",
+                    genres:[
+                        "Drama",
+                        "History",
+                        "War"
+                    ],
+                    runtime:165,
+                    year:"2000",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"ZSssYtYYKzU"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/yNVERas7QuxviDkqymSnLHXZeO9.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/d5xiP5x9VldlQnWZJHP7biJGaet.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "epic",
+                        "daughter",
+                        "mission"
+                    ],
+                    cast:[
+                        "Mel Gibson",
+                        "Heath Ledger",
+                        "Joely Richardson"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Fury",
+                    desc:"In the last months of World War II, as the Allies make their final push in the European theatre, a battle-hardened U.S. Army sergeant named 'Wardaddy' commands a Sherman tank called 'Fury' and its fiv...",
+                    genres:[
+                        "War",
+                        "Drama",
+                        "Action"
+                    ],
+                    runtime:135,
+                    year:"2014",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"OkfwwwDlyds",
+                        trailer:"09w9MTtZDEM",
+                        teaser:"n-8YjrfLh6Y"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/6zAWKtmVWGcOGfGocSexYrbo9F3.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/v3ticRB3hl6Iw9aiJm5cYJn7qub.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "hero",
+                        "nazi",
+                        "ambush"
+                    ],
+                    cast:[
+                        "Brad Pitt",
+                        "Shia LaBeouf",
+                        "Logan Lerman"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"Red Dragon",
+                    desc:"Former FBI Agent Will Graham, who was once almost killed by the savage Hannibal 'The Cannibal' Lecter, now has no choice but to face him again, as it seems Lecter is the only one who can help Graham t...",
+                    genres:[
+                        "Crime",
+                        "Thriller",
+                        "Horror"
+                    ],
+                    runtime:124,
+                    year:"2002",
+                    isMostLiked:false,
+                    videos:{
+                        clip:"4zmSHyFBiTk",
+                        trailer:"1zXN6_QuU48"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/cpFL7tulLOgwILopFvyDpdm2KZU.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/cIesmuXkCxcmOk9wju3jFzVuD0t.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "psychopath",
+                        "fbi",
+                        "murder"
+                    ],
+                    cast:[
+                        "Edward Norton",
+                        "Anthony Hopkins",
+                        "Ralph Fiennes"
+                    ],
+                    ageRating:"A-Rated"
+                },
+                {
+                    type:"movie",
+                    title:"The Equalizer",
+                    desc:"McCall believes he has put his mysterious past behind him and dedicated himself to beginning a new, quiet life. But when he meets Teri, a young girl under the control of ultra-violent Russian gangster...",
+                    genres:[
+                        "Thriller",
+                        "Action",
+                        "Crime"
+                    ],
+                    runtime:132,
+                    year:"2014",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"KcTu7hC5PR0",
+                        trailer:"BP_FwE0Z7no",
+                        teaser:"82jMI0-kQ1c"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/wNNdcsIsYFM6C7rij4cUo2FufNb.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/v82pEQYViRKgjNjvlILLfHIlE3d.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "assassin",
+                        "corruption",
+                        "hitman"
+                    ],
+                    cast:[
+                        "Denzel Washington",
+                        "Marton Csokas",
+                        "Chloë Grace Moretz"
+                    ],
+                    ageRating:"A-Rated"
+                }
+            ],
             shows: []
         },
         binge: {
             tabs: ['show'],
             showTitle: 'Binge-Worthy Shows',
             movies: [],
-            shows: []
+            shows: [
+                {
+                    type:"show",
+                    title:"Farzi",
+                    desc:"Sunny, a brilliant small-time artist is catapulted into the high-stakes world of counterfeiting when he creates the perfect fake currency note, even as Michael, a fiery, unorthodox task force officer ...",
+                    genres:[
+                        "Drama",
+                        "Crime"
+                    ],
+                    totalSeasons:1,
+                    totalEpisodes:8,
+                    year:"2023",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"KQdgKpNYho8"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/pbcusTSBfqZ9mfFAjyDkbu4JkeS.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/ifGD5GeRaBk9mNo73xFcGsqPEFP.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "Not Available"
+                    ],
+                    cast:[
+                        "Shahid Kapoor",
+                        "Vijay Sethupathi",
+                        "Kay Kay Menon"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"Sunny, a brilliant small-time artist is catapulted into the high-stakes world of counterfeiting when he creates the perfect fake currency note, even as Michael, a fiery, unorthodox task force officer ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/cTS86RwEBIDgCgUmjWQTSoPsK6p.jpg",
+                            totalEpisode:8,
+                            year:"2023"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"The Family Man",
+                    desc:"The story of a middle-class man who works for a special cell of the National Investigation Agency. While he tries to protect the nation from terrorists, he also has to protect his family from the impa...",
+                    genres:[
+                        "Comedy",
+                        "Drama",
+                        "Action & Adventure"
+                    ],
+                    totalSeasons:3,
+                    totalEpisodes:19,
+                    year:"2019",
+                    isMostLiked:false,
+                    videos:{},
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/rRWNU4TQKIzGmSPtaWQwQ5FmWth.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/jYcBQsRTHyPl3otiqok9LLFL1eE.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "terrorism",
+                        "raw"
+                    ],
+                    cast:[
+                        "Manoj Bajpayee",
+                        "Priyamani",
+                        "Sharib Hashmi"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"The Family Man is an edgy action-Drama series, which tells the story of a middle-class man who works for a special cell of the National Investigation Agency. While he tries to protect the nation from ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/ArZia3RQFa3SrLYXNGdtcyUzldw.jpg",
+                            totalEpisode:10,
+                            year:"2019"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"Srikant Tiwari has quit TASC and works in the private sector to spend more time with the family. A powerful new enemy forces him to return. Srikant has to now uncover and thwart a dangerous coalition ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/yvT2ffgh43UTlS0Ei0vkyfZ6rnG.jpg",
+                            totalEpisode:9,
+                            year:"2021"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"The story of a middle-class man who works for a special cell of the National Investigation Agency. While he tries to protect the nation from terrorists, he also has to protect his family from the impa...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/tE1NUJqw9gV6AVjQ1GTK78LbWJ9.jpg",
+                            totalEpisode:"Not Disclosed Yet",
+                            year:"202- (Unannounced)"
+                        }
+                    ],
+                    ageRating:"U/A 17+"
+                },
+                {
+                    type:"show",
+                    title:"The Railway Men - The Untold Story of Bhopal 1984",
+                    desc:"India, 1984. After a deadly gas leaks from a factory in Bhopal, brave railway workers risk their lives to save others in the face of an unspeakable disaster.",
+                    genres:[
+                        "Drama"
+                    ],
+                    totalSeasons:1,
+                    totalEpisodes:4,
+                    year:"2023",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"htQsI-b9dgc",
+                        teaser:"4T7TbU5jhxk"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/q0h8xeI2tIIRWSssCeyozD1fTAf.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/lLiQ1fSyhfywRNieZdE1Ymn3Qx6.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "Not Available"
+                    ],
+                    cast:[
+                        "Kay Kay Menon",
+                        "Divyendu Sharma",
+                        "Babil Khan"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"After a deadly gas leaks from a factory in Bhopal, brave railway workers risk their lives to save others in the face of an unspeakable disaster.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/ejgoT5zhvltxfjFb9mS4ykjPFFG.jpg",
+                            totalEpisode:4,
+                            year:"2023"
+                        }
+                    ],
+                    ageRating:"U/A 17+"
+                },
+                {
+                    type:"show",
+                    title:"Indian Police Force",
+                    desc:"Follows the harrowing journey of Delhi Police Officer Kabir Malik as he battles an insidious adversary, Zarar, who has chosen the path of terrorism.",
+                    genres:[
+                        "Action & Adventure",
+                        "Crime"
+                    ],
+                    totalSeasons:1,
+                    totalEpisodes:7,
+                    year:"2024",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"kvnWfKtEO-A"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/8l8hnF8Cxr3YxTP1C9EIFRb3aL4.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/sSFWtqZPHkwhxzLkbBfHissMXTJ.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "Not Available"
+                    ],
+                    cast:[
+                        "Sidharth Malhotra",
+                        "Shilpa Shetty Kundra",
+                        "Vivek Oberoi"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"\"Indian Police Force” is an action-packed series that follows the harrowing journey of Delhi Police Officer Kabir Malik as he battles an insidious adversary, Zarar, who has chosen the path of terroris...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/adAHp6OZp632mOrKLWCETyly2g7.jpg",
+                            totalEpisode:7,
+                            year:"2024"
+                        }
+                    ],
+                    ageRating:"U/A 17+"
+                },
+                {
+                    type:"show",
+                    title:"Permanent Roommates",
+                    desc:"A couple, who were in a long distance relationship for 3 years, face the prospect of getting married.",
+                    genres:[
+                        "Comedy"
+                    ],
+                    totalSeasons:3,
+                    totalEpisodes:18,
+                    year:"2014",
+                    isMostLiked:false,
+                    videos:{},
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/6k7g8ybn5uSDD1fZ9CboaK2HXeo.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/cIGQBW7rDx3pFhO5jbkHPWyjnYD.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "relationship",
+                        "sitcom"
+                    ],
+                    cast:[
+                        "Nidhi Singh",
+                        "Sumeet Vyas",
+                        "Deepak Kumar Mishra"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"A couple, who were in a long distance relationship for 3 years, face the prospect of getting married.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/lFkVzIOfW4FlbOWWzfBeluQkhvb.jpg",
+                            totalEpisode:5,
+                            year:"2014"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"Mikesh's parents have arrived at the Permanent Roommates' residence, as the news of Tanya's pregnancy also arrives. Mikesh and Tanya's wedding is being planned now in full force, with both their famil...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/ghGbI4UlIiL8I1Uv2ilZNgEdAnc.jpg",
+                            totalEpisode:8,
+                            year:"2016"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"Mikesh has the perfect life, whereas Tanya feels stuck. She reckons being stuck in her career is what stops her from being truly happy. Her fix for them to move abroad and Mikesh's resistance to the i...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/rH6pDUBJEBWbyjh39bovqRcKYrx.jpg",
+                            totalEpisode:5,
+                            year:"2023"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"Guns & Gulaabs",
+                    desc:"In the cartel-run town of Gulaabgunj, an unprecedented opium deal pulls a big-city cop and a lovesick mechanic into its chaotic clutches.",
+                    genres:[
+                        "Comedy",
+                        "Drama"
+                    ],
+                    totalSeasons:1,
+                    totalEpisodes:7,
+                    year:"2023",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"0dIIChsjKBc",
+                        teaser:"D365RUy_JRI"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/6jJmcfqBnb4Kua7N1cFwJQFR0k2.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/wdsHzBxr5y7HL9wpvEzZj0xjte.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "Not Available"
+                    ],
+                    cast:[
+                        "Dulquer Salmaan",
+                        "Rajkummar Rao",
+                        "Adarsh Gourav"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"In the cartel-run town of Gulaabgunj, an unprecedented opium deal pulls a big-city cop and a lovesick mechanic into its chaotic clutches.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/tqnM3ER0HdBijf9YNrMMWCxydUp.jpg",
+                            totalEpisode:7,
+                            year:"2023"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"Euphoria",
+                    desc:"A group of high school students navigate love and friendships in a world of drugs, sex, trauma, and social media.",
+                    genres:[
+                        "Drama"
+                    ],
+                    totalSeasons:2,
+                    totalEpisodes:16,
+                    year:"2019",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"UR4Pxgnm-GA",
+                        teaser:"JjcfL8fbs7k"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/3vQVZyNYTVQk8ali527KallQSrj.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/hp9ztcz0fMyztCKeQmNQg0F5dao.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "drug crime",
+                        "sex scandal",
+                        "childhood trauma"
+                    ],
+                    cast:[
+                        "Zendaya",
+                        "Hunter Schafer",
+                        "Sydney Sweeney"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"Euphoria follows a group of high schoolers as they explore the worlds of drugs, sexuality, and violence.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/5mi3aRl16yKmfpQJMzvqN5TXkdA.jpg",
+                            totalEpisode:8,
+                            year:"2019"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"The lines between fantasy and reality begin to blur as Kat contemplates ending her relationship and Jules, craving Rue's affection, ponders hers. Rue pursues a new dangerous business venture as she si...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/jtnfNzqZwN4E32FGGxx1YZaBWWf.jpg",
+                            totalEpisode:8,
+                            year:"2022"
+                        }
+                    ],
+                    ageRating:"U/A 17+"
+                },
+                {
+                    type:"show",
+                    title:"The Umbrella Academy",
+                    desc:"A dysfunctional family of superheroes comes together to solve the mystery of their father's death, the threat of the apocalypse and more.",
+                    genres:[
+                        "Action & Adventure",
+                        "Sci-Fi & Fantasy",
+                        "Drama"
+                    ],
+                    totalSeasons:4,
+                    totalEpisodes:36,
+                    year:"2019",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"oOFIxbotYCU"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/wlu91wzUh4WwTZPi9UEZmzozyd3.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/vLxjDvKL3SCFeiDBemuizLlmHEe.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "time travel",
+                        "superhero",
+                        "based on comic"
+                    ],
+                    cast:[
+                        "Aidan Gallagher",
+                        "Elliot Page",
+                        "Tom Hopper"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"Reunited by their father's death, estranged siblings with extraordinary powers uncover shocking family secrets -- and a looming threat to humanity.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/3sD4yI5A2YRTvJJcxmV1byLriOe.jpg",
+                            totalEpisode:10,
+                            year:"2019"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"Blasted back in time to 1960s Dallas, the scattered siblings build new lives for themselves — until a new doomsday threat pulls them back together.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/2aD0iZJelrJ6CguuzgZRKCvponZ.jpg",
+                            totalEpisode:10,
+                            year:"2020"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"Back at the Academy, the Umbrellas clash with a new squad of Hargreeves siblings as a mysterious force begins to wreak havoc on the city.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/wkgq3MRUCC1vmJ6wX9xFIzGcu1a.jpg",
+                            totalEpisode:10,
+                            year:"2022"
+                        },
+                        {
+                            name:"Season 4",
+                            desc:"Six years after the reset, the powerless Hargreeves clan faces a secret society and learns that the greatest threat to the universe... may be themselves.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/95JN2rqriB5sQmp92WFZUZsvaf8.jpg",
+                            totalEpisode:6,
+                            year:"2024"
+                        }
+                    ],
+                    ageRating:"U/A 17+"
+                },
+                {
+                    type:"show",
+                    title:"The Vampire Diaries",
+                    desc:"The story of two vampire brothers obsessed with the same girl, who bears a striking resemblance to the beautiful but ruthless vampire they knew and loved in 1864.",
+                    genres:[
+                        "Drama",
+                        "Sci-Fi & Fantasy"
+                    ],
+                    totalSeasons:8,
+                    totalEpisodes:171,
+                    year:"2009",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"_GWtgdAYHMU"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/4XU5Gb4UCMZnRIx2WW7LPHjyn82.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/u6nkKlo0PI7BEvQ9LrXxfdwnvPF.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "love triangle",
+                        "witch",
+                        "vampire"
+                    ],
+                    cast:[
+                        "Paul Wesley",
+                        "Ian Somerhalder",
+                        "Kat Graham"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"Life hasn't been the same for Elena since the tragic death of her parents, but she tries to pick up the pieces and provide support for her troubled younger brother, Jeremy. On her first day back at My...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/gXVXkQ5GcpAOi4nny1kcXxDgxJY.jpg",
+                            totalEpisode:22,
+                            year:"2009"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"This season, Katherine's appearance in Mystic Falls will throw a wrench into the love triangle between Stefan, Elena and Damon, and the other residents of Mystic Falls must choose sides as they fall v...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/qtxsFhfYu758GYyJ6EX5faJSXGP.jpg",
+                            totalEpisode:22,
+                            year:"2010"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"Season three opens the door to learn more about Klaus and the Original Family as his motives for wanting Stefan on his side are finally revealed. As Stefan sinks deeper into the dark side, Damon and E...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/3M3BFUFEFPyGoCXiTH8DKxMvpJJ.jpg",
+                            totalEpisode:22,
+                            year:"2011"
+                        },
+                        {
+                            name:"Season 4",
+                            desc:"The fourth season starts off with everything in transition. Elena faces her worst nightmare as she awakens from her deadly accident to find she must now endure the terrifying change of becoming a vamp...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/rCwqeO4RryINvM2sVJxhEfTRtgs.jpg",
+                            totalEpisode:23,
+                            year:"2012"
+                        },
+                        {
+                            name:"Season 5",
+                            desc:"The hit series enters its fifth season with some characters headed off to college, Katherine trying to survive as a human and a shocking Salvatore secret.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/h6J9MoUPvfnU7L3yBv6tJvT5cUo.jpg",
+                            totalEpisode:22,
+                            year:"2013"
+                        },
+                        {
+                            name:"Season 6",
+                            desc:"Season six follows the characters’ journey back to each other as they explore the duality of good versus evil inside themselves. Michael Malarkey joins the cast as Enzo, an old vampire friend from Dam...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/as8sU9MUTkhg3Cr410LH8dJhLqi.jpg",
+                            totalEpisode:22,
+                            year:"2014"
+                        },
+                        {
+                            name:"Season 7",
+                            desc:"In the wake of Elena Gilbert's goodbye, in season seven, some characters will recover while others falter. As Lily tries to drive a wedge between the Salvatore brothers, we'll still hold onto hope tha...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/4QzmmYS7Z6bc4d4LUiaq0njFh9q.jpg",
+                            totalEpisode:22,
+                            year:"2015"
+                        },
+                        {
+                            name:"Season 8",
+                            desc:"The final season of \"The Vampire Diaries\" begins a few months after it left off, with Damon and Enzo on an epic killing spree after being kidnapped and enslaved by the Siren Sybil. During the search t...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/1IRuj3K0tppjPF1rypLp85DDoUl.jpg",
+                            totalEpisode:16,
+                            year:"2016"
+                        }
+                    ],
+                    ageRating:"U/A 17+"
+                },
+                {
+                    type:"show",
+                    title:"Wednesday",
+                    desc:"Wednesday Addams is sent to Nevermore Academy, a bizarre boarding school where she attempts to master her psychic powers, stop a monstrous killing spree of the town citizens, and solve the supernatura...",
+                    genres:[
+                        "Sci-Fi & Fantasy",
+                        "Mystery",
+                        "Comedy"
+                    ],
+                    totalSeasons:2,
+                    totalEpisodes:8,
+                    year:"2022",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"RCL_dp8YRtA",
+                        trailer:"Qa5kFRxBkNw",
+                        teaser:"SoTmSuThMKc"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/Ah1bTTgIi5iqaEe9S3czK0vM0PT.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/m5nR52ErmLa0fkY4ItBuYaQuXJJ.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "witch",
+                        "friendship",
+                        "teenage girl"
+                    ],
+                    cast:[
+                        "Jenna Ortega",
+                        "Emma Myers",
+                        "Joy Sunday"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"Wednesday Addams is sent to Nevermore Academy, a bizarre boarding school where she attempts to master her psychic powers, stop a monstrous killing spree of the town citizens, and solve the supernatura...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/ajACh2JtjPOS2jJFhuD30gI1o8a.jpg",
+                            totalEpisode:8,
+                            year:"2022"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"Wednesday Addams is sent to Nevermore Academy, a bizarre boarding school where she attempts to master her psychic powers, stop a monstrous killing spree of the town citizens, and solve the supernatura...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/i55zgB5Eo8jwQH0EsARCtOla2C4.jpg",
+                            totalEpisode:"Not Disclosed Yet",
+                            year:"202- (Unannounced)"
+                        }
+                    ],
+                    ageRating:"U/A 17+"
+                },
+                {
+                    type:"show",
+                    title:"The 100",
+                    desc:"100 years in the future, when the Earth has been abandoned due to radioactivity, the last surviving humans live on an ark orbiting the planet — but the ark won't last forever. So the repressive regime...",
+                    genres:[
+                        "Sci-Fi & Fantasy",
+                        "Drama",
+                        "Action & Adventure"
+                    ],
+                    totalSeasons:7,
+                    totalEpisodes:100,
+                    year:"2014",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"aDrsItJ_HU4"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/mLniG2EsSDq5v7fZKkABwX8Y3sB.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/diuGY6h8kwQe1kxnyZvofoWuGpu.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "self-discovery",
+                        "space colony",
+                        "space travel"
+                    ],
+                    cast:[
+                        "Eliza Taylor",
+                        "Bob Morley",
+                        "Lindsey Morgan"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"Set 97 years after a nuclear war has destroyed civilization, when a spaceship housing humanity's lone survivors sends 100 juvenile delinquents back to Earth in hopes of possibly re-populating the plan...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/jAsSkxSGEjeEEHL3KiWXr3NwyPG.jpg",
+                            totalEpisode:13,
+                            year:"2014"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"The second season picks up with the group still scattered and desperate to be reunited. As members of The 100 and new arrivals from the Ark stake out their place in a dangerous and beautiful new world...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/4ngujsHppz4Imxh7qf9NQIIMlLY.jpg",
+                            totalEpisode:16,
+                            year:"2014"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"Reunited with the survivors of the space-station Ark that fell to Earth, Clarke Griffin and her band of juvenile delinquents have faced death at every turn. Though Clarke was alternately challenged, s...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/ayebqASxTXVSo9Qoug6M5YowZS0.jpg",
+                            totalEpisode:16,
+                            year:"2016"
+                        },
+                        {
+                            name:"Season 4",
+                            desc:"The fight to survive has torn The 100 apart, turned them against each other, and taken the lives of their closest friends. Last season, our heroes found themselves at the epicenter of both the Grounde...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/qCdJvikZUQkr4sOVYNkKHntRfha.jpg",
+                            totalEpisode:13,
+                            year:"2017"
+                        },
+                        {
+                            name:"Season 5",
+                            desc:"More than six years have passed since Praimfaya has ravaged the planet and killed most of the human race. As Clarke waits to hear from the group on the Ark, or in the bunker, a prison ship drops from ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/6uuX26IfMQeh3ARStMdToubrFEo.jpg",
+                            totalEpisode:13,
+                            year:"2018"
+                        },
+                        {
+                            name:"Season 6",
+                            desc:"After 125 years in cryosleep, traveling through the stars, our heroes woke up to a new home, a final gift from dearly-departed friends. A place where they can try again. They’re given one simple task:...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/wBzNjurA8ijJPF21Ggs9nbviIzi.jpg",
+                            totalEpisode:13,
+                            year:"2019"
+                        },
+                        {
+                            name:"Season 7",
+                            desc:"After arriving on a new planet, our heroes found a place where they hoped to try again. Clarke and Bellamy led a group down to this mysterious world to start anew, but not everything on Sanctum was as...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/xLOEWox9zuvzDbDdODP92RnQtjO.jpg",
+                            totalEpisode:16,
+                            year:"2020"
+                        }
+                    ],
+                    ageRating:"U/A 17+"
+                },
+                {
+                    type:"show",
+                    title:"Friends",
+                    desc:"Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pr...",
+                    genres:[
+                        "Comedy"
+                    ],
+                    totalSeasons:10,
+                    totalEpisodes:228,
+                    year:"1994",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"H29XSxoKp80"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/eAMSFRWEQcBt8dak4pCkjUSveHf.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/hcc6J1bR385nDORynbVPGaavOyZ.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "new york city",
+                        "roommate",
+                        "friendship"
+                    ],
+                    cast:[
+                        "Jennifer Aniston",
+                        "Courteney Cox",
+                        "Lisa Kudrow"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pr...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/odCW88Cq5hAF0ZFVOkeJmeQv1nV.jpg",
+                            totalEpisode:24,
+                            year:"1994"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pr...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/kC9VHoMh1KkoAYfsY3QlHpZRxDy.jpg",
+                            totalEpisode:24,
+                            year:"1995"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pr...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/n9u4pslqb6tpiLc8soldL5IbAyG.jpg",
+                            totalEpisode:25,
+                            year:"1996"
+                        },
+                        {
+                            name:"Season 4",
+                            desc:"Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pr...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/3WdH3FNMXgp3Qlx21T7kwKS8Mtc.jpg",
+                            totalEpisode:23,
+                            year:"1997"
+                        },
+                        {
+                            name:"Season 5",
+                            desc:"Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pr...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/aEwLXWbo6gV1TNIv9veu4rRwsPZ.jpg",
+                            totalEpisode:23,
+                            year:"1998"
+                        },
+                        {
+                            name:"Season 6",
+                            desc:"Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pr...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/7EU6bV6d8j1Xbc1F8QoNkOZrpsi.jpg",
+                            totalEpisode:23,
+                            year:"1999"
+                        },
+                        {
+                            name:"Season 7",
+                            desc:"Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pr...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/yvUZVChjOnqCjB9rjdEqEmpDdnQ.jpg",
+                            totalEpisode:23,
+                            year:"2000"
+                        },
+                        {
+                            name:"Season 8",
+                            desc:"Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pr...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/eh6PPkrzkXsEksRJDcdtx9lZsqX.jpg",
+                            totalEpisode:23,
+                            year:"2001"
+                        },
+                        {
+                            name:"Season 9",
+                            desc:"Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pr...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/1IvIdN4I5jJ0bwC3BkmDCy4pQ9j.jpg",
+                            totalEpisode:23,
+                            year:"2002"
+                        },
+                        {
+                            name:"Season 10",
+                            desc:"Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pr...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/67ETB6XIqYc5vZkyAjN8XINOX5i.jpg",
+                            totalEpisode:17,
+                            year:"2003"
+                        }
+                    ],
+                    ageRating:"U/A 17+"
+                }
+            ]
         },
         sitcom: {
             tabs: ['show'],
-            showTitle: 'Sitcoms to Binge',
-            movied: [],
-            shows: []
+            showTitle: 'Sitcoms to Binge-Watch',
+            movies: [],
+            shows: [
+                {
+                    type:"show",
+                    title:"The Big Bang Theory",
+                    desc:"Physicists Leonard and Sheldon find their nerd-centric social circle with pals Howard and Raj expanding when aspiring actress Penny moves in next door.",
+                    genres:[
+                        "Comedy"
+                    ],
+                    totalSeasons:12,
+                    totalEpisodes:279,
+                    year:"2007",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"3g2yTcg1QFI"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/4o1plAPue8wntFYO8lGZ4qQxQhY.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/zE0XcHYGM9oqVtXnLE92FGyDol5.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "geek",
+                        "nerd",
+                        "friends"
+                    ],
+                    cast:[
+                        "Johnny Galecki",
+                        "Jim Parsons",
+                        "Kaley Cuoco"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"University physicists Leonard and Sheldon know whether to use an integral or a differential to solve the area under a curve. But they don't have a clue about girls. Or dating. Or clothes. Or parties. ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/xeMLtxqVnHmtlrgvj3RUO9XQNT2.jpg",
+                            totalEpisode:17,
+                            year:"2007"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"This season, Leonard gets a girl. So does Sheldon. Howard drives the Mars Rover into a ditch. Raj woos a terminator. Gorgeous girl-next-door Penny falls under the spell of Age of Conan. And super-smar...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/8W0AmwfAWsmx9I95Naqzv6pI94Z.jpg",
+                            totalEpisode:23,
+                            year:"2008"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"Worlds collide in Season 3! A love affair with Penny has opened a big, wide, wonderful world of romance for Leonard. But Sheldon likes the world just the way it was, thank you. All of which makes for ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/yzUeZH3Qhh21nQR2mH5VqHGrM9w.jpg",
+                            totalEpisode:23,
+                            year:"2009"
+                        },
+                        {
+                            name:"Season 4",
+                            desc:"This season the Big Bang gang’s romantic universe expands. On the rebound from Penny, Leonard falls into the arms of Raj’s sister Priya. Sheldon gets a girlfriend, or rather a friend who is a girl: Am...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/gWVaLfld2V57gMoDd3Njv6JpRsq.jpg",
+                            totalEpisode:24,
+                            year:"2010"
+                        },
+                        {
+                            name:"Season 5",
+                            desc:"In season five, Penny and Leonard's relationship is relaunched in full \"beta test\" mode, while Sheldon, Howard, and Raj discover the feminine mystique is something that cannot be easily graphed or cal...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/wlAxsPhqqfCakXIQJvOuo4aWAo7.jpg",
+                            totalEpisode:24,
+                            year:"2011"
+                        },
+                        {
+                            name:"Season 6",
+                            desc:"Whether on or above Earth, hilarity is outrageously universal in TV's most popular comedy featuring four forward-thinking but socially backward geniuses. Fun discoveries multiply: Leonard learns jealo...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/loGfAOaq8mtuCUyRzXPylmogZlA.jpg",
+                            totalEpisode:24,
+                            year:"2012"
+                        },
+                        {
+                            name:"Season 7",
+                            desc:"Leonard returns from his North Sea expedition to find that his relationship with Penny involves more beta-testing than he’s ever done in a lab. Howard’s attachment issues with the women in his life in...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/JCLYJdBQWYMYODiKAvCSiVqj1F.jpg",
+                            totalEpisode:24,
+                            year:"2013"
+                        },
+                        {
+                            name:"Season 8",
+                            desc:"Sheldon is rescued from his soul-searching cross-country train trip (older but no wiser) and that means The Big Bang Theory gang's all here to spread another gear's cheer as TV's most attended laugh s...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/853ErM02RtBHdK5zA4E3J0TtxR7.jpg",
+                            totalEpisode:24,
+                            year:"2014"
+                        },
+                        {
+                            name:"Season 9",
+                            desc:"Our two genius roommates, Leonard and Sheldon, and their friends are back once again (smarter, but no wiser). Last season, Sheldon went soul-searching (on a train, of course) and was prepared to make ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/vZL8qekJxGqluZC5QauG7cJY6xc.jpg",
+                            totalEpisode:24,
+                            year:"2015"
+                        },
+                        {
+                            name:"Season 10",
+                            desc:"Leonard and Penny renew their vows, this time inviting their friends and family for wedding party; they also learn that marriage is about compromise, and figure out how to support each other. Sheldon ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/hZXAruQr6Kr8enwKN9pVWGxucDY.jpg",
+                            totalEpisode:24,
+                            year:"2016"
+                        },
+                        {
+                            name:"Season 11",
+                            desc:"After years of only looking out for himself, Sheldon found Amy Farrah Fowler to be the most patient woman to ever walk the earth, and... they did it! Wedding fever continues in season 11.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/A373F7AzZtIFy3l2LryC2yr2hC2.jpg",
+                            totalEpisode:24,
+                            year:"2017"
+                        },
+                        {
+                            name:"Season 12",
+                            desc:"Best friends and brilliant physicists Leonard Hofstadter and Sheldon Cooper are geniuses in the lab but socially challenge outside of it. Despite this, Leonard married his beautiful, street-smart neig...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/txta7TTNUfGCgsJI9oB6vb6uFlA.jpg",
+                            totalEpisode:24,
+                            year:"2018"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"The Simpsons",
+                    desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                    genres:[
+                        "Family",
+                        "Animation",
+                        "Comedy"
+                    ],
+                    totalSeasons:36,
+                    totalEpisodes:775,
+                    year:"1989",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"_jgYEYERYFQ"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/zmVUsCk31tUuoemp029nNS8l6CV.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/kyE83l2648IXArRQOOQJlirQ76b.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "middle class",
+                        "cartoon",
+                        "satire"
+                    ],
+                    cast:[
+                        "Dan Castellaneta",
+                        "Julie Kavner",
+                        "Nancy Cartwright"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/t544zSFUNyvmyeP4sHotlcEX3zH.jpg",
+                            totalEpisode:13,
+                            year:"1989"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/bRyDlUQQafSoIT052jpjLBMe8TH.jpg",
+                            totalEpisode:22,
+                            year:"1990"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/9ghmIhWJJuTx3UHyfVVBXQoUGvI.jpg",
+                            totalEpisode:24,
+                            year:"1991"
+                        },
+                        {
+                            name:"Season 4",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/voqu5a4drV1CXMjjZ0Mkw35n26l.jpg",
+                            totalEpisode:22,
+                            year:"1992"
+                        },
+                        {
+                            name:"Season 5",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/9O7tIcS2KZk1ukMq3aOvoj8KIJZ.jpg",
+                            totalEpisode:22,
+                            year:"1993"
+                        },
+                        {
+                            name:"Season 6",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/qD20BnTxIdF1rcnX4BARmFshzKA.jpg",
+                            totalEpisode:25,
+                            year:"1994"
+                        },
+                        {
+                            name:"Season 7",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/blCeZS6BmN3wwmF40fuCZSeFwbB.jpg",
+                            totalEpisode:25,
+                            year:"1995"
+                        },
+                        {
+                            name:"Season 8",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/xLebCxRHSwXBW39a4OLmMSGChLs.jpg",
+                            totalEpisode:25,
+                            year:"1996"
+                        },
+                        {
+                            name:"Season 9",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/6PTYyLD8bSiNZf1PFdCQ9JyiIFW.jpg",
+                            totalEpisode:25,
+                            year:"1997"
+                        },
+                        {
+                            name:"Season 10",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/A77xKuxA13aXA1mQd6YLAaTIErK.jpg",
+                            totalEpisode:23,
+                            year:"1998"
+                        },
+                        {
+                            name:"Season 11",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/7lgnlOENoCdub15UijLKTHawyhm.jpg",
+                            totalEpisode:22,
+                            year:"1999"
+                        },
+                        {
+                            name:"Season 12",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/jfxiyjRLoQq9LavlFNRBgjuweg5.jpg",
+                            totalEpisode:21,
+                            year:"2000"
+                        },
+                        {
+                            name:"Season 13",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/xflc3aV1SbP2bGeZNuu4AG6cIqH.jpg",
+                            totalEpisode:22,
+                            year:"2001"
+                        },
+                        {
+                            name:"Season 14",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/9IowK57TpeO09D4B46jd4J3wjPO.jpg",
+                            totalEpisode:22,
+                            year:"2002"
+                        },
+                        {
+                            name:"Season 15",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/bmMwmEfwmziKzWP2jiU0GMw8yKd.jpg",
+                            totalEpisode:22,
+                            year:"2003"
+                        },
+                        {
+                            name:"Season 16",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/ifjiG1gHGRyYmNDWRb9Ul9VCfEn.jpg",
+                            totalEpisode:21,
+                            year:"2004"
+                        },
+                        {
+                            name:"Season 17",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/evIWfK3hKFIExETjv6L2YS9J8fw.jpg",
+                            totalEpisode:22,
+                            year:"2005"
+                        },
+                        {
+                            name:"Season 18",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/kwb8AZAHyhn96dzn17mtTV3l8dl.jpg",
+                            totalEpisode:22,
+                            year:"2006"
+                        },
+                        {
+                            name:"Season 19",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/nLKZJ1ozVvYFtaOynzkShE8wN4k.jpg",
+                            totalEpisode:20,
+                            year:"2007"
+                        },
+                        {
+                            name:"Season 20",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/2CUdLX4K8fMlcdVPHUbciTYt4ri.jpg",
+                            totalEpisode:21,
+                            year:"2008"
+                        },
+                        {
+                            name:"Season 21",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/fEykf9XN4Cn5tJ17pOD2PObdjoc.jpg",
+                            totalEpisode:23,
+                            year:"2009"
+                        },
+                        {
+                            name:"Season 22",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/xUZeYO9NPkmXCcuRrr8PgXzk2Qd.jpg",
+                            totalEpisode:22,
+                            year:"2010"
+                        },
+                        {
+                            name:"Season 23",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/wlQnKb3pHBxtMivCjcvM8TDpBbv.jpg",
+                            totalEpisode:22,
+                            year:"2011"
+                        },
+                        {
+                            name:"Season 24",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/qGPFl3X6ukZ6fBQRiLxueLWQh9y.jpg",
+                            totalEpisode:22,
+                            year:"2012"
+                        },
+                        {
+                            name:"Season 25",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/iwlh2yoia66MCaZEqybsLSt3OHa.jpg",
+                            totalEpisode:22,
+                            year:"2013"
+                        },
+                        {
+                            name:"Season 26",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/9bGpb3vWygBogXpQBnTodFWaQte.jpg",
+                            totalEpisode:22,
+                            year:"2014"
+                        },
+                        {
+                            name:"Season 27",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/aw26dkO0PnxD0EfYWXCMUQLFNbI.jpg",
+                            totalEpisode:22,
+                            year:"2015"
+                        },
+                        {
+                            name:"Season 28",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/j4GZ2oH5PEWEyZkwuZ41OYLb30W.jpg",
+                            totalEpisode:22,
+                            year:"2016"
+                        },
+                        {
+                            name:"Season 29",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/9LAihbWybQA2UCLjitES1K3xc3T.jpg",
+                            totalEpisode:21,
+                            year:"2017"
+                        },
+                        {
+                            name:"Season 30",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/2uCMfNKU5jQiWV2Js519Eg4lUqQ.jpg",
+                            totalEpisode:23,
+                            year:"2018"
+                        },
+                        {
+                            name:"Season 31",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/1y2zzQhnAuFpRNovNMHWlubOaxw.jpg",
+                            totalEpisode:22,
+                            year:"2019"
+                        },
+                        {
+                            name:"Season 32",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/ifvEta1mmPGLu3E6lFnPSJAyBhh.jpg",
+                            totalEpisode:22,
+                            year:"2020"
+                        },
+                        {
+                            name:"Season 33",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/sjg9DQMgZzUA0Uqfw7eL89gFXOr.jpg",
+                            totalEpisode:22,
+                            year:"2021"
+                        },
+                        {
+                            name:"Season 34",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/pnoT4SHafalZmf2XNtzjBppVrpj.jpg",
+                            totalEpisode:22,
+                            year:"2022"
+                        },
+                        {
+                            name:"Season 35",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/3sq5RENcLT6aDrHjGH6B2q904EJ.jpg",
+                            totalEpisode:18,
+                            year:"2023"
+                        },
+                        {
+                            name:"Season 36",
+                            desc:"Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/jKPiHUaxjLExkGGj3RUdz6HrOkA.jpg",
+                            totalEpisode:7,
+                            year:"2024"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"Friends",
+                    desc:"Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pr...",
+                    genres:[
+                        "Comedy"
+                    ],
+                    totalSeasons:10,
+                    totalEpisodes:228,
+                    year:"1994",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"H29XSxoKp80"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/eAMSFRWEQcBt8dak4pCkjUSveHf.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/hcc6J1bR385nDORynbVPGaavOyZ.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "new york city",
+                        "roommate",
+                        "friendship"
+                    ],
+                    cast:[
+                        "Jennifer Aniston",
+                        "Courteney Cox",
+                        "Lisa Kudrow"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pr...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/odCW88Cq5hAF0ZFVOkeJmeQv1nV.jpg",
+                            totalEpisode:24,
+                            year:"1994"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pr...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/kC9VHoMh1KkoAYfsY3QlHpZRxDy.jpg",
+                            totalEpisode:24,
+                            year:"1995"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pr...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/n9u4pslqb6tpiLc8soldL5IbAyG.jpg",
+                            totalEpisode:25,
+                            year:"1996"
+                        },
+                        {
+                            name:"Season 4",
+                            desc:"Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pr...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/3WdH3FNMXgp3Qlx21T7kwKS8Mtc.jpg",
+                            totalEpisode:23,
+                            year:"1997"
+                        },
+                        {
+                            name:"Season 5",
+                            desc:"Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pr...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/aEwLXWbo6gV1TNIv9veu4rRwsPZ.jpg",
+                            totalEpisode:23,
+                            year:"1998"
+                        },
+                        {
+                            name:"Season 6",
+                            desc:"Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pr...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/7EU6bV6d8j1Xbc1F8QoNkOZrpsi.jpg",
+                            totalEpisode:23,
+                            year:"1999"
+                        },
+                        {
+                            name:"Season 7",
+                            desc:"Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pr...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/yvUZVChjOnqCjB9rjdEqEmpDdnQ.jpg",
+                            totalEpisode:23,
+                            year:"2000"
+                        },
+                        {
+                            name:"Season 8",
+                            desc:"Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pr...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/eh6PPkrzkXsEksRJDcdtx9lZsqX.jpg",
+                            totalEpisode:23,
+                            year:"2001"
+                        },
+                        {
+                            name:"Season 9",
+                            desc:"Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pr...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/1IvIdN4I5jJ0bwC3BkmDCy4pQ9j.jpg",
+                            totalEpisode:23,
+                            year:"2002"
+                        },
+                        {
+                            name:"Season 10",
+                            desc:"Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pr...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/67ETB6XIqYc5vZkyAjN8XINOX5i.jpg",
+                            totalEpisode:17,
+                            year:"2003"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"How I Met Your Mother",
+                    desc:"A father recounts to his children - through a series of flashbacks - the journey he and his four best friends took leading up to him meeting their mother.",
+                    genres:[
+                        "Comedy"
+                    ],
+                    totalSeasons:9,
+                    totalEpisodes:208,
+                    year:"2005",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"cjJLEYMzpjc"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/mU9CCBZZ24g45koGRoSgUQQMnPs.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/1bYJhHks9QBfsLXmbdkwlSMSaBC.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "roommate",
+                        "self-discovery",
+                        "group of friends"
+                    ],
+                    cast:[
+                        "Josh Radnor",
+                        "Neil Patrick Harris",
+                        "Jason Segel"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"A love story in reverse: How I Met Your Mother is a fresh new comedy about Ted (Josh Radnor) and how he fell in love. When Ted's best friends Marshall (Jason Segel) and Lily (Alyson Hannigan) decide t...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/7n8OEMRgIVkyPfswdBaftEBqQnI.jpg",
+                            totalEpisode:22,
+                            year:"2005"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"The woman of his dreams is out there — the question is, who is she? — Told in a series of flash backs, How I Met Your Mother is the hilariously unpredictable story of how twenty-something Ted meets hi...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/8OEKsU865P88LrAO6dZ157VNvHV.jpg",
+                            totalEpisode:22,
+                            year:"2006"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"It's Season Three and the search for a soul mate has never been so wildly inappropriate! Thirty-year-old Ted is still looking for Miss Right, but his road to domestic bliss is improbably paved with pu...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/4QwuGNHzByZxXftS01EMbks7Cn7.jpg",
+                            totalEpisode:20,
+                            year:"2007"
+                        },
+                        {
+                            name:"Season 4",
+                            desc:"Loaded with irresistible laughter and filled with outrageous fun, there's just one word for the hit comedy How I Met Your Mother: Awesomeness!\n\nFrom dating dilemmas to career conundrums, the recently ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/8Ly76CWFpQ6voKvUZmOKsBwF6qH.jpg",
+                            totalEpisode:24,
+                            year:"2008"
+                        },
+                        {
+                            name:"Season 5",
+                            desc:"Suit up for the hilarious Season Five of How I Met Your Mother, the outrageous, Emmy®-nominated hit starring Neil Patrick Harris, Jason Segel and Alyson Hannigan! The show's funniest season to date is...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/hNwfnZpuiTfSRCEJz77IO3Kvib6.jpg",
+                            totalEpisode:24,
+                            year:"2009"
+                        },
+                        {
+                            name:"Season 6",
+                            desc:"The more things change, the more things get interesting in this all-new hilarious season of How I Met Your Mother. Ted's (Josh Radnor) search for \"the one\" continues while Marshall and Lily (Jason Seg...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/fKKZ5Zns5ISPoF4lwH0a14TgBxp.jpg",
+                            totalEpisode:24,
+                            year:"2010"
+                        },
+                        {
+                            name:"Season 7",
+                            desc:"With both a baby and a wedding on the way, change is in the air and awesomeness abounds in the hilariously unpredictable Season Seven of How I Met Your Mother. As Marshall and Lily move away to start ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/8tme9C6s75sj0Nn7DQrn6PlNa1B.jpg",
+                            totalEpisode:24,
+                            year:"2011"
+                        },
+                        {
+                            name:"Season 8",
+                            desc:"In the uproarious Eighth Season of How I Met Your Mother, the arrival of baby Marvin reminds Marshall and Lily of things they need, like sleep, better jobs and sex! Meanwhile Barney uses his playbook ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/o6BepKycT39kubElBsnj5bWpDPU.jpg",
+                            totalEpisode:24,
+                            year:"2012"
+                        },
+                        {
+                            name:"Season 9",
+                            desc:"Suit up and give one last high-five for the legend — wait for it — dary final season of How I Met Your Mother. Surprising answers to hilarious questions will be revealed during one epic wedding weeken...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/ynDSoB5ilvp2qnSJp1WFCZSRjbm.jpg",
+                            totalEpisode:24,
+                            year:"2013"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"Malcolm in the Middle",
+                    desc:"A gifted young teen tries to survive life with his dimwitted, dysfunctional family.",
+                    genres:[
+                        "Family",
+                        "Comedy",
+                        "Drama"
+                    ],
+                    totalSeasons:7,
+                    totalEpisodes:151,
+                    year:"2000",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"o6gPg-P5FPg"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/yboiDe8YZ1c5FfjUEUBOq4aj9FJ.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/7aXcNVcQpKYkz07j6pmwyBBiRG3.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "middle class",
+                        "social satire",
+                        "family"
+                    ],
+                    cast:[
+                        "Frankie Muniz",
+                        "Jane Kaczmarek",
+                        "Bryan Cranston"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"A gifted young teen tries to survive life with his dimwitted, dysfunctional family.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/uRiJcfOTpqMKxp6EHVCXCTRbh0d.jpg",
+                            totalEpisode:16,
+                            year:"2000"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"A gifted young teen tries to survive life with his dimwitted, dysfunctional family.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/AtuQTd80P5SoaqT0BTh6yyM1XYZ.jpg",
+                            totalEpisode:25,
+                            year:"2000"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"A gifted young teen tries to survive life with his dimwitted, dysfunctional family.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/tQGXeQZwQE3cP1TtTbDoYsDA8tJ.jpg",
+                            totalEpisode:22,
+                            year:"2001"
+                        },
+                        {
+                            name:"Season 4",
+                            desc:"A gifted young teen tries to survive life with his dimwitted, dysfunctional family.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/ohRcqZ66lmmU8YEkAW5l3JhVPQZ.jpg",
+                            totalEpisode:22,
+                            year:"2002"
+                        },
+                        {
+                            name:"Season 5",
+                            desc:"A gifted young teen tries to survive life with his dimwitted, dysfunctional family.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/dF9Q0J90Lfswj30OHPOySZPwAg0.jpg",
+                            totalEpisode:22,
+                            year:"2003"
+                        },
+                        {
+                            name:"Season 6",
+                            desc:"A gifted young teen tries to survive life with his dimwitted, dysfunctional family.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/eJv11VBqzt2WJzK8xBVVD0YwjhC.jpg",
+                            totalEpisode:22,
+                            year:"2004"
+                        },
+                        {
+                            name:"Season 7",
+                            desc:"A gifted young teen tries to survive life with his dimwitted, dysfunctional family.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/k1LxfboalBatsZwiTbEyuYNGU4f.jpg",
+                            totalEpisode:22,
+                            year:"2005"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"The Office",
+                    desc:"The everyday lives of office employees in the Scranton, Pennsylvania branch of the fictional Dunder Mifflin Paper Company.",
+                    genres:[
+                        "Comedy"
+                    ],
+                    totalSeasons:9,
+                    totalEpisodes:186,
+                    year:"2005",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"96ix3P9WaRc"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/gSX2JND7Ltb6LNfcBRE3SIrVO0v.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/zWozteGoJM0NhHj5lhXSqhu6rUA.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "office",
+                        "work",
+                        "boss"
+                    ],
+                    cast:[
+                        "Rainn Wilson",
+                        "John Krasinski",
+                        "Jenna Fischer"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"This season introduced the main characters, and established the general plot, which revolves around Michael Scott, regional manager of the Scranton branch office, trying to convince the filmmakers of ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/d71JQWhX75ZE2D383DlIsHVH1In.jpg",
+                            totalEpisode:6,
+                            year:"2005"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"Beginning with \"The Dundies\", the second season further developed into the plot of the fear of company downsizing, along with the introduction of new characters and developing some of the minor ones—e...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/sAd3RhOjhTuaIBpyiI1QmB0YUq8.jpg",
+                            totalEpisode:22,
+                            year:"2005"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"The season marked the move of main character Jim Halpert from Scranton to Stamford, and also introduced Rashida Jones as Karen Filippelli, and Ed Helms as Andy Bernard—both members of Dunder Mifflin S...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/1SR5ZR0KNHTRvAzFayaKbhKAFSu.jpg",
+                            totalEpisode:23,
+                            year:"2006"
+                        },
+                        {
+                            name:"Season 4",
+                            desc:"Season four marked the departure of Karen Filippelli as a regular character, although she appeared for a few seconds in the first episode, \"Fun Run\" and in the sixth episode, \"Branch Wars\", as the reg...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/zunFI6wdYJQRHnfXnziArUTs2e2.jpg",
+                            totalEpisode:14,
+                            year:"2007"
+                        },
+                        {
+                            name:"Season 5",
+                            desc:"Michael Scott and his fellow Dunder Mifflin-ites steal customers, frame co-workers, and indulge in intra-office love affairs.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/hwlQxOPGIybqBz5TYYIe6XtOfi4.jpg",
+                            totalEpisode:26,
+                            year:"2008"
+                        },
+                        {
+                            name:"Season 6",
+                            desc:"In Season 6, the crew faces romances, marriage, parenthood, new corporate ownership, Darryl’s rise to middle management, and a ball-busting new boss.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/hk3a9U26J726oV8nHTdeMTtH91B.jpg",
+                            totalEpisode:24,
+                            year:"2009"
+                        },
+                        {
+                            name:"Season 7",
+                            desc:"In Season 7, Dwight is now the owner of the building, Andy is courting Erin, Jim and Pam struggle with being new parents, and past girlfriends haunt Michael.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/uR3y9BwPA8gnk2nmB6ncQejEe8k.jpg",
+                            totalEpisode:24,
+                            year:"2010"
+                        },
+                        {
+                            name:"Season 8",
+                            desc:"The eighth season largely centers around Andy Bernard's ascension to regional manager, as well as the antics of Robert California, the new CEO of Sabre, a fictional printer company that owns Dunder Mi...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/sQLtAEBbQNIXGZyTUt3IK9gX4VE.jpg",
+                            totalEpisode:24,
+                            year:"2011"
+                        },
+                        {
+                            name:"Season 9",
+                            desc:"In Season 9, Andy finds his true calling in showbiz, Jim lands the job of his dreams, Erin struggles with love, and Angela's marriage isn’t what it seems.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/8L6lgr8PueiI73e1I78lazuLt5i.jpg",
+                            totalEpisode:23,
+                            year:"2012"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"Brooklyn Nine-Nine",
+                    desc:"A single-camera ensemble comedy following the lives of an eclectic group of detectives in a New York precinct, including one slacker who is forced to shape up when he gets a new boss.",
+                    genres:[
+                        "Comedy",
+                        "Crime"
+                    ],
+                    totalSeasons:8,
+                    totalEpisodes:152,
+                    year:"2013",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"icTOP9F17pU",
+                        teaser:"1GTVc1pLJKw"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/aNsrgElf0fiKBSR8cWWEL6XUTte.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/c4B02LhSKL6xLrI8vJ5IbLHL0Ue.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "new york city",
+                        "police",
+                        "big city"
+                    ],
+                    cast:[
+                        "Andy Samberg",
+                        "Melissa Fumero",
+                        "Terry Crews"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"Talented but laid-back detective Jake Peralta and his dysfunctional peers struggle to get along under their precinct's strict new captain.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/9hL8os3A3pGpdvQtt029zj2pURy.jpg",
+                            totalEpisode:22,
+                            year:"2013"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"In Season 2, Jake smokes out a mole in the precinct, Amy finds a flaw in one of Holt's old cases, and the precinct gets antiterrorism training.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/lvST5TSkJqN4yyhDy5IgyoBDize.jpg",
+                            totalEpisode:23,
+                            year:"2014"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"After Holt's transfer, the precinct isn't happy with his replacement. Amy and Jake adjust to romance, while personnel changes shake up the department.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/nqlpXFbyCGzeBaDVC2E6PO5itCw.jpg",
+                            totalEpisode:23,
+                            year:"2015"
+                        },
+                        {
+                            name:"Season 4",
+                            desc:"While the Nine-Nine tries to keep a lid on things in Brooklyn, Jake and Holt are in a witness protection program in Florida, where Holt is thriving.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/6fsr582nvms8E4ag3jb3oHL76en.jpg",
+                            totalEpisode:22,
+                            year:"2016"
+                        },
+                        {
+                            name:"Season 5",
+                            desc:"After a nightmare stint in prison for a crime he didn't commit, Jake returns to the Nine-Nine, where personal and professional changes are afoot.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/dWOF2pJBNfunspM7PpVG6O9LWj3.jpg",
+                            totalEpisode:22,
+                            year:"2017"
+                        },
+                        {
+                            name:"Season 6",
+                            desc:"As Jake and Amy adjust to married life and Holt squares off with a rival, the hijinks, heists and crime-fighting continue at the Nine-Nine.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/xa9xA4Ieju9cyVkfJ47n1hnbHWB.jpg",
+                            totalEpisode:18,
+                            year:"2019"
+                        },
+                        {
+                            name:"Season 7",
+                            desc:"Jake and Amy rethink their family plans, Holt chafes over his demotion, and the squad sees the return of old pals and nemeses amid the usual shenanigans.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/kJUpn3xnymCbdxInyZVGFW5vGYR.jpg",
+                            totalEpisode:13,
+                            year:"2020"
+                        },
+                        {
+                            name:"Season 8",
+                            desc:"Jake and the squad must try to balance their personal lives and their professional lives over the course of a very difficult year.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/8PmhuCEB9W3Cc5ZDJunnV1m68IZ.jpg",
+                            totalEpisode:9,
+                            year:"2021"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"Futurama",
+                    desc:"The adventures of a late-20th-century New York City pizza delivery boy, Philip J. Fry, who, after being unwittingly cryogenically frozen for one thousand years, finds employment at Planet Express, an ...",
+                    genres:[
+                        "Animation",
+                        "Comedy",
+                        "Sci-Fi & Fantasy"
+                    ],
+                    totalSeasons:9,
+                    totalEpisodes:144,
+                    year:"1999",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"dUHzt5md1x0"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/fXeyop5j5rCuLcmA9Rb37GBbSwh.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/6jNQtbazLLAu5gLzW46FP8EGePb.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "spacecraft",
+                        "future",
+                        "space travel"
+                    ],
+                    cast:[
+                        "Billy West",
+                        "Katey Sagal",
+                        "John DiMaggio"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"The adventures of a late-20th-century New York City pizza delivery boy, Philip J. Fry, who, after being unwittingly cryogenically frozen for one thousand years, finds employment at Planet Express, an ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/1HsTfDiB8Isd9QOVTPSriZSUeEF.jpg",
+                            totalEpisode:9,
+                            year:"1999"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"The adventures of a late-20th-century New York City pizza delivery boy, Philip J. Fry, who, after being unwittingly cryogenically frozen for one thousand years, finds employment at Planet Express, an ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/73wNUIJoi50I8RozwncfPurfk8g.jpg",
+                            totalEpisode:20,
+                            year:"1999"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"The adventures of a late-20th-century New York City pizza delivery boy, Philip J. Fry, who, after being unwittingly cryogenically frozen for one thousand years, finds employment at Planet Express, an ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/3b7s0n9vpyrSQkohX8wxnmNKA9l.jpg",
+                            totalEpisode:15,
+                            year:"2000"
+                        },
+                        {
+                            name:"Season 4",
+                            desc:"The adventures of a late-20th-century New York City pizza delivery boy, Philip J. Fry, who, after being unwittingly cryogenically frozen for one thousand years, finds employment at Planet Express, an ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/mOc2Cd9cpCn5uaOjHqNNMrvNbzi.jpg",
+                            totalEpisode:12,
+                            year:"2001"
+                        },
+                        {
+                            name:"Season 5",
+                            desc:"In the fifth season, Bender grows jealous when Fry attempts to clone his beloved fossilized dog; when Kif gets pregnant, Amy questions her readiness to become a parent; when Fry and Leela discover a m...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/r5nGE66fq69uR4FKA3j7TKSL8uP.jpg",
+                            totalEpisode:16,
+                            year:"2002"
+                        },
+                        {
+                            name:"Season 6",
+                            desc:"The adventures of a late-20th-century New York City pizza delivery boy, Philip J. Fry, who, after being unwittingly cryogenically frozen for one thousand years, finds employment at Planet Express, an ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/9QGsYuRe7XHa9ARu9XHKz0h0cra.jpg",
+                            totalEpisode:26,
+                            year:"2010"
+                        },
+                        {
+                            name:"Season 7",
+                            desc:"The adventures of a late-20th-century New York City pizza delivery boy, Philip J. Fry, who, after being unwittingly cryogenically frozen for one thousand years, finds employment at Planet Express, an ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/sKkMifpyEHPqqfMsmkOJ7oFgfpb.jpg",
+                            totalEpisode:26,
+                            year:"2012"
+                        },
+                        {
+                            name:"Season 8",
+                            desc:"The adventures of a late-20th-century New York City pizza delivery boy, Philip J. Fry, who, after being unwittingly cryogenically frozen for one thousand years, finds employment at Planet Express, an ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/7RRHbCUtAsVmKI6FEMzZB6Re88P.jpg",
+                            totalEpisode:10,
+                            year:"2023"
+                        },
+                        {
+                            name:"Season 9",
+                            desc:"On this orbit around the sun, our occasionally heroic crew embarks on mind-bending adventures involving birthday party games to the death, the secrets of Bender's ancestral robot village, A.I. friends...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/sdJcX2cXirwQurLLlrDLYov7hcD.jpg",
+                            totalEpisode:10,
+                            year:"2024"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"Two and a Half Men",
+                    desc:"A hedonistic jingle writer's free-wheeling life comes to an abrupt halt when his brother and 10-year-old nephew move into his beach-front house.",
+                    genres:[
+                        "Comedy"
+                    ],
+                    totalSeasons:12,
+                    totalEpisodes:262,
+                    year:"2003",
+                    isMostLiked:true,
+                    videos:{
+                        clip:"h1YadOPGL-0",
+                        trailer:"E7ap_eCWxYI"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/nL99A7KQc7I5PSWo3CRHzorcjgS.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/ivAjR58o2LaAHDThE923k7VOV37.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "california",
+                        "composer",
+                        "roommate"
+                    ],
+                    cast:[
+                        "Ashton Kutcher",
+                        "Jon Cryer",
+                        "Conchata Ferrell"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"A hedonistic jingle writer's free-wheeling life comes to an abrupt halt when his brother and 10-year-old nephew move into his beach-front house.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/9NmUF41Izd5E4k69g4klkoh4zTb.jpg",
+                            totalEpisode:24,
+                            year:"2003"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"A hedonistic jingle writer's free-wheeling life comes to an abrupt halt when his brother and 10-year-old nephew move into his beach-front house.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/l03f6HTmnc82LlDCvR2q6pfWO87.jpg",
+                            totalEpisode:24,
+                            year:"2004"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"A hedonistic jingle writer's free-wheeling life comes to an abrupt halt when his brother and 10-year-old nephew move into his beach-front house.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/I5Hhdvc5UIEyhgpRoNPqj99H49.jpg",
+                            totalEpisode:24,
+                            year:"2005"
+                        },
+                        {
+                            name:"Season 4",
+                            desc:"A hedonistic jingle writer's free-wheeling life comes to an abrupt halt when his brother and 10-year-old nephew move into his beach-front house.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/kcYIXEat3fR5FoVt4dbzQSnUDa6.jpg",
+                            totalEpisode:24,
+                            year:"2006"
+                        },
+                        {
+                            name:"Season 5",
+                            desc:"A hedonistic jingle writer's free-wheeling life comes to an abrupt halt when his brother and 10-year-old nephew move into his beach-front house.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/g52E3BZ6jKydQVxoGM15ePOEFXg.jpg",
+                            totalEpisode:19,
+                            year:"2007"
+                        },
+                        {
+                            name:"Season 6",
+                            desc:"A hedonistic jingle writer's free-wheeling life comes to an abrupt halt when his brother and 10-year-old nephew move into his beach-front house.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/kQ2h5wcreCJK7zJMJnAJjjY7rWK.jpg",
+                            totalEpisode:24,
+                            year:"2008"
+                        },
+                        {
+                            name:"Season 7",
+                            desc:"A hedonistic jingle writer's free-wheeling life comes to an abrupt halt when his brother and 10-year-old nephew move into his beach-front house.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/psgfTx3DYM8h8KDXGaHyvFmxroo.jpg",
+                            totalEpisode:22,
+                            year:"2009"
+                        },
+                        {
+                            name:"Season 8",
+                            desc:"A hedonistic jingle writer's free-wheeling life comes to an abrupt halt when his brother and 10-year-old nephew move into his beach-front house.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/lV8h3H9IJQU8hqnsjwwg5td2SGA.jpg",
+                            totalEpisode:16,
+                            year:"2010"
+                        },
+                        {
+                            name:"Season 9",
+                            desc:"A hedonistic jingle writer's free-wheeling life comes to an abrupt halt when his brother and 10-year-old nephew move into his beach-front house.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/qBpw1BaMtzXnk9MWRr4dQH2KVDB.jpg",
+                            totalEpisode:24,
+                            year:"2011"
+                        },
+                        {
+                            name:"Season 10",
+                            desc:"A hedonistic jingle writer's free-wheeling life comes to an abrupt halt when his brother and 10-year-old nephew move into his beach-front house.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/r2qiOEQcI9tSIk9KiJfuQ8hmPp7.jpg",
+                            totalEpisode:23,
+                            year:"2012"
+                        },
+                        {
+                            name:"Season 11",
+                            desc:"A hedonistic jingle writer's free-wheeling life comes to an abrupt halt when his brother and 10-year-old nephew move into his beach-front house.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/qH1E5VDtEHZFtOIYHajTe31JUHm.jpg",
+                            totalEpisode:22,
+                            year:"2013"
+                        },
+                        {
+                            name:"Season 12",
+                            desc:"A hedonistic jingle writer's free-wheeling life comes to an abrupt halt when his brother and 10-year-old nephew move into his beach-front house.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/6xltlUQoxBdoHAuEwfAW4IOIYAn.jpg",
+                            totalEpisode:16,
+                            year:"2014"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"Modern Family",
+                    desc:"The Pritchett-Dunphy-Tucker clan is a wonderfully large and blended family. They give us an honest and often hilarious look into the sometimes warm, sometimes twisted, embrace of the modern family.",
+                    genres:[
+                        "Comedy"
+                    ],
+                    totalSeasons:11,
+                    totalEpisodes:250,
+                    year:"2009",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"rbpTUPisA78",
+                        teaser:"U7dLXjZfXV8"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/zN1G6IY2G5dQUKm1mYs0h3Hnt5Z.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/rbKhglYrECjMZNYtT2QyihOQ5F.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "family",
+                        "sitcom",
+                        "blended family"
+                    ],
+                    cast:[
+                        "Ed O'Neill",
+                        "Sofía Vergara",
+                        "Julie Bowen"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"Modern Family takes a refreshing and funny view of what it means to raise a family in this hectic day and age.  Multi-cultural relationships, adoption, and same-sex marriage are just a few of the time...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/i1KhQoI391KaEA5fKArrzoTvNDk.jpg",
+                            totalEpisode:24,
+                            year:"2009"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"While fledgling fathers Cameron and Mitchell struggle with learning the ropes of parenthood, long-time parents Claire and Phil try to keep the spice in their marriage amid the chaos of raising three c...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/yvBc8av9K1g5QRtBDnP5xY69jb4.jpg",
+                            totalEpisode:24,
+                            year:"2010"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"As the extended Pritchett-Dunphy clan faces an uproariously unpredictable array of family vacations, holiday hassles, troublesome in-laws, and surprising secrets, they still somehow manage to thrive t...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/a4EJOG8VOV02veUIYtu4lX6FVdr.jpg",
+                            totalEpisode:24,
+                            year:"2011"
+                        },
+                        {
+                            name:"Season 4",
+                            desc:"With Jay and Gloria's baby on the way and Haley going off to college, the entire Pritchett-Dunphy clan faces some major surprises as they bicker and bond over house-flipping headaches, unwanted play d...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/3fpusiurM5qBwiHVpMFBkLYxgIx.jpg",
+                            totalEpisode:24,
+                            year:"2012"
+                        },
+                        {
+                            name:"Season 5",
+                            desc:"Wedding bells are ringing in season five of Modern Family. As Cam and Mitchell bicker over plans for their big day, the rest of the family has its hands full adapting to new jobs, new schools, and a n...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/sJ9PqGDvGIOwJfSle62yGGieZC1.jpg",
+                            totalEpisode:24,
+                            year:"2013"
+                        },
+                        {
+                            name:"Season 6",
+                            desc:"The honeymoon is over, but the laughs continue in season six of Modern Family. As freshly hitched Cam and Mitch acclimate to the realities of wedded bliss, Phil and Claire find their marriage stressed...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/5cUUBx6iUrWFvJ8BmP2d4SATy1G.jpg",
+                            totalEpisode:24,
+                            year:"2014"
+                        },
+                        {
+                            name:"Season 7",
+                            desc:"Enjoy a new chapter of love and laughter with the Seventh Season of the show. Quackery rules the roost when Phil adopts a trio of orphan ducklings and the rebellious Dunphy kids spread their wings. Me...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/825aF6sf43gIyPsX0oeNNhqMzuH.jpg",
+                            totalEpisode:22,
+                            year:"2015"
+                        },
+                        {
+                            name:"Season 8",
+                            desc:"The household hilarity continues as the Dunphy clan is wrapping up a Big Apple adventure. Back at home, Claire struggles to keep order at Pritchett's Closets while Phil and Jay go into business togeth...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/coOmsK9sWpScfLDlRXQ2xUJdzZ8.jpg",
+                            totalEpisode:22,
+                            year:"2016"
+                        },
+                        {
+                            name:"Season 9",
+                            desc:"The outrageous ninth season revolves around the blended Pritchett-Dunphy-Tucker clan, headed by Jay Pritchett. Jay and his vivacious second wife Gloria are raising their young son Joe and Gloria's col...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/innrJlIzs0mktUCcQaGvMYMu4pk.jpg",
+                            totalEpisode:22,
+                            year:"2017"
+                        },
+                        {
+                            name:"Season 10",
+                            desc:"As the tenth season kicks off, Jay's slated to be grand marshal in a Fourth of July parade, prompting the Pritchett-Dunphy-Tuckers to set off a few too many fireworks. Phil stumbles into a new career ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/4aksppat5nq4IO08crJwcL2bbrv.jpg",
+                            totalEpisode:22,
+                            year:"2018"
+                        },
+                        {
+                            name:"Season 11",
+                            desc:"Jay and Gloria are navigating life with their youngest son, Joe, while Manny has headed off to college to explore the world on his own terms. Meanwhile, Claire and Phil have officially lost their stat...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/sMIhyJw2s1PRS8S7UtVnQrHAlNB.jpg",
+                            totalEpisode:18,
+                            year:"2019"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"The Fresh Prince of Bel-Air",
+                    desc:"Will, a street-smart teenager, moves from the tough streets of West Philly to posh Bel-Air to live with his Uncle Philip, Aunt Vivian, his cousins — spoiled Hilary, preppy Carlton and young Ashley — a...",
+                    genres:[
+                        "Comedy",
+                        "Family"
+                    ],
+                    totalSeasons:6,
+                    totalEpisodes:148,
+                    year:"1990",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"_u6vYpbfCmQ"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/a5DqjlKF6gn1V83AuPNUyRov20D.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/6Urh1vTNDdwFF7TzSXXdO6sdYxV.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "california",
+                        "black people",
+                        "rap music"
+                    ],
+                    cast:[
+                        "Will Smith",
+                        "James Avery",
+                        "Daphne Maxwell Reid"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"Will Smith is revealed to be a street-smart teenager from West Philadelphia, who is sent to live with his wealthy relatives at their Bel Air, Los Angeles mansion. His relatives include Phillip Banks, ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/2GQfpBhAiWrVynEudqcfqXFE0AQ.jpg",
+                            totalEpisode:25,
+                            year:"1990"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"The prince is back and fresher than ever! In the second season of this inspiring comedy, as the Banks family continues to adjust to Will living with them in Bel-Air, they find themselves questioning h...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/54Tqn3zorDtYXoVD6oQkmFk8q2t.jpg",
+                            totalEpisode:24,
+                            year:"1991"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"Season three of The Fresh Prince of Bel-Air finds Will (Will Smith) firmly entrenched in the Banks family, having traded his rough-and-tumble Philadelphia youth for posh surroundings in Bel-Air. This ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/q2qXI0wnEEwCRTYaBj6Gkuyv0Ao.jpg",
+                            totalEpisode:24,
+                            year:"1992"
+                        },
+                        {
+                            name:"Season 4",
+                            desc:"Charming and cocky Will continues his reign as The Fresh Prince of Bel-Air in the fourth fast-paced season of this hit family comedy with heart. Will (Will Smith) and Carlton (Alfonso Ribeiro) are liv...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/ZlHr5gONLpXPtKTzCzTL8zD2Jc.jpg",
+                            totalEpisode:26,
+                            year:"1993"
+                        },
+                        {
+                            name:"Season 5",
+                            desc:"Will meets Lisa — and before you can say “Go slow, bro,” he’s in love, engaged, and standing before the minister with 50 pounds of iced shrimp melting in the banquet hall. All that romance must be con...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/32bd1yk0ONW5Hji3ywQxwmZwF8S.jpg",
+                            totalEpisode:25,
+                            year:"1994"
+                        },
+                        {
+                            name:"Season 6",
+                            desc:"After Will becomes Hilary's talent coordinator, her show goes national and she is lured to New York, where Ashley hopes to model. When Philip presides over a high-profile Hollywood case, his ambition ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/onT0gSiBwOtzP2uIhrIiUm3cEt4.jpg",
+                            totalEpisode:24,
+                            year:"1995"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"Sex and the City",
+                    desc:"Based on the bestselling book by Candace Bushnell, Sex and the City tells the story of four best friends, all single and in their late thirties, as they pursue their careers and talk about their sex l...",
+                    genres:[
+                        "Comedy",
+                        "Drama"
+                    ],
+                    totalSeasons:6,
+                    totalEpisodes:94,
+                    year:"1998",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"b58gZlXm2yI"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/veFvRHkQgZxfMuJ6UmEKZ45TTzx.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/bMPMSe1JVUu5ObNK7faywiIJ4UN.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "new york city",
+                        "beauty",
+                        "female friendship"
+                    ],
+                    cast:[
+                        "Sarah Jessica Parker",
+                        "Kim Cattrall",
+                        "Cynthia Nixon"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"Thirtysomething writer Carrie Bradshaw's experiences on the New York singles scene serve as the inspiration for her newspaper column: 'Sex and the City'. The struggles of finding a partner are seen th...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/cPxf5Y1aRE4iq5j08vd1y13cZMK.jpg",
+                            totalEpisode:12,
+                            year:"1998"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"Carrie begins dating again in the wake of her break-up with Mr. Big while Samantha, Charlotte and Miranda continue to provide fodder for her column.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/1ZXJv019e5l2V0DWhD1IFGOGpKC.jpg",
+                            totalEpisode:18,
+                            year:"1999"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"Based on the bestselling book by Candace Bushnell, Sex and the City tells the story of four best friends, all single and in their late thirties, as they pursue their careers and talk about their sex l...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/24JqcKtnduYEmsbTQo9upDM6cNz.jpg",
+                            totalEpisode:18,
+                            year:"2000"
+                        },
+                        {
+                            name:"Season 4",
+                            desc:"Based on the bestselling book by Candace Bushnell, Sex and the City tells the story of four best friends, all single and in their late thirties, as they pursue their careers and talk about their sex l...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/ive3mic73CQqTGb5Hh9hLGNovfm.jpg",
+                            totalEpisode:18,
+                            year:"2001"
+                        },
+                        {
+                            name:"Season 5",
+                            desc:"Based on the bestselling book by Candace Bushnell, Sex and the City tells the story of four best friends, all single and in their late thirties, as they pursue their careers and talk about their sex l...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/ixtl8ThPcDL7vd310uoHDdkt6vc.jpg",
+                            totalEpisode:8,
+                            year:"2002"
+                        },
+                        {
+                            name:"Season 6",
+                            desc:"Based on the bestselling book by Candace Bushnell, Sex and the City tells the story of four best friends, all single and in their late thirties, as they pursue their careers and talk about their sex l...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/nYyY7AICJFCOhozkacJrHcYGbme.jpg",
+                            totalEpisode:20,
+                            year:"2003"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                }
+            ]
         },
         mystery: {
             tabs: ['show'],
             showTitle: 'Mystery and Suspenseful Shows',
             movies: [],
-            shows: []
+            shows: [
+                {
+                    "type": "show",
+                    "title": "Rana Naidu",
+                    "desc": "Rana Naidu can solve any problem in Bollywood. But when his father is suddenly released from prison, the one mess he can’t handle may be his own.",
+                    "genres": [
+                        "Crime",
+                        "Drama",
+                        "Mystery"
+                    ],
+                    "totalSeasons": 2,
+                    "totalEpisodes": 10,
+                    "year": "2023",
+                    "isMostLiked": false,
+                    "videos": {
+                        "trailer": "ewBaubqRmEk"
+                    },
+                    "backdrop": {
+                        "image": "https://image.tmdb.org/t/p/w500/cLQZv8KxWVrsSgm4sbuQSixPgH9.jpg",
+                        "isLogoIncluded": false
+                    },
+                    "backdropNoLang": "",
+                    "poster": null,
+                    "logo": {
+                        "image": "https://image.tmdb.org/t/p/w500/6H0k5IVQnlRPnZzkIgg3wVsPDQP.png",
+                        "isLogoIncluded": true
+                    },
+                    "keywords": [
+                        "Not Available"
+                    ],
+                    "cast": [
+                        "Rana Daggubati",
+                        "Venkatesh",
+                        "Surveen Chawla"
+                    ],
+                    "seasons": [
+                        {
+                            "name": "Season 1",
+                            "desc": "Life of Rana Naidu, Mumbai city's go-to-fixer, does the dirty work for the top power players; making the problems of the city's celebrities, superstar athletes, and business moguls disappear. But when...",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/4kUF7cO76W4vEx70KVfwmju6Vud.jpg",
+                            "totalEpisode": 10,
+                            "year": "2023"
+                        },
+                        {
+                            "name": "Season 2",
+                            "desc": "Rana Naidu can solve any problem in Bollywood. But when his father is suddenly released from prison, the one mess he can’t handle may be his own.",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/4kUF7cO76W4vEx70KVfwmju6Vud.jpg",
+                            "totalEpisode": "Not Disclosed Yet",
+                            "year": "202- (Unannounced)"
+                        }
+                    ],
+                    "ageRating": "U/A 13+"
+                },
+                {
+                    "type": "show",
+                    "title": "Mai: A Mother's Rage",
+                    "desc": "A grieving mother discovers the criminals behind her daughter's tragic death, and transforms from meek to merciless to get the real story.",
+                    "genres": [
+                        "Crime",
+                        "Drama",
+                        "Mystery"
+                    ],
+                    "totalSeasons": 1,
+                    "totalEpisodes": 6,
+                    "year": "2022",
+                    "isMostLiked": false,
+                    "videos": {},
+                    "backdrop": {
+                        "image": "https://image.tmdb.org/t/p/w500/5ljP8SEfuZYGqBck6V26wDkB5Lx.jpg",
+                        "isLogoIncluded": false
+                    },
+                    "backdropNoLang": "",
+                    "poster": null,
+                    "logo": {
+                        "image": "https://image.tmdb.org/t/p/w500/z0iJUl3jDGwbqhJefNEN5pDyrbu.png",
+                        "isLogoIncluded": true
+                    },
+                    "keywords": [
+                        "murder",
+                        "organized crime",
+                        "avenge"
+                    ],
+                    "cast": [
+                        "Sakshi Tanwar",
+                        "Wamiqa Gabbi",
+                        "Anant Vidhaat Sharma"
+                    ],
+                    "seasons": [
+                        {
+                            "name": "Season 1",
+                            "desc": "A grieving mother discovers the criminals behind her daughter's tragic death, and transforms from meek to merciless to get the real story.",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/Aet3WvxjjcITjVDWsWDDYcAZomH.jpg",
+                            "totalEpisode": 6,
+                            "year": "2022"
+                        }
+                    ],
+                    "ageRating": "U/A 17+"
+                },
+                {
+                    "type": "show",
+                    "title": "Breathe: Into the Shadows",
+                    "desc": "A 6-year old girl is kidnapped by a mysterious masked man, who demands an unusual ransom. To save his daughter, Dr. Avinash Sabharwal must kill someone! Meanwhile, Kabir Sawant's journey continues in ...",
+                    "genres": [
+                        "Drama",
+                        "Mystery",
+                        "Crime"
+                    ],
+                    "totalSeasons": 2,
+                    "totalEpisodes": 20,
+                    "year": "2020",
+                    "isMostLiked": false,
+                    "videos": {
+                        "teaser": "yT2t0ath4sg"
+                    },
+                    "backdrop": {
+                        "image": "https://image.tmdb.org/t/p/w500/52m53Wi3jyCr9b8oDcAHPZfjCNC.jpg",
+                        "isLogoIncluded": false
+                    },
+                    "backdropNoLang": "",
+                    "poster": null,
+                    "logo": {
+                        "image": "https://image.tmdb.org/t/p/w500/qJi0cAZZtu99urDltLCbSJdcvpY.png",
+                        "isLogoIncluded": true
+                    },
+                    "keywords": [
+                        "Not Available"
+                    ],
+                    "cast": [
+                        "Not Available"
+                    ],
+                    "seasons": [
+                        {
+                            "name": "Season 1",
+                            "desc": "A 6-year old girl is kidnapped by a mysterious masked man, who demands an unusual ransom. To save his daughter, Dr. Avinash Sabharwal must kill someone! Meanwhile, Kabir Sawant's journey continues in ...",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/owTpRRYKO4VIuJWTKBSM1oCHF2T.jpg",
+                            "totalEpisode": 12,
+                            "year": "2020"
+                        },
+                        {
+                            "name": "Season 2",
+                            "desc": "J’s existence and ideology re-emerge as he sets out to finish what he started, leading Avinash to confront his merging dual identity. But this time around, he has a new partner-in-crime, Victor. Kabir...",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/5zUTwIk9uEawo3MQEPAz98fe5kI.jpg",
+                            "totalEpisode": 8,
+                            "year": "2022"
+                        }
+                    ],
+                    "ageRating": "U/A 13+"
+                },
+                {
+                    "type": "show",
+                    "title": "Mumbai Diaries",
+                    "desc": "A medical thriller set in the Emergency Room of a government hospital. The series explores the challenges faced by the medical staff at the hospital as well as other first responders across the city o...",
+                    "genres": [
+                        "Drama",
+                        "Mystery"
+                    ],
+                    "totalSeasons": 2,
+                    "totalEpisodes": 16,
+                    "year": "2021",
+                    "isMostLiked": false,
+                    "videos": {
+                        "clip": "0hcRp22kPzA",
+                        "teaser": "46XNpRtYwLw"
+                    },
+                    "backdrop": {
+                        "image": "https://image.tmdb.org/t/p/w500/oaflpLPIGcx5PLoxWZ3lyk3DBPs.jpg",
+                        "isLogoIncluded": true
+                    },
+                    "backdropNoLang": "",
+                    "poster": null,
+                    "logo": {
+                        "image": "https://image.tmdb.org/t/p/w500/teZNPfSpnRKEjoHvruPN4nh0QM1.png",
+                        "isLogoIncluded": true
+                    },
+                    "keywords": [
+                        "hospital",
+                        "terrorist attack"
+                    ],
+                    "cast": [
+                        "Mohit Raina",
+                        "Konkona Sen Sharma",
+                        "Shreya Dhanwanthary"
+                    ],
+                    "seasons": [
+                        {
+                            "name": "26/11",
+                            "desc": "Mumbai Diaries is a medical thriller set in the Emergency Room of a hospital. The series explores the challenges faced by the medical staff at the hospital as well as other first responders across the...",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/2YTZfT3cq8CDnlWWGNXTBmvxRTa.jpg",
+                            "totalEpisode": 8,
+                            "year": "2021"
+                        },
+                        {
+                            "name": "Season 2",
+                            "desc": "As a devastating deluge threatens to submerge the city of Mumbai, our crew at BGH would once again have to put aside their personal issues; some of which threaten to destroy them, their relationships ...",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/jDZXjtO3i1WpePWmg7paVKNpdfz.jpg",
+                            "totalEpisode": 8,
+                            "year": "2023"
+                        }
+                    ],
+                    "ageRating": "U/A 13+"
+                },
+                {
+                    "type": "show",
+                    "title": "Aranyak",
+                    "desc": "After a foreign teenage tourist goes missing in a misty village, Kasturi, a frazzled local cop, is forced to team up with her city-bred successor, Angad, on a high-profile case that unearths skeletons...",
+                    "genres": [
+                        "Crime",
+                        "Drama",
+                        "Mystery"
+                    ],
+                    "totalSeasons": 1,
+                    "totalEpisodes": 8,
+                    "year": "2021",
+                    "isMostLiked": false,
+                    "videos": {},
+                    "backdrop": {
+                        "image": "https://image.tmdb.org/t/p/w500/bmlDEKCq23QtjIsG3huEkOieWaN.jpg",
+                        "isLogoIncluded": false
+                    },
+                    "backdropNoLang": "",
+                    "poster": null,
+                    "logo": {
+                        "image": "https://image.tmdb.org/t/p/w500/mLJD9CK33FHugKTHLq70AUW0qpo.png",
+                        "isLogoIncluded": true
+                    },
+                    "keywords": [
+                        "police",
+                        "murder"
+                    ],
+                    "cast": [
+                        "Raveena Tandon",
+                        "Ashutosh Rana",
+                        "Parambrata Chatterjee"
+                    ],
+                    "seasons": [
+                        {
+                            "name": "Season 1",
+                            "desc": "Political ploys, personal agendas and a beastly myth all surface as two mismatched hill station cops navigate a web of suspects after a puzzling murder.",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/8ISiNNlIyXcibWFV8loFzC6jRXv.jpg",
+                            "totalEpisode": 8,
+                            "year": "2021"
+                        }
+                    ],
+                    "ageRating": "U/A 13+"
+                },
+                {
+                    "type": "show",
+                    "title": "GHOUL",
+                    "desc": "A newly minted military interrogator arrives at a covert detention center to discover that some of the terrorists held there are not of this world.",
+                    "genres": [
+                        "Mystery",
+                        "Sci-Fi & Fantasy",
+                        "Drama"
+                    ],
+                    "totalSeasons": 1,
+                    "totalEpisodes": 3,
+                    "year": "2018",
+                    "isMostLiked": false,
+                    "videos": {
+                        "trailer": "zg0N4L4mwFk",
+                        "teaser": "Fzmlsb--0bk"
+                    },
+                    "backdrop": {
+                        "image": "https://image.tmdb.org/t/p/w500/4jydDb3X7pXRBJf7feucfFUqYu7.jpg",
+                        "isLogoIncluded": true
+                    },
+                    "backdropNoLang": "",
+                    "poster": null,
+                    "logo": {
+                        "image": "https://image.tmdb.org/t/p/w500/kEivSJV15xnhBlaPMpJXD1GbY53.png",
+                        "isLogoIncluded": true
+                    },
+                    "keywords": [
+                        "military prison",
+                        "interrogation",
+                        "demonic"
+                    ],
+                    "cast": [
+                        "Rohit Pathak",
+                        "Manav Kaul",
+                        "Radhika Apte"
+                    ],
+                    "seasons": [
+                        {
+                            "name": "Season 1",
+                            "desc": "When a new prisoner at a military detention center exhibits eerie behavior, a young interrogator’s search for the truth becomes a battle for survival.",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/zhRnyv5forBOOcu9AVe8DOcy0FL.jpg",
+                            "totalEpisode": 3,
+                            "year": "2018"
+                        }
+                    ],
+                    "ageRating": "U/A 17+"
+                },
+                {
+                    "type": "show",
+                    "title": "Sherlock",
+                    "desc": "A modern update finds the famous sleuth and his doctor partner solving crime in 21st century London.",
+                    "genres": [
+                        "Crime",
+                        "Drama",
+                        "Mystery"
+                    ],
+                    "totalSeasons": 4,
+                    "totalEpisodes": 12,
+                    "year": "2010",
+                    "isMostLiked": true,
+                    "videos": {
+                        "trailer": "gGqWqGOSTGQ"
+                    },
+                    "backdrop": {
+                        "image": "https://image.tmdb.org/t/p/w500/79DgItjsyH5tpA3mC2xv5gU2zlZ.jpg",
+                        "isLogoIncluded": true
+                    },
+                    "backdropNoLang": "",
+                    "poster": null,
+                    "logo": {
+                        "image": "https://image.tmdb.org/t/p/w500/5cTbld1BphDXeT2uyN6bMQ4wwGh.png",
+                        "isLogoIncluded": true
+                    },
+                    "keywords": [
+                        "london, england",
+                        "detective",
+                        "workaholic"
+                    ],
+                    "cast": [
+                        "Benedict Cumberbatch",
+                        "Martin Freeman"
+                    ],
+                    "seasons": [
+                        {
+                            "name": "Series 1",
+                            "desc": "When a chance encounter brings soldier John Watson into Sherlock's life, it's apparent the two men couldn't be more different, but Sherlock's intellect coupled with John's pragmatism soon forges an un...",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/wQczbo7IKtHjmO49pVWTc2u5pSt.jpg",
+                            "totalEpisode": 3,
+                            "year": "2010"
+                        },
+                        {
+                            "name": "Series 2",
+                            "desc": "A Royal scandal, a dazzling game of cat and mouse. The seductive Irene Adler is cold, calculating, brilliant. Has Sherlock finally met his match?",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/hSf2frcLiEWAPUZ6wbOMTTNZ7b0.jpg",
+                            "totalEpisode": 3,
+                            "year": "2012"
+                        },
+                        {
+                            "name": "Series 3",
+                            "desc": "Sherlock is back, but will things ever be the same again?",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/z9ljxwZUQA2349ZBZAssBXpd0i6.jpg",
+                            "totalEpisode": 3,
+                            "year": "2014"
+                        },
+                        {
+                            "name": "Series 4",
+                            "desc": "The fourth series begins with the nation’s favourite detective, the mercurial Sherlock Holmes, back once more on British soil, as Doctor Watson and his wife, Mary, prepare for their biggest ever chall...",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/yVaWUlLmln0xqUDxVFc8JBuzHzK.jpg",
+                            "totalEpisode": 3,
+                            "year": "2017"
+                        }
+                    ],
+                    "ageRating": "U/A 17+"
+                },
+                {
+                    "type": "show",
+                    "title": "True Detective",
+                    "desc": "An American anthology police detective series utilizing multiple timelines in which investigations seem to unearth personal and professional secrets of those involved, both within or outside the law.",
+                    "genres": [
+                        "Drama",
+                        "Mystery"
+                    ],
+                    "totalSeasons": 4,
+                    "totalEpisodes": 30,
+                    "year": "2014",
+                    "isMostLiked": true,
+                    "videos": {
+                        "trailer": "fVQUcaO4AvE"
+                    },
+                    "backdrop": {
+                        "image": "https://image.tmdb.org/t/p/w500/c27jL84jaLZVLCTaxY51rDLHYiq.jpg",
+                        "isLogoIncluded": true
+                    },
+                    "backdropNoLang": "",
+                    "poster": null,
+                    "logo": {
+                        "image": "https://image.tmdb.org/t/p/w500/6q4KzOcM2eEE1IbhFTadUsQkphl.png",
+                        "isLogoIncluded": true
+                    },
+                    "keywords": [
+                        "detective",
+                        "investigation",
+                        "anthology"
+                    ],
+                    "cast": [
+                        "Jodie Foster",
+                        "Kali Reis",
+                        "Fiona Shaw"
+                    ],
+                    "seasons": [
+                        {
+                            "name": "Season 1",
+                            "desc": "In 2012, Louisiana State Police Detectives Rust Cohle and Martin Hart  are brought in to revisit a homicide case they worked in 1995. As the  inquiry unfolds in present day through separate interrogat...",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/gf5PFAwzcrRjd26zqcumqeMZV0W.jpg",
+                            "totalEpisode": 8,
+                            "year": "2014"
+                        },
+                        {
+                            "name": "Season 2",
+                            "desc": "A bizarre murder brings together three law-enforcement officers and a career criminal, each of whom must navigate a web of conspiracy and betrayal in the scorched landscapes of California.",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/owTL3WTY4Yax2qClnwbaDsOO72r.jpg",
+                            "totalEpisode": 8,
+                            "year": "2015"
+                        },
+                        {
+                            "name": "Season 3",
+                            "desc": "Season 3 tells the story of a macabre crime involving two missing children in the heart of the Ozarks, a mystery that deepens over decades and plays out in three separate time periods.",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/uOd2yMAxhfvwNd0pkVapHgRk1c1.jpg",
+                            "totalEpisode": 8,
+                            "year": "2019"
+                        },
+                        {
+                            "name": "Night Country",
+                            "desc": "When the long winter night falls in Ennis, Alaska, the eight men who operate the Tsalal Arctic Research Station vanish without a trace. To solve the case, Detectives Liz Danvers and Evangeline Navarro...",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/799LSP55qx3qUV6guUFC3lkiHsX.jpg",
+                            "totalEpisode": 6,
+                            "year": "2024"
+                        }
+                    ],
+                    "ageRating": "U/A 17+"
+                },
+                {
+                    "type": "show",
+                    "title": "Twin Peaks",
+                    "desc": "The body of Laura Palmer is washed up on a beach near the small Washington state town of Twin Peaks. FBI Special Agent Dale Cooper is called in to investigate her strange demise only to uncover a web ...",
+                    "genres": [
+                        "Drama",
+                        "Mystery"
+                    ],
+                    "totalSeasons": 3,
+                    "totalEpisodes": 48,
+                    "year": "1990",
+                    "isMostLiked": true,
+                    "videos": {
+                        "trailer": "GLnkfajitpQ"
+                    },
+                    "backdrop": {
+                        "image": "https://image.tmdb.org/t/p/w500/frgw31E00tK2bYBeVjbjpHrJwyU.jpg",
+                        "isLogoIncluded": true
+                    },
+                    "backdropNoLang": "",
+                    "poster": null,
+                    "logo": {
+                        "image": "https://image.tmdb.org/t/p/w500/5gh7PdBXI1UJ8zFLkVOoBymTw5v.png",
+                        "isLogoIncluded": true
+                    },
+                    "keywords": [
+                        "small town",
+                        "deputy sheriff",
+                        "fbi"
+                    ],
+                    "cast": [
+                        "Kyle MacLachlan"
+                    ],
+                    "seasons": [
+                        {
+                            "name": "Season 1",
+                            "desc": "It turns out Twin Peaks is not like other towns, and soon FBI Agent Cooper becomes enmeshed with its quirky and mysterious residents.",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/2dI60F5ODC6LvpKJgatpTcKdizv.jpg",
+                            "totalEpisode": 8,
+                            "year": "1990"
+                        },
+                        {
+                            "name": "Season 2",
+                            "desc": "The town's dark side and secrets become more prominent in Agent Cooper's investigation into who killed Laura Palmer. As the unbelievable details reveal themselves, he risks everything to learn the tru...",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/dkxtnSbbm8T6NZ1VQB87NeToE0B.jpg",
+                            "totalEpisode": 22,
+                            "year": "1990"
+                        },
+                        {
+                            "name": "The Return",
+                            "desc": "Twenty-five years later, the story continues...",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/ei7odFMfdnNV9pr5LyfrAAQOFes.jpg",
+                            "totalEpisode": 18,
+                            "year": "2017"
+                        }
+                    ],
+                    "ageRating": "U/A 13+"
+                },
+                {
+                    "type": "show",
+                    "title": "How to Get Away with Murder",
+                    "desc": "A sexy, suspense-driven legal thriller about a group of ambitious law students and their brilliant, mysterious criminal defense professor. They become entangled in a murder plot and will shake the ent...",
+                    "genres": [
+                        "Crime",
+                        "Drama",
+                        "Mystery"
+                    ],
+                    "totalSeasons": 6,
+                    "totalEpisodes": 90,
+                    "year": "2014",
+                    "isMostLiked": true,
+                    "videos": {
+                        "trailer": "VHKRO7rSbOs",
+                        "teaser": "hcRdcnOfsxU"
+                    },
+                    "backdrop": {
+                        "image": "https://image.tmdb.org/t/p/w500/vyd9sqQ2iQO2cc4ZYkD1n7BtWYm.jpg",
+                        "isLogoIncluded": true
+                    },
+                    "backdropNoLang": "",
+                    "poster": null,
+                    "logo": {
+                        "image": "https://image.tmdb.org/t/p/w500/zXf2J4Yy7Bi9WnS8GjbMquPlyXC.png",
+                        "isLogoIncluded": true
+                    },
+                    "keywords": [
+                        "court case",
+                        "murder",
+                        "lawyer"
+                    ],
+                    "cast": [
+                        "Viola Davis",
+                        "Billy Brown",
+                        "Jack Falahee"
+                    ],
+                    "seasons": [
+                        {
+                            "name": "Season 1",
+                            "desc": "A law professor chooses five students to intern at her firm, while shifts in time foretell of the team's involvement in a shocking murder.",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/lub62zywrVzwwdcEVu6FnejIjAI.jpg",
+                            "totalEpisode": 15,
+                            "year": "2014"
+                        },
+                        {
+                            "name": "Season 2",
+                            "desc": "They say the first year of law school is the hardest. After taking Professor Annalise Keating's class at Middleton University, the Keating 5 were pushed to their limits as their values, convictions, d...",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/2FWDfMtRXnxxw8GEy3TA9GieoJN.jpg",
+                            "totalEpisode": 15,
+                            "year": "2015"
+                        },
+                        {
+                            "name": "Season 3",
+                            "desc": "Professor Annalise Keating and her class of bright law students push the limits of legality in the courtroom and beyond in order to keep their clients out of jail and each other out of hot water.",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/snwDLmltAPtbbHD4pVwPdp00nVX.jpg",
+                            "totalEpisode": 15,
+                            "year": "2016"
+                        },
+                        {
+                            "name": "Season 4",
+                            "desc": "Murder, deception, fear and guilt are the ties that bind Middleton University Professor Annalise Keating to her long-time associates Frank Delfino, Bonnie Winterbottom and her students. But as the gro...",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/tuKy7vWMIu1BH1zGDpRAVBlSyP2.jpg",
+                            "totalEpisode": 15,
+                            "year": "2017"
+                        },
+                        {
+                            "name": "Season 5",
+                            "desc": "Michaela, Connor, Asher, and Laurel move on with the next chapter of their lives. A new mystery involving one of their own will unfold, as relationships are fractured, and new secrets are exposed.",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/hF0W7YUptWS3HzIcXzzDFL56CGp.jpg",
+                            "totalEpisode": 15,
+                            "year": "2018"
+                        },
+                        {
+                            "name": "Season 6",
+                            "desc": "Professor Annalise Keating’s class is in their final semester of law school – while the deception, fear and guilt binding Professor Keating to her students prove deadlier then ever.",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/eSEbaFI66BFdcDAaszUPfDNRnFU.jpg",
+                            "totalEpisode": 15,
+                            "year": "2019"
+                        }
+                    ],
+                    "ageRating": "U/A 13+"
+                },
+                {
+                    "type": "show",
+                    "title": "Only Murders in the Building",
+                    "desc": "Three strangers share an obsession with true crime and suddenly find themselves wrapped up in one.",
+                    "genres": [
+                        "Comedy",
+                        "Mystery",
+                        "Crime"
+                    ],
+                    "totalSeasons": 4,
+                    "totalEpisodes": 40,
+                    "year": "2021",
+                    "isMostLiked": true,
+                    "videos": {
+                        "teaser": "JRgyBaTulbs"
+                    },
+                    "backdrop": {
+                        "image": "https://image.tmdb.org/t/p/w500/fPjbP7x1TahX3bCd1K5GaDJGNKq.jpg",
+                        "isLogoIncluded": true
+                    },
+                    "backdropNoLang": "",
+                    "poster": null,
+                    "logo": {
+                        "image": "https://image.tmdb.org/t/p/w500/w8F4pOu8ZE0G5vTwRWNaxaq88sr.png",
+                        "isLogoIncluded": true
+                    },
+                    "keywords": [
+                        "deaf",
+                        "friendship",
+                        "murderer"
+                    ],
+                    "cast": [
+                        "Steve Martin",
+                        "Martin Short",
+                        "Selena Gomez"
+                    ],
+                    "seasons": [
+                        {
+                            "name": "Season 1",
+                            "desc": "When a grisly death occurs inside their exclusive Upper West Side apartment building, three strangers who share an obsession with true crime suspect murder and employ their precise knowledge of true c...",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/9N4gAQsSEqsXUh2oiVEmW9OG7oQ.jpg",
+                            "totalEpisode": 10,
+                            "year": "2021"
+                        },
+                        {
+                            "name": "Season 2",
+                            "desc": "Season 2 picks up with the trio following the shocking death of Arconia Board President Bunny Folger, as they race to unmask her killer. However, three (unfortunate) complications ensue—the trio is pu...",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/t6w2cytZltwN3qdc0ErZQgdxwOR.jpg",
+                            "totalEpisode": 10,
+                            "year": "2022"
+                        },
+                        {
+                            "name": "Season 3",
+                            "desc": "Season three finds Charles, Oliver & Mabel investigating a murder behind the scenes of a Broadway show. Ben Glenroy is a Hollywood action star whose Broadway debut is cut short by his untimely death. ...",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/yhx6PnU3L2a6FnEFGOlBKTZ8TSD.jpg",
+                            "totalEpisode": 10,
+                            "year": "2023"
+                        },
+                        {
+                            "name": "Season 4",
+                            "desc": "The trio investigates the mysterious murder of Zazz Pataki, Charles' stunt double, whose death raises questions about whether Zazz or Charles was the intended victim. The Arconia residents find themse...",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/bZubW4eLAk2zqk44fSWRDTFfcba.jpg",
+                            "totalEpisode": 10,
+                            "year": "2024"
+                        }
+                    ],
+                    "ageRating": "U/A 17+"
+                },
+                {
+                    "type": "show",
+                    "title": "FROM",
+                    "desc": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also surviv...",
+                    "genres": [
+                        "Mystery",
+                        "Drama",
+                        "Sci-Fi & Fantasy"
+                    ],
+                    "totalSeasons": 3,
+                    "totalEpisodes": 30,
+                    "year": "2022",
+                    "isMostLiked": true,
+                    "videos": {
+                        "clip": "1WTED3iU_zU",
+                        "trailer": "pDHqAj4eJcM",
+                        "teaser": "78tTuVoKONg"
+                    },
+                    "backdrop": {
+                        "image": "https://image.tmdb.org/t/p/w500/tUtCKwFnllW94qM3DRWK9acrFKi.jpg",
+                        "isLogoIncluded": true
+                    },
+                    "backdropNoLang": "",
+                    "poster": null,
+                    "logo": {
+                        "image": "https://image.tmdb.org/t/p/w500/kPQrUwdpoONe5jdOuHgQfRXyUf1.png",
+                        "isLogoIncluded": true
+                    },
+                    "keywords": [
+                        "sheriff",
+                        "small town",
+                        "forest"
+                    ],
+                    "cast": [
+                        "Harold Perrineau",
+                        "Catalina Sandino Moreno",
+                        "Eion Bailey"
+                    ],
+                    "seasons": [
+                        {
+                            "name": "Season 1",
+                            "desc": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also surviv...",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/ps46NdLlH70ptDD8ailTL8TCZU3.jpg",
+                            "totalEpisode": 10,
+                            "year": "2022"
+                        },
+                        {
+                            "name": "Season 2",
+                            "desc": "Hidden truths about the nature and terrifying origins of the town begin to emerge, even as life for its residents is plunged into chaos by the arrival of mysterious newcomers.",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/cJmfLHnF95XkoIr9as2bBK5cPeK.jpg",
+                            "totalEpisode": 10,
+                            "year": "2023"
+                        },
+                        {
+                            "name": "Season 3",
+                            "desc": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also surviv...",
+                            "posterPath": "https://image.tmdb.org/t/p/w400/sj64QEEb6JM1CdCfXHaIbA3WPx8.jpg",
+                            "totalEpisode": 10,
+                            "year": "2024"
+                        }
+                    ],
+                    "ageRating": "U/A 17+"
+                }
+            ]
         },
         anime: {
             tabs: ['show'],
             showTitle: 'Japanese Anime',
-            movies: [],
-            shows: []
+            movies: null,
+            shows: [
+                {
+                    type:"show",
+                    title:"Naruto Shippūden",
+                    desc:"After 2 and a half years Naruto finally returns to his village of Konoha, and sets about putting his ambitions to work. It will not be easy though as he has amassed a few more dangerous enemies, in th...",
+                    genres:[
+                        "Animation",
+                        "Action & Adventure",
+                        "Sci-Fi & Fantasy"
+                    ],
+                    totalSeasons:20,
+                    totalEpisodes:500,
+                    year:"2007",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"1WLO0Owi5-A"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/fsZrHyICFykVbuRfFg7N46rJ8vT.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/qopvxH4C4YIoeJWss0EVLv13rgW.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "hero",
+                        "fight",
+                        "villain"
+                    ],
+                    cast:[
+                        "Junko Takeuchi",
+                        "Noriaki Sugiyama",
+                        "Chie Nakamura"
+                    ],
+                    seasons:[
+                        {
+                            name:"Kazekage Rescue",
+                            desc:"Naruto Uzumaki is back! After two and a half years of training on the road with Jiraiya of the Sannin, Naruto is back in the Village Hidden in the Leaves and he's ready to show off his new skills. He ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/842myobV2MkoHZuoyxJDV9gdkvb.jpg",
+                            totalEpisode:32,
+                            year:"2007"
+                        },
+                        {
+                            name:"Long-Awaited Reunion",
+                            desc:"In the midst of its spying mission, Team Kakashi is suddenly confronted with the Leaf Village's sworn enemy, Orochimaru. Naruto challenges him, and during their battle, his anger brings forth the powe...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/qb1AcfiKlXLKIiR3S4x8YZtr2po.jpg",
+                            totalEpisode:21,
+                            year:"2007"
+                        },
+                        {
+                            name:"Twelve Guardian Ninja",
+                            desc:"Defeated by Sasuke, Naruto returns to the hidden Leaf Village to start a new training program with Kakashi and Yamato. Naruto learns that he has Wind-style chakra. Meanwhile, a group of four mysteriou...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/12NzQ0E270gaNU8wbpkpUJz7N3t.jpg",
+                            totalEpisode:18,
+                            year:"2008"
+                        },
+                        {
+                            name:"Immortal Devastators - Hidan and Kakuzu",
+                            desc:"Asuma and Shikamaru have to think on their feet as they face the mind-boggling jutsu of the Akatsuki pair, Hidan and Kakuzu. At the last minute, the Akatsuki are called away, but not before dealing a ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/szBCeaXBvKM0azDmJMGTkO02I9f.jpg",
+                            totalEpisode:17,
+                            year:"2008"
+                        },
+                        {
+                            name:"The Three-Tailed Demon Turtle",
+                            desc:"Naruto's new jutsu Rasen Shuriken is unbelievably powerful - but because of the risks to the user, Tsunade forbids Naruto to use it! When Jiraiya returns to the village, Naruto seeks his guidance, and...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/wcXrlA0knmk5U5e6rKoSh1Z8fan.jpg",
+                            totalEpisode:24,
+                            year:"2008"
+                        },
+                        {
+                            name:"Master's Prophecy and Vengeance",
+                            desc:"Sasuke's future hangs in the balance as Orochimaru prepares for reanimation. It's been three years since Sasuke left the Leaf Village seeking the power Orochimaru promised him. Now it's time to face h...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/g4E0AodxYUF62Q9gMJ6mcodnBpF.jpg",
+                            totalEpisode:31,
+                            year:"2009"
+                        },
+                        {
+                            name:"The Six-Tailed Demon Slug",
+                            desc:"The team is heading back to the village when an urgent assignment comes in from Tsunade that will lead them on a perilous journey to protect a young woman!",
+                            posterPath:"https://image.tmdb.org/t/p/w400/ayXMHRPqT6LQlrAiNVL0eghdQL8.jpg",
+                            totalEpisode:8,
+                            year:"2010"
+                        },
+                        {
+                            name:"Two Saviors",
+                            desc:"Naruto and his friends successfully decipher the code Jiraiya left behind, but it's not enough to solve the mystery of Pain. For Naruto, Jiraiya's passing is more than enough to inspire him to follow ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/g7yAuliC36kfy2vliU8yf9WPZCG.jpg",
+                            totalEpisode:24,
+                            year:"2010"
+                        },
+                        {
+                            name:"Past Arc The Locus of Konoha",
+                            desc:"After Pain's attack, the Leaf Ninja set about rebuilding their village. Naruto and Sakura are thrilled to be reunited with Tazuna and his grandson Inari from the Land of Waves, who have come to help. ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/zIoec9Wa0WtRhwSl9pTrBl9mUOb.jpg",
+                            totalEpisode:21,
+                            year:"2010"
+                        },
+                        {
+                            name:"The Gathering of the Five Kage",
+                            desc:"In the aftermath of the attack on the village, Naruto and Sakura are shocked to discover that Danzo has been selected as the new Hokage. And his first order of business involves Team 7's own Rogue Nin...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/l0LFSQOJZyQ8ujaw3Mf4Z0TeZY7.jpg",
+                            totalEpisode:25,
+                            year:"2011"
+                        },
+                        {
+                            name:"Paradise on the Ship",
+                            desc:"Naruto declares to his friends his intention to take on Sasuke by himself, while the Elders of the Leaf make a serious decision about who will fill the vacant seat of Hokage: Kakashi! In Mount Myoboku...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/1lxahYOBIMpKqoKoB11qtmaBVP1.jpg",
+                            totalEpisode:21,
+                            year:"2011"
+                        },
+                        {
+                            name:"Nine-Tailed Fox Taming and Karmic Encounters",
+                            desc:"As the Leaf Village prepares for war, each shinobi and clan must contemplate the role they will play in the battles to come. While Naruto's peers seek training from surprising sources, Naruto himself ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/qo5231LMeauy4evn4cWMTEG6yWs.jpg",
+                            totalEpisode:33,
+                            year:"2012"
+                        },
+                        {
+                            name:"The Seven Shinobi Swordsman",
+                            desc:"The Fourth Great Ninja War rages on, and danger comes from every angle. Old comrades and enemies have risen from the grave under the control of Kabuto to fight the Allied Forces. While some retain the...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/f6zh4A1yQI0n4c3xqhpGNuwBmQj.jpg",
+                            totalEpisode:20,
+                            year:"2012"
+                        },
+                        {
+                            name:"The Fourth Great Ninja War Assailants From Afar",
+                            desc:"Gaara leads the Fourth Company into battle against the previous Kage, including his own father. Meanwhile Naruto and Killer Bee face the reanimated Itachi Uchiha, who recognises Naruto’s growth as a s...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/2YoIRNMqiGJTFRGXEwwXRvV66be.jpg",
+                            totalEpisode:25,
+                            year:"2013"
+                        },
+                        {
+                            name:"The Fourth Great Ninja War Sasuke and Itachi",
+                            desc:"As the Fourth Great Ninja War rages on, the endless waves of Reanimated Shinobi take their toll as the Allied Shinobi Forces are forced to keep fighting their own fallen friends and comrades. Meanwhil...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/t72j0m5fa98RRFQ47uEFxmdPUFI.jpg",
+                            totalEpisode:28,
+                            year:"2013"
+                        },
+                        {
+                            name:"Kakashi: Shadow of the Anbu Black Ops",
+                            desc:"Years before he became Naruto's teacher, Kakashi served as a member of the ANBU Black Ops team, so ruthless he earned the nickname \"Cold-blooded Kakashi.\" But despite his reputation, he is haunted by ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/wi73sU6BjJAgUI8C5qIXgb3S6Nz.jpg",
+                            totalEpisode:13,
+                            year:"2014"
+                        },
+                        {
+                            name:"The Fourth Great Ninja War The Return of Squad Seven",
+                            desc:"With Kakashi unable to get through to Obito, Naruto leaps to his Sensei's defense. The release of Ten Tails forces the Allied Shinobi Forces into an assault on Obito and Madara, but the powerful Taile...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/bS5BHrNiLtdoMjF3FEYGhsEFe38.jpg",
+                            totalEpisode:11,
+                            year:"2014"
+                        },
+                        {
+                            name:"Fourth Great Ninja War Obito Uchiha Against the Shinobi Forces",
+                            desc:"On the same side once more, Naruto and Sasuke prepare for battle as Obito absorbs the power of Ten Tails to become the tailed beast's Jinchuriki. As the other shinobi watch helplessly, Obito summons t...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/5CTyFgdZkY719b8M1aylP3l95kc.jpg",
+                            totalEpisode:21,
+                            year:"2014"
+                        },
+                        {
+                            name:"Naruto's Back The Tracks of His Friends",
+                            desc:"Naruto and the Allied Shinobi manage to extract Obito’s Tailed Beasts, leaving Madara as the final foe to defeat. Obito realizes the error of his ways, but Black Zetsu prevents him from interfering. N...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/xxdmYAKEakoPYcbe9z812S4I2Ci.jpg",
+                            totalEpisode:20,
+                            year:"202- (Unannounced)"
+                        },
+                        {
+                            name:"Infinite Tsukuyomi The Invokation",
+                            desc:"As Naruto and Sasuke lay near death, Kakashi and a reformed Obito prepare to confront Madara together. But Madara has gained the power of the Six Paths, and Guy may have to make the ultimate sacrifice...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/pkNcN6tA6aKkIDEahQvLFIstKT9.jpg",
+                            totalEpisode:87,
+                            year:"2015"
+                        }
+                    ],
+                    ageRating:"U/A 17+"
+                },
+                {
+                    type:"show",
+                    title:"Demon Slayer: Kimetsu no Yaiba",
+                    desc:"It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole surviv...",
+                    genres:[
+                        "Animation",
+                        "Action & Adventure",
+                        "Sci-Fi & Fantasy"
+                    ],
+                    totalSeasons:5,
+                    totalEpisodes:63,
+                    year:"2019",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"SWAMTXfqer0"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/unhUWXYl8DFaIsaz6U59cDGSBgj.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/ecghlDeabR3X3Vv8tXIOeXHQvQe.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "swordplay",
+                        "magic",
+                        "supernatural"
+                    ],
+                    cast:[
+                        "Natsuki Hanae",
+                        "Akari Kito",
+                        "Hiro Shimono"
+                    ],
+                    seasons:[
+                        {
+                            name:"Tanjiro Kamado, Unwavering Resolve",
+                            desc:"Ever since the death of his father, the burden of supporting the family has fallen upon Tanjiro Kamado's shoulders. One day, Tanjiro decides to go down to the local village to make a little money sell...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/bV0ZCL0IqrTQKClu6EtXlZaJevD.jpg",
+                            totalEpisode:26,
+                            year:"2019"
+                        },
+                        {
+                            name:"Mugen Train",
+                            desc:"A mysterious string of disappearances on a certain train has caught the attention of the Demon Slayer Corps, and they have sent one of their best to exterminate what can only be a demon responsible. H...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/pLGjaDyg2LeA2d9KZxBZCiiqC2B.jpg",
+                            totalEpisode:7,
+                            year:"2021"
+                        },
+                        {
+                            name:"Entertainment District",
+                            desc:"The devastation of the Mugen Train incident still weighs heavily on the members of the Demon Slayer Corps. Despite being given time to recover, life must go on, as the wicked never sleep: a vicious de...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/gbmhcOtre5SeBgwR9gvTpUra5kZ.jpg",
+                            totalEpisode:11,
+                            year:"2021"
+                        },
+                        {
+                            name:"Swordsmith Village",
+                            desc:"For centuries, the Demon Slayer Corps has sacredly kept the location of Swordsmith Village a secret. As the village of the greatest forgers, it provides Demon Slayers with the finest weapons, which al...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/7drgLU7dnjZvM6zv81YURN6hkeN.jpg",
+                            totalEpisode:11,
+                            year:"2023"
+                        },
+                        {
+                            name:"Hashira Training",
+                            desc:"After a series of mighty clashes with Upper Rank Demons, the Ubuyashiki clan prepares for one last battle with the hellish forces of Muzan Kibutsuji. In order to finally defeat the Demon leader once a...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/axI3BUZgTYz36IYtUtRhivtspUo.jpg",
+                            totalEpisode:8,
+                            year:"2024"
+                        }
+                    ],
+                    ageRating:"U/A 17+"
+                },
+                {
+                    type:"show",
+                    title:"Attack on Titan",
+                    desc:"Many years ago, the last remnants of humanity were forced to retreat behind the towering walls of a fortified city to escape the massive, man-eating Titans that roamed the land outside their fortress....",
+                    genres:[
+                        "Animation",
+                        "Sci-Fi & Fantasy",
+                        "Action & Adventure"
+                    ],
+                    totalSeasons:4,
+                    totalEpisodes:87,
+                    year:"2013",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"bT9csxkth8g"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/kAPsxKEAaCYKPOVmrBzhGpLMQLh.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/csy774JSTIoo4KUkrFWtU9SHA8j.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "fascism",
+                        "dystopia",
+                        "politics"
+                    ],
+                    cast:[
+                        "Yuki Kaji",
+                        "Yui Ishikawa",
+                        "Marina Inoue"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid creatures called titans, forcing humans to hide in fear behind enormous concentric walls. What makes these giants truly ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/gC78bsXhdU2PwT3FkLcn8R5YcHb.jpg",
+                            totalEpisode:25,
+                            year:"2013"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"Eren Yeager and others of the 104th Training Corps have just begun to become full members of the Survey Corps. As they ready themselves to face the Titans once again, their preparations are interrupte...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/2fhK0wbFixskgRyuq6YvaMn75et.jpg",
+                            totalEpisode:12,
+                            year:"2017"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"Eren and his companions in the 104th are assigned to the newly-formed Levi Squad, whose assignment is to keep Eren and Historia safe given Eren's newly-discovered power and Historia's knowledge and pe...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/2F3sYFneiKcrwboD0bOqb29cGET.jpg",
+                            totalEpisode:22,
+                            year:"2018"
+                        },
+                        {
+                            name:"The Final Season",
+                            desc:"The truth revealed through the memories of Grisha's journals shakes all of Eren's deepest beliefs. There is no rugged but free land beyond the walls. There is a whole other world, equally full of oppr...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/iUsrnXfubNwhM8FRNEmzXmLfxB2.jpg",
+                            totalEpisode:28,
+                            year:"2020"
+                        }
+                    ],
+                    ageRating:"U/A 17+"
+                },
+                {
+                    type:"show",
+                    title:"Naruto",
+                    desc:"Naruto Uzumaki, a mischievous adolescent ninja, struggles as he searches for recognition and dreams of becoming the Hokage, the village's leader and strongest ninja.",
+                    genres:[
+                        "Animation",
+                        "Action & Adventure",
+                        "Sci-Fi & Fantasy"
+                    ],
+                    totalSeasons:4,
+                    totalEpisodes:220,
+                    year:"2002",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"-G9BqkgZXRA"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/dW9FQRgTDBdH36FtDbC2qCEKjtQ.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/kaZ99sfclCKWnUgmW7AYrok03Am.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "martial arts",
+                        "hero",
+                        "rivalry"
+                    ],
+                    cast:[
+                        "Junko Takeuchi",
+                        "Noriaki Sugiyama",
+                        "Chie Nakamura"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"Deep within the Hidden Leaf Village, young ninja Naruto Uzumaki carries sealed inside him the Nine-Tailed Fox Spirit, which once almost destroyed the village. Always an outcast because of his secret, ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/fmps15jQsy74PjxnaxxeVEyuNnX.jpg",
+                            totalEpisode:52,
+                            year:"2002"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"Before the final round of the Chunin Exam, Naruto receives some special training from the legendary Toad Sage, Jiraiya. When the battles resume, Naruto is ready, but what about Sasuke? He's about to f...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/yBHXns4g7gWcWuQfOzL4Jekj74e.jpg",
+                            totalEpisode:52,
+                            year:"202- (Unannounced)"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"Naruto returns from his training journey eager to see his friend Sasuke. But Sasuke has only one thing on his mind: his quest for revenge against his older brother. His unquenchable thirst for power k...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/uVf4TahDsV9iNgNgE0SVWkNZYw9.jpg",
+                            totalEpisode:54,
+                            year:"202- (Unannounced)"
+                        },
+                        {
+                            name:"Season 4",
+                            desc:"In the Village Hidden in the Leaves, there are few things Naruto and Choji love more than a steaming bowl of Ichiraku ramen, and when the daughter of the owner is kidnapped, they're on the case. Then,...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/2L7qUHd6C1RgMmm6upxH9rL5jjK.jpg",
+                            totalEpisode:62,
+                            year:"202- (Unannounced)"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"Dragon Ball Super",
+                    desc:"With Majin Buu defeated half-a-year prior, peace returns to Earth, where Son Goku (now a radish farmer) and his friends now live peaceful lives. However, a new threat appears in the form of Beerus, th...",
+                    genres:[
+                        "Animation",
+                        "Action & Adventure",
+                        "Sci-Fi & Fantasy"
+                    ],
+                    totalSeasons:1,
+                    totalEpisodes:131,
+                    year:"2015",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"_DDm-2h8sbw",
+                        teaser:"QinoGlZP_V4"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/yiEx1v5lvRsPfxwfklCgYwPkDUN.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/sx3LCCSpYleEVTMiEPpUCUhnkzM.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "martial arts",
+                        "time travel",
+                        "space"
+                    ],
+                    cast:[
+                        "Masako Nozawa",
+                        "Ryo Horikawa",
+                        "Hiromi Tsuru"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"With Majin Buu defeated half-a-year prior, peace returns to Earth, where Son Goku (now a radish farmer) and his friends now live peaceful lives. However, a new threat appears in the form of Beerus, th...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/hbaDZox0e0PC5WrR3XDvFKdWTEv.jpg",
+                            totalEpisode:131,
+                            year:"2015"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"The Seven Deadly Sins",
+                    desc:"The “Seven Deadly Sins”—a group of evil knights who conspired to overthrow the kingdom of Britannia—were said to have been eradicated by the Holy Knights, although some claim that they still live. Ten...",
+                    genres:[
+                        "Action & Adventure",
+                        "Animation",
+                        "Sci-Fi & Fantasy"
+                    ],
+                    totalSeasons:4,
+                    totalEpisodes:96,
+                    year:"2014",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"Lwv2CQu2fYg"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/n5Ty1KJIRNCXlDHDjcPpUgp57tr.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/1GBuTmYHrwpXmzofwjcKRFfP640.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "amnesia",
+                        "magic",
+                        "narration"
+                    ],
+                    cast:[
+                        "Yuki Kaji",
+                        "Sora Amamiya",
+                        "Tatsuhisa Suzuki"
+                    ],
+                    seasons:[
+                        {
+                            name:"The Seven Deadly Sins",
+                            desc:"Elizabeth Liones' search for the Seven Deadly Sins started ten years after their rumored coup d'état. While villagers thought of it to be a myth, Elizabeth came to search for them anyway in order to r...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/mGuI0aaxzuQnFrE933EUJPLpKKE.jpg",
+                            totalEpisode:24,
+                            year:"2014"
+                        },
+                        {
+                            name:"Revival of the Commandments",
+                            desc:"As peace returns to the Kingdom of Liones, the Sins decide to pursue separate paths to continue their own individual journeys. Gowther brainwashes Guila into falling in love with him, while Diane spen...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/pE4pGQpb7VST7kd6lNQHm6RwBjn.jpg",
+                            totalEpisode:24,
+                            year:"2018"
+                        },
+                        {
+                            name:"Imperial Wrath of the Gods",
+                            desc:"In the village, a young boy named Peliodas who aspires to be the Dragon's Sin of Wrath (Meliodas) attempts to fight the demons to stop his community from continually capturing sacrifices for them, but...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/hpM9JOkIjuRNUMdjzdiAxOoIT5p.jpg",
+                            totalEpisode:24,
+                            year:"2019"
+                        },
+                        {
+                            name:"Dragon's Judgement",
+                            desc:"An alliance is formed between the Arc Angels and the forces of Liones to put an end to the war. Ban ventures into the depths of Purgatory to find Meliodas's emotions and bring them back.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/9H5ybvY5WAOHSk8tEY1cD5DHCwA.jpg",
+                            totalEpisode:24,
+                            year:"2021"
+                        }
+                    ],
+                    ageRating:"U/A 17+"
+                },
+                {
+                    type:"show",
+                    title:"My Hero Academia",
+                    desc:"A superhero-admiring boy without any powers enrolls in a prestigious hero academy and learns what it really means to be a hero.",
+                    genres:[
+                        "Action & Adventure",
+                        "Animation",
+                        "Sci-Fi & Fantasy"
+                    ],
+                    totalSeasons:8,
+                    totalEpisodes:159,
+                    year:"2016",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"EPVkcwyLQQ8"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/g8VaOsKfeDgarRlGzd3Qh3cVOA4.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/x2akyNYTkIUExuM46FaJ2NUcAlw.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "saving the world",
+                        "competition",
+                        "hero"
+                    ],
+                    cast:[
+                        "Not Available"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"A superhero-admiring boy without any powers enrolls in a prestigious hero academy and learns what it really means to be a hero.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/6TKenGHaTGMvlMMKfMBoFHU2mVj.jpg",
+                            totalEpisode:13,
+                            year:"2016"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"A superhero-admiring boy without any powers enrolls in a prestigious hero academy and learns what it really means to be a hero.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/bLggKZhdEHhvax9jeT95MDxM6CA.jpg",
+                            totalEpisode:25,
+                            year:"2017"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"A superhero-admiring boy without any powers enrolls in a prestigious hero academy and learns what it really means to be a hero.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/1VVJgXpSDI2uMHnlzI9Eg0zF7pw.jpg",
+                            totalEpisode:25,
+                            year:"2018"
+                        },
+                        {
+                            name:"Season 4",
+                            desc:"A superhero-admiring boy without any powers enrolls in a prestigious hero academy and learns what it really means to be a hero.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/YCI5ADVr0JBboX0V3C3apAOtNH.jpg",
+                            totalEpisode:25,
+                            year:"2019"
+                        },
+                        {
+                            name:"Season 5",
+                            desc:"A superhero-admiring boy without any powers enrolls in a prestigious hero academy and learns what it really means to be a hero.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/uJz848GKjbSqjCkkF1J99HN9VaG.jpg",
+                            totalEpisode:25,
+                            year:"2021"
+                        },
+                        {
+                            name:"Season 6",
+                            desc:"A superhero-admiring boy without any powers enrolls in a prestigious hero academy and learns what it really means to be a hero.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/wSrSvGVxlYaTylTulqueeNQJyvR.jpg",
+                            totalEpisode:25,
+                            year:"2022"
+                        },
+                        {
+                            name:"Season 7",
+                            desc:"A superhero-admiring boy without any powers enrolls in a prestigious hero academy and learns what it really means to be a hero.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/6yQKyw3BNw9kSKsP6SRrXqsUpNe.jpg",
+                            totalEpisode:21,
+                            year:"2024"
+                        },
+                        {
+                            name:"Final Season",
+                            desc:"A superhero-admiring boy without any powers enrolls in a prestigious hero academy and learns what it really means to be a hero.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/myxWINN4lV2YRtb3DcCi7UFn6C5.jpg",
+                            totalEpisode:2,
+                            year:"202- (Unannounced)"
+                        }
+                    ],
+                    ageRating:"U/A 17+"
+                },
+                {
+                    type:"show",
+                    title:"One Piece",
+                    desc:"Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirat...",
+                    genres:[
+                        "Action & Adventure",
+                        "Comedy",
+                        "Animation"
+                    ],
+                    totalSeasons:22,
+                    totalEpisodes:1122,
+                    year:"1999",
+                    isMostLiked:true,
+                    videos:{},
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/eYELHQbSfY3z1hq1RkYptCq2Bzz.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/9F7daAmibx8ZHTE17CdM5FAwiHE.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "ocean",
+                        "sea",
+                        "boat"
+                    ],
+                    cast:[
+                        "Mayumi Tanaka",
+                        "Kazuya Nakai",
+                        "Akemi Okamura"
+                    ],
+                    seasons:[
+                        {
+                            name:"East Blue",
+                            desc:"Monkey D. Luffy meets the Red Hair Pirates as a young boy living in East Blue, swearing becoming the next Pirate King. 10 years later, Luffy sets sail and experiences first adventures, recruiting the ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/9hW62RDq5Dno8vLABXscddjEq9M.jpg",
+                            totalEpisode:61,
+                            year:"1999"
+                        },
+                        {
+                            name:"Whisky Peak & Little Garden",
+                            desc:"With a Log Pose now in hand, the Straw Hat Pirates are directed toward Whisky Peak, a town that welcomes pirates with open arms and treats them like celebrities. However, the townsfolk have a dark sec...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/egsfvwuojnsNZRTrqLkWyw09p6f.jpg",
+                            totalEpisode:16,
+                            year:"202- (Unannounced)"
+                        },
+                        {
+                            name:"Drum Island",
+                            desc:"After Nami falls ill with an unknown disease, the Straw Hat Pirates travel to Drum Island in search of a doctor. The crew meets a bizarre talking reindeer named Tony Tony Chopper, who helps them fend ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/fyOt2eCAVAB5tUpf4oOrLqX1cYD.jpg",
+                            totalEpisode:14,
+                            year:"202- (Unannounced)"
+                        },
+                        {
+                            name:"Alabasta",
+                            desc:"The Straw Hats, with Kureha's assistant Tony Tony Chopper, finally arrive at Arabasta, which is on the verge of civil war. Vivi must reach the rebels and tell them the real cause behind the conflict, ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/psjQVMfKxjkiyH9fK9Byo9ynVy9.jpg",
+                            totalEpisode:39,
+                            year:"202- (Unannounced)"
+                        },
+                        {
+                            name:"Post-Alabasta, Goat Island & Ruluka Island",
+                            desc:"While on the run from some Marines, the crew stumble upon an island inhabited by a man named Zenny who lives with a herd of goats. The crew set out to him in his seemingly final days. After evading so...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/dJHWwdcNzsbBUAnXdNsrIAgkmiK.jpg",
+                            totalEpisode:13,
+                            year:"202- (Unannounced)"
+                        },
+                        {
+                            name:"Skypiea",
+                            desc:"The Straw Hats arrive on the Sky Island Skypiea and learn of its connections to Jaya and Mont Blanc Noland's tale of a lost city of gold. As the crew embarks in search of treasure, they become entangl...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/hYasiagbhomaEj0Vv1LMqewOuBE.jpg",
+                            totalEpisode:52,
+                            year:"202- (Unannounced)"
+                        },
+                        {
+                            name:"Long Ring Long Land",
+                            desc:"The Straw Hats accidentally float down into the Marine base, G-8. Forced to abandon ship, the crew must make their way through the base to reclaim the Going Merry and avoid capture.\n\nThe crew manage t...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/A2msjyMOBEdbSHjiPHWLZhKI5HS.jpg",
+                            totalEpisode:33,
+                            year:"202- (Unannounced)"
+                        },
+                        {
+                            name:"Water Seven",
+                            desc:"The Straw Hats arrive at the oceanic metropolis of Water 7 to find a shipwright who can repair the Going Merry, as well as potentially join their crew. They soon become targeted by the Franky Family, ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/ww1JO056uv4KhDSycDTLkNRveIg.jpg",
+                            totalEpisode:35,
+                            year:"202- (Unannounced)"
+                        },
+                        {
+                            name:"Enies Lobby",
+                            desc:"The Straw Hats, Sogeking, the Franky Family, and the shipwrights of the Galley-La Company arrive at Enies Lobby aboard the Rocketman to rescue Nico Robin and Franky. Standing in their way, however, ar...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/7y6yoAIepNVrNTLMxgHEEgjEEge.jpg",
+                            totalEpisode:73,
+                            year:"202- (Unannounced)"
+                        },
+                        {
+                            name:"Thriller Bark",
+                            desc:"During their journey through the Florian Triangle, the Straw Hats arrive on a seemingly haunted island called Thriller Bark, where they encounter the Warlord Gecko Moria. Using his Devil Fruit abiliti...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/gCWPlCfElGdGtl6xryoyXcadNd9.jpg",
+                            totalEpisode:45,
+                            year:"202- (Unannounced)"
+                        },
+                        {
+                            name:"Sabaody Archipelago",
+                            desc:"The Straw Hat Pirates arrive at the final island of the Grand Line's first half, Sabaody Archipelago. While searching for a means to pass under the Red Line into the New World, they come into conflict...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/kMvtZUg4jCZ4JzEqvOCjkiklQfF.jpg",
+                            totalEpisode:26,
+                            year:"202- (Unannounced)"
+                        },
+                        {
+                            name:"Amazon Lily",
+                            desc:"After his defeat at the hands of Kuma at the Sabaody Archipelago, Luffy is sent flying and crash lands on Amazon Lily, an island exclusive to women that executes males on sight. As he tries to find a ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/bVjlWX17j9t6XB3AZ3KOv7ya7g7.jpg",
+                            totalEpisode:14,
+                            year:"202- (Unannounced)"
+                        },
+                        {
+                            name:"Impel Down & Marineford",
+                            desc:"Luffy puts finding his crew on hold in favor of rescuing his brother Ace from the underwater prison Impel Down. With Boa Hancock's help, he manages to infiltrate the facility. However, fulfilling his ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/zcVNRh5sqdgSgoXm0Z2GlTxF6DN.jpg",
+                            totalEpisode:101,
+                            year:"202- (Unannounced)"
+                        },
+                        {
+                            name:"Fishman Island",
+                            desc:"The Straw Hat Pirates finally arrive at Fishman Island. There, the crew learn the history of Fisher Tiger and the ongoing discrimination between humans and fishman, while the New Fishman Pirates plot ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/wpVC1e0RVK2qRtZMFDYu1c6mHcy.jpg",
+                            totalEpisode:58,
+                            year:"202- (Unannounced)"
+                        },
+                        {
+                            name:"Punk Hazard",
+                            desc:"Upon finally entering the New World, the Straw Hat Pirates immediately receive a distress call from residents of Punk Hazard, who state that a samurai is attacking them. Without hesitation, Luffy sets...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/slTtfpqvqelTNoRTxTuiSvqWoTU.jpg",
+                            totalEpisode:62,
+                            year:"202- (Unannounced)"
+                        },
+                        {
+                            name:"Dressrosa",
+                            desc:"The Straw Hat Pirates and Trafalgar Law, together with Kin'emon, Momonosuke and the captured Caesar Clown, travel to Dressrosa with the goal of taking down the nation's king, Warlord of the Sea Donqui...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/sDzpqSCuCyvKIcJADOhPD261maG.jpg",
+                            totalEpisode:50,
+                            year:"202- (Unannounced)"
+                        },
+                        {
+                            name:"Dressrosa (2)",
+                            desc:"A sequence of unexpected events shakes the world order, and Doflamingo proves to be a challenge that even some of the strongest warriors cannot overcome.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/nXyJ2Yor5VUX8Zpwf0eQbuDOsF0.jpg",
+                            totalEpisode:56,
+                            year:"202- (Unannounced)"
+                        },
+                        {
+                            name:"Zou",
+                            desc:"After defeating Doflamingo, the Straw Hats, Trafalgar Law, Kin'emon, and Kanjuro arrive on Zou, in order to reunite with Sanji and the others. However, they discover that Sanji has been swept up in a ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/wg7ngI5lw0u54xRY5FwmlvzS9cu.jpg",
+                            totalEpisode:55,
+                            year:"2016"
+                        },
+                        {
+                            name:"Whole Cake Island",
+                            desc:"Luffy, Nami, Chopper, Brook, and the minks Pekoms, Pedro, and Carrot head to Whole Cake Island, where Big Mom of the Four Emperors resides. Nicknamed the Sanji Retrieval Team, the group seeks to rescu...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/59G8pVHbFqSuAQAitdK9CKGAZXX.jpg",
+                            totalEpisode:74,
+                            year:"2017"
+                        },
+                        {
+                            name:"Levely Arc",
+                            desc:"The Straw Hat Pirates' actions against the Big Mom Pirates are revealed to the world. Luffy's group is on its way to Wano Country while the Revolutionary Army prepares for their next move. Meanwhile, ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/huF0TU9U8UIt2BaLGn6Ujbjikbg.jpg",
+                            totalEpisode:14,
+                            year:"2019"
+                        },
+                        {
+                            name:"Wano Country Arc",
+                            desc:"The Ninja-Pirate-Mink-Samurai Alliance gather their forces in Wano Country and prepare for their inevitable clash against the Beasts Pirates. The history of Kozuki Oden and his ties to Wano Country, W...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/awSahTRht2V11NKVp8KaMyd3z2v.jpg",
+                            totalEpisode:197,
+                            year:"2019"
+                        },
+                        {
+                            name:"Egghead",
+                            desc:"The aftermaths of both the Levely and the Raid on Onigashima, as well as the erasure of the Lulusia Kingdom, cause major shifts across the world that could lead to global war. The Straw Hat Pirates, f...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/fqOUJhVYQchjaxOPHiBJ6I7Gr1l.jpg",
+                            totalEpisode:35,
+                            year:"202- (Unannounced)"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"Dragon Ball Z",
+                    desc:"The adventures of Earth's martial arts defender, Son Goku, continue with a new family and the revelation of his alien origins. Now Goku and his allies must defend the planet from an onslaught of new e...",
+                    genres:[
+                        "Animation",
+                        "Sci-Fi & Fantasy",
+                        "Action & Adventure"
+                    ],
+                    totalSeasons:9,
+                    totalEpisodes:291,
+                    year:"1989",
+                    isMostLiked:true,
+                    videos:{},
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/4pBjYo4lJXOSEneevIlbTJSdqyt.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/yMoktMFgvqnsQ1Pii9xwturAHx4.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "competition",
+                        "cyborg",
+                        "martial arts"
+                    ],
+                    cast:[
+                        "Masako Nozawa",
+                        "Ryo Horikawa",
+                        "Toshio Furukawa"
+                    ],
+                    seasons:[
+                        {
+                            name:"Saiyan Saga",
+                            desc:"The Saiyans are coming! These ruthless, intergalactic villains carved a path of destruction across the galaxy, and now they’re headed for Earth. The evil Saiyan warlord Vegeta will not rest until he’s...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/wBvWfCJyN9uXbkXKxJNTLzeGmme.jpg",
+                            totalEpisode:39,
+                            year:"1989"
+                        },
+                        {
+                            name:"Namek Saga",
+                            desc:"While Goku recovers from injuries suffered during battle with the Saiyans, his friends begin their perilous quest for the Namekian Dragon Balls. Awaiting their arrival on Planet Namek is the powerful ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/zE4HN3kAVFNHRE6gI2LNnWyp9cr.jpg",
+                            totalEpisode:35,
+                            year:"1990"
+                        },
+                        {
+                            name:"Frieza Saga",
+                            desc:"All seven Namekian Dragon Balls have been assembled, and the dragon Porunga has been summoned. Goku and his loyal friends must stop Frieza from making his wish for immortality. To defeat this monstrou...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/a2L4vWPp2NFHBALWBPyVH5vPk6e.jpg",
+                            totalEpisode:33,
+                            year:"1991"
+                        },
+                        {
+                            name:"Androids Saga",
+                            desc:"Goku is missing, and a new breed of villain prepares to wreak havoc on Earth. Armed with knowledge of this looming menace, a Super Saiyan arrives from the future to deliver a grave warning: The Androi...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/tB5YM9eFFF3OmLg3zsR67oNUfAF.jpg",
+                            totalEpisode:32,
+                            year:"1991"
+                        },
+                        {
+                            name:"Cell Saga",
+                            desc:"As the battle with the Androids rages on, a fierce evil rises from the shadows: the monster known as Cell. Dr. Gero’s heinous creation is the ultimate weapon, a fighting machine built from the genetic...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/iIzYMnpLtBTh9Vg8yj91RhjQMFy.jpg",
+                            totalEpisode:26,
+                            year:"1992"
+                        },
+                        {
+                            name:"Cell Games Saga",
+                            desc:"Humanity nears extinction as Cell achieves his deadly perfect form! Eager to display his new power, the monster proposes a tournament. If Earth produces a worthy challenger, whether be it Goku or Mr. ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/381gFEyW91dgBUu09NMSvkI2Rac.jpg",
+                            totalEpisode:29,
+                            year:"1992"
+                        },
+                        {
+                            name:"World Tournament Saga",
+                            desc:"In the seven years since Cell’s defeat, life on Earth has returned to normal. But now, the time has come for a new World Martial Arts Tournament. Goku returns from Other World to challenge Mr. Satan f...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/w2x8LhWuoXyFp2i2syagpTbrfcR.jpg",
+                            totalEpisode:25,
+                            year:"1993"
+                        },
+                        {
+                            name:"Majin Buu Saga",
+                            desc:"The evil wizard Babidi embarks on a quest for vengeance, seeking to fulfill his father's thwarted dreams of universal domination. Supreme Kai enlists Goku and the Z-Fighters to stop Babidi and his vil...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/AksanoqLDDqpr615GU037m0zSKV.jpg",
+                            totalEpisode:34,
+                            year:"1994"
+                        },
+                        {
+                            name:"Kid Buu Saga",
+                            desc:"Majin Buu's rampage continues, and the only hope of defeating this terrifying foe is the Fusion Technique. For this desperate plan to succeed, two fierce rivals, Goku and Vegeta, must combine their po...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/ng5ikoqe4vU7gS5l42EB35rMEIX.jpg",
+                            totalEpisode:38,
+                            year:"1995"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"Death Note",
+                    desc:"Light Yagami is an ace student with great prospects—and he’s bored out of his mind. But all that changes when he finds the Death Note, a notebook dropped by a rogue Shinigami death god. Any human whos...",
+                    genres:[
+                        "Animation",
+                        "Mystery",
+                        "Sci-Fi & Fantasy"
+                    ],
+                    totalSeasons:1,
+                    totalEpisodes:37,
+                    year:"2006",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"NlJZ-YgAt-c"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/cImgYbMpDbvsEdnUSa0tXj4O1wf.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/mbDyY5qEDKVQNvuHk71OvxH8Cjg.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "detective",
+                        "journalism",
+                        "secret identity"
+                    ],
+                    cast:[
+                        "Mamoru Miyano",
+                        "Shido Nakamura",
+                        "Aya Hirano"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"An intelligent high school student goes on a secret crusade to eliminate criminals from the world after discovering a notebook capable of killing anyone whose name is written into it.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/1BloDOEmKxPFzbCIuNCLmCrcx6L.jpg",
+                            totalEpisode:37,
+                            year:"2006"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"Jujutsu Kaisen",
+                    desc:"Yuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a classmate who has been attacked by curses, he eats the finger of Ryo...",
+                    genres:[
+                        "Animation",
+                        "Action & Adventure",
+                        "Sci-Fi & Fantasy"
+                    ],
+                    totalSeasons:1,
+                    totalEpisodes:47,
+                    year:"2020",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"VpO6APNqY1c"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/zAfK8cVjJiYUsVLDkHoIgxJh319.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/tEmqJ1k4MdjuaKaetn8wGyZGcyC.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "martial arts",
+                        "exorcism",
+                        "sorcery"
+                    ],
+                    cast:[
+                        "Not Available"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"Yuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a classmate who has been attacked by curses, he eats the finger of Ryo...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/k3LNFvoLJidIinXkvmahCpShL12.jpg",
+                            totalEpisode:47,
+                            year:"2020"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"One-Punch Man",
+                    desc:"Saitama is a hero who only became a hero for fun. After three years of “special” training, though, he's become so strong that he's practically invincible. In fact, he's too strong — even his mightiest...",
+                    genres:[
+                        "Animation",
+                        "Comedy",
+                        "Action & Adventure"
+                    ],
+                    totalSeasons:3,
+                    totalEpisodes:24,
+                    year:"2015",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"2JAElThbKrI"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/t9futsXE3RhY9ielKHjA6oDAhrL.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/s4c20xXgSDjbYAcpKchuWRU3zuR.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "cyborg",
+                        "martial arts",
+                        "monster"
+                    ],
+                    cast:[
+                        "Makoto Furukawa",
+                        "Kaito Ishikawa",
+                        "Hiroki Yasumoto"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"Saitama is a hero who only became a hero for fun. After three years of “special” training, though, he's become so strong that he's practically invincible. In fact, he's too strong — even his mightiest...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/6duQmNHgo7KpHAvf7g2YI5G4Q9j.jpg",
+                            totalEpisode:12,
+                            year:"2015"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"An increase in villain activity has the Hero Organization worried that the \"Earthdoom prophecy\" will soon come to pass. In an effort to alleviate the overworked heroes, they turn to villains themselve...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/fRibuDuC5MVn19lbvvnuH941w6d.jpg",
+                            totalEpisode:12,
+                            year:"2019"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"Saitama is a hero who only became a hero for fun. After three years of “special” training, though, he's become so strong that he's practically invincible. In fact, he's too strong — even his mightiest...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/jbYJuxfZMpYDalkiOnBcCv9TaL.jpg",
+                            totalEpisode:"Not Disclosed Yet",
+                            year:"202- (Unannounced)"
+                        }
+                    ],
+                    ageRating:"U/A 17+"
+                }
+            ]
         },
         dark: {
             tabs: ['show'],
             showTitle: 'Dark and Gritty Shows',
-            movies: [],
-            shows: []
+            movies: null,
+            shows: [
+                {
+                    type:"show",
+                    title:"Better Call Saul",
+                    desc:"Six years before Saul Goodman meets Walter White. We meet him when the man who will become Saul Goodman is known as Jimmy McGill, a small-time lawyer searching for his destiny, and, more immediately, ...",
+                    genres:[
+                        "Crime",
+                        "Drama"
+                    ],
+                    totalSeasons:6,
+                    totalEpisodes:63,
+                    year:"2015",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"HN4oydykJFc",
+                        teaser:"EujKha0HQGo"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/8Oe31sSVE8PTFUoeLn4qZ2otJzA.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/hwxBWyoeTefjafeqkIONxl0mXUV.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "new mexico",
+                        "moral conflict",
+                        "crooked lawyer"
+                    ],
+                    cast:[
+                        "Bob Odenkirk",
+                        "Jonathan Banks",
+                        "Rhea Seehorn"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"Jimmy McGill was a small-time lawyer, hustling to make ends meet. This is how the search for his destiny and the story of Saul Goodman collide.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/bAbZBZmz25Lqk8A8mwMWzAkvlAj.jpg",
+                            totalEpisode:10,
+                            year:"2015"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"Jimmy McGill returns with a new outlook on life and growing appetites that will push his career -- and his relationships -- into uncharted territory.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/4NDwAQjFD8bTOsMKxYdl8IK10R9.jpg",
+                            totalEpisode:10,
+                            year:"2016"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"Jimmy resorts to ever more desperate measures to keep his law career afloat, while Mike is drawn into the orbit of a mysterious new figure.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/dHIMW3CkL21jYWtsHiAdwkCjAej.jpg",
+                            totalEpisode:10,
+                            year:"2017"
+                        },
+                        {
+                            name:"Season 4",
+                            desc:"As Jimmy copes with a shocking loss, a series of shady schemes propel him deeper into the criminal world -- and closer to his life as Saul Goodman.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/8zvIqLFOrBymKKI3L2W1AH8YZQI.jpg",
+                            totalEpisode:10,
+                            year:"2018"
+                        },
+                        {
+                            name:"Season 5",
+                            desc:"Changing his name to Saul Goodman, Jimmy recruits a new crop of clients. Kim wrestles with a moral dilemma at work. Lalo's feud with Gus heats up.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/dZHa2vUtYNQ81KV38eHGjn0P4JE.jpg",
+                            totalEpisode:10,
+                            year:"2020"
+                        },
+                        {
+                            name:"Season 6",
+                            desc:"From the cartel to the courthouse, from Albuquerque to Omaha, season six tracks Jimmy, Saul and Gene as well as Jimmy's complex relationship with Kim, who is in the midst of her own existential crisis...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/rbNc44otT6VRd7QpxqlUAMyByaQ.jpg",
+                            totalEpisode:13,
+                            year:"2022"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"Mr. Robot",
+                    desc:"A contemporary and culturally resonant drama about a young programmer, Elliot, who suffers from a debilitating anti-social disorder and decides that he can only connect to people by hacking them. He w...",
+                    genres:[
+                        "Crime",
+                        "Drama"
+                    ],
+                    totalSeasons:4,
+                    totalEpisodes:45,
+                    year:"2015",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"N6HGuJC--rk"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/oB9XeZRZKe8DSPCfwezbwPXJ9LD.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/9uhe0jDcp83Px30kxKfSQYUaaO1.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "hacker",
+                        "secret society",
+                        "childhood trauma"
+                    ],
+                    cast:[
+                        "Rami Malek",
+                        "Christian Slater",
+                        "Carly Chaikin"
+                    ],
+                    seasons:[
+                        {
+                            name:"season_1.0",
+                            desc:"Elliot finds himself at a crossroad when the mysterious leader of an underground hacker group recruits him to destroy the firm he is paid to protect. Compelled by his personal beliefs, Elliot struggle...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/1aiNh5Gak36EdpdwhvWHIXzAj50.jpg",
+                            totalEpisode:10,
+                            year:"2015"
+                        },
+                        {
+                            name:"season_2.0",
+                            desc:"Following the events of fsociety’s 5/9 hack on multi-national company Evil Corp, season two explores the consequences of that attack as well as the illusion of control.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/wKUwCWhGk1rYrBObH52a7qIfnn6.jpg",
+                            totalEpisode:12,
+                            year:"2016"
+                        },
+                        {
+                            name:"season_3.0",
+                            desc:"Picking up immediately following the season two cliffhanger, season three explores each character’s motivations and the disintegration between Elliot and Mr. Robot.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/voGo8bIwZodRXSxCcxsyiB5YzY5.jpg",
+                            totalEpisode:10,
+                            year:"2017"
+                        },
+                        {
+                            name:"season_4.0",
+                            desc:"The mission to take down Whiterose and the Dark Army enters its final phase as Elliot attempts to come to terms with his reality.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/gXMZnIvHxOFRQ7UGQWtmsVfCueT.jpg",
+                            totalEpisode:13,
+                            year:"2019"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"Dexter",
+                    desc:"Dexter Morgan, a blood spatter pattern analyst for the Miami Metro Police also leads a secret life as a serial killer, hunting down criminals who have slipped through the cracks of justice.",
+                    genres:[
+                        "Crime",
+                        "Drama",
+                        "Mystery"
+                    ],
+                    totalSeasons:8,
+                    totalEpisodes:96,
+                    year:"2006",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"YQeUmSD1c3g",
+                        teaser:"1UJz0O2NjOo"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/5PBWovhpRsUeLMGBZIkacr9dp24.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/wn1pM2548zWm8qNWH3lLyf1NjXg.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "miami, florida",
+                        "double life",
+                        "homicide"
+                    ],
+                    cast:[
+                        "Michael C. Hall",
+                        "Jennifer Carpenter",
+                        "Geoff Pierson"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"By day, mild-mannered Dexter is a blood-spatter analyst for the Miami police. But at night, he is a serial killer who only targets other murderers.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/rmhoMEHK3ZP2EAXX2VpxuKpW3Bf.jpg",
+                            totalEpisode:12,
+                            year:"2006"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"In season two, the bodies of Dexter's victims are uncovered and an investigation is launched in Dexter's own department to find the killer, dubbed the \"Bay Harbor Butcher.\" Debra struggles to recover,...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/t8o6P0pTsnfgsUo6AXSuaiw9fgG.jpg",
+                            totalEpisode:12,
+                            year:"2007"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"After a runin with a man, Dexter initiates a friendship with his brother, Assistant District Attorney Miguel Prado. In the meantime, Rita discovers that she is pregnant, and Debra investigates the mur...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/8zyoh0AtArOyTq0F2USckRGzZEU.jpg",
+                            totalEpisode:12,
+                            year:"2008"
+                        },
+                        {
+                            name:"Season 4",
+                            desc:"Dexter as a father and husband struggles to figure out how to survive for years to come. He seeks to learn from Arthur Mitchell, a serial killer and family man, who has murdered for over thirty years ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/1Oh0QmXVTnyV9QqpDcEpvxtKYFw.jpg",
+                            totalEpisode:12,
+                            year:"2009"
+                        },
+                        {
+                            name:"Season 5",
+                            desc:"In season five, Dexter comes to terms with the aftermath of the Season 4 finale, stopping a group of serial rapists and avoiding a corrupt cop who learns his deadly secret.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/sKDHRvdaHfhiYzCFCXQoo1TuHhb.jpg",
+                            totalEpisode:12,
+                            year:"2010"
+                        },
+                        {
+                            name:"Season 6",
+                            desc:"Season six follows Dexter's and Miami Metro's investigations into a string of bizarre ritualistic killings featuring overtly religious apocalyptic symbolism.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/yxylCqF28NttybWJvQtHztTdDKr.jpg",
+                            totalEpisode:12,
+                            year:"2011"
+                        },
+                        {
+                            name:"Season 7",
+                            desc:"Season seven follows Dexter's tangles with a Ukrainian mob boss and introduces Hannah McKay, a mysterious widow with a green thumb and a checkered past.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/lM4EY2L324exlZ1hF2YpBM0a97J.jpg",
+                            totalEpisode:12,
+                            year:"2012"
+                        },
+                        {
+                            name:"Season 8",
+                            desc:"As Deb struggles to deal with the consequences of her actions, a mysterious woman comes to work with Miami Metro, offering first-hand information on Dexter's past.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/q8dWfc4JwQuv3HayIZeO84jAXED.jpg",
+                            totalEpisode:12,
+                            year:"2013"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"True Detective",
+                    desc:"An American anthology police detective series utilizing multiple timelines in which investigations seem to unearth personal and professional secrets of those involved, both within or outside the law.",
+                    genres:[
+                        "Drama",
+                        "Mystery"
+                    ],
+                    totalSeasons:4,
+                    totalEpisodes:30,
+                    year:"2014",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"fVQUcaO4AvE"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/c27jL84jaLZVLCTaxY51rDLHYiq.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/6q4KzOcM2eEE1IbhFTadUsQkphl.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "detective",
+                        "investigation",
+                        "anthology"
+                    ],
+                    cast:[
+                        "Jodie Foster",
+                        "Kali Reis",
+                        "Fiona Shaw"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"In 2012, Louisiana State Police Detectives Rust Cohle and Martin Hart  are brought in to revisit a homicide case they worked in 1995. As the  inquiry unfolds in present day through separate interrogat...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/gf5PFAwzcrRjd26zqcumqeMZV0W.jpg",
+                            totalEpisode:8,
+                            year:"2014"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"A bizarre murder brings together three law-enforcement officers and a career criminal, each of whom must navigate a web of conspiracy and betrayal in the scorched landscapes of California.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/owTL3WTY4Yax2qClnwbaDsOO72r.jpg",
+                            totalEpisode:8,
+                            year:"2015"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"Season 3 tells the story of a macabre crime involving two missing children in the heart of the Ozarks, a mystery that deepens over decades and plays out in three separate time periods.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/uOd2yMAxhfvwNd0pkVapHgRk1c1.jpg",
+                            totalEpisode:8,
+                            year:"2019"
+                        },
+                        {
+                            name:"Night Country",
+                            desc:"When the long winter night falls in Ennis, Alaska, the eight men who operate the Tsalal Arctic Research Station vanish without a trace. To solve the case, Detectives Liz Danvers and Evangeline Navarro...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/799LSP55qx3qUV6guUFC3lkiHsX.jpg",
+                            totalEpisode:6,
+                            year:"2024"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"Grimm",
+                    desc:"After Portland homicide detective Nick Burkhardt discovers he's descended from an elite line of criminal profilers known as \"Grimms,\" he increasingly finds his responsibilities as a detective at odds ...",
+                    genres:[
+                        "Drama",
+                        "Mystery",
+                        "Sci-Fi & Fantasy"
+                    ],
+                    totalSeasons:6,
+                    totalEpisodes:122,
+                    year:"2011",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"2rVy3RBJmNo"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/aCP0HwUZHNm5SYRVZOGoDBZ1dCf.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/nOPg4FutzDnPdwlXMDy8hVRuJAr.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "detective",
+                        "fairy tale",
+                        "police"
+                    ],
+                    cast:[
+                        "David Giuntoli",
+                        "Silas Weir Mitchell",
+                        "Russell Hornsby"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"After Portland homicide detective Nick Burkhardt discovers he's descended from an elite line of criminal profilers known as \"Grimms,\" he increasingly finds his responsibilities as a detective at odds ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/83D3Obk5yPJrtsMgh72d4C0VgD6.jpg",
+                            totalEpisode:22,
+                            year:"2011"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"After Portland homicide detective Nick Burkhardt discovers he's descended from an elite line of criminal profilers known as \"Grimms,\" he increasingly finds his responsibilities as a detective at odds ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/eD4K8951bEai6bfkN3t5zPI8Iqz.jpg",
+                            totalEpisode:22,
+                            year:"2012"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"After Portland homicide detective Nick Burkhardt discovers he's descended from an elite line of criminal profilers known as \"Grimms,\" he increasingly finds his responsibilities as a detective at odds ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/nFXkIKKCG8BPazEtvDFcOpcL8CK.jpg",
+                            totalEpisode:22,
+                            year:"2013"
+                        },
+                        {
+                            name:"Season 4",
+                            desc:"After Portland homicide detective Nick Burkhardt discovers he's descended from an elite line of criminal profilers known as \"Grimms,\" he increasingly finds his responsibilities as a detective at odds ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/rwSN3Lr6cFdLk5kRVs1mbNDDvZi.jpg",
+                            totalEpisode:22,
+                            year:"2014"
+                        },
+                        {
+                            name:"Season 5",
+                            desc:"After Portland homicide detective Nick Burkhardt discovers he's descended from an elite line of criminal profilers known as \"Grimms,\" he increasingly finds his responsibilities as a detective at odds ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/yiPNb9wMzy0pIDRzeQWdrufdtmk.jpg",
+                            totalEpisode:21,
+                            year:"2015"
+                        },
+                        {
+                            name:"Season 6",
+                            desc:"After Portland homicide detective Nick Burkhardt discovers he's descended from an elite line of criminal profilers known as \"Grimms,\" he increasingly finds his responsibilities as a detective at odds ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/bTEbob7J3AguqsSLmojq4dn6cGC.jpg",
+                            totalEpisode:13,
+                            year:"2017"
+                        }
+                    ],
+                    ageRating:"U/A 17+"
+                },
+                {
+                    type:"show",
+                    title:"Fargo",
+                    desc:"A close-knit anthology series dealing with stories involving malice, violence and murder based in and around Minnesota.",
+                    genres:[
+                        "Crime",
+                        "Drama"
+                    ],
+                    totalSeasons:5,
+                    totalEpisodes:51,
+                    year:"2014",
+                    isMostLiked:true,
+                    videos:{
+                        trailer:"FXIeYKlMA_0"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/9ZwrH0vDooketKwEy0weUELIaBW.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/gdFFKKCDfubJVbj88JnaCHRJDGZ.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "detective",
+                        "minnesota",
+                        "winter"
+                    ],
+                    cast:[
+                        "Juno Temple",
+                        "Jennifer Jason Leigh",
+                        "David Rysdahl"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"In January 2006, Lorne Malvo passes through Bemidji, Minnesota and influences put-upon insurance salesman Lester Nygaard with his malice and violence. Meanwhile, Deputy Molly Solverson and Duluth poli...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/matO9b040ibkviZV5mmDdKpQMEV.jpg",
+                            totalEpisode:10,
+                            year:"2014"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"Season two's chapter takes you back to 1979 in Sioux Falls, South Dakota and Luverne, Minnesota. Lou Solverson, a young State Police Officer recently back from Vietnam, investigates a case involving a...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/xeKfy7m8rPl08mQ6ZfbkgOy6Hdj.jpg",
+                            totalEpisode:10,
+                            year:"2015"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"December 2010, Minnesota. Emmit Stussy, the Parking Lot King of Minnesota, is a handsome, self-made, real estate mogul and family man - an American success story. His slightly younger brother, Ray Stu...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/dYHoNzcpQXzU2qBMZYbyOnrcuvi.jpg",
+                            totalEpisode:10,
+                            year:"2017"
+                        },
+                        {
+                            name:"Season 4",
+                            desc:"In 1950s Kansas City, Missouri, two criminal syndicates have struck an uneasy peace. One Italian, one African-American. Together they control an alternate economy — that of exploitation, graft and dru...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/zLhsNgyby6jqlrSOcrU2TWXm7yB.jpg",
+                            totalEpisode:11,
+                            year:"2020"
+                        },
+                        {
+                            name:"Season 5",
+                            desc:"After an unexpected series of events lands Dorothy \"Dot\" Lyon in hot water with the authorities, this seemingly typical Midwestern housewife is suddenly plunged back into a life she thought she had le...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/6U9CPeD8obHzweikFhiLhpc7YBT.jpg",
+                            totalEpisode:10,
+                            year:"2023"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"Sacred Games",
+                    desc:"A link in their pasts leads an honest cop to a fugitive gang boss, whose cryptic warning spurs the officer on a quest to save Mumbai from cataclysm.",
+                    genres:[
+                        "Drama",
+                        "Crime",
+                        "Action & Adventure"
+                    ],
+                    totalSeasons:2,
+                    totalEpisodes:16,
+                    year:"2018",
+                    isMostLiked:false,
+                    videos:{
+                        teaser:"AkUgf2jIPyI"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/wTVb2m8Nsc8YE8IyLPZS2lcj5yB.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/timrJkMqs1huwJSNdtjkgh3O4MB.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "investigation",
+                        "torture",
+                        "drugs"
+                    ],
+                    cast:[
+                        "Saif Ali Khan",
+                        "Nawazuddin Siddiqui",
+                        "Pankaj Tripathi"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"A link in their pasts leads an honest cop to a fugitive gang boss, whose cryptic warning spurs the officer on a quest to save Mumbai from cataclysm.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/mVQ6JFJCAMRLKvsMZdiEeYXC6cp.jpg",
+                            totalEpisode:8,
+                            year:"2018"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"As Mumbai’s fate hangs in the balance, Sartaj Singh chases a connection to Ganesh Gaitonde’s third father, an enigmatic guru with a catastrophic plan.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/5Bs2SBg97gaqoYH2c9zRNOEctaz.jpg",
+                            totalEpisode:8,
+                            year:"2019"
+                        }
+                    ],
+                    ageRating:"U/A 17+"
+                },
+                {
+                    type:"show",
+                    title:"Paatal Lok",
+                    desc:"A down and out cop lands the case of a lifetime when four suspects are nabbed in the assassination attempt of a prime time journalist. The case turns out to be a devious maze where nothing is what it ...",
+                    genres:[
+                        "Crime",
+                        "Drama"
+                    ],
+                    totalSeasons:2,
+                    totalEpisodes:9,
+                    year:"2020",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"cNwWMW4mxO8"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/s9HBagoNkCGoXxykbR9rvUgS91d.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/cEwO2WmHVmYkl72h3DB4vNHTrcp.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "detective",
+                        "police",
+                        "organized crime"
+                    ],
+                    cast:[
+                        "Jaideep Ahlawat",
+                        "Gul Panag",
+                        "Neeraj Kabi"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"A down and out cop lands the case of a lifetime when four suspects are nabbed in the assassination attempt of a prime time journalist. The case turns out to be a devious maze where nothing is what it ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/w5wlQNIDnP3hlt79BVEr2yaFRum.jpg",
+                            totalEpisode:9,
+                            year:"2020"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"A down and out cop lands the case of a lifetime when four suspects are nabbed in the assassination attempt of a prime time journalist. The case turns out to be a devious maze where nothing is what it ...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/duaaazbB49iKK4TMvekR3fQIVhU.jpg",
+                            totalEpisode:"Not Disclosed Yet",
+                            year:"202- (Unannounced)"
+                        }
+                    ],
+                    ageRating:"U/A 17+"
+                },
+                {
+                    type:"show",
+                    title:"Dahaad",
+                    desc:"Women are disappearing without a trace in Rajasthan and nobody seems surprised. But police officer Anjali Bhaati notices a similarity in the cases: long nightly phone calls and a boyfriend that no one...",
+                    genres:[
+                        "Crime",
+                        "Mystery",
+                        "Drama"
+                    ],
+                    totalSeasons:1,
+                    totalEpisodes:8,
+                    year:"2023",
+                    isMostLiked:false,
+                    videos:{},
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/pO1tIrVa1ptJWS7vA15HokdeBcL.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:null,
+                    keywords:[
+                        "suicide",
+                        "inspector",
+                        "police"
+                    ],
+                    cast:[
+                        "Sonakshi Sinha",
+                        "Vijay Varma",
+                        "Gulshan Devaiah"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"When a series of women are found dead in public bathrooms under mysterious circumstances, Sub-inspector Anjali Bhaati is tasked with leading the investigation. As the case unravels she begins to suspe...",
+                            posterPath:"https://image.tmdb.org/t/p/w400/szRDAgsa5ptjIq8ifIKE8BZPReX.jpg",
+                            totalEpisode:8,
+                            year:"2023"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"House of Secrets: The Burari Deaths",
+                    desc:"Suicide, murder... or something else? This docuseries examines chilling truths and theories around the deaths of 11 members of a Delhi family.",
+                    genres:[
+                        "Documentary",
+                        "Crime"
+                    ],
+                    totalSeasons:1,
+                    totalEpisodes:3,
+                    year:"2021",
+                    isMostLiked:false,
+                    videos:{
+                        clip:"Gp3OmiJMGjc",
+                        trailer:"xN5J-Ld3G1s"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/e7YjhjWFp9gmYvET6oZZ9Auod5h.jpg",
+                        isLogoIncluded:false
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/22NqWu9xeEEq28YX5jEclE19ZH1.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "delhi, india",
+                        "investigation",
+                        "murder"
+                    ],
+                    cast:[
+                        "Not Available"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"Suicide, murder... or something else? This docuseries examines chilling truths and theories around the deaths of 11 members of a Delhi family.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/3tijKrQysQHm14Uce7rzBKNDwxD.jpg",
+                            totalEpisode:3,
+                            year:"2021"
+                        }
+                    ],
+                    ageRating:"U/A 13+"
+                },
+                {
+                    type:"show",
+                    title:"Delhi Crime",
+                    desc:"Following the police force as they investigate high-profile crimes in Delhi, this series has seasons inspired by both real and fictional events.",
+                    genres:[
+                        "Crime"
+                    ],
+                    totalSeasons:3,
+                    totalEpisodes:12,
+                    year:"2019",
+                    isMostLiked:false,
+                    videos:{
+                        trailer:"jNuKwlKJx2E",
+                        teaser:"ydoqfYCwmxQ"
+                    },
+                    backdrop:{
+                        image:"https://image.tmdb.org/t/p/w500/8WXouptCWLBHkBpWZahIgkeUDiH.jpg",
+                        isLogoIncluded:true
+                    },
+                    backdropNoLang:"",
+                    poster:null,
+                    logo:{
+                        image:"https://image.tmdb.org/t/p/w500/iQi9YBSoPc1H9MZm3SIbQHRRcxT.png",
+                        isLogoIncluded:true
+                    },
+                    keywords:[
+                        "delhi, india",
+                        "investigation",
+                        "gang rape"
+                    ],
+                    cast:[
+                        "Shefali Shah",
+                        "Rasika Dugal",
+                        "Avijit Dutt"
+                    ],
+                    seasons:[
+                        {
+                            name:"Season 1",
+                            desc:"As Delhi reels in the aftermath of a gang rape, DCP Vartika Chaturvedi leads a painstaking search for the culprits. Inspired by the 2012 Nirbhaya case.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/xkpkTj6KGsjSaet0VQaq0aTn31D.jpg",
+                            totalEpisode:7,
+                            year:"2019"
+                        },
+                        {
+                            name:"Season 2",
+                            desc:"When a chain of distinctly grisly murders suggests the return of a feared criminal gang, DCP Vartika heads the case under media and public pressure.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/xwK3JdYQpEH7bYocbngvB9XQcEm.jpg",
+                            totalEpisode:5,
+                            year:"2022"
+                        },
+                        {
+                            name:"Season 3",
+                            desc:"Following the police force as they investigate high-profile crimes in Delhi, this series has seasons inspired by both real and fictional events.",
+                            posterPath:"https://image.tmdb.org/t/p/w400/xkpkTj6KGsjSaet0VQaq0aTn31D.jpg",
+                            totalEpisode:"Not Disclosed Yet",
+                            year:"202- (Unannounced)"
+                        }
+                    ],
+                    ageRating:"U/A 17+"
+                }
+            ]
         },
         martin: {
             tabs: ['director'],

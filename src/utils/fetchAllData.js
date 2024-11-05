@@ -1,12 +1,7 @@
     import Bottleneck from "bottleneck"
-    import { fetchTopRated, fetchMovieSectionWithFourUrl, fetchCritic, fetchNetflix, fetchMovieSectionWithTwoUrl, fetchBestOfYear, fetchFamily, fetchMcu, fetchAward, fetchCult, fetchViolent, fetchShowSectionWithTwoUrl, fetchShowSectionWithOneUrl, fetchDirectorSection } from "./fetchSections"
+    import { fetchTopRated, fetchMovieSectionWithFourUrl, fetchCritic, fetchNetflix, fetchMovieSectionWithTwoUrl, fetchBestOfYear, fetchFamily, fetchMcu, fetchAward, fetchCult, fetchViolent, fetchShowSectionWithTwoUrl, fetchShowSectionWithOneUrl, fetchDirectorSection, fetchTrending } from "./fetchSections"
 
     export const fetchAllData = () => {
-
-        const limiter = new Bottleneck({
-            maxConcurrent: 49,
-            minTime: 20,
-        })
 
         const url = {
             newRelease: [
@@ -29,33 +24,23 @@
                 "https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&air_date.gte=2023-12-01&air_date.lte=2024-06-01&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_original_language=en",
             ],
 
-            trending: [
-                "https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=hi&page=1&primary_release_year=2024&primary_release_date.gte=2024-07-20&region=IN&with_original_language=hi&sort_by=vote_count.desc&with_original_language=hi&year=2024&without_keywords=1852",
-
-                "https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&primary_release_year=2024&primary_release_date.gte=2024-07-20&sort_by=popularity.desc&with_original_language=en&year=2024&without_keywords=1852",
-
-                "https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&air_date.gte=2024-05-20&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_origin_country=IN&with_original_language=hi&with_networks=213%7C1024%7C3373",
-
-                "https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&air_date.gte=2024-05-20&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=popularity.desc&with_original_language=en&with_networks=213%7C1024%7C3373"
-            ],
-
             adventure: [
                 "https://api.themoviedb.org/3/discover/movie?&api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&region=IN&sort_by=popualrity.desc&with_genres=12&with_origin_country=IN&with_original_language=hi&without_genres=28&primary_release_date.gte=2005-01-00&without_keywords=9914%7C290707%7C210024",
                 
-                "https://api.themoviedb.org/3/discover/movie?&api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=12%2C28&primary_release_date.gte=2005-01-01&with_original_language=en",
+                "https://api.themoviedb.org/3/discover/movie?&api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=12%2C28&primary_release_date.gte=2005-01-01&with_original_language=en&without_keywords=14544%7C303848%7C257384",
             ],
 
             action: [
                 "https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&primary_release_date.gte=2010-01-01&region=IN&sort_by=vote_count.desc&with_genres=28%2C53&with_origin_country=IN&with_original_language=hi&without_keywords=164742%7C9818",
 
-                "https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_genres=28%2C53",
+                "https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_genres=28%2C53&without_keywords=9715%7C12616",
 
             ],
 
             trueStories: [
                 "https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&region=IN&sort_by=popularity.desc&with_keywords=9672%7C332623%7C5565&with_origin_country=IN&with_original_language=hi&without_keywords=286995%7C281358%7C293198%7C170362",
 
-                "https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_keywords=9672%7C332623%7C5565&without_keywords=286995%7C281358%7C293198%7C170362",
+                "https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_keywords=9672%7C332623%7C5565&without_keywords=286995%7C281358%7C293198%7C170362&with_original_language=en",
 
             ],
 
@@ -69,7 +54,7 @@
             feelGood: [
                 "https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&region=IN&sort_by=revenue.desc&with_origin_country=IN&with_original_language=hi&without_genres=9648%2C53%2C28%2C80%2C36%2C37%2C10752&without_keywords=215292%2C10160&with_keywords=6054",
                 
-                "https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_keywords=304995%7C329716%7C279521%7C288816%7C199630%7C324723&with_original_language=en&without_genres=28%2C80%2C27%2C53%2C10752&without_keywords=286758%2C316090",
+                "https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&with_keywords=304995%7C329716%7C279521%7C288816%7C199630%7C324723&with_original_language=en&without_genres=28%7C80%7C27%7C53%7C10752%7C16&without_keywords=286758%2C316090",
 
                 "https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_keywords=6054%7C304995%7C329716%7C279521%7C288816%7C199630%7C324723%7C9840&with_original_language=hi&with_origin_country=IN&without_genres=10762%7C28%2C80%2C27%2C53%2C10752&with_networks=213%7C1024%7C3733&without_keywords=330920",
 
@@ -96,9 +81,10 @@
             sitcom: "https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_genres=35&with_keywords=322268%7C210605%7C232956%7C280227%7C193171%7C336095&with_original_language=en&without_keywords=8102",
 
             mystery: [
-                "https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_genres=9648&with_keywords=316332%7C231172%7C263443%7C229137%7C259984%7C207046%7C288394%7C316790%7C314730%7C319190%7C313317&with_original_language=en",
-
-                "https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_average.desc&with_genres=9648&with_networks=213%7C1024%7C3373&with_origin_country=IN&with_original_language=hi"
+                
+                "https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_average.desc&with_genres=9648&with_networks=213%7C1024%7C3373&with_origin_country=IN&with_original_language=hi",
+                
+                "https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_genres=9648&with_keywords=316332%7C231172%7C263443%7C229137%7C259984%7C207046%7C288394%7C316790%7C314730%7C319190%7C313317&with_original_language=en"
             ],
 
             anime: "https://api.themoviedb.org/3/discover/tv?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=vote_count.desc&with_genres=16&with_keywords=210024%7C248841&with_original_language=ja&without_genres=10762",
@@ -125,40 +111,40 @@
         
         Promise.all([
 
-            limiter.wrap(fetchTopRated)(),
-            limiter.wrap(fetchMovieSectionWithFourUrl)(url.newRelease[0], url.newRelease[1], url.newRelease[2], url.newRelease[3], 12, 'newRelease', false),
-            limiter.wrap(fetchMovieSectionWithFourUrl)(url.popular[0], url.popular[1], url.popular[2], url.popular[3], 12, 'popular', false),
-            limiter.wrap(fetchCritic)(),
-            limiter.wrap(fetchNetflix)(),
-            limiter.wrap(fetchMovieSectionWithFourUrl)(url.trending[0], url.trending[1], url.trending[2], url.trending[3], 10, 'trendingIndia', true),
-            limiter.wrap(fetchMovieSectionWithTwoUrl)(url.adventure[0], url.adventure[1], 'adventure'),
-            limiter.wrap(fetchMovieSectionWithTwoUrl)(url.action[0], url.action[1], 'action'),
-            limiter.wrap(fetchBestOfYear)(),
-            limiter.wrap(fetchMovieSectionWithTwoUrl)(url.trueStories[0], url.trueStories[1], 'trueStories'),
-            limiter.wrap(fetchMovieSectionWithTwoUrl)(url.comedy[0], url.comedy[1], 'comedy'),
-            limiter.wrap(fetchFamily)(),
-            limiter.wrap(fetchMovieSectionWithFourUrl)(url.feelGood[0], url.feelGood[1], url.feelGood[2], url.feelGood[3], 12, 'feelGood', false),
-            limiter.wrap(fetchMovieSectionWithFourUrl)(url.crime[0], url.crime[1], url.crime[2], url.crime[3], 12, 'crime', false),
-            limiter.wrap(fetchMcu)(),
-            limiter.wrap(fetchAward)(),
-            limiter.wrap(fetchCult)(),
-            limiter.wrap(fetchViolent)(),
-            limiter.wrap(fetchShowSectionWithTwoUrl)(url.binge[0], url.binge[1], 'binge'),
-            limiter.wrap(fetchShowSectionWithOneUrl)(url.sitcom, 'sitcom'),
-            limiter.wrap(fetchShowSectionWithTwoUrl)(url.mystery[0], url.mystery[1], 'mystery'),
-            limiter.wrap(fetchShowSectionWithOneUrl)(url.anime, 'anime'),
-            limiter.wrap(fetchShowSectionWithTwoUrl)(url.dark[0], url.dark[1], 'dark'),
-            limiter.wrap(fetchDirectorSection)(url.martin, 'martin'),
-            limiter.wrap(fetchDirectorSection)(url.tarantino, 'tarantino'),
-            limiter.wrap(fetchDirectorSection)(url.steven, 'steven'),
-            limiter.wrap(fetchDirectorSection)(url.nolan, 'nolan'),
-            limiter.wrap(fetchDirectorSection)(url.kubrick, 'kubrick'),
-            limiter.wrap(fetchDirectorSection)(url.fincher, 'fincher'),
-            limiter.wrap(fetchDirectorSection)(url.coen, 'coen'),
-            limiter.wrap(fetchDirectorSection)(url.ray, 'ray'),
-            limiter.wrap(fetchDirectorSection)(url.hirani, 'hirani'),
-            limiter.wrap(fetchDirectorSection)(url.guru, 'guru'),
-            limiter.wrap(fetchDirectorSection)(url.anurag, 'anurag'),
+            fetchTopRated(),
+            fetchMovieSectionWithFourUrl(url.newRelease[0], url.newRelease[1], url.newRelease[2], url.newRelease[3], 12, 'newRelease', false),
+            fetchMovieSectionWithFourUrl(url.popular[0], url.popular[1], url.popular[2], url.popular[3], 12, 'popular', false),
+            fetchCritic(),
+            fetchNetflix(),
+            fetchTrending(),
+            fetchMovieSectionWithTwoUrl(url.adventure[0], url.adventure[1], 'adventure'),
+            fetchMovieSectionWithTwoUrl(url.action[0], url.action[1], 'action'),
+            fetchBestOfYear(),
+            fetchMovieSectionWithTwoUrl(url.trueStories[0], url.trueStories[1], 'trueStories'),
+            fetchMovieSectionWithTwoUrl(url.comedy[0], url.comedy[1], 'comedy'),
+            fetchFamily(),
+            fetchMovieSectionWithFourUrl(url.feelGood[0], url.feelGood[1], url.feelGood[2], url.feelGood[3], 12, 'feelGood', false),
+            fetchDirectorSection(url.martin, 'martin'),
+            fetchDirectorSection(url.tarantino, 'tarantino'),
+            fetchDirectorSection(url.steven, 'steven'),
+            fetchDirectorSection(url.nolan, 'nolan'),
+            fetchDirectorSection(url.kubrick, 'kubrick'),
+            fetchDirectorSection(url.fincher, 'fincher'),
+            fetchDirectorSection(url.coen, 'coen'),
+            fetchDirectorSection(url.ray, 'ray'),
+            fetchDirectorSection(url.hirani, 'hirani'),
+            fetchDirectorSection(url.guru, 'guru'),
+            fetchDirectorSection(url.anurag, 'anurag'), 
+            fetchMovieSectionWithFourUrl(url.crime[0], url.crime[1], url.crime[2], url.crime[3], 12, 'crime', false),
+            fetchMcu(),
+            fetchAward(),
+            fetchCult(),
+            fetchViolent(),
+            fetchShowSectionWithTwoUrl(url.binge[0], url.binge[1], 'binge'),
+            fetchShowSectionWithOneUrl(url.sitcom, 'sitcom'),
+            fetchShowSectionWithTwoUrl(url.mystery[0], url.mystery[1], 'mystery'),
+            fetchShowSectionWithOneUrl(url.anime, 'anime'),
+            fetchShowSectionWithTwoUrl(url.dark[0], url.dark[1], 'dark'),
 
         ])
     }
