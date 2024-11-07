@@ -54,7 +54,13 @@ const extractInfoMovie = (isPosterNeeded, movie, sectionName) => {
             }
         }
         return {
-            image: `https://image.tmdb.org/t/p/${type == 'poster' ? `w400` : `w500`}${image['file_path']}`,
+            image: `https://image.tmdb.org/t/p/${
+                (() => {
+                    if(type == 'poster') return `w400`
+                    if(type == 'backdrop') return `w500`
+                    if(type == 'logo') return `w342`
+                })()
+            }${image['file_path']}`,
             isLogoIncluded: image['iso_639_1'] ? true : false
         }
     }
@@ -141,7 +147,13 @@ const extractInfoShow = (isPosterNeeded, show, sectionName) => {
             }
         }
         return {
-            image: `https://image.tmdb.org/t/p/${type == 'poster' ? `w400` : `w500`}${image['file_path']}`,
+            image: `https://image.tmdb.org/t/p/${
+                (() => {
+                    if(type == 'poster') return `w400`
+                    if(type == 'backdrop') return `w500`
+                    if(type == 'logo') return `w342`
+                })()
+            }${image['file_path']}`,
             isLogoIncluded: image['iso_639_1'] ? true : false
         }
     }
@@ -576,7 +588,7 @@ export const fetchAward = async () => {
     try {
 
         const movieUrl = 'https://api.themoviedb.org/3/discover/movie?api_key=99821f5d8417dc69c3ffd66d204f12cc&include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_count.desc&vote_count.gte=500&with_keywords=191741%7C164186%7C320648%7C329315&with_original_language=en&without_genres=16&without_keywords=180547%7C9715%7C329315'
-        const movieIdArray = [7508, 19666, 5801, 415358, 290815, 491625]
+        const movieIdArray = [7508, 19666, 5801, 290815, 491625]
 
         const dataArray = await Promise.all(
             [

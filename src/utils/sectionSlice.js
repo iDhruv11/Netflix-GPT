@@ -17247,7 +17247,7 @@ const sectionSlice = createSlice({
         anime: {
             tabs: ['show'],
             showTitle: 'Japanese Anime',
-            movies: null,
+            movies: [],
             shows: [
                 {
                     type:"show",
@@ -18301,7 +18301,7 @@ const sectionSlice = createSlice({
         dark: {
             tabs: ['show'],
             showTitle: 'Dark and Gritty Shows',
-            movies: null,
+            movies: [],
             shows: [
                 {
                     type:"show",

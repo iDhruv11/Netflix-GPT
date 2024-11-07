@@ -8,6 +8,7 @@ export const BrowseWrapper = () => {
 
     const [hasScrolled, setHasScrolled] = useState(false)
     const [page, setPage] = useState("home")
+    const [blurTitle, setBlurTitle] = useState(false)
 
     const contentOccurance = useRef({
         home: [],
@@ -47,10 +48,11 @@ export const BrowseWrapper = () => {
     return (
         <div className="w-screen">
             {
-                (areHomeSectionsLoaded) && <Header hasScrolled={hasScrolled} page={page} setPage={setPage}/>
+                (areHomeSectionsLoaded) && <Header hasScrolled={hasScrolled} page={page} setPage={setPage} blurTitle={blurTitle} setBlurTitle={setBlurTitle}/>
             }
             <Outlet context={{
                 setHasScrolled,
+                setBlurTitle,
                 contentOccurance: contentOccurance.current
             }}/>
         </div>

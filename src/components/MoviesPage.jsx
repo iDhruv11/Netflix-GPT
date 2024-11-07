@@ -7,8 +7,25 @@ import SuggestedSections from "./SuggestedSections"
 export const MoviesPage = () => {
 
     const scrolledElement = useRef(null)
-    const {setHasScrolled, contentOccurance} = useOutletContext()
-
+    const { setHasScrolled, contentOccurance, setBlurTitle } = useOutletContext()
+    const sections = [
+        'popular',
+        'netflix',
+        'mcu',
+        'adventure',
+        'feelGood',
+        'violent',
+        'newRelease',
+        'critic',
+        'trendingIndia',
+        'award',
+        'topRated',
+        'comedy',
+        'cult',
+        'trueStories',
+        'crime',
+        'action',
+    ];
 
     const trending = useSelector(store => {
         return store.contents["trendingIndia"].movies
@@ -28,7 +45,7 @@ export const MoviesPage = () => {
             .filter(movie => movie.backdropNoLang && movie.logo)
             .filter((movie, index) => index > 4)
     })
-    
+
     const mainMovieCollection = {
 
         page: "movies",
@@ -37,20 +54,26 @@ export const MoviesPage = () => {
             ...newRelease,
             ...netflix,
         ]
-        
+
     }
 
     useEffect(() => {
         setHasScrolled(true)
     }, [])
-    
+
+    const handleScroll = () => {
+        scrolledElement.current.scrollTop > 50 ? setBlurTitle(true) : setBlurTitle(false)
+    }
+
+
     return (
         <div
             className="relative bg-[#141414] w-screen h-screen overflow-y-scroll overflow-x-hidden custom-scrollbar"
             ref={scrolledElement}
+            onScroll={handleScroll}
         >
             <MainMovie mainMovieCollection={mainMovieCollection} bottom={`bottom-56`} contentOccurance={contentOccurance.movies} />
-            <SuggestedSections sections={sections} page={"home"}/>
+            <SuggestedSections sections={sections} page={"movies"} />
         </div>
     )
 

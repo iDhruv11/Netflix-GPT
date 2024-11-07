@@ -10,7 +10,7 @@ const SuggestedSections = ({ sections, page }) => {
             return acc
         }, {})
     })
-
+    console.log(data)
     return (
         <div
             className="bg-[#141414] w-screen relative mt-[3.2rem]"
@@ -23,12 +23,16 @@ const SuggestedSections = ({ sections, page }) => {
                         return Object.keys(data)
                             .map(section => {
 
-                                return (data[section].title.includes("Trending"))
-                                    ? [
-                                        <SectionTrending content={data[section].movies} page={"Movies"}/>,
-                                        <SectionTrending content={data[section].shows} page={"Shows"}/>
-                                    ]
-                                    : <Section sectionData={data[section]} page={page} />
+                                return (section == "trendingIndia")
+                                    ? (() => {
+                                        if(page == "home") return [
+                                            <SectionTrending content={data[section].movies} page={"Movies"}/>,
+                                            <SectionTrending content={data[section].shows} page={"Shows"}/>
+                                        ]
+                                        if(page == "movies") return <SectionTrending content={data[section].movies} page={"Movies"}/> 
+                                        if(page == "shows") return <SectionTrending content={data[section].shows} page={"Shows"}/>
+                                    })() 
+                                    : <Section sectionData={data[section]} page={page} section={section}/>
                             })
                             .flat()
 
