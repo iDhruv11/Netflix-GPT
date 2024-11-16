@@ -13,8 +13,8 @@ const SuggestedSections = ({ sections, page }) => {
     console.log(data)
     return (
         <div
-            className="bg-[#141414] w-screen relative mt-[3.2rem]"
-            style={{ boxShadow: "0px -50px 40px 50px #141414", zIndex: "49" }}
+            className="bg-[#121212] w-screen relative mt-[3.2rem]"
+            style={{ boxShadow: "0px -50px 40px 50px #121212", zIndex: "49" }}
         >
             <div className="-translate-y-40 flex flex-col gap-16">
                 {

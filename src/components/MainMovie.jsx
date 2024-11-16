@@ -286,7 +286,7 @@ const MainMovie = ({ mainMovieCollection, bottom, contentOccurance}) => {
                         <ShimmerButton mode="custom" width={200} height={60} from="#141414" via="#1c1c1c" to="#141414" border={0} loading={!mainMovie.desc}>
 
                             <button className="bg-white flex items-center gap-3 px-7 py-[0.65rem] rounded-sm hover:bg-white/70 ">
-                                <Play />
+                                <Play width={"2.2em"} height={"2.2em"}/>
                                 <p className="text-[1.45rem] text-black font-medium">Play</p>
                             </button>
 

@@ -117,7 +117,7 @@ const Header = ({ hasScrolled, page, setPage, blurTitle, setBlurTitle }) => {
     return (
         <div className="absolute z-50 top-0 left-0 w-screen ">
 
-            <div className={`flex py-[1.3em] pl-16 pr-14 text-white font-semibold text-[0.92em] justify-between w-full bg-gradient-to-b from-black/80 ${(hasScrolled) ? `bg-[#141414]/100` : `bg-[#141414]/0 transition-all duration-300 ease-linear` }`}>
+            <div className={`flex py-[1.3em] pl-16 pr-14 text-white font-semibold text-[0.92em] justify-between w-full bg-gradient-to-b from-black/80 ${(hasScrolled) ? `bg-[#121212]/100` : `bg-[#121212]/0 transition-all duration-300 ease-linear` }`}>
 
                 <div className="flex gap-14">
 

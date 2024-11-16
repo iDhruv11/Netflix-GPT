@@ -1,44 +1,28 @@
-import { useState, useEffect } from "react"
+import { useEffect, useRef } from "react"
 import { Backdrop } from "./Backdrop"
 
-export const ContentCard = ({ content, isTrending = false, number, sliderScrolled }) => {
+export const ContentCard = ({ content, isTrending = false, number, sliderScrolled, setMovieCard, movieCard }) => {
 
-    const [logo, setLogo] = useState(null)
+    const timeoutId = useRef(false)
 
-    useEffect(() => {
+    const getTranslateValue = (element) => {
 
-        if (content.logo) {
-            const logo = new Image()
-            logo.src = content.logo.image
-            logo.onload = () => {
-
-                const aspectRatio = logo.naturalWidth / logo.naturalHeight
-
-                if (aspectRatio >= 1.75) {
-                    setLogo({
-                        src: logo.src,
-                        width: `w-8/12`
-                    })
-                }
-                else if (aspectRatio >= 1.20 && aspectRatio < 1.75) {
-                    setLogo({
-                        src: logo.src,
-                        width: `w-4/12`
-                    })
-                }
-                else {
-                    setLogo({
-                        src: logo.src,
-                        width: `w-3/12`
-                    })
-                }
-            }
+        let translateValue = -100
+        // console.log(element.getBoundingClientRect().top)
+        // console.log(element.getBoundingClientRect().bottom)
+        if(element.getBoundingClientRect().top >= 230 && element.getBoundingClientRect().top < 660){
+            return translateValue + "px"
+        }
+        else if(element.getBoundingClientRect().top < 230){
+            translateValue = translateValue + (230 - element.getBoundingClientRect().top)
+            return Math.floor(translateValue) - 10 + "px"
         }
         else {
-            setLogo(false)
+            translateValue = translateValue - (element.getBoundingClientRect().top - 650 )
+            return Math.floor(translateValue) + "px"
         }
-    }, [])
-
+    }
+    
     return (isTrending)
 
         ? <div
@@ -60,5 +44,36 @@ export const ContentCard = ({ content, isTrending = false, number, sliderScrolle
             </div>
         </div>
 
-        : <Backdrop number={number} sliderScrolled={sliderScrolled} content={content}/>
+        : <div
+            className="w-[19.3rem] rounded-[4px]"
+            onMouseEnter={(e) => {
+
+                const left = Math.trunc(e.target.getBoundingClientRect().left - 62)
+                const translateValueY = getTranslateValue(e.target)
+                let translateValueX 
+
+                if( e.target.getBoundingClientRect().left < 100 ){
+                    translateValueX = Math.trunc(e.target.getBoundingClientRect().left) + "px"
+                }
+                else if(e.target.getBoundingClientRect().right > 1800){
+                    translateValueX =  "-" + (window.innerWidth - Math.trunc(e.target.getBoundingClientRect().right)) + "px"
+                }
+                else translateValueX = "0"
+                    
+
+                if (movieCard) {
+                    setTimeout(() => {
+                        requestAnimationFrame(() => setMovieCard({ ...content, left, translateValueY, translateValueX }))
+                    }, 300);
+                } else {
+                    requestAnimationFrame(() => setMovieCard({ ...content, left, translateValueY, translateValueX }))
+                }
+
+            }}
+            onMouseLeave={() => {
+                clearTimeout(timeoutId.current)
+            }}
+        >
+            <Backdrop number={number} sliderScrolled={sliderScrolled} content={content} />
+        </div>
 }

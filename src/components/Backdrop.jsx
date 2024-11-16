@@ -1,25 +1,67 @@
-export const Backdrop = ({ number=null, sliderScrolled=null, content}) => {
-    return (
+import { useEffect, useState } from "react"
 
-        // <div className={`w-[19.3rem] aspect-video relative ${number == 0 && !sliderScrolled ? `pl-16` : `pl-0`}`}>
-        <div className={`w-[19.3rem] aspect-video relative ${
-            (()=>{
-                if(number != null ){
+export const Backdrop = ({ number = null, sliderScrolled = null, content, rounded=`rounded-[4px]` }) => {
+
+    const [logo, setLogo] = useState(null)
+ 
+    useEffect(() => {
+
+        if (content.logo) {
+            const logo = new Image()
+            logo.src = content.logo.image
+            logo.onload = () => {
+
+                const aspectRatio = logo.naturalWidth / logo.naturalHeight
+
+                if (aspectRatio >= 1.75) {
+                    setLogo({
+                        src: logo.src,
+                        width: `w-8/12`
+                    })
+                }
+                else if (aspectRatio >= 1.20 && aspectRatio < 1.75) {
+                    setLogo({
+                        src: logo.src,
+                        width: `w-4/12`
+                    })
+                }
+                else {
+                    setLogo({
+                        src: logo.src,
+                        width: `w-3/12`
+                    })
+                }
+            }
+        }
+        else {
+            setLogo(false)
+        }
+    }, [])
+
+    return (
+        <div className={`w-full aspect-video relative ${(() => {
+                if (number != null) {
                     return number == 0 && !sliderScrolled ? `pl-16` : `pl-0`
                 }
             })()
-        }`}>
-
-            <img src={content?.backdrop?.image} className="w-full h-full object-cover rounded-[4px]" />
-
-            {/* <div className={`w-full h-full absolute top-0 left-0 rounded-[4px] ${(!sliderScrolled && number == 0) && `hidden`}`}> */}
-            <div className={`w-full h-full absolute top-0 left-0 rounded-[4px] ${
-                (() => {
-                    if(number != null){
-                        return (!sliderScrolled && number == 0) ? `hidden` : ``
-                    }
-                })()
             }`}>
+
+            <img src={content?.backdrop?.image} className={`w-full h-full object-cover ${rounded} `} />
+
+            <div>
+                
+            </div>
+
+            <div className={`w-full h-full absolute top-0 left-0 ${rounded} ${
+                    (() => {
+
+                        if (number != null) {
+                            return (!sliderScrolled && number == 0) ? `hidden` : ``
+                        }
+                    
+                    })()
+                }
+                `}>
 
                 {
                     (() => {
@@ -29,7 +71,7 @@ export const Backdrop = ({ number=null, sliderScrolled=null, content}) => {
                             return <img
                                 src={logo.src}
                                 alt="logo"
-                                className={`${logo.width} absolute ${logo.width == `w-4/12` || logo.width == `w-3/12` ? `bottom-12` : `bottom-2`} left-4`}
+                                className={`${logo.width} absolute bottom-2 left-4`}
                                 style={{ filter: "drop-shadow(0 0 5px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 8px rgba(0, 0, 0, 0.8))" }}
                             />
 

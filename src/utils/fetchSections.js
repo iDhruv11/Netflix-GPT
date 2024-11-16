@@ -57,7 +57,7 @@ const extractInfoMovie = (isPosterNeeded, movie, sectionName) => {
             image: `https://image.tmdb.org/t/p/${
                 (() => {
                     if(type == 'poster') return `w400`
-                    if(type == 'backdrop') return `w500`
+                    if(type == 'backdrop') return `w780`
                     if(type == 'logo') return `w342`
                 })()
             }${image['file_path']}`,
@@ -75,15 +75,25 @@ const extractInfoMovie = (isPosterNeeded, movie, sectionName) => {
         poster = extractImage(movie.images.posters, 'poster')
     }
 
-    const keywords = movie.keywords.keywords.length
-        ? movie.keywords.keywords.filter(keyword => keyword.name.length < 18).slice(0, 3).map(keyword => keyword.name)
+    let keywords = movie.keywords.keywords.length
+        ? movie.keywords.keywords
+            .filter(keyword => keyword.name.length < 18)
+            .slice(0, 3)
+            .map(keyword => keyword.name )
         : ["Not Available"]
 
-    let ageRatingMapKey = movie['release_dates'].results.find(country => country['iso_3166_1'] == 'US')?.['release_dates'].find(rating => rating.certification)?.certification
+    if(keywords.filter( keyword => keyword.length > 12 ).length > 1){
+        keywords = keywords.filter( keyword => keyword.length > 12).slice(0, 2)
+    }
+
+    let ageRatingMapKey = movie['release_dates'].results
+        .find(country => country['iso_3166_1'] == 'US')?.['release_dates']
+        .find(rating => rating.certification)?.certification
 
     if (!ageRatingMapKey || ageRatingMapKey == "NR") {
         ageRatingMapKey = movie['release_dates'].results.find(country => country['iso_3166_1'] == 'IN')?.['release_dates'][0]?.certification || ["G", "PG", "PG-10"][Math.floor(Math.random() * 3)]
     }
+
     const ageRating = Object.keys(ageRatingMap).includes(ageRatingMapKey) ? ageRatingMap[ageRatingMapKey] : ageRatingMapKey
     const cast = movie.credits.cast.slice(0, 3).map(person => person.name)
 
@@ -150,7 +160,7 @@ const extractInfoShow = (isPosterNeeded, show, sectionName) => {
             image: `https://image.tmdb.org/t/p/${
                 (() => {
                     if(type == 'poster') return `w400`
-                    if(type == 'backdrop') return `w500`
+                    if(type == 'backdrop') return `w780`
                     if(type == 'logo') return `w342`
                 })()
             }${image['file_path']}`,
@@ -165,9 +175,16 @@ const extractInfoShow = (isPosterNeeded, show, sectionName) => {
         poster = extractImage(show.images.posters, 'poster')
     }
 
-    const keywords = show.keywords.results.length
-        ? show.keywords.results.filter(keyword => keyword.name.length < 18).slice(0, 3).map(keyword => keyword.name)
+    let keywords = show.keywords.results.length
+        ? show.keywords.results
+            .filter(keyword => keyword.name.length < 18)
+            .slice(0, 3)
+            .map(keyword => keyword.name )
         : ["Not Available"]
+
+    if(keywords.filter( keyword => keyword.length > 12 ).length > 1){
+        keywords = keywords.filter( keyword => keyword.length > 12).slice(0, 2)
+    }
 
     const cast = show.credits.cast.length
         ? show.credits.cast.slice(0, 3).map(person => person?.name)
@@ -212,7 +229,8 @@ const extractInfoShow = (isPosterNeeded, show, sectionName) => {
         keywords,
         cast,
         seasons,
-        ageRating
+        ageRating,
+        
     }
 }
 export const fetchMovieSectionWithFourUrl = async (movieUrlOne, movieUrlTwo, showUrlOne, showUrlTwo, limit, key, extractPosters) => {
